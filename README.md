@@ -13,6 +13,7 @@ This is a proposal for an Open Source project sponsored by [STOIC](https://stoic
 - Designed for [AWS](https://aws.amazon.com/) (with planned support for [Azure](https://azure.microsoft.com/en-us) and [Google Cloud](https://cloud.google.com/))
 - Invoked through an HTTP endpoint served by [Amazon API Gateway](https://aws.amazon.com/api-gateway/)
 - Deployed as an [AWS Lambda](https://aws.amazon.com/lambda/) function (or a couple of functions)
+- Integrated with [AWS EMR](https://aws.amazon.com/emr/) (EKS and Serverless)
 - Packaged as an [AWS CloudFormation](https://aws.amazon.com/cloudformation/) template
 - Released as a free [AWS Marketplace](https://aws.amazon.com/marketplace) product
 - Running on your [Amazon VPC](https://aws.amazon.com/vpc/)
@@ -24,5 +25,9 @@ This is a proposal for an Open Source project sponsored by [STOIC](https://stoic
 - Write queries on Object Store executed by [DuckDB](https://duckdb.org/)
 - Write queries on Lakehouse executed by [Spark SQL](https://spark.apache.org/sql/)
 - Built-in [DuckDB](https://duckdb.org/) to [Spark SQL](https://spark.apache.org/sql/) SQL dialect converter for write queries on Lakehouse
-- Concurrent support for multiple table formats ([Apache Iceberg](https://iceberg.apache.org/) (first), [Apache Hudi](https://hudi.apache.org/), [Delta Lake](https://delta.io/)) and multiple Lakehouse instances
 - Built-in SQL parser/stringifier using native [DuckDB](https://duckdb.org/) SQL parser/stringifier
+- Built-in low-latency table scanning API (fetch table partitions from `WHERE` clause predicates) running on standalone function (without [Apache Spark](https://spark.apache.org/))
+- Concurrent support for multiple table formats ([Apache Iceberg](https://iceberg.apache.org/) (first), [Apache Hudi](https://hudi.apache.org/), [Delta Lake](https://delta.io/)) and multiple Lakehouse instances
+- Native support for all Lakehouse Catalogs ([AWS Glue Data Catalog](https://docs.aws.amazon.com/glue/latest/dg/catalog-and-crawler.html), [Amazon DynamoDB](https://aws.amazon.com/dynamodb/), and [Amazon RDS](https://aws.amazon.com/rds/) on [AWS](https://aws.amazon.com/))
+- Support for both synchronous and asynchronous invocations
+- Query results returned as response to HTTP request, serialized on Object Store, or streamed through [Apache Arrow](https://arrow.apache.org/)
