@@ -31,3 +31,4 @@ This is a proposal for an Open Source project sponsored by [STOIC](https://stoic
 - Native support for all Lakehouse Catalogs ([AWS Glue Data Catalog](https://docs.aws.amazon.com/glue/latest/dg/catalog-and-crawler.html), [Amazon DynamoDB](https://aws.amazon.com/dynamodb/), and [Amazon RDS](https://aws.amazon.com/rds/) on [AWS](https://aws.amazon.com/))
 - Support for both synchronous and asynchronous invocations
 - Query results returned as response to HTTP request, serialized on Object Store, or streamed through [Apache Arrow](https://arrow.apache.org/)
+- Query logs recorded on Lakehouse table in [Apache Parquet](https://parquet.apache.org/) format
