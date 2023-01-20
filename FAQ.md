@@ -2,6 +2,12 @@
 
 Please ask unanswered questions by creating a [new issue](https://github.com/sutoiku/pafin/issues).
 
+## What is Pafin?
+Patfin is a serverless lakehouse query engine powered by [Iceberg](https://iceberg.apache.org/) × [DuckDB](https://duckdb.org/) × [Arrow](https://arrow.apache.org/)
+
+## What does Pafin do?
+Pafin's purpose is to make it easier to run [DuckDB](https://duckdb.org/) on a serverless function ([AWS Lambda](https://aws.amazon.com/lambda/), [Azure Function](https://learn.microsoft.com/en-us/azure/azure-functions/functions-overview), [Google Cloud Function](https://cloud.google.com/functions)) for executing read/write queries against objects managed by an Object Store ([Amazon S3](https://aws.amazon.com/s3/), [Azure Blob Storage](https://azure.microsoft.com/en-us/products/storage/blobs), [Google Cloud Storage](https://cloud.google.com/storage)) and tables managed by a Lakehouse ([Apache Iceberg](https://iceberg.apache.org/), [Apache Hudi](https://hudi.apache.org/), [Delta Lake](https://delta.io/)).
+
 ## Why should I run DuckDB on the cloud instead of my personal computer?
 While running DuckDB on your personal computer will work great in some instances, running it on the cloud can bring many benefits:
 - No need to download large datasets from the cloud to your local computer.
