@@ -1,5 +1,5 @@
 # Puffin 🐧
-Serverless lakehouse query engine powered by [Apache Arrow](https://arrow.apache.org/) and [DuckDB](https://duckdb.org/)
+Serverless lakehouse query engine powered by [DuckDB](https://duckdb.org/) and [Apache Arrow](https://arrow.apache.org/)
 
 
 ## Introduction
