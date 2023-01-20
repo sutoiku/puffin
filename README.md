@@ -48,6 +48,12 @@ Pafin will support four complementary deployment models:
 - [AWS CloudFormation](https://aws.amazon.com/cloudformation/) template deployed within your own [VPC](https://aws.amazon.com/vpc/)
 - [AWS Marketplace](https://aws.amazon.com/marketplace) product added to your own cloud environment
 
+## Philosophy
+- Developer-first — no non-sense, no friction
+- Minimalist architecture — as few deployment dependencies as possible
+- Lowest lantecy — every millisecond counts
+- Elastic architecture — from kilobytes to petabytes
+
 ## FAQ
 Please check our [Frequently Asked Questions](./FAQ.md).
 
