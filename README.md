@@ -8,7 +8,7 @@ This is a proposal for an Open Source project sponsored by [STOIC](https://stoic
 ## Outline
 - Written in [TypeScript](https://www.typescriptlang.org/)
 - Deployed on [Node.js](https://nodejs.org/en/) (or [Bun](https://bun.sh/))
-- Powered by [Apache Arrow](https://arrow.apache.org/) and [DuckDB](https://duckdb.org/)
+- Powered by [Iceberg](https://iceberg.apache.org/) × [DuckDB](https://duckdb.org/) × [Arrow](https://arrow.apache.org/)
 - Integrated with [Apache Iceberg](https://iceberg.apache.org/) first, then [Apache Hudi](https://hudi.apache.org/) and [Delta Lake](https://delta.io/)
 - Designed for [AWS](https://aws.amazon.com/) (with planned support for [Microsoft Azure](https://azure.microsoft.com/en-us) and [Google Cloud](https://cloud.google.com/))
 - Invoked through an HTTP endpoint served by [Amazon API Gateway](https://aws.amazon.com/api-gateway/)
