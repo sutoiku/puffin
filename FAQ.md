@@ -67,7 +67,7 @@ No, all you need is the [AWS SDK](https://aws.amazon.com/developer/tools/) for t
 - Swift
 
 ## Will you offer hosting services for Pafin?
-We will not. Instead, you can use your own [Amazon VPC](https://aws.amazon.com/vpc/) and add Pufin from the [AWS Marketplace](https://aws.amazon.com/marketplace), for free. Others are encouraged to though.
+We will not. Instead, you can use your [Amazon VPC](https://aws.amazon.com/vpc/) and add Pufin from the [AWS Marketplace](https://aws.amazon.com/marketplace), for free. Others are encouraged to though.
 
 ## When will Pafin be released?
 We do not know yet, but a tentative roadmap will be released soon.
