@@ -20,8 +20,8 @@ This is a proposal for an Open Source project sponsored by [STOIC](https://stoic
 
 ## Features
 
-- Read queries executed by [DuckDB](https://duckdb.org/) or [Spark SQL](https://spark.apache.org/sql/).
-- Write queries on Object Store executed by [DuckDB](https://duckdb.org/).
-- Write queries on Lakehouse executed by [Spark SQL](https://spark.apache.org/sql/).
-- Built-in [DuckDB](https://duckdb.org/) to [Spark SQL](https://spark.apache.org/sql/) SQL dialect converter for write queries on Lakehouse.
-- Concurrent support for multiple table formats ([Apache Iceberg](https://iceberg.apache.org/) (first), [Apache Hudi](https://hudi.apache.org/), [Delta Lake](https://delta.io/)) and multiple Lakehouse instances.
+- Read queries executed by [DuckDB](https://duckdb.org/) or [Spark SQL](https://spark.apache.org/sql/)
+- Write queries on Object Store executed by [DuckDB](https://duckdb.org/)
+- Write queries on Lakehouse executed by [Spark SQL](https://spark.apache.org/sql/)
+- Built-in [DuckDB](https://duckdb.org/) to [Spark SQL](https://spark.apache.org/sql/) SQL dialect converter for write queries on Lakehouse
+- Concurrent support for multiple table formats ([Apache Iceberg](https://iceberg.apache.org/) (first), [Apache Hudi](https://hudi.apache.org/), [Delta Lake](https://delta.io/)) and multiple Lakehouse instances
