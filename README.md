@@ -17,3 +17,11 @@ This is a proposal for an Open Source project sponsored by [STOIC](https://stoic
 - Released as a free [AWS Marketplace](https://aws.amazon.com/marketplace) product
 - Running on your [Amazon VPC](https://aws.amazon.com/vpc/)
 - Licensed under [MIT License](https://opensource.org/licenses/MIT)
+
+## Features
+
+- Read queries executed by [DuckDB](https://duckdb.org/) or [Spark SQL](https://spark.apache.org/sql/).
+- Write queries on Object Store executed by [DuckDB](https://duckdb.org/).
+- Write queries on Lakehouse executed by [Spark SQL](https://spark.apache.org/sql/).
+- Built-in [DuckDB](https://duckdb.org/) to [Spark SQL](https://spark.apache.org/sql/) SQL dialect converter for write queries on Lakehouse.
+- Concurrent support for multiple table formats ([Apache Iceberg](https://iceberg.apache.org/) (first), [Apache Hudi](https://hudi.apache.org/), [Delta Lake](https://delta.io/)) and multiple Lakehouse instances.
