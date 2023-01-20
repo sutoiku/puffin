@@ -53,6 +53,6 @@ This project will leverage many [DuckDB](https://duckdb.org/) features that were
 - Support for [Azure Blob Storage](https://azure.microsoft.com/en-us/products/storage/blobs) (development to start a bit later)
 
 ## Notes
-*Pafin* (not to be confused with [Puffin](https://iceberg.apache.org/puffin-spec/)) is the Japanese [romanization](https://en.wikipedia.org/wiki/Romanization) of [*puffin*](https://en.wikipedia.org/wiki/Puffin), much like *sutoiku* is to *stoic*.
+*Pafin* (not to be confused with [Puffin](https://iceberg.apache.org/puffin-spec/)) is the Japanese [romanization](https://en.wikipedia.org/wiki/Romanization) of [*puffin*](https://en.wikipedia.org/wiki/Puffin), much like *sutoiku* is to [*stoic*](https://stoic.com/).
 
 Ⓒ Sutoiku, Inc.
