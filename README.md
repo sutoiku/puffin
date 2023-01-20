@@ -31,6 +31,8 @@ This is a proposal for an Open Source project sponsored by [STOIC](https://stoic
 - Support for both synchronous and asynchronous invocations
 - Query results returned as response to HTTP request, serialized on Object Store, or streamed through [Apache Arrow](https://arrow.apache.org/)
 - Query logs recorded on Lakehouse table in [Apache Parquet](https://parquet.apache.org/) format
+- Transparent support for all table lifecycle features offered by the Lakehouse
+- Transparent support for all file formats supported by [DuckDB](https://duckdb.org/) and the Lakehouse ([Apache Parquet](https://parquet.apache.org/) strongly recommended for now)
 
 ## Credits
 This project was initially inspired by this excellent [article](https://towardsdatascience.com/boost-your-cloud-data-applications-with-duckdb-and-iceberg-api-67677666fbd3) from [Alon Agmon](https://medium.com/@alon.agmon).
