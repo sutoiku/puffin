@@ -51,7 +51,7 @@ Pafin will support four complementary deployment models:
 ## Credits
 This project was initially inspired by this excellent [article](https://towardsdatascience.com/boost-your-cloud-data-applications-with-duckdb-and-iceberg-api-67677666fbd3) from [Alon Agmon](https://medium.com/@alon.agmon).
 
-This project will leverage many [DuckDB](https://duckdb.org/) features that were | are being sponsored by [STOIC](https://stoic.com/):
+This project will leverage many [DuckDB](https://duckdb.org/) features implemented by [DuckDB Labs](https://duckdblabs.com/) and sponsored by [STOIC](https://stoic.com/):
 
 - Support for [Apache Arrow](https://arrow.apache.org/) streaming when using [Node.js](https://nodejs.org/en/) deployment (released)
 - Support for user-defined functions when using [Node.js](https://nodejs.org/en/) deployment (released)
