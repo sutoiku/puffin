@@ -42,10 +42,11 @@ This is a proposal for an Open Source project sponsored by [STOIC](https://stoic
 ## Credits
 This project was initially inspired by this excellent [article](https://towardsdatascience.com/boost-your-cloud-data-applications-with-duckdb-and-iceberg-api-67677666fbd3) from [Alon Agmon](https://medium.com/@alon.agmon).
 
-This project will leverage many [DuckDB](https://duckdb.org/) features that were sponsored by [STOIC](https://stoic.com/):
+This project will leverage many [DuckDB](https://duckdb.org/) features that were|are being sponsored by [STOIC](https://stoic.com/):
 
 - Support for [Apache Arrow](https://arrow.apache.org/) streaming when using [Node.js](https://nodejs.org/en/) deployment
 - Support for user-defined functions when using [Node.js](https://nodejs.org/en/) deployment
 - Support for map-reduced queries with binary map results using new `COMBINE` clause
 - Support for partitioned exports (to be released soon)
-- Support for [Azure Blob Storage](https://azure.microsoft.com/en-us/products/storage/blobs) (development starting soon)
+- Support for SQL query parsing/serializing through standard query API (development starting soon)
+- Support for [Azure Blob Storage](https://azure.microsoft.com/en-us/products/storage/blobs) (development to start a bit later)
