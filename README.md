@@ -9,7 +9,7 @@ This is a proposal for an Open Source project sponsored by [STOIC](https://stoic
 - Written in [TypeScript](https://www.typescriptlang.org/)
 - Deployed on [Node.js](https://nodejs.org/en/) (or [Bun](https://bun.sh/))
 - Powered by [Apache Arrow](https://arrow.apache.org/) and [DuckDB](https://duckdb.org/)
-- Integrated with [Apache Iceberg](https://iceberg.apache.org/) first, then [Apache Hudi](https://hudi.apache.org/), and [Delta Lake](https://delta.io/)
+- Integrated with [Apache Iceberg](https://iceberg.apache.org/) first, then [Apache Hudi](https://hudi.apache.org/) and [Delta Lake](https://delta.io/)
 - Designed for [AWS](https://aws.amazon.com/) (with planned support for [Microsoft Azure](https://azure.microsoft.com/en-us) and [Google Cloud](https://cloud.google.com/))
 - Invoked through an HTTP endpoint served by [Amazon API Gateway](https://aws.amazon.com/api-gateway/)
 - Deployed as an [AWS Lambda](https://aws.amazon.com/lambda/) function (or a couple of functions)
@@ -26,7 +26,7 @@ This is a proposal for an Open Source project sponsored by [STOIC](https://stoic
 - Built-in [DuckDB](https://duckdb.org/) to [Spark SQL](https://spark.apache.org/sql/) SQL dialect converter for write queries on Lakehouse
 - Built-in SQL parser/stringifier using native [DuckDB](https://duckdb.org/) SQL parser/stringifier
 - Low-latency table scanning API (fetch table partitions from filter predicates) running on standalone function
-- Concurrent support for multiple table formats ([Apache Iceberg](https://iceberg.apache.org/) first, then [Apache Hudi](https://hudi.apache.org/), [Delta Lake](https://delta.io/))
+- Concurrent support for multiple table formats ([Apache Iceberg](https://iceberg.apache.org/) first, then [Apache Hudi](https://hudi.apache.org/) and [Delta Lake](https://delta.io/))
 - Concurrent suport for multiple Lakehouse instances
 - Native support for all Lakehouse Catalogs ([AWS Glue Data Catalog](https://docs.aws.amazon.com/glue/latest/dg/catalog-and-crawler.html), [Amazon DynamoDB](https://aws.amazon.com/dynamodb/), and [Amazon RDS](https://aws.amazon.com/rds/))
 - Support for both synchronous and asynchronous invocations
