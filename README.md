@@ -40,6 +40,13 @@ This is a proposal for an Open Source project sponsored by [STOIC](https://stoic
 - Planned support for deployment on [Amazon EC2](https://aws.amazon.com/ec2/) and [AWS Fargate](https://aws.amazon.com/fargate/)
 - Planned support for deployment across fleet of [AWS Lambda](https://aws.amazon.com/lambda/) functions using distributed SQL query planner
 
+## Deployment
+Pafin will support four complementary deployment models:
+- [Node.js](https://nodejs.org/en/) module deeply integrated within your tool or application
+- [AWS Lambda](https://aws.amazon.com/lambda/) deployed within your own cloud platform
+- [AWS CloudFormation](https://aws.amazon.com/cloudformation/) template deployed within your own [VPC](https://aws.amazon.com/vpc/)
+- [AWS Marketplace](https://aws.amazon.com/marketplace) product added to your own cloud environment
+
 ## Credits
 This project was initially inspired by this excellent [article](https://towardsdatascience.com/boost-your-cloud-data-applications-with-duckdb-and-iceberg-api-67677666fbd3) from [Alon Agmon](https://medium.com/@alon.agmon).
 
