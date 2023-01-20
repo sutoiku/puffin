@@ -21,7 +21,7 @@ This is a proposal for an Open Source project sponsored by [STOIC](https://stoic
 
 ## Features
 
-- Read queries executed by [DuckDB](https://duckdb.org/) or [Spark SQL](https://spark.apache.org/sql/)
+- Read queries executed by [DuckDB](https://duckdb.org/) (running on [AWS Lambda](https://aws.amazon.com/lambda/)) or [Spark SQL](https://spark.apache.org/sql/) (running on [AWS EMR](https://aws.amazon.com/emr/))
 - Write queries on Object Store executed by [DuckDB](https://duckdb.org/)
 - Write queries on Lakehouse executed by [Spark SQL](https://spark.apache.org/sql/)
 - Built-in [DuckDB](https://duckdb.org/) to [Spark SQL](https://spark.apache.org/sql/) SQL dialect converter for write queries on Lakehouse
