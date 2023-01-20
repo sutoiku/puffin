@@ -30,10 +30,14 @@ This is a proposal for an Open Source project sponsored by [STOIC](https://stoic
 - Concurrent suport for multiple Lakehouse instances
 - Native support for all Lakehouse Catalogs ([AWS Glue Data Catalog](https://docs.aws.amazon.com/glue/latest/dg/catalog-and-crawler.html), [Amazon DynamoDB](https://aws.amazon.com/dynamodb/), and [Amazon RDS](https://aws.amazon.com/rds/))
 - Support for both synchronous and asynchronous invocations
+- Joins across heterogenous tables using different table formats
+- Joins across tables managed by different Lakehouse instances
 - Query results returned as HTTP reponse, serialized on Object Store, or streamed through [Apache Arrow](https://arrow.apache.org/)
 - Query logs recorded on Lakehouse table in [Apache Parquet](https://parquet.apache.org/) format
 - Transparent support for all file formats supported by [DuckDB](https://duckdb.org/) and the Lakehouse
 - Transparent support for all table lifecycle features offered by the Lakehouse
+- Planned support for deployment on [Amazon EC2](https://aws.amazon.com/ec2/) and [AWS Fargate](https://aws.amazon.com/fargate/)
+- Planned support for deployment across fleet functions using distributed SQL query planner
 
 ## Credits
 This project was initially inspired by this excellent [article](https://towardsdatascience.com/boost-your-cloud-data-applications-with-duckdb-and-iceberg-api-67677666fbd3) from [Alon Agmon](https://medium.com/@alon.agmon).
