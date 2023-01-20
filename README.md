@@ -26,7 +26,7 @@ This is a proposal for an Open Source project sponsored by [STOIC](https://stoic
 - Built-in [DuckDB](https://duckdb.org/) to [Spark SQL](https://spark.apache.org/sql/) SQL dialect converter for write queries on Lakehouse
 - Built-in SQL parser/stringifier using native [DuckDB](https://duckdb.org/) SQL parser/stringifier
 - Low-latency table scanning API (fetch table partitions from filter predicates) running on standalone function (*sans* [Apache Spark](https://spark.apache.org/))
-- Concurrent support for multiple table formats ([Apache Iceberg](https://iceberg.apache.org/) (first), [Apache Hudi](https://hudi.apache.org/), [Delta Lake](https://delta.io/)) and multiple Lakehouse instances
+- Concurrent support for multiple table formats ([Apache Iceberg](https://iceberg.apache.org/) first, then [Apache Hudi](https://hudi.apache.org/), [Delta Lake](https://delta.io/)) and multiple Lakehouse instances
 - Native support for all Lakehouse Catalogs ([AWS Glue Data Catalog](https://docs.aws.amazon.com/glue/latest/dg/catalog-and-crawler.html), [Amazon DynamoDB](https://aws.amazon.com/dynamodb/), and [Amazon RDS](https://aws.amazon.com/rds/) on [AWS](https://aws.amazon.com/))
 - Support for both synchronous and asynchronous invocations
 - Query results returned as response to HTTP request, serialized on Object Store, or streamed through [Apache Arrow](https://arrow.apache.org/)
