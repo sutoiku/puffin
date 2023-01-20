@@ -40,7 +40,7 @@ Yes, it will (or so we've [read](https://twitter.com/tabulario/status/1616467434
 No, all you need is an HTTP client, which you should be able to find for virtually any platform.
 
 ## Will you offer hosting services for Pafin?
-We will not. Instead, you will use your own [Amazon VPC](https://aws.amazon.com/vpc/) and add Pufin from the [AWS Marketplace](https://aws.amazon.com/marketplace), for free.
+We will not. Instead, you can use your own [Amazon VPC](https://aws.amazon.com/vpc/) and add Pufin from the [AWS Marketplace](https://aws.amazon.com/marketplace), for free. Others might though.
 
 ## When will Pafin be released?
 We do not know yet, but a tentative roadmap will be released before the end of January 2023.
