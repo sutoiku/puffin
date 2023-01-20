@@ -48,6 +48,9 @@ Pafin will support four complementary deployment models:
 - [AWS CloudFormation](https://aws.amazon.com/cloudformation/) template deployed within your own [VPC](https://aws.amazon.com/vpc/)
 - [AWS Marketplace](https://aws.amazon.com/marketplace) product added to your own cloud environment
 
+## FAQ
+Please check our [Frequently Asked Questions](./FAQ.md).
+
 ## Credits
 This project was initially inspired by this excellent [article](https://towardsdatascience.com/boost-your-cloud-data-applications-with-duckdb-and-iceberg-api-67677666fbd3) from [Alon Agmon](https://medium.com/@alon.agmon).
 
