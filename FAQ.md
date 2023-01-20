@@ -19,7 +19,7 @@ A Lakehouse like [Apache Iceberg](https://iceberg.apache.org/), [Apache Hudi](ht
 Note: feature deacriptions courtesy of [Apache Iceberg](https://iceberg.apache.org/)
 
 ## Do I need a specific client to use Pafin?
-No, all you need is an HTTP client, which you should be able to find from any platform.
+No, all you need is an HTTP client, which you should be able to find for virtually any platform.
 
 ## Will you offer hosting services for Pafin?
 We will not. Instead, you will use your own [Amazon VPC](https://aws.amazon.com/vpc/) and add Pufin from the [AWS Marketplace](https://aws.amazon.com/marketplace), for free.
