@@ -32,6 +32,7 @@ This is a proposal for an Open Source project sponsored by [STOIC](https://stoic
 - Support for both synchronous and asynchronous invocations
 - Joins across heterogenous tables using different table formats
 - Joins across tables managed by different Lakehouse instances
+- Small filtered partitions cached on [AWS Lambda](https://aws.amazon.com/lambda/) function
 - Query results returned as HTTP reponse, serialized on Object Store, or streamed through [Apache Arrow](https://arrow.apache.org/)
 - Query results cached on Object Store
 - Query logs recorded on Lakehouse table in [Apache Parquet](https://parquet.apache.org/) format
