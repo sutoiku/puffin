@@ -7,7 +7,11 @@ A Lakehouse like [Apache Iceberg](https://iceberg.apache.org/), [Apache Hudi](ht
 - [Partition layout evolution](https://iceberg.apache.org/docs/latest/evolution/#partition-evolution) can update the layout of a table as data volume or query patterns change
 - [Time travel](https://iceberg.apache.org/docs/latest/spark-queries/#time-travel) enables reproducible queries that use exactly the same table snapshot
 - Table version rollback allows users to quickly correct problems by resetting tables to a good state
-- [Advanced filtering](https://iceberg.apache.org/docs/latest/performance/#data-filtering) data files are pruned with partition and column-level stats, using table metadata
+- [Advanced filtering](https://iceberg.apache.org/docs/latest/performance/#data-filtering) prunes data files with partition and column-level stats, using table metadata
+- [Serializable isolation](https://iceberg.apache.org/docs/latest/reliability/) makes table changes atomic and ensures that readers never see partial or uncommitted changes
+- [Multiple concurrent writers](https://iceberg.apache.org/docs/latest/reliability/#concurrent-write-operations) use optimistic concurrency and transaction retry
+
+Note: feature deacriptions courtesy of [Apache Iceberg](https://iceberg.apache.org/)
 
 ## What does *Pafin* mean?
 *Pafin* (not to be confused with [Puffin](https://iceberg.apache.org/puffin-spec/)) is the Japanese [romanization](https://en.wikipedia.org/wiki/Romanization) of [*puffin*](https://en.wikipedia.org/wiki/Puffin), much like [*sutoiku*](https://github.com/sutoiku) is to [*stoic*](https://stoic.com/).
