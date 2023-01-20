@@ -33,4 +33,4 @@ This is a proposal for an Open Source project sponsored by [STOIC](https://stoic
 - Query logs recorded on Lakehouse table in [Apache Parquet](https://parquet.apache.org/) format
 
 ## Credits
-This project was initially inspired by this excellent [article](https://towardsdatascience.com/boost-your-cloud-data-applications-with-duckdb-and-iceberg-api-67677666fbd3) from [Alon Agmon](https://medium.com/@alon.agmon). ❤️
+This project was initially inspired by this excellent [article](https://towardsdatascience.com/boost-your-cloud-data-applications-with-duckdb-and-iceberg-api-67677666fbd3) from [Alon Agmon](https://medium.com/@alon.agmon).
