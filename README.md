@@ -1,4 +1,4 @@
-# Puffin
+# Puffin 🐧
 Serverless lakehouse query engine powered by [Apache Arrow](https://arrow.apache.org/) and [DuckDB](https://duckdb.org/)
 
 
