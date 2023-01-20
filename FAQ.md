@@ -48,7 +48,7 @@ No. You will only be billed for [AWS Lambda](https://aws.amazon.com/lambda/) fun
 ## Which cloud platforms are supported?
 Currently, [AWS](https://aws.amazon.com/). Support for [Microsoft Azure](https://azure.microsoft.com/en-us) and [Google Cloud](https://cloud.google.com/) will be added in future releases.
 
-## Which lakehouse platforms are support?
+## Which lakehouse platforms are supported?
 Currently, [Apache Iceberg](https://iceberg.apache.org/). Support for [Apache Hudi](https://hudi.apache.org/) and [Delta Lake](https://delta.io/) will be added in future releases.
 
 ## Do I need a specific client to use Pafin?
