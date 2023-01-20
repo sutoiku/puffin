@@ -46,4 +46,4 @@ We will not. Instead, you can use your own [Amazon VPC](https://aws.amazon.com/v
 We do not know yet, but a tentative roadmap will be released before the end of January 2023.
 
 ## How may I contribute?
-Please send an email to info at stoic dot com.
+Please send an email to info at pafin dot org.
