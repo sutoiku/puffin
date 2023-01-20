@@ -43,7 +43,7 @@ If you just make read queries on [Iceberg tables](https://iceberg.apache.org/doc
 No. You will only be billed for [AWS Lambda](https://aws.amazon.com/lambda/) functions, thanks to the fact that the [Iceberg Java API](https://iceberg.apache.org/docs/latest/api/) used for [table scans](https://iceberg.apache.org/docs/latest/api/#scanning) is packaged as a standalone [AWS Lambda](https://aws.amazon.com/lambda/) function running without [Apache Spark](https://spark.apache.org/). This ensures the lowest possible costs, and a much lower table scan marginal latency under 500 ms. You will get billed for EMR only when doing write queries on [Iceberg tables](https://iceberg.apache.org/docs/latest/configuration/). Finally, queries made directly on Object Store objects do not use [Apache Iceberg](https://iceberg.apache.org/), hence do not require [Apache Spark](https://spark.apache.org/).
 
 ## Do I need a specific client to use Pafin?
-No, all you need is the [AWS SDK](https://aws.amazon.com/developer/tools/) for your platform of choice:
+No, all you need is the [AWS SDK](https://aws.amazon.com/developer/tools/) for the programming language of your choice:
 - C++
 - Go
 - Java
