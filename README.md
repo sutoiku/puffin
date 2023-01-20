@@ -20,7 +20,6 @@ This is a proposal for an Open Source project sponsored by [STOIC](https://stoic
 - Licensed under [MIT License](https://opensource.org/licenses/MIT)
 
 ## Features
-
 - Read queries executed by [DuckDB](https://duckdb.org/) (running on [AWS Lambda](https://aws.amazon.com/lambda/)) or [Spark SQL](https://spark.apache.org/sql/) (running on [AWS EMR](https://aws.amazon.com/emr/))
 - Write queries on Object Store executed by [DuckDB](https://duckdb.org/)
 - Write queries on Lakehouse executed by [Spark SQL](https://spark.apache.org/sql/)
@@ -32,3 +31,6 @@ This is a proposal for an Open Source project sponsored by [STOIC](https://stoic
 - Support for both synchronous and asynchronous invocations
 - Query results returned as response to HTTP request, serialized on Object Store, or streamed through [Apache Arrow](https://arrow.apache.org/)
 - Query logs recorded on Lakehouse table in [Apache Parquet](https://parquet.apache.org/) format
+
+## Credits
+This project was initially inspired by this excellent [article](https://towardsdatascience.com/boost-your-cloud-data-applications-with-duckdb-and-iceberg-api-67677666fbd3) from [Alon Agmon](https://medium.com/@alon.agmon). ❤️
