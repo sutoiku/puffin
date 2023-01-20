@@ -30,5 +30,11 @@ No, all you need is an HTTP client, which you should be able to find for virtual
 ## Will you offer hosting services for Pafin?
 We will not. Instead, you will use your own [Amazon VPC](https://aws.amazon.com/vpc/) and add Pufin from the [AWS Marketplace](https://aws.amazon.com/marketplace), for free.
 
+## When will Pafin be released?
+We do not know yet, but a tentative roadmap will be released before the end of January 2023.
+
+## How may I contribute?
+Please send an email to info at stoic dot com.
+
 ## What does *Pafin* mean?
 *Pafin* (not to be confused with [Puffin](https://iceberg.apache.org/puffin-spec/)) is the Japanese [romanization](https://en.wikipedia.org/wiki/Romanization) of [*puffin*](https://en.wikipedia.org/wiki/Puffin), much like [*sutoiku*](https://github.com/sutoiku) is to [*stoic*](https://stoic.com/).
