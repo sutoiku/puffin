@@ -1,4 +1,4 @@
-# Puffin 🐧
+# Pafin 🐧
 Serverless lakehouse query engine powered by [Iceberg](https://iceberg.apache.org/) × [DuckDB](https://duckdb.org/) × [Arrow](https://arrow.apache.org/)
 
 
