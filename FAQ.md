@@ -21,5 +21,8 @@ Note: feature deacriptions courtesy of [Apache Iceberg](https://iceberg.apache.o
 ## Do I need a specific client to use Pafin?
 No, all you need is an HTTP client, which you should be able to find from any platform.
 
+## Will you offer hosting services for Pafin?
+We will not. Instead, you will use your own [Amazon VPC](https://aws.amazon.com/vpc/) and add Pufin from the [AWS Marketplace](https://aws.amazon.com/marketplace), for free.
+
 ## What does *Pafin* mean?
 *Pafin* (not to be confused with [Puffin](https://iceberg.apache.org/puffin-spec/)) is the Japanese [romanization](https://en.wikipedia.org/wiki/Romanization) of [*puffin*](https://en.wikipedia.org/wiki/Puffin), much like [*sutoiku*](https://github.com/sutoiku) is to [*stoic*](https://stoic.com/).
