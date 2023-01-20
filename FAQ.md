@@ -72,6 +72,9 @@ No, all you need is the [AWS SDK](https://aws.amazon.com/developer/tools/) for t
 ## Will you offer hosting services for Pafin?
 We will not. Instead, you can use your [Amazon VPC](https://aws.amazon.com/vpc/) and add Pufin from the [AWS Marketplace](https://aws.amazon.com/marketplace), for free. Others are encouraged to though.
 
+## Why is STOIC initiating and funding this open source project?
+[STOIC](https://stoic.com/) is in the business of developing and licensing a progressive data platform allowing any data citizen to interact with datasets of any size, from kilobytes to petabytes. In that context, we need to perform read | write SQL queries on large datasets, with low latency (2 seconds or less) and low cost (one or two order of magnitude more cost-effective than conventional solutions).
+
 ## When will Pafin be released?
 We do not know yet, but a tentative roadmap will be released soon.
 
