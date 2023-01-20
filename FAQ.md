@@ -1,6 +1,6 @@
 # Frequently Asked Questions
 
-Please ask unanswnered questions by creating a [new issue](https://github.com/sutoiku/pafin/issues).
+Please ask unanswered questions by creating a [new issue](https://github.com/sutoiku/pafin/issues).
 
 ## Can I use Pafin without a Lakehouse?
 Yes, you can use Pafin with just an Object Store like [Amazon S3](https://aws.amazon.com/s3/).
