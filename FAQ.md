@@ -2,6 +2,9 @@
 
 Please ask unanswered questions by creating a [new issue](https://github.com/sutoiku/pafin/issues).
 
+## Why should I run DuckDB on the cloud instead of my dekstop or laptop computer?
+While running DuckDB on your dekstop or laptop computer will work great in many instances, running on the cloud has some benefits:
+
 ## Can I use Pafin without a Lakehouse?
 Yes, you can use Pafin with just an Object Store like [Amazon S3](https://aws.amazon.com/s3/).
 
