@@ -48,7 +48,8 @@ No, all you need is the [AWS SDK](https://aws.amazon.com/developer/tools/) for y
 - Go
 - Java
 - JavaScript
-- Kotlin.NET
+- Kotlin
+- .NET
 - Node.js
 - PHP
 - Python
