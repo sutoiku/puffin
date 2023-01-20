@@ -51,6 +51,9 @@ Initially, [AWS](https://aws.amazon.com/). Support for [Microsoft Azure](https:/
 ## Which lakehouse platforms will be supported?
 Initially, [Apache Iceberg](https://iceberg.apache.org/). Support for [Apache Hudi](https://hudi.apache.org/) and [Delta Lake](https://delta.io/) will be added in future releases.
 
+## Why use Node.js?
+Why not? [Node.js](https://nodejs.org/en/) is a great development platform for this type of project, and we're familiar with it. But it should not matter to users.
+
 ## Do I need a specific client to use Pafin?
 No, all you need is the [AWS SDK](https://aws.amazon.com/developer/tools/) for the programming language of your choice:
 - C++
