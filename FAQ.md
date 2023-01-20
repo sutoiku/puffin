@@ -18,7 +18,7 @@ While running DuckDB on your personal computer will work great in some instances
 - Enforcement of column and | or row-level access control policies.
 
 ## Can I use Pafin without a Lakehouse?
-Yes, you can use Pafin with just an Object Store like [Amazon S3](https://aws.amazon.com/s3/). But you should still take a close look at [Apache Iceberg](https://iceberg.apache.org/), for the following reasons:
+Yes, you can use Pafin with just an Object Store like [Amazon S3](https://aws.amazon.com/s3/). But you should still take a look at [Apache Iceberg](https://iceberg.apache.org/), for the following reasons:
 
 ## Why should I use a Lakehouse like Iceberg instead of just an Object Store like S3?
 A Lakehouse like [Apache Iceberg](https://iceberg.apache.org/), [Apache Hudi](https://hudi.apache.org/), and [Delta Lake](https://delta.io/) offers many critical features:
