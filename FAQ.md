@@ -18,5 +18,8 @@ A Lakehouse like [Apache Iceberg](https://iceberg.apache.org/), [Apache Hudi](ht
 
 Note: feature deacriptions courtesy of [Apache Iceberg](https://iceberg.apache.org/)
 
+## Do I need a specific client to use Pafin?
+No, all you need is an HTTP client, which you should be able to find from any platform.
+
 ## What does *Pafin* mean?
 *Pafin* (not to be confused with [Puffin](https://iceberg.apache.org/puffin-spec/)) is the Japanese [romanization](https://en.wikipedia.org/wiki/Romanization) of [*puffin*](https://en.wikipedia.org/wiki/Puffin), much like [*sutoiku*](https://github.com/sutoiku) is to [*stoic*](https://stoic.com/).
