@@ -69,6 +69,9 @@ No, all you need is the [AWS SDK](https://aws.amazon.com/developer/tools/) for t
 - Rust
 - Swift
 
+## How does query result caching work?
+Whenever you execute a read query, its result can be cached on the Object Store ([Amazon S3](https://aws.amazon.com/s3/)), and this cache is automatically referenced in the query logs table. Recent entries in this table are cached in the main [AWS Lambda](https://aws.amazon.com/lambda/) function for fast lookup. Whenever the same query is requested a gain, cached results can be returned instead of re-executing the query. This helps reduce latency and cost, while freeing limited resources (most [AWS](https://aws.amazon.com/) accounts are limited to 3,000 concurrent [Lambda](https://aws.amazon.com/lambda/) functions) for other queries.
+
 ## Will you offer hosting services for Pafin?
 We will not. Instead, you can use your [Amazon VPC](https://aws.amazon.com/vpc/) and add Pufin from the [AWS Marketplace](https://aws.amazon.com/marketplace), for free. Others are encouraged to though.
 
