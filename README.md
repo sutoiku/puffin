@@ -49,7 +49,7 @@ Pafin will support four complementary deployment models:
 - [AWS Marketplace](https://aws.amazon.com/marketplace) product added to your own cloud environment
 
 ## Philosophy
-- **Developer-first** — no non-sense, no friction
+- **Developer-first** — no non-sense, zero friction
 - **Minimalist architecture** — as few deployment dependencies as possible
 - **Lowest latency** — every millisecond counts
 - **Elastic architecture** — from kilobytes to petabytes
