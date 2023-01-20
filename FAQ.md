@@ -1,5 +1,8 @@
 # Frequently Asked Questions
 
+## Can I use Pafin without a Lakehouse?
+Yes, you can use Pafin with just an Object Store like [Amazon S3](https://aws.amazon.com/s3/).
+
 ## Why should I use a Lakehouse like Iceberg instead of just an Object Store like S3?
 A Lakehouse like [Apache Iceberg](https://iceberg.apache.org/), [Apache Hudi](https://hudi.apache.org/), and [Delta Lake](https://delta.io/) offers many critical features:
 - [Schema evolution](https://iceberg.apache.org/docs/latest/evolution/#schema-evolution) supports add, drop, update, or rename, and has [no side-effects](https://iceberg.apache.org/docs/latest/evolution/#correctness).
