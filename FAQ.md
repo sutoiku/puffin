@@ -43,7 +43,7 @@ No, all you need is an HTTP client, which you should be able to find for virtual
 We will not. Instead, you can use your own [Amazon VPC](https://aws.amazon.com/vpc/) and add Pufin from the [AWS Marketplace](https://aws.amazon.com/marketplace), for free. Others might though.
 
 ## When will Pafin be released?
-We do not know yet, but a tentative roadmap will be released before the end of January 2023.
+We do not know yet, but a tentative roadmap will be released soon.
 
 ## How may I contribute?
 Please send an email to info at pafin dot org.
