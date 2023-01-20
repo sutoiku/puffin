@@ -52,7 +52,7 @@ Pafin will support four complementary deployment models:
 - **Developer-first** — no non-sense, zero friction
 - **Minimalist architecture** — as few deployment dependencies as possible
 - **Lowest latency** — every millisecond counts
-- **Elastic architecture** — from kilobytes to petabytes
+- **Elastic design** — from kilobytes to petabytes
 
 ## FAQ
 Please check our [Frequently Asked Questions](./FAQ.md).
