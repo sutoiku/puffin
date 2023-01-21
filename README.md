@@ -1,4 +1,4 @@
-# Puffin 🐧
+# PuffinDB 🐧
 Serverless lakehouse query engine powered by [Iceberg](https://iceberg.apache.org/) × [DuckDB](https://duckdb.org/) × [Arrow](https://arrow.apache.org/)
 
 
@@ -42,7 +42,7 @@ This is a proposal for an Open Source project sponsored by [STOIC](https://stoic
 - Planned support for deployment across fleet of [AWS Lambda](https://aws.amazon.com/lambda/) functions using distributed SQL query planner
 
 ## Deployment
-Puffin will support four complementary deployment models:
+PuffinDB will support four complementary deployment models:
 - [Node.js](https://nodejs.org/en/) module deeply integrated within your own tool or application
 - [AWS Lambda](https://aws.amazon.com/lambda/) deployed within your own cloud platform
 - [AWS CloudFormation](https://aws.amazon.com/cloudformation/) template deployed within your own [VPC](https://aws.amazon.com/vpc/)
@@ -75,6 +75,6 @@ We are also considering funding the following projects:
 
 ## Notes
 
-Puffin (the query engine) should not be confused with the [Puffin](https://iceberg.apache.org/puffin-spec/) file format.
+PuffinDB (the query engine) should not be confused with the [Puffin](https://iceberg.apache.org/puffin-spec/) file format.
 
 Ⓒ [Sutoiku, Inc.](https://stoic.com/)
