@@ -21,7 +21,7 @@ The answer consists in leveraging the tens or hundreds of millions of powerful q
 While the vision outlined above might seem very ambitious, it could be implemented with a relatively-simple extension to the SQL syntax:
 
 ```
-SELECT REMOTE 'https://queryEngine.com/' * FROM remoteTable;`
+SELECT REMOTE 'https://queryEngine.com/' * FROM remoteTable;
 ```
 
 With that syntax, `myRemoteTable` would be local to `https://queryEngine.com/`, which itself would be nothing more than an HTTP endpoint exposing a query engine's API. Initially, this query engine would use the SQL syntax, but it should be possible to support alternative query syntaxes down the road, such as the upcoming [Graph Query Language](https://www.gqlstandards.org/) (GQL), while offering the ability to nest one into the other, in both correlated and uncorrelated manners.
@@ -31,5 +31,5 @@ While similar results could be achieved with alternative syntaxes, using a remot
 ```
 SELECT *
   FROM localTable AS local, (SELECT REMOTE 'https://queryEngine.com/' * FROM remoteTable) AS remote
-  WHERE local.key = remote.key`
+  WHERE local.key = remote.key;
 ```
