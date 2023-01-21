@@ -69,6 +69,9 @@ No, all you need is the [AWS SDK](https://aws.amazon.com/developer/tools/) for t
 - Rust
 - Swift
 
+## How does partition caching work?
+Whenever you execute a query on a table (be it backed by objects on the Object Store or a table in the Lakehouse) and are planning to make multiple queries on the same subset of the table, its partitions can be cached within the memory of the [AWS Lambda](https://aws.amazon.com/lambda/) function(s) used to execute the query. During subsequent queries on the same partitions, the function has a 99% probability of enjoying a hot start, giving it instant access to previously-cached partitions. This helps reduce latency and cost, since downloading partitions from the Object Store to the function is usually the longest step in the end-to-end query process (at least for relatively simple queries). The only drawback of such an optimization is that it slows the initial query down, because it requires an extra copy of the data in memory, but this is a small price to pay if many queries are to be made on the same table partitions.
+
 ## How does query result caching work?
 Whenever you execute a read query, its result can be cached on the Object Store ([Amazon S3](https://aws.amazon.com/s3/)), and this cache is automatically referenced in the query logs table. Recent entries in this table are cached in the main [AWS Lambda](https://aws.amazon.com/lambda/) function for fast lookup. Whenever the same query is requested again, its cached result can be returned instead of re-executing the query. This helps reduce latency and cost, while freeing limited resources (most [AWS](https://aws.amazon.com/) accounts are limited to 3,000 concurrent [Lambda](https://aws.amazon.com/lambda/) functions) for other queries.
 
