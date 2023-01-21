@@ -55,7 +55,7 @@ In this example, the client calls a first remote query engine, which in turns ca
 
 ## Components
 For this architecture to work, we need two things:
-1. The client-side query engine and first remote query engine must support this new `SELECT REMOTE` syntqx.
+1. The client-side query engine and first remote query engine must support this new `SELECT REMOTE` syntax.
 2. Both remote query engines must support expose themselves as HTTP endpoints.
 
 The former will require a fairly sophisticated query planner, while the latter will require a relatively-simple protocol. For performance and scalability reasons, this protocol should support both synchronous and asynchronous requests. With a synchronous request, the query's result should be returned as a simple response to the HTTP request. With an asynchronous request, the response should simply include an Object Store URI from which the query's result could be fetched at a later time (with polling or notification).
