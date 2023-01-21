@@ -26,4 +26,8 @@ With that syntax, `myRemoteTable` would be local to `https://queryEngine.com/`, 
 
 While similar results could be achieved with alternative syntaxes, using a remote SELECT statement would allow this kind of query:
 
-`SELECT * FROM localTable AS local, (SELECT REMOTE 'https://queryEngine.com/' * FROM remoteTable) AS remote WHERE local.key = remote.key`
+```
+SELECT *
+  FROM localTable AS local, (SELECT REMOTE 'https://queryEngine.com/' * FROM remoteTable) AS remote
+  WHERE local.key = remote.key`
+```
