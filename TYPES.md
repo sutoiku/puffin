@@ -1,6 +1,6 @@
 # Types
 
-The following table maps [DuckDB](https://duckdb.org/docs/sql/data_types/overview) types to [Apache Iceberg Types](https://iceberg.apache.org/docs/latest/schemas/):
+The following table maps [DuckDB](https://duckdb.org/docs/sql/data_types/overview) types to [Apache Iceberg](https://iceberg.apache.org/docs/latest/schemas/) types:
 
 | DuckDB | Description  | Iceberg |
 | ------ | ------------ | ------- |
