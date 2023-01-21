@@ -55,6 +55,9 @@ So that you can pick the one that will work best for you:
 - **Easier**: [AWS CloudFormation](https://aws.amazon.com/cloudformation/) template deployed within your own [VPC](https://aws.amazon.com/vpc/)
 - **Easiest**: [AWS Marketplace](https://aws.amazon.com/marketplace) product added to your own cloud environment
 
+## Can PuffinDB be deployed on EC2 instances or Fargates?
+Initially, PuffinDB will be deployed on [AWS Lambda](https://aws.amazon.com/lambda/) functions, but support for [Amazon EC2](https://aws.amazon.com/ec2/) and [AWS Fargate](https://aws.amazon.com/fargate/) will be added soon after.
+
 ## Why use Node.js?
 Why not? [Node.js](https://nodejs.org/en/) is a great development platform for this type of project, and we're familiar with it. But it should not matter to users.
 
