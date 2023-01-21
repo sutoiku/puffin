@@ -71,6 +71,7 @@ This project leverages many [DuckDB](https://duckdb.org/) features implemented b
 
 We are also considering funding the following projects:
 
+- Support for `SELECT REMOTE 'https://myPuffinService.com/' * FROM myRemoteTable` syntax (*C.f.* [related issue comment](https://github.com/sutoiku/puffin/issues/4)).
 - Support for [Bun](https://bun.sh/) deployment as a faster alternative to [Node.js](https://nodejs.org/en/).
 - Support for `FIXED` fixed-length character strings (*C.f.* [related issue](https://github.com/sutoiku/puffin/issues/3)).
 
