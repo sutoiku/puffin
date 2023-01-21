@@ -71,8 +71,8 @@ This project will leverage many [DuckDB](https://duckdb.org/) features implement
 
 We are also considering funding the following projects:
 
-- Support for `FIXED` fixed-length character strings (*C.f.* [related issue](https://github.com/sutoiku/puffin/issues/3)).
 - Support for [Bun](https://bun.sh/) deployment as an alternative to [Node.js](https://nodejs.org/en/).
+- Support for `FIXED` fixed-length character strings (*C.f.* [related issue](https://github.com/sutoiku/puffin/issues/3)).
 
 ## Notes
 
