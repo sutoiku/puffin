@@ -75,6 +75,6 @@ We are also considering funding the following projects:
 
 ## Notes
 
-Puffin (the query engine) should not be confused with [Puffin](https://iceberg.apache.org/puffin-spec/) the file format.
+Puffin (the query engine) should not be confused with the [Puffin](https://iceberg.apache.org/puffin-spec/) file format.
 
 Ⓒ [Sutoiku, Inc.](https://stoic.com/)
