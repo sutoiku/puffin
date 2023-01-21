@@ -74,7 +74,7 @@ No, all you need is the [AWS SDK](https://aws.amazon.com/developer/tools/) for t
 2. Scan table(s) using low-latency [Lakehouse Catalog API](https://iceberg.apache.org/docs/latest/api/#scanning) running on [AWS Lambda](https://aws.amazon.com/lambda/) function.
 3. Replace reference(s) to table(s) with references to partitions returned by table scan(s).
 4. Stringify SQL query using native [DuckDB](https://duckdb.org/) stringifier.
-5. Execute query using [DuckDB](https://duckdb.org/).
+5. Execute query using [DuckDB](https://duckdb.org/) running on [AWS Lambda](https://aws.amazon.com/lambda/) function.
 
 ## How does partition caching work?
 Whenever you execute a query on a table (be it backed by objects on the Object Store or a table in the Lakehouse) and are planning to make multiple queries on the same subset of the table, its partitions can be cached within the memory of the [AWS Lambda](https://aws.amazon.com/lambda/) function(s) used to execute the query. During subsequent queries on the same partitions, the function has a 99% probability of enjoying a hot start, giving it instant access to previously-cached partitions. This helps reduce latency and cost, since downloading partitions from the Object Store to the function is usually the longest step in the end-to-end query process (at least for relatively simple queries). The only drawback of such an optimization is that it slows the initial query down, because it requires an extra copy of the data in memory, but this is a small price to pay if many queries are to be made on the same table partitions.
