@@ -1,12 +1,12 @@
 # Frequently Asked Questions
 
-Please ask unanswered questions by creating a [new issue](https://github.com/sutoiku/Puffin/issues).
+Please ask unanswered questions by creating a [new issue](https://github.com/sutoiku/puffin/issues).
 
-## What is Puffin?
-Puffin is a serverless lakehouse query engine powered by [Iceberg](https://iceberg.apache.org/) × [DuckDB](https://duckdb.org/) × [Arrow](https://arrow.apache.org/).
+## What is PuffinDB?
+PuffinDB is a serverless lakehouse query engine powered by [Iceberg](https://iceberg.apache.org/) × [DuckDB](https://duckdb.org/) × [Arrow](https://arrow.apache.org/).
 
-## Why should I use Puffin?
-Puffin makes it much easier to run [DuckDB](https://duckdb.org/) on a serverless function ([AWS Lambda](https://aws.amazon.com/lambda/), [Azure Function](https://learn.microsoft.com/en-us/azure/azure-functions/functions-overview), [Google Cloud Function](https://cloud.google.com/functions)) for executing read | write queries against objects managed by an Object Store ([Amazon S3](https://aws.amazon.com/s3/), [Azure Blob Storage](https://azure.microsoft.com/en-us/products/storage/blobs), [Google Cloud Storage](https://cloud.google.com/storage)) and tables managed by a Lakehouse ([Apache Iceberg](https://iceberg.apache.org/), [Apache Hudi](https://hudi.apache.org/), [Delta Lake](https://delta.io/)).
+## Why should I use PuffinDB?
+PuffinDB makes it much easier to run [DuckDB](https://duckdb.org/) on a serverless function ([AWS Lambda](https://aws.amazon.com/lambda/), [Azure Function](https://learn.microsoft.com/en-us/azure/azure-functions/functions-overview), [Google Cloud Function](https://cloud.google.com/functions)) for executing read | write queries against objects managed by an Object Store ([Amazon S3](https://aws.amazon.com/s3/), [Azure Blob Storage](https://azure.microsoft.com/en-us/products/storage/blobs), [Google Cloud Storage](https://cloud.google.com/storage)) and tables managed by a Lakehouse ([Apache Iceberg](https://iceberg.apache.org/), [Apache Hudi](https://hudi.apache.org/), [Delta Lake](https://delta.io/)).
 
 ## Why should I run DuckDB on the cloud instead of my personal computer?
 While running DuckDB on your personal computer will work great in some instances, running it on the cloud can bring many benefits:
@@ -14,8 +14,8 @@ While running DuckDB on your personal computer will work great in some instances
 - Ability to work with larger datasets by taking advantage of fleets of [AWS Lambda](https://aws.amazon.com/lambda/) functions and | or large [Amazon EC2](https://aws.amazon.com/ec2/) instances.
 - Enforcement of column and | or row-level access control policies.
 
-## Can I use Puffin without a Lakehouse?
-Yes, you can use Puffin with just an Object Store like [Amazon S3](https://aws.amazon.com/s3/). But you should still take a look at [Iceberg](https://iceberg.apache.org/), for the following reasons:
+## Can I use PuffinDB without a Lakehouse?
+Yes, you can use PuffinDB with just an Object Store like [Amazon S3](https://aws.amazon.com/s3/). But you should still take a look at [Iceberg](https://iceberg.apache.org/), for the following reasons:
 
 ## Why should I use a Lakehouse like Iceberg instead of just an Object Store like S3?
 A Lakehouse like [Apache Iceberg](https://iceberg.apache.org/), [Apache Hudi](https://hudi.apache.org/), and [Delta Lake](https://delta.io/) offers many critical features:
@@ -31,12 +31,12 @@ A Lakehouse like [Apache Iceberg](https://iceberg.apache.org/), [Apache Hudi](ht
 Credits: feature deacriptions courtesy of [Apache Iceberg](https://iceberg.apache.org/).
 
 ## Won't DuckDB support Iceberg soon?
-Yes, it will (or so we've [read](https://twitter.com/tabulario/status/1616467434772533250)). Nevertheless, this support is likely to be limited to [DuckDB](https://duckdb.org/) running on a single host (client, function, or VM). Puffin is designed to support DuckDB running on multiple functions in parallel, or multiple functions and a VM coordinating their work. Consequently, while DuckDB can directly request a [table scan](https://iceberg.apache.org/docs/latest/api/#scanning) through [Iceberg](https://iceberg.apache.org/)'s [Java API](https://iceberg.apache.org/docs/latest/api/) when running in single-host mode, this scan must be performed outside of DuckDB when running in multi-host mode. Furthermore, Puffin supports the optional execution of some read queries on [Spark SQL](), whenever such delegated execution would be faster or more cost-effective.
+Yes, it will (or so we've [read](https://twitter.com/tabulario/status/1616467434772533250)). Nevertheless, this support is likely to be limited to [DuckDB](https://duckdb.org/) running on a single host (client, function, or VM). PuffinDB is designed to support DuckDB running on multiple functions in parallel, or multiple functions and a VM coordinating their work. Consequently, while DuckDB can directly request a [table scan](https://iceberg.apache.org/docs/latest/api/#scanning) through [Iceberg](https://iceberg.apache.org/)'s [Java API](https://iceberg.apache.org/docs/latest/api/) when running in single-host mode, this scan must be performed outside of DuckDB when running in multi-host mode. Furthermore, PuffinDB supports the optional execution of some read queries on [Spark SQL](), whenever such delegated execution would be faster or more cost-effective.
 
 ## Why not just use Spark SQL?
 [Spark SQL](https://spark.apache.org/sql/) can be use to read | write any [Iceberg tables](https://iceberg.apache.org/spec/), but many read queries will be faster and more cost-effective when using [DuckDB](https://duckdb.org/).
 
-## Do I need Amazon EMR to query Iceberg tables with Puffin?
+## Do I need Amazon EMR to query Iceberg tables with PuffinDB?
 If you just make read queries on [Iceberg tables](https://iceberg.apache.org/spec/), you do not. But you will need [Amazon EMR](https://aws.amazon.com/emr/) (EKS or Serverless), or any suitable alternative [Apache Spark](https://spark.apache.org/) deployment running [Apache Iceberg](https://iceberg.apache.org/) if you want to make write queries on these tables. Thankfully, [Amazon EMR Serverless](https://aws.amazon.com/emr/serverless/) comes pre-configured with the default [AWS CloudFormation](https://aws.amazon.com/cloudformation/) template that is part of Pufin. Furthermore, [Amazon EMR Serverless](https://aws.amazon.com/emr/serverless/) is only 30% more expensive than running barebone [AWS Lambda](https://aws.amazon.com/lambda/) functions, is billed by the second, and is fully managed by [AWS](https://aws.amazon.com/), therefore, we cannot think of many reasons *not* to use it.
 
 ## Will I get billed for EMR when executing read queries?
@@ -51,7 +51,7 @@ Initially, [Apache Iceberg](https://iceberg.apache.org/). Support for [Apache Hu
 ## Why use Node.js?
 Why not? [Node.js](https://nodejs.org/en/) is a great development platform for this type of project, and we're familiar with it. But it should not matter to users.
 
-## Do I need a specific client to use Puffin?
+## Do I need a specific client to use PuffinDB?
 No, all you need is the [AWS SDK](https://aws.amazon.com/developer/tools/) for the programming language of your choice:
 - C++
 - Go
@@ -79,13 +79,13 @@ Whenever you execute a query on a table (be it backed by objects on the Object S
 ## How does query result caching work?
 Whenever you execute a read query, its result can be cached on the Object Store ([Amazon S3](https://aws.amazon.com/s3/)), and this cache is automatically referenced in the query logs table. Recent entries in this table are cached in the main [AWS Lambda](https://aws.amazon.com/lambda/) function for fast lookup. Whenever the same query is requested again, its cached result can be returned instead of re-executing the query. This helps reduce latency and cost, while freeing limited resources (most [AWS](https://aws.amazon.com/) accounts are limited to 3,000 concurrent [Lambda](https://aws.amazon.com/lambda/) functions) for other queries.
 
-## Will you offer hosting services for Puffin?
+## Will you offer hosting services for PuffinDB?
 Not anytime soon. Instead, you can use your [Amazon VPC](https://aws.amazon.com/vpc/) and add Pufin from the [AWS Marketplace](https://aws.amazon.com/marketplace), for free. But others might.
 
 ## Why is STOIC initiating and funding this open source project?
 [STOIC](https://stoic.com/) is in the business of developing and selling a progressive data platform allowing any data citizen to interact with datasets of any size, from kilobytes to petabytes. In that context, we need to perform read | write SQL queries on large datasets, with low latency (2s or less) and low cost (one or two orders of magnitude more cost-effective than conventional solutions). And we need the required query engine to support the top-three cloud platforms and the top-three table formats. Furthermore, we want it powered by [DuckDB](https://duckdb.org/) and [Arrow](https://arrow.apache.org/), because there are no better technologies available today. We could not find such an engine available under a liberal open source license, so we decided to build one. But because this component is a means to an end for us, yet could benefit countless other projects and organizations, we decided to develop it as an open source project.
 
-## When will Puffin be released?
+## When will PuffinDB be released?
 We do not know yet, but a tentative roadmap will be released soon.
 
 ## How may I contribute?
