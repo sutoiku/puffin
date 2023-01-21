@@ -42,8 +42,7 @@ And if the remote query engine were to support this syntax as well, we would gai
 SELECT *
   FROM
     localTable AS local,
-    (
-      SELECT REMOTE 'https://firstRemoteEngine.com/' *
+    (SELECT REMOTE 'https://firstRemoteEngine.com/' *
         FROM
           firstTable AS first,
           (SELECT REMOTE 'https://secondRemoteEngine.com/' * FROM secondTable) AS second
