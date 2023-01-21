@@ -50,7 +50,7 @@ PuffinDB will support four complementary deployment models:
 
 ## Philosophy
 - **Developer-first** — no non-sense, zero friction
-- **Minimalist architecture** — as few deployment dependencies as possible
+- **Minimalist architecture** — the fewer dependencies the better
 - **Lowest latency** — every millisecond counts
 - **Elastic design** — from kilobytes to petabytes
 
