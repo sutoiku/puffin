@@ -12,7 +12,7 @@ Finally, EDDI assumes that such a data lake is surrounded by a wide range of com
 ## Question
 The question then becomes: **how should we express and execute queries involving multiple datasets made of multiple tables managed by multiple lakehouses, and queried across multiple query engines?** We can either adopt a conventional cloud-centric approach with static data integration pipelines, or embrace a radical edge-driven approach with dynamic user-driven integration scenarios.
 
-EDDI advocates for the latter. Think pipeline *vs.* tanker.
+Think pipeline *vs.* tanker — EDDI advocates for the latter.
 
 ## Answer
 The answer consists in leveraging the tens of millions of powerful query engines that will very soon be found at the edge, following the explosive adoption of [DuckDB](https://duckdb.org/). But instead of leveraging them for their local querying capabilities, we should leverage them for their ability to originate queries that will be executed on the cloud, in a massively-distributed fashion. There is a very good reason for that: data is getting heavier and heavier, and the more it does, the less it can escape the cloud's gravitational pull.
