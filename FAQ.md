@@ -86,11 +86,11 @@ Whenever you execute a query on a table (be it backed by objects on the Object S
 ## How does query result caching work?
 Whenever you execute a read query, its result can be cached on the Object Store ([Amazon S3](https://aws.amazon.com/s3/)), and this cache is automatically referenced in the query logs table. Recent entries in this table are cached in the main [AWS Lambda](https://aws.amazon.com/lambda/) function for fast lookup. Whenever the same query is requested again, its cached result can be returned instead of re-executing the query. This helps reduce latency and cost, while freeing limited resources (most [AWS](https://aws.amazon.com/) accounts are limited to 3,000 concurrent [Lambda](https://aws.amazon.com/lambda/) functions) for other queries.
 
-## Will you offer hosting services for PuffinDB?
-Not anytime soon. Instead, you can use your [Amazon VPC](https://aws.amazon.com/vpc/) and add Pufin from the [AWS Marketplace](https://aws.amazon.com/marketplace), for free. But others might.
-
 ## Why is STOIC initiating and funding this open source project?
 [STOIC](https://stoic.com/) is in the business of developing and selling a progressive data platform allowing any data citizen to interact with datasets of any size, from kilobytes to petabytes. In that context, we need to perform read | write SQL queries on large datasets, with low latency (2s or less) and low cost (one or two orders of magnitude more cost-effective than conventional solutions). And we need the required query engine to support the top-three cloud platforms and the top-three table formats. Furthermore, we want it powered by [DuckDB](https://duckdb.org/) and [Arrow](https://arrow.apache.org/), because there are no better technologies available today. We could not find such an engine available under a liberal open source license, so we decided to build one. But because this component is a means to an end for us, yet could benefit countless other projects and organizations, we decided to develop it as an open source project.
+
+## Will you offer hosting services for PuffinDB?
+Not anytime soon. Instead, you can use your [Amazon VPC](https://aws.amazon.com/vpc/) and add Pufin from the [AWS Marketplace](https://aws.amazon.com/marketplace), for free. But others might.
 
 ## When will PuffinDB be released?
 We do not know yet, but a tentative roadmap will be released soon.
