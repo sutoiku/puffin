@@ -73,4 +73,8 @@ We are also considering funding the following projects:
 
 - Support for `FIXED` fixed-length character strings (*C.f.* [related issue](https://github.com/sutoiku/puffin/issues/3)).
 
+## Notes
+
+Puffin (the query engine) should not be confused with [Puffin](https://iceberg.apache.org/puffin-spec/) the file format.
+
 Ⓒ [Sutoiku, Inc.](https://stoic.com/)
