@@ -36,7 +36,7 @@ SELECT *
   WHERE local.key = remote.key;
 ```
 
-And if the remote query engine were to support this syntax, we would gain some kind of Cascading Query Language (CQL):
+And if the remote query engine were to support this syntax as well, we would gain some kind of Cascading Query Language (CQL):
 
 ```
 SELECT *
