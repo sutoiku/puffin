@@ -28,7 +28,7 @@ SELECT REMOTE 'https://queryEngine.com/' * FROM remoteTable;
 
 With that syntax, `remoteTable` is local to `https://queryEngine.com/`, which itself is nothing more than an HTTP endpoint exposing a query engine's API. Initially, this query engine will only use the SQL syntax, but it should be possible to support complementary query syntaxes down the road, such as the upcoming [Graph Query Language](https://www.gqlstandards.org/) (GQL), while offering the ability to nest one into the other, in both correlated and uncorrelated fashions.
 
-While similar results could be achieved with alternative syntaxes, using a remote SELECT statement would allow this kind of query:
+While similar results could be achieved with alternative syntaxes, using a remote `SELECT` statement would allow this kind of query:
 
 ```
 SELECT *
