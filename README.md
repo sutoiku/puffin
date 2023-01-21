@@ -42,7 +42,7 @@ This is a proposal for an Open Source project sponsored by [STOIC](https://stoic
 - Planned support for deployment across fleet of [AWS Lambda](https://aws.amazon.com/lambda/) functions using distributed SQL query planner
 
 ## Deployment
-Pafin will support four complementary deployment models:
+Puffin will support four complementary deployment models:
 - [Node.js](https://nodejs.org/en/) module deeply integrated within your own tool or application
 - [AWS Lambda](https://aws.amazon.com/lambda/) deployed within your own cloud platform
 - [AWS CloudFormation](https://aws.amazon.com/cloudformation/) template deployed within your own [VPC](https://aws.amazon.com/vpc/)
