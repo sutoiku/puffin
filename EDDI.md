@@ -22,4 +22,4 @@ While the vision outlined above might seem very ambitious, it could be implement
 
 `SELECT REMOTE 'https://myPuffinService.com/' * FROM myRemoteTable;`
 
-With that syntax, `myRemoteTable` would be local to `https://myPuffinService.com/`, which itself would be nothing more than an HTTP endpoint exposing a query engine API. Initially, this query engine would use the SQL syntax, but it should be possible to support alternative query syntaxes, such as the upcoiming [Graph Query Language](https://www.gqlstandards.org/) (GQL), while offering the ability to nest one into the other, in both correlated and uncorrelated manners.
+With that syntax, `myRemoteTable` would be local to `https://myPuffinService.com/`, which itself would be nothing more than an HTTP endpoint exposing a query engine's API. Initially, this query engine would use the SQL syntax, but it should be possible to support alternative query syntaxes, such as the upcoiming [Graph Query Language](https://www.gqlstandards.org/) (GQL), while offering the ability to nest one into the other, in both correlated and uncorrelated manners.
