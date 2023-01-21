@@ -10,7 +10,7 @@ The following table maps [DuckDB](https://duckdb.org/docs/sql/data_types/overvie
 | `DATE` | Calendar date (year, month day) | `date` |
 | `DOUBLE` | Double precision floating-point number (8 bytes) | `double` |
 | `DECIMAL` | Fixed-precision floating point number with the given scale and precision | `decimal` |
-| `HUGEINT` | Signed sixteen-byte integer | Cast to `long` (with loss) |
+| `HUGEINT` | Signed sixteen-byte integer | Cast to `long` ([with loss](https://github.com/sutoiku/pafin/issues/2)) |
 | `INTEGER` | Signed four-byte integer | `int` |
 | `INTERVAL` | Date \| time delta | Cast to `long` |
 | `LIST` | List with elements of any data type | `list` |
@@ -29,3 +29,5 @@ The following table maps [DuckDB](https://duckdb.org/docs/sql/data_types/overvie
 | `UUID` | UUID data type | Cast to `fixed` |
 | `VARCHAR` | Variable-length character string | `string` |
 | Cast to `VARCHAR` | Fixed-length character string | `fixed` |
+
+**Note**: Should a `FIXED` type for fixed-length character string be added to [DuckDB](https://duckdb.org/docs/sql/data_types/overview)?
