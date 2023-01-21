@@ -71,7 +71,7 @@ No, all you need is the [AWS SDK](https://aws.amazon.com/developer/tools/) for t
 
 ## How are read queries on Lakehouse tables executed?
 1. Parse SQL query using native [DuckDB](https://duckdb.org/) parser and outline table filter predicates.
-2. [Scan table(s)](https://iceberg.apache.org/docs/latest/api/#scanning) using low-latency Lakehouse Catalog API running on [AWS Lambda](https://aws.amazon.com/lambda/) function.
+2. Scan table(s) using low-latency [Lakehouse Catalog API](https://iceberg.apache.org/docs/latest/api/#scanning) running on [AWS Lambda](https://aws.amazon.com/lambda/) function.
 3. Replace reference(s) to table(s) with references to partitions returned by table scan(s).
 4. Stringify SQL query using native [DuckDB](https://duckdb.org/) stringifier.
 5. Execute query using [DuckDB](https://duckdb.org/).
