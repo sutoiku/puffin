@@ -30,6 +30,24 @@ While similar results could be achieved with alternative syntaxes, using a remot
 
 ```
 SELECT *
-  FROM localTable AS local, (SELECT REMOTE 'https://queryEngine.com/' * FROM remoteTable) AS remote
+  FROM
+    localTable AS local,
+    (SELECT REMOTE 'https://queryEngine.com/' * FROM remoteTable) AS remote
+  WHERE local.key = remote.key;
+```
+
+And if the remote query engine were to support this syntax, we would gain some kind of Cascading Query Language (CQL):
+
+```
+SELECT *
+  FROM
+    localTable AS local,
+    (
+      SELECT REMOTE 'https://firstRemoteEngine.com/' *
+        FROM
+          firstTable AS first,
+          (SELECT REMOTE 'https://secondRemoteEngine.com/' * FROM secondTable) AS second
+        WHERE first.key = second.key
+    ) AS remote
   WHERE local.key = remote.key;
 ```
