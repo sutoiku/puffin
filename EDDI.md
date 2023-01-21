@@ -16,3 +16,10 @@ EDDI advocates for the latter.
 
 ## Answer
 The answer consists in leveraging the tens or hundreds of millions of powerful query engines that will very soon be found at the edge, following the explosive adoption of [DuckDB](https://duckdb.org/). But instead of leveraging them for their local querying capabilities, we should leverage them for their ability to originate queries that will be executed on the cloud, in a massively-distributed fashion. There is a very good reason for that: data is getting heavier and heavier, and the more it does, the less it can escape the cloud's gravitational pull. One should not think in terms of **big data** anymore. Instead, one should think in terms of **heavy data**.
+
+## Implementation
+While the vision outlined above might seem very ambitious, it could be implemented with a relatively-simple extension to the SQL syntax:
+
+`SELECT REMOTE 'https://myPuffinService.com/' * FROM myRemoteTable;`
+
+With that syntax, `myRemoteTable` would be local to `https://myPuffinService.com/`, which itself would be nothing more than an HTTP endpoint exposing a query engine API. Initially, this query engine would use the SQL syntax, but it should be possible to support alternative query syntaxes, such as the upcoiming [Graph Query Language](https://www.gqlstandards.org/) (GQL), while offering the ability to nest one into the other, in both correlated and uncorrelated manners.
