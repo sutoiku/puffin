@@ -34,6 +34,7 @@ This is a proposal for an Open Source project sponsored by [STOIC](https://stoic
 - Concurrent support for multiple table formats ([Apache Iceberg](https://iceberg.apache.org/) first, then [Apache Hudi](https://hudi.apache.org/) and [Delta Lake](https://delta.io/))
 - Concurrent suport for multiple Lakehouse instances
 - Native support for all Lakehouse Catalogs ([AWS Glue Data Catalog](https://docs.aws.amazon.com/glue/latest/dg/catalog-and-crawler.html), [Amazon DynamoDB](https://aws.amazon.com/dynamodb/), and [Amazon RDS](https://aws.amazon.com/rds/))
+- Support for authentication and authorization
 - Support for both synchronous and asynchronous invocations
 - Joins across heterogenous tables using different table formats
 - Joins across tables managed by different Lakehouse instances
