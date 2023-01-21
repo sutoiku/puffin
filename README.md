@@ -8,7 +8,7 @@ This is a proposal for an Open Source project sponsored by [STOIC](https://stoic
 ## Beliefs
 - Nothing beats SQL, because nothing can beat maths
 - [Iceberg](https://iceberg.apache.org/) × [DuckDB](https://duckdb.org/) × [Arrow](https://arrow.apache.org/) are game changers
-- [Edge-Driven Integration](./EDDI.md) is the way forward
+- [Edge-Driven Data Integration](./EDDI.md) is the way forward
 
 ## Outline
 - Written in [TypeScript](https://www.typescriptlang.org/)
