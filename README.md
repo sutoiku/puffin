@@ -76,6 +76,6 @@ We are also considering funding the following projects:
 
 ## Notes
 
-PuffinDB should not be confused with the [Puffin](https://iceberg.apache.org/puffin-spec/) file format.
+PuffinDB should not be confused with the [Puffin file format](https://iceberg.apache.org/puffin-spec/).
 
 Ⓒ [Sutoiku, Inc.](https://stoic.com/)
