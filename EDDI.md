@@ -10,7 +10,7 @@ EDDI assumes that such a data lake is powered by an infinitely elastic Object St
 Finally, EDDI assumes that such a data lake is surrounded by a wide range of complementary query engines, themselves being also elastically scalable and capable of handling a virtually unlimited number of concurrent connections for read queries, on datasets of virtually unlimited size. Some of these engines excel with relational queries, others with graph-oriented queries, others with queries on time series, and others with queries on geospatial data. Each brings a unique set of optimization techniques and query syntaxes, but all share a common query protocol, making it possible to perform joins across multiple large datasets with excellent performance.
 
 ## Question
-The question then becomes: **how should we express and execute queries involving multiple datasets made of multiple tables managed by multiple lakehouses, and queried across multiple query engines?** We can either adopt a conventional clud-centric approach with static data ingration pipelines, or embrace a radical edge-driven approach with dynamic user-driven integration scenarios.
+The question then becomes: **how should we express and execute queries involving multiple datasets made of multiple tables managed by multiple lakehouses, and queried across multiple query engines?** We can either adopt a conventional cloud-centric approach with static data ingration pipelines, or embrace a radical edge-driven approach with dynamic user-driven integration scenarios.
 
 EDDI advocates for the latter.
 
