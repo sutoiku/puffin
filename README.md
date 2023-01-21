@@ -1,4 +1,4 @@
-# Pafin 🐧
+# Puffin 🐧
 Serverless lakehouse query engine powered by [Iceberg](https://iceberg.apache.org/) × [DuckDB](https://duckdb.org/) × [Arrow](https://arrow.apache.org/)
 
 
@@ -72,8 +72,5 @@ This project will leverage many [DuckDB](https://duckdb.org/) features implement
 We are also considering funding the following projects:
 
 - Support for `FIXED` fixed-length character strings (*C.f.* [related issue](https://github.com/sutoiku/pafin/issues/3)).
-
-## Notes
-*Pafin* (not to be confused with [Puffin](https://iceberg.apache.org/puffin-spec/)) is the Japanese [romanization](https://en.wikipedia.org/wiki/Romanization) of [*puffin*](https://en.wikipedia.org/wiki/Puffin), much like [*sutoiku*](https://github.com/sutoiku) is to [*stoic*](https://stoic.com/).
 
 Ⓒ [Sutoiku, Inc.](https://stoic.com/)
