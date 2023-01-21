@@ -30,4 +30,4 @@ The following table maps [DuckDB](https://duckdb.org/docs/sql/data_types/overvie
 | `VARCHAR` | Variable-length character string | `string` |
 | Cast to `VARCHAR` | Fixed-length character string | `fixed` |
 
-**Note**: Should a `FIXED` type for fixed-length character string be added to [DuckDB](https://duckdb.org/docs/sql/data_types/overview)?
+**Note**: Should a `FIXED` type for fixed-length character strings be added to [DuckDB](https://duckdb.org/docs/sql/data_types/overview)?
