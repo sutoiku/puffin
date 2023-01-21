@@ -89,4 +89,4 @@ Not anytime soon. Instead, you can use your [Amazon VPC](https://aws.amazon.com/
 We do not know yet, but a tentative roadmap will be released soon.
 
 ## How may I contribute?
-Please send an email to info at Puffin dot org.
+Please send an email to info at stoic dot com.
