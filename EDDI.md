@@ -52,3 +52,9 @@ SELECT *
 ```
 
 In this example, the client calls a first remote query engine, which in turns calls a second remote query engine, hence the cascade.
+
+## Components
+For this architecture to work, we need three things:
+1. The client-side query engine must support this new `SELECT REMOTE` syntqx.
+2. The first remote query engine must support the same syntax and expose itself as an HTTP endpoint.
+3. The second remote query engine must expose itself as an HTTP endpoint.
