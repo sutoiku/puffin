@@ -12,7 +12,7 @@ The following table maps [DuckDB](https://duckdb.org/docs/sql/data_types/overvie
 | `DECIMAL` | fixed-precision floating point number with the given scale and precision | `decimal` |
 | `HUGEINT` | signed sixteen-byte integer | `N/A` |
 | `INTEGER` | signed four-byte integer | `int` |
-| `INTERVAL` | date \| time delta | `N/a` |
+| `INTERVAL` | date \| time delta | `N/A` |
 | `LIST` | list with elements of any data type | `list` |
 | `MAP` | map with keys and values of any data type | `map` |
 | `STRUCT` | record with named fields of any data type | `struct` |
