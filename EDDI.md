@@ -15,7 +15,7 @@ The question then becomes: **how should we express and execute queries involving
 Think pipeline *vs.* tanker — EDDI advocates for the latter.
 
 ## Answer
-The answer consists in leveraging the tens of millions of powerful query engines that will very soon be found at the edge, following the explosive adoption of [DuckDB](https://duckdb.org/). But instead of leveraging them for their local querying capabilities, we should leverage them for their ability to originate complex queries that will be executed on the cloud, in a massively-distributed fashion. There is a very good reason for that: data is getting heavier and heavier, and the more it does, the less it can escape the cloud's gravitational pull.
+The answer consists in leveraging the tens of millions of powerful query engines that will very soon be found at the edge, following the explosive adoption of [DuckDB](https://duckdb.org/). But instead of leveraging them for their local querying capabilities, we should leverage them for their ability to originate complex queries that will be executed on the cloud for the most part, in a massively-distributed fashion. There is a very good reason for that: data is getting heavier and heavier, and the more it does, the less it can escape the cloud's gravitational pull.
 
 One should not think in terms of **big data** anymore. Instead, one should think in terms of **heavy data**.
 
