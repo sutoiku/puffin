@@ -38,9 +38,9 @@ This is a proposal for an open source project sponsored by [STOIC](https://stoic
 - Support for both synchronous and asynchronous invocations
 - Joins across heterogenous tables using different table formats
 - Joins across tables managed by different Lakehouse instances
-- Small filtered partitions cached on [AWS Lambda](https://aws.amazon.com/lambda/) function
+- Small filtered partitions [cached](FAQ.md#how-does-partition-caching-work) on [AWS Lambda](https://aws.amazon.com/lambda/) function
 - Query results returned as HTTP response, serialized on Object Store, or streamed through [Apache Arrow](https://arrow.apache.org/)
-- Query results cached on Object Store
+- Query results [cached](FAQ.md#how-does-query-result-caching-work) on Object Store and CDN ([Amazon CloudFront](https://aws.amazon.com/cloudfront/))
 - Query logs recorded on Lakehouse table in [Apache Parquet](https://parquet.apache.org/) format
 - Transparent support for all file formats supported by [DuckDB](https://duckdb.org/) and the Lakehouse
 - Transparent support for all table lifecycle features offered by the Lakehouse
