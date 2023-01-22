@@ -8,7 +8,7 @@ This is a proposal for an open source project sponsored by [STOIC](https://stoic
 ## Beliefs
 - Nothing beats SQL, because nothing can beat maths
 - [Iceberg](https://iceberg.apache.org/) × [DuckDB](https://duckdb.org/) × [Arrow](https://arrow.apache.org/) are game changers
-- [Edge-Driven Data Integration](./EDDI.md) is the way forward
+- [Edge-Driven Data Integration](EDDI.md) is the way forward
 
 ## Outline
 - Written in [TypeScript](https://www.typescriptlang.org/)
@@ -48,7 +48,7 @@ This is a proposal for an open source project sponsored by [STOIC](https://stoic
 - Planned support for deployment across fleet of [AWS Lambda](https://aws.amazon.com/lambda/) functions using distributed SQL query planner
 
 ## Deployment
-PuffinDB will support four [complementary deployment models](FAQ.md#why-support-so-many-deployment-options):
+PuffinDB will support four [complementary deployment options](FAQ.md#why-support-so-many-deployment-options):
 - [Node.js](https://nodejs.org/en/) module deeply integrated within your own tool or application
 - [AWS Lambda](https://aws.amazon.com/lambda/) deployed within your own cloud platform
 - [AWS CloudFormation](https://aws.amazon.com/cloudformation/) template deployed within your own [VPC](https://aws.amazon.com/vpc/)
@@ -61,7 +61,7 @@ PuffinDB will support four [complementary deployment models](FAQ.md#why-support-
 - **Elastic design** — from kilobytes to petabytes
 
 ## FAQ
-Please check our [Frequently Asked Questions](./FAQ.md).
+Please check our [Frequently Asked Questions](FAQ.md).
 
 ## Credits
 This project leverages many [DuckDB](https://duckdb.org/) features implemented by [DuckDB Labs](https://duckdblabs.com/) and funded by [STOIC](https://stoic.com/):
