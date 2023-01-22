@@ -26,8 +26,8 @@ This is a proposal for an open source project [sponsored](FAQ.md#why-is-stoic-in
 
 ## Features
 - Read queries executed by [DuckDB](https://duckdb.org/) (running on [AWS Lambda](https://aws.amazon.com/lambda/)) or [Spark SQL](https://spark.apache.org/sql/) (running on [AWS EMR](https://aws.amazon.com/emr/))
-- Write queries on Object Store executed by [DuckDB](https://duckdb.org/)
-- Write queries on Lakehouse executed by [Spark SQL](https://spark.apache.org/sql/)
+- Write queries against Object Store objects executed by [DuckDB](https://duckdb.org/)
+- Write queries against Lakehouse tables executed by [Spark SQL](https://spark.apache.org/sql/)
 - Built-in [DuckDB](https://duckdb.org/) to [Spark SQL](https://spark.apache.org/sql/) SQL dialect converter for write queries on Lakehouse
 - Built-in SQL parser | stringifier using native [DuckDB](https://duckdb.org/) SQL parser | stringifier
 - Sub-500ms table scanning API (fetch table partitions from filter predicates) running on standalone function
