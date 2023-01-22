@@ -25,7 +25,7 @@ This is a proposal for an open source project [sponsored](FAQ.md#why-is-stoic-in
 - Licensed under [MIT License](https://opensource.org/licenses/MIT)
 
 ## Features
-- Distributed query planner powered by [Apache Calcite](https://calcite.apache.org/)
+- Distributed SQL query planner powered by [Apache Calcite](https://calcite.apache.org/)
 - Read queries executed by [DuckDB](https://duckdb.org/) (running on [AWS Lambda](https://aws.amazon.com/lambda/)) or [Spark SQL](https://spark.apache.org/sql/) (running on [AWS EMR](https://aws.amazon.com/emr/))
 - Write queries against Object Store objects executed by [DuckDB](https://duckdb.org/)
 - Write queries against Lakehouse tables executed by [Spark SQL](https://spark.apache.org/sql/)
@@ -46,7 +46,7 @@ This is a proposal for an open source project [sponsored](FAQ.md#why-is-stoic-in
 - Transparent support for all file formats supported by [DuckDB](https://duckdb.org/) and the Lakehouse
 - Transparent support for all table lifecycle features offered by the Lakehouse
 - Planned support for deployment on [Amazon EC2](https://aws.amazon.com/ec2/) and [AWS Fargate](https://aws.amazon.com/fargate/)
-- Planned support for deployment across fleet of [AWS Lambda](https://aws.amazon.com/lambda/) functions using distributed SQL query planner
+- Planned support for deployment across fleet of [AWS Lambda](https://aws.amazon.com/lambda/) functions
 
 ## Deployment
 PuffinDB will support four [complementary deployment options](FAQ.md#why-support-so-many-deployment-options):
