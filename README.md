@@ -37,6 +37,9 @@ This is a proposal for an open source project [sponsored](FAQ.md#why-is-stoic-in
 - Native support for all Lakehouse Catalogs ([AWS Glue Data Catalog](https://docs.aws.amazon.com/glue/latest/dg/catalog-and-crawler.html), [Amazon DynamoDB](https://aws.amazon.com/dynamodb/), and [Amazon RDS](https://aws.amazon.com/rds/))
 - Support for authentication and authorization
 - Support for synchronous and asynchronous invocations
+- Support for [materialized views](https://calcite.apache.org/docs/materialized_views.html)
+- Support for [lattices](https://calcite.apache.org/docs/lattice.html)
+- Support for [external query engines](https://calcite.apache.org/docs/adapter.html)
 - Joins across heterogenous tables using different table formats
 - Joins across tables managed by different Lakehouse instances
 - Small filtered partitions [cached](FAQ.md#how-does-partition-caching-work) on [AWS Lambda](https://aws.amazon.com/lambda/) function
@@ -47,6 +50,8 @@ This is a proposal for an open source project [sponsored](FAQ.md#why-is-stoic-in
 - Transparent support for all table lifecycle features offered by the Lakehouse
 - Planned support for deployment on [Amazon EC2](https://aws.amazon.com/ec2/) and [AWS Fargate](https://aws.amazon.com/fargate/)
 - Planned support for deployment across fleet of [AWS Lambda](https://aws.amazon.com/lambda/) functions
+- Planned support for [streaming](https://calcite.apache.org/docs/stream.html)
+- Planned support for [OpenGIS](https://calcite.apache.org/docs/spatial.html)
 
 ## Deployment
 PuffinDB will support four [complementary deployment options](FAQ.md#why-support-so-many-deployment-options):
