@@ -39,7 +39,7 @@ This is a proposal for an open source project sponsored by [STOIC](https://stoic
 - Joins across heterogenous tables using different table formats
 - Joins across tables managed by different Lakehouse instances
 - Small filtered partitions cached on [AWS Lambda](https://aws.amazon.com/lambda/) function
-- Query results returned as HTTP reponse, serialized on Object Store, or streamed through [Apache Arrow](https://arrow.apache.org/)
+- Query results returned as HTTP response, serialized on Object Store, or streamed through [Apache Arrow](https://arrow.apache.org/)
 - Query results cached on Object Store
 - Query logs recorded on Lakehouse table in [Apache Parquet](https://parquet.apache.org/) format
 - Transparent support for all file formats supported by [DuckDB](https://duckdb.org/) and the Lakehouse
