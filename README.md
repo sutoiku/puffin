@@ -29,7 +29,7 @@ This is a proposal for an open source project sponsored by [STOIC](https://stoic
 - Write queries on Object Store executed by [DuckDB](https://duckdb.org/)
 - Write queries on Lakehouse executed by [Spark SQL](https://spark.apache.org/sql/)
 - Built-in [DuckDB](https://duckdb.org/) to [Spark SQL](https://spark.apache.org/sql/) SQL dialect converter for write queries on Lakehouse
-- Built-in SQL parser/stringifier using native [DuckDB](https://duckdb.org/) SQL parser/stringifier
+- Built-in SQL parser | stringifier using native [DuckDB](https://duckdb.org/) SQL parser | stringifier
 - Sub-500ms table scanning API (fetch table partitions from filter predicates) running on standalone function
 - Concurrent support for multiple table formats ([Apache Iceberg](https://iceberg.apache.org/) first, then [Apache Hudi](https://hudi.apache.org/) and [Delta Lake](https://delta.io/))
 - Concurrent suport for multiple Lakehouse instances
