@@ -9,7 +9,7 @@ Every log entry includes the following information:
 | -- | ---- | ----------- |
 | `id` | [`ulid`](https://github.com/ulid/spec) | Unique identifier (includes timestamp) |
 | `query` | `string` | Query executed by query engine |
-| `duration` | `integer` | Duration of query execution in milliseconds |
+| `duration` | `integer` | Duration of the query execution in milliseconds |
 | `cache` | `uri` | URI of cached query result on Object Store |
 | `error` | `string` | Error message |
 
