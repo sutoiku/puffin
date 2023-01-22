@@ -1,6 +1,6 @@
 # Logs
 
-Logs of all queries
+Logs of all queries executed by the query engine
 
 ## Schema
 Every log entry includes the following information:
