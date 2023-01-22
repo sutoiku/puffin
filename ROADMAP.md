@@ -2,7 +2,7 @@
 
 Features will be implemented in the following order:
 
-- Core project framework
+- [ ] Core project framework
 - Unit testing framework
 - Integration testing framework
 - Engine serverless function
