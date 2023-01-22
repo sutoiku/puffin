@@ -4,6 +4,6 @@ The **Planner** is a serverless function implementing the distributed SQL query 
 
 ## Methods
 The Planner serverless functions exposes the following public methods:
-- `planQuery`
 - `parseQuery`
+- `planQuery`
 - `scanTable`
