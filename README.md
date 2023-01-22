@@ -25,7 +25,7 @@ This is a proposal for an open source project [sponsored](FAQ.md#why-is-stoic-in
 - Licensed under [MIT License](https://opensource.org/licenses/MIT)
 
 ## Features
-- Distributed SQL query planner powered by [Apache Calcite](https://calcite.apache.org/)
+- [Distributed SQL query planner](docs/Planner.md) powered by [Apache Calcite](https://calcite.apache.org/)
 - Read queries executed by [DuckDB](https://duckdb.org/) (running on [AWS Lambda](https://aws.amazon.com/lambda/)) or [Spark SQL](https://spark.apache.org/sql/) (running on [AWS EMR](https://aws.amazon.com/emr/))
 - Write queries against Object Store objects executed by [DuckDB](https://duckdb.org/)
 - Write queries against Lakehouse tables executed by [Spark SQL](https://spark.apache.org/sql/)
