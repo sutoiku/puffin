@@ -17,4 +17,4 @@ Every log entry includes the following information:
 
 Logs are serialized using an [Iceberg table](https://iceberg.apache.org/spec/) managed by the Spark cluster.
 
-**Note**: The serialization of logs will not use the query engine, therefore will still work even when the query engine does not.
+**Note**: The serialization of logs does not rely on the query engine, therefore still works even when the query engine does not.
