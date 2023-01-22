@@ -12,7 +12,7 @@ PuffinDB makes it much easier to run [DuckDB](https://duckdb.org/) on serverless
 [Edge-Driven Data Integration](EDDI.md) (EDDI) is an inversion of control proposed by the PuffinDB project. Its main idea is that data integration should be driven at the edge by dynamic user-driven integration scenarios, rather than on the cloud with static data integration pipelines, yet without sacrificing solid architecture design and proper data governance ([read more](EDDI.md)).
 
 ## Why should I run DuckDB on the cloud instead of my personal computer?
-While running [DuckDB](https://duckdb.org/) on your personal computer will work great in some instances, running it on the cloud can bring many benefits:
+While running [DuckDB](https://duckdb.org/) on your personal computer will work great in many instances, running it on the cloud can bring several benefits:
 - No need to download large datasets from the cloud to your local computer.
 - Ability to work with larger datasets by taking advantage of fleets of [AWS Lambda](https://aws.amazon.com/lambda/) functions and | or large [Amazon EC2](https://aws.amazon.com/ec2/) instances.
 - Enforcement of column and | or row-level access control policies.
