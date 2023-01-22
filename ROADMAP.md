@@ -2,8 +2,8 @@
 
 Features will be implemented in the following order:
 
-- [x] GitHub repository
-- [x] Domain name
+- [x] [GitHub repository](https://github.com/sutoiku/puffin)
+- [x] [Domain name](http://PuffinDB.io/)
 - [ ] Core architecture design
 - [ ] Core project framework
 - [ ] Unit testing framework
