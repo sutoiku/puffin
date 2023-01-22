@@ -108,7 +108,7 @@ Whenever you execute a read query, its result can be cached on the Object Store 
 Not anytime soon. Instead, you will use your [Amazon VPC](https://aws.amazon.com/vpc/) and add PuffinDB from the [AWS Marketplace](https://aws.amazon.com/marketplace), for free. But others might.
 
 ## When will PuffinDB be released?
-We do not know yet, but a tentative roadmap will be released soon.
+We do not know yet, but here is our [prioritized roadmap](ROADMAP.md).
 
 ## How may I contribute?
 Please send an email to info at stoic dot com.
