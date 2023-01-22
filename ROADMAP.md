@@ -1,0 +1,47 @@
+# Roadmap
+
+Features will be implemented in the following order:
+
+- Core project framework
+- Unit testing framework
+- Integration testing framework
+- Engine serverless function
+- [Planner](docs/planner.md) serverless function
+- Authentication
+- Authorization
+- [AWS CloudFormation](https://aws.amazon.com/cloudformation/) template
+- [Iceberg Java API](https://iceberg.apache.org/docs/latest/api/)
+- [Apache Calcite API](https://calcite.apache.org/)
+- Lakehouse catalog integration ([AWS Glue Data Catalog](https://docs.aws.amazon.com/glue/latest/dg/catalog-and-crawler.html), [Amazon DynamoDB](https://aws.amazon.com/dynamodb/), and [Amazon RDS](https://aws.amazon.com/rds/)
+- Synchronous invocations
+- Asynchronous invocations over Object Store
+- Query logs recorded on Lakehouse table in [Apache Parquet](https://parquet.apache.org/) format
+- Read queries executed by [DuckDB](https://duckdb.org/) (running on [AWS Lambda](https://aws.amazon.com/lambda/))
+- Read queries executed by [Spark SQL](https://spark.apache.org/sql/) (running on [AWS EMR](https://aws.amazon.com/emr/))
+- Write queries against Object Store objects executed by [DuckDB](https://duckdb.org/)
+- Write queries against Lakehouse tables executed by [Spark SQL](https://spark.apache.org/sql/)
+- [External query engine](https://calcite.apache.org/docs/adapter.html) support
+- [Amazon ElastiCache for Redis](https://aws.amazon.com/elasticache/redis/) support
+- [Partition caching](FAQ.md#how-does-partition-caching-work) on [AWS Lambda](https://aws.amazon.com/lambda/) function
+- [Query result caching](FAQ.md#how-does-query-result-caching-work) on Object Store
+- [Query result caching](FAQ.md#how-does-query-result-caching-work) on CDN ([Amazon CloudFront](https://aws.amazon.com/cloudfront/))
+- Basic distributed query planner [AWS Lambda](https://aws.amazon.com/lambda/) functions
+- Distributed query execution across multiple 
+- [Materialized views](https://calcite.apache.org/docs/materialized_views.html)
+- [Lattices](https://calcite.apache.org/docs/lattice.html)
+- [Microsoft Azure](https://azure.microsoft.com/en-us) support
+- Joins across tables managed by different Lakehouse instances
+- Asynchronous invocations over [Apache Arrow](https://arrow.apache.org/)
+- [Amazon EC2](https://aws.amazon.com/ec2/) support
+- [AWS Fargate](https://aws.amazon.com/fargate/) support
+- [Amazon OpenSearch Service](https://aws.amazon.com/opensearch-service/) support
+- [DuckDB](https://duckdb.org/) to [Spark SQL](https://spark.apache.org/sql/) dialect converter for write queries against Lakehouse tables
+- [AWS Marketplace](https://aws.amazon.com/marketplace) provisioning
+- Concurrent suport for multiple Lakehouse instances
+- Advanced distributed query planner
+- [Delta Lake](https://delta.io/)) support
+- [Apache Hudi](https://hudi.apache.org/) support
+- Joins across heterogenous tables using different table formats
+- [Google Cloud](https://cloud.google.com/) support
+- [Streaming](https://calcite.apache.org/docs/stream.html) support
+- [OpenGIS](https://calcite.apache.org/docs/spatial.html) support
