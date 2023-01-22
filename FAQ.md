@@ -85,6 +85,16 @@ No, all you need is the [AWS SDK](https://aws.amazon.com/developer/tools/) for t
 - Rust
 - Swift
 
+## Why use Apache Calcite for implementing the distributed query planner?
+[Apache Calcite](https://calcite.apache.org/) is the best option for implementing the [distributed query planner](docs/Planner.md), for the following reasons:
+- Mature framework widely deployed in production
+- Powerful [relational algebra](https://calcite.apache.org/docs/algebra.html)
+- Support for [materialized views](https://calcite.apache.org/docs/materialized_views.html)
+- Support for [lattices](https://calcite.apache.org/docs/lattice.html)
+- Support for [streaming](https://calcite.apache.org/docs/stream.html)
+- Extensive collection of [adapters](https://calcite.apache.org/docs/adapter.html)
+- Can be packaged within the [same Java Lambda function](docs/Planner.md) as the one used for Iceberg's [Java API](https://iceberg.apache.org/docs/latest/api/)
+
 ## How are read queries on Lakehouse tables executed?
 1. Parse SQL query using native [DuckDB](https://duckdb.org/) parser and outline table filter predicates.
 2. Scan table(s) using low-latency [Lakehouse Catalog API](https://iceberg.apache.org/docs/latest/api/#scanning) running on [AWS Lambda](https://aws.amazon.com/lambda/) function.
