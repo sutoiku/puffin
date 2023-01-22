@@ -70,7 +70,7 @@ This project leverages many [DuckDB](https://duckdb.org/) features implemented b
 - Support for user-defined functions when using [Node.js](https://nodejs.org/en/) deployment (released)
 - Support for map-reduced queries with binary map results using new [`COMBINE`](https://github.com/duckdb/duckdb/pull/2998) function (released)
 - Support for partitioned exports (to be released soon)
-- Support for SQL query parsing/stringifying through standard query API (development starting soon)
+- Support for SQL query parsing | stringifying through standard query API (development starting soon)
 - Support for [Azure Blob Storage](https://azure.microsoft.com/en-us/products/storage/blobs) (development to start a bit later)
 
 We are also considering funding the following projects:
