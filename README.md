@@ -48,7 +48,7 @@ This is a proposal for an open source project sponsored by [STOIC](https://stoic
 - Planned support for deployment across fleet of [AWS Lambda](https://aws.amazon.com/lambda/) functions using distributed SQL query planner
 
 ## Deployment
-PuffinDB will support four complementary deployment models:
+PuffinDB will support four [complementary deployment models](FAQ.md#why-support-so-many-deployment-options):
 - [Node.js](https://nodejs.org/en/) module deeply integrated within your own tool or application
 - [AWS Lambda](https://aws.amazon.com/lambda/) deployed within your own cloud platform
 - [AWS CloudFormation](https://aws.amazon.com/cloudformation/) template deployed within your own [VPC](https://aws.amazon.com/vpc/)
