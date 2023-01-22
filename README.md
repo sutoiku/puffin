@@ -69,6 +69,9 @@ PuffinDB will support four [complementary deployment options](FAQ.md#why-support
 ## FAQ
 Please check our [Frequently Asked Questions](FAQ.md).
 
+## Roadmap
+Please check our [Roadmap](ROADMAP.md).
+
 ## Credits
 This project leverages many [DuckDB](https://duckdb.org/) features implemented by [DuckDB Labs](https://duckdblabs.com/) and funded by [STOIC](https://stoic.com/):
 
