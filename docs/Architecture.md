@@ -6,3 +6,5 @@ PuffinDB is architected around the following serverless components:
 - [Planner](../functions/planner/README.md) Java serverless function implementing the distributed query planner
 - [AWS EMR](https://aws.amazon.com/emr/) for executing write queries on lakehouse tables
 - [Amazon ElastiCache for Redis](https://aws.amazon.com/elasticache/redis/) for logging, queuing, and synchronization
+
+**Note**: Technically-speaking, [Amazon ElastiCache for Redis](https://aws.amazon.com/elasticache/redis/) is not serverless, yet is a fully managed service.
