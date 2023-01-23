@@ -1,6 +1,6 @@
 # Roadmap
 
-Features will be implemented in the following order. Please file an [issue](https://github.com/sutoiku/puffin/issues) to discuss any element of this proposed roadmap.
+Features will be implemented in the following order. Please start an `Idea` [discussion](https://github.com/sutoiku/puffin/discussions) to discuss any element of this proposed roadmap.
 
 - [x] [GitHub repository](https://github.com/sutoiku/puffin)
 - [x] [Domain name](http://PuffinDB.io/)
