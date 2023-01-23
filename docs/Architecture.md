@@ -1,5 +1,8 @@
-# Serverless Architecture
+# Architecture
 
+PuffinDB has a radical cloud-native architecture. Deployment on "private clouds" is not a priority.
+
+## Serverless Components
 PuffinDB is architected around the following serverless components:
 
 - [Engine](../functions/engine/README.md) Node.js serverless function implementing the core query engine powered by [DuckDB](https://duckdb.org/) and [Apache Arrow](https://arrow.apache.org/)
