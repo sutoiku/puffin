@@ -96,7 +96,7 @@ No, all you need is the [AWS SDK](https://aws.amazon.com/developer/tools/) for t
 - Can be packaged within the [same Java Lambda function](functions/planner/README.md) as the one used for Iceberg's [Java API](https://iceberg.apache.org/docs/latest/api/)
 
 ## Why use a Redis cluster for storing query logs?
-[Query logs](docs/Logs.md) must be accessed with very low latency for looking up the Object Store URI where an earlier query result might be cached. [Amazon ElastiCache for Redis](https://aws.amazon.com/elasticache/redis/) provides submillisecond latency for such queries. Furthermore, Redis can also be used as a low-latency broker for notification, queuing, and synchronization.
+[Query logs](docs/Logs.md) must be accessed with very low latency for looking up the Object Store URI where an earlier query result might be cached. [Amazon ElastiCache for Redis](https://aws.amazon.com/elasticache/redis/) provides submillisecond latency for such queries, at a very reasonable cost. Furthermore, Redis can also be used as a low-latency broker for notification, queuing, and synchronization.
 
 ## How are read queries on Lakehouse tables executed?
 1. Parse SQL query using native [DuckDB](https://duckdb.org/) parser and outline table filter predicates.
