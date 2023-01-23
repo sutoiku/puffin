@@ -19,4 +19,4 @@ Logs are serialized as [JSON](https://redis.io/docs/stack/json/) values in a [Re
 
 **Related FAQ**: [Why use a Redis cluster for storing query logs?](../FAQ.md#why-use-a-redis-cluster-for-storing-query-logs)
 
-**Note**: For simpler or smaller deployments that do not require distributed queries, we could consider using [Amazon DynamoDB](https://aws.amazon.com/dynamodb/) as an alternative option.
+**Note**: For simpler or smaller deployments that do not require distributed queries, we could consider using [Amazon DynamoDB](https://aws.amazon.com/dynamodb/) as an alternative.
