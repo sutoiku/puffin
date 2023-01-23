@@ -15,6 +15,4 @@ Every log entry includes the following information:
 
 ## Serialization
 
-Logs are serialized using an [Iceberg table](https://iceberg.apache.org/spec/) managed by the Spark cluster.
-
-**Note**: The serialization of logs does not rely on the query engine, therefore still works even when the query engine does not.
+Logs are serialized as [JSON](https://redis.io/docs/stack/json/) values in a [Redis](https://redis.io/) cluster (using [Amazon ElastiCache for Redis](https://aws.amazon.com/elasticache/redis/)).
