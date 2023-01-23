@@ -8,8 +8,8 @@ Features will be implemented in the following order. Please file an [issue](http
 - [ ] Core project framework
 - [ ] Unit testing framework
 - [ ] Integration testing framework
-- [ ] [Engine](docs/Engine.md) serverless function
-- [ ] [Planner](docs/Planner.md) serverless function
+- [ ] [Engine](functions/engine/README.md) serverless function
+- [ ] [Planner](functions/planner/README.md) serverless function
 - [ ] Authentication
 - [ ] Authorization
 - [ ] [AWS CloudFormation](https://aws.amazon.com/cloudformation/) template
