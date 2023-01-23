@@ -15,9 +15,9 @@ The following table maps [DuckDB types](https://duckdb.org/docs/sql/data_types/o
 | `INTERVAL` | Date \| time delta | Cast to `long` |
 | `LIST` | List with elements of any data type | `list` |
 | `MAP` | Map with keys and values of any data type | `map` |
-| `STRUCT` | Record with named fields of any data type | `struct` |
 | `REAL` | Single precision floating-point number (4 bytes) | `float` |
 | `SMALLINT` | Signed two-byte integer | Cast to `int` |
+| `STRUCT` | Record with named fields of any data type | `struct` |
 | `TIME` | Time of day (no time zone) | `time` |
 | `TIMESTAMP` | Combination of time and date | `timestamp` |
 | `TIMESTAMPTZ` | Combination of time and date that uses the current time zone | `timestamptz` |
