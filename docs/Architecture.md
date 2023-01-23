@@ -2,7 +2,7 @@
 
 PuffinDB is architected around the following serverless components:
 
-- [Engine](../functions/engine/README.md) Node.js serverless function implementing the core query engine powered by [DuckDB](https://duckdb.org/)
+- [Engine](../functions/engine/README.md) Node.js serverless function implementing the core query engine powered by [DuckDB](https://duckdb.org/) and [Apache Arrow](https://arrow.apache.org/)
 - [Planner](../functions/planner/README.md) Java serverless function implementing the distributed query planner powered by [Apache Calcite](https://calcite.apache.org/) and [Iceberg's Java API](https://iceberg.apache.org/docs/latest/api/)
 - [AWS EMR Serverless](https://aws.amazon.com/emr/serverless/) for executing write queries on lakehouse tables
 - [Amazon ElastiCache for Redis](https://aws.amazon.com/elasticache/redis/) for logging, queuing, and synchronization
