@@ -10,3 +10,8 @@ PuffinDB is architected around the following serverless components:
 - [Amazon CloudFront](https://aws.amazon.com/cloudfront/) for cached query result distribution
 
 **Note**: Technically-speaking, [Amazon ElastiCache for Redis](https://aws.amazon.com/elasticache/redis/) is not serverless, yet is a fully managed service.
+
+## CloudFormation Templates
+These components are packaged into two complementary [AWS CloudFormation](https://aws.amazon.com/cloudformation/) templates:
+- [Lakehouse Template](../templates/lakehouse/README.md)
+- [Engine Template](../templates/engine/README.md)
