@@ -26,7 +26,7 @@ This is a proposal for an open source project [sponsored](FAQ.md#why-is-stoic-in
 ## Features
 - [Distributed SQL query planner](functions/planner/README.md) powered by [DataFusion](https://arrow.apache.org/datafusion/)
 - Read queries executed by [DataFusion](https://arrow.apache.org/datafusion/) or [DuckDB](https://duckdb.org/) (on [AWS Lambda](https://aws.amazon.com/lambda/)) or [Spark SQL](https://spark.apache.org/sql/) (on [AWS EMR](https://aws.amazon.com/emr/))
-- Write queries against Object Store objects executed by [DuckDB](https://duckdb.org/)
+- Write queries against Object Store objects executed by [DataFusion](https://arrow.apache.org/datafusion/) or [DuckDB](https://duckdb.org/)
 - Write queries against Lakehouse tables executed by [Spark SQL](https://spark.apache.org/sql/)
 - Built-in [DuckDB](https://duckdb.org/) to [Spark SQL](https://spark.apache.org/sql/) dialect converter for write queries against Lakehouse tables
 - Built-in SQL parser | stringifier using native [DuckDB](https://duckdb.org/) SQL parser | stringifier
