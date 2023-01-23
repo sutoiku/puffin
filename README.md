@@ -6,7 +6,7 @@ This is a proposal for an open source project [sponsored](FAQ.md#why-is-stoic-in
 
 ## Beliefs
 - Nothing beats [SQL](https://en.wikipedia.org/wiki/SQL) because nothing can beat [maths](https://en.wikipedia.org/wiki/Relational_algebra)
-- [Iceberg](https://iceberg.apache.org/) × [DuckDB](https://duckdb.org/) × [Arrow](https://arrow.apache.org/) are game changers
+- [Arrow](https://arrow.apache.org/) × [DuckDB](https://duckdb.org/) × [Iceberg](https://iceberg.apache.org/) are game changers
 - [Edge-Driven Data Integration](EDDI.md) is the way forward
 
 ## Outline
