@@ -28,33 +28,28 @@ This is a proposal for an open source project [sponsored](FAQ.md#why-is-stoic-in
 - Read queries executed by [DataFusion](https://arrow.apache.org/datafusion/) or [DuckDB](https://duckdb.org/) (on [AWS Lambda](https://aws.amazon.com/lambda/)) or [Spark SQL](https://spark.apache.org/sql/) (on [AWS EMR](https://aws.amazon.com/emr/))
 - Write queries against Object Store objects executed by [DataFusion](https://arrow.apache.org/datafusion/) or [DuckDB](https://duckdb.org/)
 - Write queries against Lakehouse tables executed by [Spark SQL](https://spark.apache.org/sql/)
-- Built-in [DuckDB](https://duckdb.org/) to [Spark SQL](https://spark.apache.org/sql/) dialect converter for write queries against Lakehouse tables
-- Built-in SQL parser | stringifier using native [DuckDB](https://duckdb.org/) SQL parser | stringifier
+- Built-in SQL dialect converter
+- Built-in SQL parser | stringifier
 - Sub-500ms table scanning API (fetch table partitions from filter predicates) running on standalone function
 - Concurrent support for multiple table formats ([Apache Iceberg](https://iceberg.apache.org/) first, then [Apache Hudi](https://hudi.apache.org/) and [Delta Lake](https://delta.io/))
 - Concurrent suport for multiple Lakehouse instances
 - Native support for all Lakehouse Catalogs ([AWS Glue Data Catalog](https://docs.aws.amazon.com/glue/latest/dg/catalog-and-crawler.html), [Amazon DynamoDB](https://aws.amazon.com/dynamodb/), and [Amazon RDS](https://aws.amazon.com/rds/))
 - Support for authentication and authorization
 - Support for synchronous and asynchronous invocations
-- Support for [materialized views](https://calcite.apache.org/docs/materialized_views.html)
-- Support for [lattices](https://calcite.apache.org/docs/lattice.html)
-- Support for [external query engines](https://calcite.apache.org/docs/adapter.html)
 - Joins across heterogenous tables using different table formats
 - Joins across tables managed by different Lakehouse instances
 - Small filtered partitions [cached](FAQ.md#how-does-partition-caching-work) on [AWS Lambda](https://aws.amazon.com/lambda/) function
 - Query results returned as HTTP response, serialized on Object Store, or streamed through [Apache Arrow](https://arrow.apache.org/)
 - Query results [cached](FAQ.md#how-does-query-result-caching-work) on Object Store and CDN ([Amazon CloudFront](https://aws.amazon.com/cloudfront/))
 - [Query logs](docs/Logs.md) recorded as [JSON](https://redis.io/docs/stack/json/) values in [Redis](https://redis.io/) cluster (using [Amazon ElastiCache for Redis](https://aws.amazon.com/elasticache/redis/))
-- Transparent support for all file formats supported by [DuckDB](https://duckdb.org/) and the Lakehouse
+- Transparent support for all file formats supported by [DataFusion](https://arrow.apache.org/datafusion/), [DuckDB](https://duckdb.org/), and the Lakehouse
 - Transparent support for all table lifecycle features offered by the Lakehouse
 - Planned support for deployment on [Amazon EC2](https://aws.amazon.com/ec2/) and [AWS Fargate](https://aws.amazon.com/fargate/)
 - Planned support for deployment across fleet of [AWS Lambda](https://aws.amazon.com/lambda/) functions
-- Planned support for [streaming](https://calcite.apache.org/docs/stream.html)
-- Planned support for [OpenGIS](https://calcite.apache.org/docs/spatial.html)
 
 ## Deployment
 PuffinDB will support four [complementary deployment options](FAQ.md#why-support-so-many-deployment-options):
-- [Node.js](https://nodejs.org/en/) module deeply integrated within your own tool or application
+- [Rust](https://www.rust-lang.org/) module deeply integrated within your own tool or application
 - [AWS Lambda](https://aws.amazon.com/lambda/) deployed within your own cloud platform
 - [AWS CloudFormation](https://aws.amazon.com/cloudformation/) template deployed within your own [VPC](https://aws.amazon.com/vpc/)
 - [AWS Marketplace](https://aws.amazon.com/marketplace) product added to your own cloud environment
@@ -72,10 +67,8 @@ Please check our [Frequently Asked Questions](FAQ.md).
 Please check our [Roadmap](ROADMAP.md).
 
 ## Credits
-This project leverages many [DuckDB](https://duckdb.org/) features implemented by [DuckDB Labs](https://duckdblabs.com/) and funded by [STOIC](https://stoic.com/):
+This project leverages several [DuckDB](https://duckdb.org/) features implemented by [DuckDB Labs](https://duckdblabs.com/) and funded by [STOIC](https://stoic.com/):
 
-- Support for [Apache Arrow](https://arrow.apache.org/) streaming when using [Node.js](https://nodejs.org/en/) deployment (released)
-- Support for user-defined functions when using [Node.js](https://nodejs.org/en/) deployment (released)
 - Support for map-reduced queries with binary map results using new [`COMBINE`](https://github.com/duckdb/duckdb/pull/2998) function (released)
 - Support for partitioned exports (to be released soon)
 - Support for SQL query parsing | stringifying through standard query API (development starting soon)
@@ -84,7 +77,6 @@ This project leverages many [DuckDB](https://duckdb.org/) features implemented b
 We are also considering funding the following projects:
 
 - Support for `SELECT REMOTE 'https://queryEngine.com/' * FROM remoteTable` syntax (*C.f.* [related issue](https://github.com/sutoiku/puffin/issues/4)).
-- Support for [Bun](https://bun.sh/) deployment as a faster alternative to [Node.js](https://nodejs.org/en/).
 - Support for `FIXED` fixed-length character strings (*C.f.* [related issue](https://github.com/sutoiku/puffin/issues/3)).
 
 This project was initially inspired by this excellent [article](https://towardsdatascience.com/boost-your-cloud-data-applications-with-duckdb-and-iceberg-api-67677666fbd3) from [Alon Agmon](https://medium.com/@alon.agmon).
