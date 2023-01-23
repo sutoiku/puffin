@@ -56,7 +56,7 @@ Initially, [Apache Iceberg](https://iceberg.apache.org/). Support for [Apache Hu
 
 ## Why support so many deployment options?
 So that you can pick the one that will work best for you:
-- **Hard**: [Node.js](https://nodejs.org/en/) module deeply integrated within your own tool or application
+- **Hard**: [Rust](https://www.rust-lang.org/) module deeply integrated within your own tool or application
 - **Easy**:[AWS Lambda](https://aws.amazon.com/lambda/) deployed within your own cloud platform
 - **Easier**: [AWS CloudFormation](https://aws.amazon.com/cloudformation/) template deployed within your own [VPC](https://aws.amazon.com/vpc/)
 - **Easiest**: [AWS Marketplace](https://aws.amazon.com/marketplace) product added to your own cloud environment
@@ -67,8 +67,8 @@ Initially, PuffinDB will be deployed on [AWS Lambda](https://aws.amazon.com/lamb
 ## How is PuffinDB serverless if it is deployed on EC2 instances?
 Fair question. Whenever PuffinDB is deployed on [Amazon EC2](https://aws.amazon.com/ec2/) instances, it still uses fleets of [AWS Lambda](https://aws.amazon.com/lambda/) for loading objects from the Object Store and for processing some parts of distributed queries, while using the EC2 instances for [reduction](https://en.wikipedia.org/wiki/Reduction_operator) purposes. The goal here is to be as serverless as possible, while remaining pragmatic (serverless Fargates remain much less powerful than the largest EC2 instances). Eventually, we expect Fargates to become more and more powerful, so much so that we do not need to rely on EC2 instances for the vast majority of applications and workloads.
 
-## Why use Node.js?
-Why not? [Node.js](https://nodejs.org/en/) is a great development platform for this type of project, and we're familiar with it. But it should not matter to users.
+## Why use Rust?
+Because [developers love it](https://insights.stackoverflow.com/survey/2021#technology-most-loved-dreaded-and-wanted).
 
 ## Do I need a specific client to use PuffinDB?
 No, all you need is the [AWS SDK](https://aws.amazon.com/developer/tools/) for the programming language of your choice:
@@ -84,16 +84,6 @@ No, all you need is the [AWS SDK](https://aws.amazon.com/developer/tools/) for t
 - Ruby
 - Rust
 - Swift
-
-## Why use Apache Calcite for implementing the distributed query planner?
-[Apache Calcite](https://calcite.apache.org/) is the best option for implementing the [distributed query planner](functions/planner/README.md), for the following reasons:
-- Mature framework widely deployed in production
-- Powerful [relational algebra](https://calcite.apache.org/docs/algebra.html)
-- Support for [materialized views](https://calcite.apache.org/docs/materialized_views.html)
-- Support for [lattices](https://calcite.apache.org/docs/lattice.html)
-- Support for [streaming](https://calcite.apache.org/docs/stream.html)
-- Extensive collection of [adapters](https://calcite.apache.org/docs/adapter.html)
-- Can be packaged within the [same Java Lambda function](functions/planner/README.md) as the one used for Iceberg's [Java API](https://iceberg.apache.org/docs/latest/api/)
 
 ## Why use a Redis cluster for storing query logs?
 [Query logs](docs/Logs.md) must be accessed with very low latency for looking up the Object Store URI where an earlier query result might be cached. [Amazon ElastiCache for Redis](https://aws.amazon.com/elasticache/redis/) provides submillisecond latency for such queries, at a very reasonable cost. Furthermore, Redis can also be used as a low-latency broker for queuing and synchronization, which is required for the execution of distributed queries.
