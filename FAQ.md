@@ -20,6 +20,9 @@ While running [DuckDB](https://duckdb.org/) on your personal computer will work 
 ## Can I still run DuckDB client-side while using PuffinDB cloud-side?
 Of course! In fact, this is probably the best way to take advantage of PuffinDB. To do so with a plain-vanilla client-side version of [DuckDB](https://duckdb.org/), simply export your PuffinDB query results to your Object Store as [Apache Parquet](https://parquet.apache.org/) files, then download these files onto your client so that you can query them using your local DuckDB engine. Down the road, it is quite likely that DuckDB will directly support more advanced protocols to make this integration totally seamless (*C.f.* [related issue](https://github.com/sutoiku/puffin/issues/4)).
 
+## Why use both DataFusion and DuckDB as cloud-side query engines?
+[DuckDB](https://duckdb.org/) is the absolute best query engine client-side, while being a great option cloud-side as well. Nevertheless, [DataFusion](https://arrow.apache.org/datafusion/) and [Ballista](https://github.com/apache/arrow-ballista) provide some critical blocks for the development of a distributed SQL query planner. Therefore, the [`Engine`](functions/engine/README.md) packages both into a single [https://github.com/awslabs/aws-lambda-rust-runtime](Rust) serverless function.
+
 ## Can I use PuffinDB without a Lakehouse?
 Yes, you can use PuffinDB with just an Object Store like [Amazon S3](https://aws.amazon.com/s3/). But you should still take a look at [Iceberg](https://iceberg.apache.org/), for the following reasons:
 
