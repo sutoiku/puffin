@@ -1,6 +1,6 @@
-# Architecture
+# Serverless Architecture
 
-PuffinDB is architected around the following components:
+PuffinDB is architected around the following serverless components:
 
 - [Engine](../functions/engine/README.md) Node.js serverless function implementing the core query engine
 - [Planner](../functions/planner/README.md) Java serverless function implementing the distributed query planner
