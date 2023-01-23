@@ -1,6 +1,6 @@
 # Frequently Asked Questions
 
-Please ask unanswered questions by creating a [new issue](https://github.com/sutoiku/puffin/issues).
+Please ask unanswered questions as a `Q&A` in [discussions](https://github.com/sutoiku/puffin/discussions).
 
 ## What is PuffinDB?
 PuffinDB is a serverless data lake query engine powered by [Iceberg](https://iceberg.apache.org/) × [DuckDB](https://duckdb.org/) × [Arrow](https://arrow.apache.org/).
