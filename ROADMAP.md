@@ -9,7 +9,9 @@ Features will be implemented in the following order. Please start an `Idea` [dis
 - [ ] Unit testing framework
 - [ ] Integration testing framework
 - [ ] [Engine](functions/engine/README.md) serverless function
-- [ ] [Planner](functions/planner/README.md) serverless function
+- [ ] [Catalog](functions/catalog/README.md) serverless function
+- [ ] [DataFusion](https://arrow.apache.org/datafusion/) integration
+- [ ] [DuckDB](https://duckdb.org/) integration
 - [ ] Authentication
 - [ ] Authorization
 - [ ] [Lakehouse template](templates/lakehouse/README.md)
