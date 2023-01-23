@@ -10,7 +10,7 @@ Features will be implemented in the following order. Please start an `Idea` [dis
 - [ ] Integration testing framework
 - [ ] [Engine](functions/engine/README.md) serverless function
 - [ ] [Catalog](functions/catalog/README.md) serverless function
-- [ ] [DataFusion](https://arrow.apache.org/datafusion/) integration
+- [ ] [DataFusion](https://github.com/apache/arrow-datafusion) integration
 - [ ] [DuckDB](https://duckdb.org/) integration
 - [ ] Authentication
 - [ ] Authorization
