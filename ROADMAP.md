@@ -44,7 +44,7 @@ Features will be implemented in the following order. Please start an `Idea` [dis
 - [ ] [AWS Marketplace](https://aws.amazon.com/marketplace) provisioning
 - [ ] Concurrent suport for multiple Lakehouse instances
 - [ ] Advanced distributed query planner
-- [ ] [Delta Lake](https://delta.io/)) support
+- [ ] [Delta Lake](https://delta.io/) support
 - [ ] [Apache Hudi](https://hudi.apache.org/) support
 - [ ] Joins across heterogenous tables using different table formats
 - [ ] [Google Cloud](https://cloud.google.com/) support
