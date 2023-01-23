@@ -10,7 +10,8 @@ This is a proposal for an open source project [sponsored](FAQ.md#why-is-stoic-in
 - [Edge-Driven Data Integration](EDDI.md) is the way forward
 
 ## Outline
-- Written in [TypeScript](https://www.typescriptlang.org/)
+- [Serverless architecture](docs/Architecture.md)
+- Implemented in [TypeScript](https://www.typescriptlang.org/)
 - Deployed on [Node.js](https://nodejs.org/en/) (or [Bun](https://bun.sh/))
 - Powered by [Iceberg](https://iceberg.apache.org/) × [DuckDB](https://duckdb.org/) × [Arrow](https://arrow.apache.org/)
 - Integrated with [Apache Iceberg](https://iceberg.apache.org/) first, then [Apache Hudi](https://hudi.apache.org/) and [Delta Lake](https://delta.io/)
