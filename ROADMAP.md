@@ -12,7 +12,8 @@ Features will be implemented in the following order. Please file an [issue](http
 - [ ] [Planner](functions/planner/README.md) serverless function
 - [ ] Authentication
 - [ ] Authorization
-- [ ] [AWS CloudFormation](https://aws.amazon.com/cloudformation/) template
+- [ ] [Lakehouse template](templates/lakehouse/README.md)
+- [ ] [Engine template](templates/engine/README.md)
 - [ ] [Iceberg Java API](https://iceberg.apache.org/docs/latest/api/)
 - [ ] [Apache Calcite API](https://calcite.apache.org/)
 - [ ] Lakehouse catalog integration ([AWS Glue Data Catalog](https://docs.aws.amazon.com/glue/latest/dg/catalog-and-crawler.html), [Amazon DynamoDB](https://aws.amazon.com/dynamodb/), and [Amazon RDS](https://aws.amazon.com/rds/)
