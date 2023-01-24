@@ -3,7 +3,7 @@
 Distributed SQL Planner powered by [DuckDB](https://duckdb.org/)
 
 ## Problem
-Multiple options have been considered for implementing the distributed query planner, including [Apache Calcite](https://calcite.apache.org/) and [DataFusion](https://github.com/apache/arrow-datafusion) (*C.f.* [#6](https://github.com/sutoiku/puffin/issues/7)). Apache Calcite has a very rich API and an unparalleled track record, but requires a JVM, which would make integration very challenging. DataFusion has been used successfully for projects like [`dask-sql`](https://github.com/dask-contrib/dask-sql), but would require migrating from [Node.js](https://nodejs.org/en/) to [Rust](https://www.rust-lang.org/), as well as integrating a secondary query engine, which would dramatically increase the footprint of our [Engine](../functions/engine/README.md) serverless function.
+Multiple options have been considered for implementing the distributed query planner, including [Apache Calcite](https://calcite.apache.org/) and [DataFusion](https://github.com/apache/arrow-datafusion) (*C.f.* [#7](https://github.com/sutoiku/puffin/issues/7)). Apache Calcite has a very rich API and an unparalleled track record, but requires a JVM, which would make integration very challenging. DataFusion has been used successfully for projects like [`dask-sql`](https://github.com/dask-contrib/dask-sql), but would require migrating from [Node.js](https://nodejs.org/en/) to [Rust](https://www.rust-lang.org/), as well as integrating a secondary query engine, which would dramatically increase the footprint of our [Engine](../functions/engine/README.md) serverless function.
 
 ## Solution
 A much more attractive option would be to use [DuckDB](https://duckdb.org/) itself, by exposing its relational algebra and some of its query planning routines through a public API. DuckDB already supports [Substrait](https://substrait.io/) for both producing and consuming substrait query plans (*C.f.* [documentation](https://duckdb.org/docs/extensions/substrait)), and its SQL parser | stringifier will soon be exposed through the SQL API (project funded by [STOIC](http://stoic.com/)). If implemented properly, this API would provide a very attractive cross-platform alternative to Apache Calcite.
@@ -19,4 +19,4 @@ A much more attractive option would be to use [DuckDB](https://duckdb.org/) itse
 
 ## Credits
 
-Many thanks to [Jacques Nadeau](https://github.com/jacques-n) and [Andy Grove](https://github.com/andygrove) for their help in giving us a better understanding of [Substrait](https://substrait.io/)'s awesome goodness.
+Many thanks to [Jacques Nadeau](https://github.com/jacques-n) and [Andy Grove](https://github.com/andygrove) for their [help](https://github.com/sutoiku/puffin/issues/7) in giving us a better understanding of [Substrait](https://substrait.io/)'s awesome goodness.
