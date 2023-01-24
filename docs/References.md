@@ -1,6 +1,6 @@
 # References
 
-The following reading materials provide an in-depth introduction to many of the techniques and technologies used in [DuckDB](https://duckdb.org/):
+The following reading materials provide an in-depth introduction to many of the techniques used in [DuckDB](https://duckdb.org/):
 
 - [Database Systems (MIT OpenCourseWare)](https://ocw.mit.edu/courses/6-830-database-systems-fall-2010/pages/readings/)
 - [Readings in Database Systems](https://mitpress.mit.edu/9780262693141/)
