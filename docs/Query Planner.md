@@ -13,4 +13,9 @@ A much more attractive option would be to use [DuckDB](https://duckdb.org/) itse
 - Perfect alignment with target query engine
 - Built-in query engine to lookup metadata related to remote tables
 - Zero additional dependencies
+- Access to a rapidly-growing community of [contributors](https://github.com/duckdb/duckdb/graphs/contributors)
 - Commercial support from [DuckDBLabs](https://duckdblabs.com/) through [STOIC](https://stoic.com/)'s sponsorship.
+
+## Credits
+
+Many thanks to [Jacques Nadeau](https://github.com/jacques-n) and [Andy Grove](https://github.com/andygrove) for their help in giving us a better understanding of [Substrait](https://substrait.io/)'s awesome goodness.
