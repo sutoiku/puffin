@@ -71,7 +71,7 @@ Please check our [Roadmap](ROADMAP.md).
 This project leverages several [DuckDB](https://duckdb.org/) features implemented by [DuckDB Labs](https://duckdblabs.com/) and funded by [STOIC](https://stoic.com/):
 
 - Support for map-reduced queries with binary map results using new [`COMBINE`](https://github.com/duckdb/duckdb/pull/2998) function (released)
-- Support for partitioned exports (to be released soon)
+- Support for [partitioned exports](https://github.com/duckdb/duckdb/pull/5964) with `COPY ... PARTITION_BY` (released)
 - Support for SQL query parsing | stringifying through standard query API (development starting soon)
 - Support for [Azure Blob Storage](https://azure.microsoft.com/en-us/products/storage/blobs) (development to start a bit later)
 
