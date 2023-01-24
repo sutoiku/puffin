@@ -37,7 +37,6 @@ This is a proposal for an open source project [sponsored](FAQ.md#why-is-stoic-in
 - Native support for all Lakehouse Catalogs ([AWS Glue Data Catalog](https://docs.aws.amazon.com/glue/latest/dg/catalog-and-crawler.html), [Amazon DynamoDB](https://aws.amazon.com/dynamodb/), and [Amazon RDS](https://aws.amazon.com/rds/))
 - Support for authentication and authorization
 - Support for synchronous and asynchronous invocations
-- Support for [Apache Arrow Flight SQL](https://arrow.apache.org/docs/format/FlightSql.html)
 - Joins across heterogenous tables using different table formats
 - Joins across tables managed by different Lakehouse instances
 - Small filtered partitions [cached](FAQ.md#how-does-partition-caching-work) on [AWS Lambda](https://aws.amazon.com/lambda/) function
