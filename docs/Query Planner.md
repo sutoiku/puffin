@@ -12,7 +12,7 @@ A much more attractive option would be to use [DuckDB](https://duckdb.org/) itse
 - Cross-platform ([C](https://duckdb.org/docs/api/c/overview), [C++](https://duckdb.org/docs/api/cpp), [Java](https://duckdb.org/docs/api/java), [Node.js](https://duckdb.org/docs/api/nodejs/overview), [Python](https://duckdb.org/docs/api/python/overview), [R](https://duckdb.org/docs/api/r), [Rust](https://duckdb.org/docs/api/rust.html), [WASM](https://duckdb.org/docs/api/wasm))
 - Aligned with constraints of [serverless architecture](Architecture.md)
 - Straightforward [integration](https://duckdb.org/docs/extensions/substrait) with [Substrait](https://substrait.io/)
-- Perfect alignment with target SQL dialect and query engine
+- Perfect alignment with target SQL dialect and primary query engine
 - Built-in query engine to lookup metadata related to remote tables
 - Built-in query engine for dynamic cascading replanning at the edges
 - Lowest-possible latency through co-location of query handler, query planner, and query engine
