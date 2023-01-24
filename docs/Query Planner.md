@@ -27,6 +27,7 @@ The following techniques are being considered:
 - Memoization for [cost-based optimization](https://www.querifylabs.com/blog/memoization-in-cost-based-optimizers)
 - Parallelization of query planning across multiple serverless functions
 - Dynamic cascading replanning at the edges
+- Piggybacking of [DuckDB](https://duckdb.org/)'s optimizer with simulated cost metrics for outlining logical distributed query plan
 
 ## Credits
 
