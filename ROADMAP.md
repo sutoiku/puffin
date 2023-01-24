@@ -29,7 +29,7 @@ Features will be implemented in the following order. Please start an `Idea` [dis
 - [ ] [Partition caching](FAQ.md#how-does-partition-caching-work) on [AWS Lambda](https://aws.amazon.com/lambda/) function
 - [ ] [Query result caching](FAQ.md#how-does-query-result-caching-work) on Object Store
 - [ ] [Query result caching](FAQ.md#how-does-query-result-caching-work) on CDN ([Amazon CloudFront](https://aws.amazon.com/cloudfront/))
-- [ ] Basic distributed query planner [AWS Lambda](https://aws.amazon.com/lambda/) functions
+- [ ] Basic [distributed query planner](docs/Query%20Planner.md)
 - [ ] Distributed query execution across multiple 
 - [ ] [Microsoft Azure](https://azure.microsoft.com/en-us) support
 - [ ] Joins across tables managed by different Lakehouse instances
@@ -42,7 +42,7 @@ Features will be implemented in the following order. Please start an `Idea` [dis
 - [ ] Project website
 - [ ] [AWS Marketplace](https://aws.amazon.com/marketplace) provisioning
 - [ ] Concurrent suport for multiple Lakehouse instances
-- [ ] Advanced distributed query planner
+- [ ] Advanced [distributed query planner](docs/Query%20Planner.md)
 - [ ] [Delta Lake](https://delta.io/) support
 - [ ] [Apache Hudi](https://hudi.apache.org/) support
 - [ ] Joins across heterogenous tables using different table formats
