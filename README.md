@@ -78,6 +78,7 @@ This project leverages several [DuckDB](https://duckdb.org/) features implemente
 
 We are also considering funding the following projects:
 
+- Expose core methods for [distributed query planner](docs/Query%20Planner.md).
 - Support for `SELECT REMOTE 'https://queryEngine.com/' * FROM remoteTable` syntax (*C.f.* [EDDI](EDDI.md)).
 - Support for `FIXED` fixed-length character strings (*C.f.* [related issue](https://github.com/sutoiku/puffin/issues/3)).
 
