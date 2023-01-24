@@ -25,6 +25,7 @@ This is a proposal for an open source project [sponsored](FAQ.md#why-is-stoic-in
 
 ## Features
 - Distributed SQL query planner powered by [DataFusion](https://github.com/apache/arrow-datafusion)
+- Distributed SQL query execution coordinated by [Redis](https://redis.io/) (using [Amazon ElastiCache for Redis](https://aws.amazon.com/elasticache/redis/))
 - Read queries executed by [DataFusion](https://github.com/apache/arrow-datafusion) or [DuckDB](https://duckdb.org/) (on [AWS Lambda](https://aws.amazon.com/lambda/)) or [Spark SQL](https://spark.apache.org/sql/) (on [AWS EMR](https://aws.amazon.com/emr/))
 - Write queries against Object Store objects executed by [DataFusion](https://github.com/apache/arrow-datafusion) or [DuckDB](https://duckdb.org/)
 - Write queries against Lakehouse tables executed by [Spark SQL](https://spark.apache.org/sql/)
