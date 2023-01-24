@@ -24,7 +24,7 @@ This is a proposal for an open source project [sponsored](FAQ.md#why-is-stoic-in
 - Licensed under [MIT License](https://opensource.org/licenses/MIT)
 
 ## Features
-- Distributed SQL query planner
+- [Distributed SQL query planner](docs/Query%20Planner.md) powered by [DuckDB](https://duckdb.org/)
 - Distributed SQL query execution coordinated by [Redis](https://redis.io/) (using [Amazon ElastiCache for Redis](https://aws.amazon.com/elasticache/redis/))
 - Read queries executed by [DuckDB](https://duckdb.org/) (on [AWS Lambda](https://aws.amazon.com/lambda/)) or [Spark SQL](https://spark.apache.org/sql/) (on [AWS EMR](https://aws.amazon.com/emr/))
 - Write queries against Object Store objects executed by or [DuckDB](https://duckdb.org/)
