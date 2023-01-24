@@ -14,7 +14,7 @@ A much more attractive option would be to use [DuckDB](https://duckdb.org/) itse
 - Straightforward [integration](https://duckdb.org/docs/extensions/substrait) with [Substrait](https://substrait.io/)
 - Perfect alignment with target SQL dialect and query engine
 - Built-in query engine to lookup metadata related to remote tables
-- Built-in query engine for dynamic-replanning at the edges
+- Built-in query engine for dynamic cascading replanning at the edges
 - Lowest-possible latency through co-location of query handler, query planner, and query engine
 - Zero additional dependencies
 - In-browser deployment option
