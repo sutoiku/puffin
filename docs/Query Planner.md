@@ -21,6 +21,12 @@ A much more attractive option would be to use [DuckDB](https://duckdb.org/) itse
 - Access to a rapidly-growing community of [contributors](https://github.com/duckdb/duckdb/graphs/contributors)
 - Commercial support from [DuckDBLabs](https://duckdblabs.com/) through [STOIC](https://stoic.com/)'s sponsorship.
 
+## Ideas
+The following techniques are being considered:
+- Domain Specific Language (DSL) for [rule-based query optimization](https://www.querifylabs.com/blog/rule-based-query-optimization)
+- Memoization for [cost-based optimization](https://www.querifylabs.com/blog/memoization-in-cost-based-optimizers)
+- Parallelization of query planning across multiple serverless functions
+
 ## Credits
 
 Many thanks to [Jacques Nadeau](https://github.com/jacques-n) and [Andy Grove](https://github.com/andygrove) for their [help](https://github.com/sutoiku/puffin/issues/7) in giving us a better understanding of [Substrait](https://substrait.io/)'s awesome goodness.
