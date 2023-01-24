@@ -26,6 +26,7 @@ The following techniques are being considered:
 - Domain Specific Language (DSL) for [rule-based query optimization](https://www.querifylabs.com/blog/rule-based-query-optimization)
 - Memoization for [cost-based optimization](https://www.querifylabs.com/blog/memoization-in-cost-based-optimizers)
 - Parallelization of query planning across multiple serverless functions
+- Dynamic cascading replanning at the edges
 
 ## Credits
 
