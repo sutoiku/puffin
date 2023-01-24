@@ -1,5 +1,5 @@
 # Engine
 
-The **Engine** is a [Rust](https://github.com/awslabs/aws-lambda-rust-runtime) serverless function implementing the query engine. It embeds [DataFusion](https://arrow.apache.org/datafusion/) and [DuckDB](https://duckdb.org/docs/api/nodejs/overview.html).
+The **Engine** is a [Node.js](https://nodejs.org/en/) serverless function implementing the distributed query engine. It embeds [DuckDB](https://duckdb.org/docs/api/nodejs/overview.html).
 
-**Note**: The Engine and [Catalog](../catalog/README.md) run on two separate serverless functions because the former uses Rust while the latter uses Java.
+**Note**: The Engine and [Catalog](../catalog/README.md) run on two separate serverless functions because the former uses Node.js while the latter uses Java.
