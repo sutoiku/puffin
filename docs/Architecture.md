@@ -5,7 +5,7 @@ PuffinDB has a radical cloud-native architecture. Deployment on "private clouds"
 ## Core Principles
 - Do as much as possible with serverless functions ([AWS Lambda](https://aws.amazon.com/lambda/)).
 - Do as much as possible of the remaining parts with serverless containers ([AWS Fargates](https://aws.amazon.com/fargate/)).
-- Do the remaining bits with a single server-based container with as much capacity as possible ([Amazon EC2](https://aws.amazon.com/ec2/)).
+- Do the last bits with a single server-based container with as much capacity as possible ([Amazon EC2](https://aws.amazon.com/ec2/)).
 
 ## Serverless Components
 PuffinDB is architected around the following serverless components:
