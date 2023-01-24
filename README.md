@@ -51,7 +51,7 @@ This is a proposal for an open source project [sponsored](FAQ.md#why-is-stoic-in
 
 ## Deployment
 PuffinDB will support four [complementary deployment options](FAQ.md#why-support-so-many-deployment-options):
-- [Rust](https://www.rust-lang.org/) module deeply integrated within your own tool or application
+- [Node.js](https://nodejs.org/en/) module deeply integrated within your own tool or application
 - [AWS Lambda](https://aws.amazon.com/lambda/) deployed within your own cloud platform
 - [AWS CloudFormation](https://aws.amazon.com/cloudformation/) template deployed within your own [VPC](https://aws.amazon.com/vpc/)
 - [AWS Marketplace](https://aws.amazon.com/marketplace) product added to your own cloud environment
