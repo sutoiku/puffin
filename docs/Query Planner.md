@@ -11,7 +11,7 @@ A much more attractive option would be to use [DuckDB](https://duckdb.org/) itse
 ## Benefits
 - Cross -platform ([C](https://duckdb.org/docs/api/c/overview), [C++](https://duckdb.org/docs/api/cpp), [Java](https://duckdb.org/docs/api/java), [Node.js](https://duckdb.org/docs/api/nodejs/overview), [Python](https://duckdb.org/docs/api/python/overview), [R](https://duckdb.org/docs/api/r), [Rust](https://duckdb.org/docs/api/rust.html), [WASM](https://duckdb.org/docs/api/wasm))
 - Straightforward [integration](https://duckdb.org/docs/extensions/substrait) with [Substrait](https://substrait.io/)
-- Perfect alignment with target query engine
+- Perfect alignment with target SQL dialect and query engine
 - Built-in query engine to lookup metadata related to remote tables
 - Zero additional dependencies
 - Access to a rapidly-growing community of [contributors](https://github.com/duckdb/duckdb/graphs/contributors)
