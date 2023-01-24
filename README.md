@@ -24,10 +24,10 @@ This is a proposal for an open source project [sponsored](FAQ.md#why-is-stoic-in
 - Licensed under [MIT License](https://opensource.org/licenses/MIT)
 
 ## Features
-- Distributed SQL query planner powered by [DataFusion](https://github.com/apache/arrow-datafusion)
+- Distributed SQL query planner
 - Distributed SQL query execution coordinated by [Redis](https://redis.io/) (using [Amazon ElastiCache for Redis](https://aws.amazon.com/elasticache/redis/))
-- Read queries executed by [DataFusion](https://github.com/apache/arrow-datafusion) or [DuckDB](https://duckdb.org/) (on [AWS Lambda](https://aws.amazon.com/lambda/)) or [Spark SQL](https://spark.apache.org/sql/) (on [AWS EMR](https://aws.amazon.com/emr/))
-- Write queries against Object Store objects executed by [DataFusion](https://github.com/apache/arrow-datafusion) or [DuckDB](https://duckdb.org/)
+- Read queries executed by [DuckDB](https://duckdb.org/) (on [AWS Lambda](https://aws.amazon.com/lambda/)) or [Spark SQL](https://spark.apache.org/sql/) (on [AWS EMR](https://aws.amazon.com/emr/))
+- Write queries against Object Store objects executed by or [DuckDB](https://duckdb.org/)
 - Write queries against Lakehouse tables executed by [Spark SQL](https://spark.apache.org/sql/)
 - Built-in SQL dialect converter
 - Built-in SQL parser | stringifier
@@ -44,7 +44,7 @@ This is a proposal for an open source project [sponsored](FAQ.md#why-is-stoic-in
 - Query results returned as HTTP response, serialized on Object Store, or streamed through [Apache Arrow](https://arrow.apache.org/)
 - Query results [cached](FAQ.md#how-does-query-result-caching-work) on Object Store and CDN ([Amazon CloudFront](https://aws.amazon.com/cloudfront/))
 - [Query logs](docs/Logs.md) recorded as [JSON](https://redis.io/docs/stack/json/) values in [Redis](https://redis.io/) cluster (using [Amazon ElastiCache for Redis](https://aws.amazon.com/elasticache/redis/))
-- Transparent support for all file formats supported by [DataFusion](https://github.com/apache/arrow-datafusion), [DuckDB](https://duckdb.org/), and the Lakehouse
+- Transparent support for all file formats supported by [DuckDB](https://duckdb.org/) and the Lakehouse
 - Transparent support for all table lifecycle features offered by the Lakehouse
 - Planned support for deployment on [Amazon EC2](https://aws.amazon.com/ec2/) and [AWS Fargate](https://aws.amazon.com/fargate/)
 - Planned support for deployment across fleet of [AWS Lambda](https://aws.amazon.com/lambda/) functions
