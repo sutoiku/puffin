@@ -11,4 +11,6 @@ A much more attractive option would be to use [DuckDB](https://duckdb.org/) itse
 ## Benefits
 - Cross -platform ([C](https://duckdb.org/docs/api/c/overview), [C++](https://duckdb.org/docs/api/cpp), [Java](https://duckdb.org/docs/api/java), [Node.js](https://duckdb.org/docs/api/nodejs/overview), [Python](https://duckdb.org/docs/api/python/overview), [R](https://duckdb.org/docs/api/r), [Rust](https://duckdb.org/docs/api/rust.html), [WASM](https://duckdb.org/docs/api/wasm))
 - Perfect alignment with target query engine
-- Built-in query engine to lookup metadata related to remote table
+- Built-in query engine to lookup metadata related to remote tables
+- Zero additional dependencies
+- Commercial support from [DuckDBLabs](https://duckdblabs.com/) through [STOIC](https://stoic.com/)'s sponsorship.
