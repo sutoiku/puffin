@@ -31,6 +31,10 @@ The following techniques are being considered:
 - Parallelization of [metadata](https://www.querifylabs.com/blog/metadata-management-in-apache-calcite) lookups through concurrent invocations of the query engine
 - Dynamic cascading replanning at the edges
 
+# Optimizer
+- Optimizer rules written with a Domain Specific Language (DSL) similar to the one developed for [CockroachDB](https://www.cockroachlabs.com/blog/building-cost-based-sql-optimizer/)
+- Initial set of optimizer rules initially created by porting [Trinio's rules](https://github.com/trinodb/trino/tree/master/core/trino-main/src/main/java/io/trino/sql/planner/iterative/rule) from Java to DSL
+
 ## Credits
 
 Many thanks to [Jacques Nadeau](https://github.com/jacques-n) and [Andy Grove](https://github.com/andygrove) for their [help](https://github.com/sutoiku/puffin/issues/7) in giving us a better understanding of [Substrait](https://substrait.io/)'s awesome goodness.
