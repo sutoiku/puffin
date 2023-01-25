@@ -79,7 +79,7 @@ We are also considering funding the following projects:
 
 - Expose core methods for [distributed query planner](docs/Query%20Planner.md).
 - Support for `SELECT REMOTE 'https://queryEngine.com/' * FROM remoteTable` syntax (*C.f.* [EDDI](EDDI.md)).
-- Support for `FIXED` fixed-length character strings (*C.f.* [related issue](https://github.com/sutoiku/puffin/issues/3)).
+- Support for `FIXED` fixed-length character strings (*C.f.* [#3](https://github.com/sutoiku/puffin/issues/3)).
 
 This project was initially inspired by this excellent [article](https://towardsdatascience.com/boost-your-cloud-data-applications-with-duckdb-and-iceberg-api-67677666fbd3) from [Alon Agmon](https://medium.com/@alon.agmon).
 
