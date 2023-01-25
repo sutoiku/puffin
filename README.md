@@ -41,7 +41,7 @@ This is a proposal for an open source project [sponsored](FAQ.md#why-is-stoic-in
 - Joins across tables managed by different Lakehouse instances
 - Small filtered partitions [cached](FAQ.md#how-does-partition-caching-work) on [AWS Lambda](https://aws.amazon.com/lambda/) function
 - Query results returned as HTTP response, serialized on Object Store, or streamed through [Apache Arrow](https://arrow.apache.org/)
-- Query results [cached](FAQ.md#how-does-query-result-caching-work) on Object Store and CDN ([Amazon CloudFront](https://aws.amazon.com/cloudfront/))
+- Query results [cached](FAQ.md#how-does-query-result-caching-work) on Object Store ([Amazon S3](https://aws.amazon.com/s3/)) and CDN ([Amazon CloudFront](https://aws.amazon.com/cloudfront/))
 - [Query logs](docs/Logs.md) recorded as [JSON](https://redis.io/docs/stack/json/) values in [Redis](https://redis.io/) cluster (using [Amazon ElastiCache for Redis](https://aws.amazon.com/elasticache/redis/))
 - Transparent support for all file formats supported by [DuckDB](https://duckdb.org/) and the Lakehouse
 - Transparent support for all table lifecycle features offered by the Lakehouse
