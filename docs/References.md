@@ -2,10 +2,10 @@
 
 The following reading materials provide an in-depth introduction to many of the techniques used in [DuckDB](https://duckdb.org/):
 
-- [Database Systems (MIT OpenCourseWare)](https://ocw.mit.edu/courses/6-830-database-systems-fall-2010/pages/readings/)
-- [Readings in Database Systems](https://mitpress.mit.edu/9780262693141/)
-- [Correctness of Query Execution Strategies in Distributed Databases](https://dl.acm.org/doi/pdf/10.1145/319996.320009)
-- [Query Evaluation Techniques for Large Databases](https://dl.acm.org/doi/pdf/10.1145/152610.152611)
+- [Database Systems](https://ocw.mit.edu/courses/6-830-database-systems-fall-2010/pages/readings/) — MIT OpenCourseWare
+- [Readings in Database Systems](https://mitpress.mit.edu/9780262693141/) — Joseph M. Hellerstein, Michael Stonebraker, 1988
+- [Correctness of Query Execution Strategies in Distributed Databases](https://dl.acm.org/doi/pdf/10.1145/319996.320009) — S. CERI, G. PELAGATTI, 1983
+- [Query Evaluation Techniques for Large Databases](https://dl.acm.org/doi/pdf/10.1145/152610.152611) — Getz Graefe, 1993
 - [Volcano — An Extensible and Parallel Query Evaluation System](https://paperhub.s3.amazonaws.com/dace52a42c07f7f8348b08dc2b186061.pdf)
 - [MonetDB/X100: Hyper-Pipelining Query Execution](https://www.researchgate.net/publication/45338800_MonetDBX100_Hyper-Pipelining_Query_Execution)
 - [Morsel-Driven Parallelism: A NUMA-Aware Query Evaluation Framework for the Many-Core Age](https://dl.acm.org/doi/pdf/10.1145/2588555.2610507)
