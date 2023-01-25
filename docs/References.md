@@ -4,6 +4,7 @@ The following reading materials provide an in-depth introduction to many of the 
 
 - [Database Systems (MIT OpenCourseWare)](https://ocw.mit.edu/courses/6-830-database-systems-fall-2010/pages/readings/)
 - [Readings in Database Systems](https://mitpress.mit.edu/9780262693141/)
+- [Correctness of Query Execution Strategies in Distributed Databases](https://dl.acm.org/doi/pdf/10.1145/319996.320009)
 - [Query Evaluation Techniques for Large Databases](https://dl.acm.org/doi/pdf/10.1145/152610.152611)
 - [Volcano — An Extensible and Parallel Query Evaluation System](https://paperhub.s3.amazonaws.com/dace52a42c07f7f8348b08dc2b186061.pdf)
 - [MonetDB/X100: Hyper-Pipelining Query Execution](https://www.researchgate.net/publication/45338800_MonetDBX100_Hyper-Pipelining_Query_Execution)
