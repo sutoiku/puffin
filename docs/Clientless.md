@@ -1,4 +1,4 @@
-# Clientless Client
+# Clientless Interface
 
 From the client side (browser, local application, online service), PuffinDB can be used through any HTTP client, or through [DuckDB](https://duckdb.org/).
 
