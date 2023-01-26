@@ -71,6 +71,8 @@ Please check our [Roadmap](ROADMAP.md).
 ## Credits
 This project leverages several [DuckDB](https://duckdb.org/) features implemented by [DuckDB Labs](https://duckdblabs.com/) and funded by [STOIC](https://stoic.com/):
 
+- Support for [Apache Arrow](https://arrow.apache.org/) streaming when using [Node.js](https://nodejs.org/en/) deployment (released)
+- Support for user-defined functions when using [Node.js](https://nodejs.org/en/) deployment (released)
 - Support for map-reduced queries with binary map results using new [`COMBINE`](https://github.com/duckdb/duckdb/pull/2998) function (released)
 - Support for import of Hive partitions (released)
 - Support for [partitioned exports](https://github.com/duckdb/duckdb/pull/5964) with `COPY ... TO ... PARTITION_BY` (released)
