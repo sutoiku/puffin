@@ -48,4 +48,11 @@ In this example, the client calls a first remote query engine, which in turns ca
 ## Scheduled Remote Data Fetching and Local Caching
 Personal computers are becoming increasingly powerful, and DuckDB offers great performance on datasets that are 10GB to 100GB in size. Unfortunately, downloading that much data from the cloud to the local client can take a long time, especially if such large datasets change on a regular basis (*e.g.* Yesterday's transactions). Fortunately, if the user's local DuckDB client can be invoked through some kind of API by another client-side application like a scheduler, the user can easily create a schedule that would automatically trigger the download of large datasets at night, allowing interactive queries on local data during the day.
 
-If remote data is available as files, it can be fetched through the standard `httpfs` extension. If it is available as files that need to be filtered, it can be fetched using a standard `SELECT` statement. And if it requires a complex query that must be excuted cloud-side, it can be fectched using the proposed `SELECT THROUGH` syntax. Either way, this straightfoward fetch-cache dataflow will work out of the box, on any platform (Linux, MacOS, Windows), with any client (*e.g.* Excel, Jupyter, RStudio).
+If remote data is available as files, it can be fetched through the standard `httpfs` extension. If it is available as files that need to be filtered, it can be fetched using a standard `SELECT` statement. And if it requires a complex query that must be excuted cloud-side, it can be fectched using the proposed `SELECT THROUGH` syntax. Either way, this straightfoward fetch-cache dataflow will work out of the box, on any platform (Linux, MacOS, Windows), with any client application (*e.g.* Excel, Jupyter, RStudio, Tableau, *etc.*).
+
+## Benefits
+- Works on any platform (Linux, MacOS, Windows)
+- Works with any client application (*e.g.* Excel, Jupyter, RStudio, Tableau, *etc.*)
+- No additional cient application or service (lightweight DuckDB extension only)
+- Zero-copy remote query execution
+- Direct read | write queries on data lake ([Apache Iceberg](https://iceberg.apache.org/), [Apache Hudi](https://hudi.apache.org/), [Delta Lake](https://delta.io/))
