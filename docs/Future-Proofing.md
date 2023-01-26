@@ -10,7 +10,7 @@ PuffinDB is designed to take advantage of the very latest serverless technologie
 - Serverless containers and functions with GPU support.
 - Serverless containers and functions with superchip support ([NVIDIA Grace Hopper](https://www.nvidia.com/en-us/data-center/grace-hopper-superchip/))
 - In-memory tier for Object Store ([Amazon S3](https://aws.amazon.com/s3/))
-- Serverless [Redis](https://redis.io/) cluster ([Amazon ElastiCache for Redis](https://aws.amazon.com/elasticache/redis/) Serverless)
+- Serverless [Redis](https://redis.io/) cluster ([Amazon ElastiCache for Redis](https://aws.amazon.com/elasticache/redis/), but Serverless)
 - [DuckDB](https://duckdb.org/) embedded within Object Store (as an upgrade from [`SelectObjectContent`](https://docs.aws.amazon.com/AmazonS3/latest/API/API_SelectObjectContent.html))
 
 We look forward to working with [AWS](https://aws.amazon.com/) and other cloud providers to make these wishes come true.
