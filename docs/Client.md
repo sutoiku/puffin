@@ -44,3 +44,8 @@ SELECT *
 ```
 
 In this example, the client calls a first remote query engine, which in turns calls a second remote query engine, hence the cascade.
+
+## Scheduled Remote Data Fetching and Local Caching
+Personal computers are becoming increasingly powerful, and DuckDB offers excellent performance on datasets that are 10 GB to 100 GB in size. Unfortunately, downloading that much data from the cloud to the local client can take a long time, especially if such large datasets change on a regular basis (*e.g.* Yesterday's transactions). Fortunately, if the user's local DuckDB client can be invoked through some kind of API by another client-side application like a scheduler, the user can easily create a schedule that would automatically trigger the download of large datasets at night, allowing interactive queries on local data during the day.
+
+If remote data is available as files, it can be fetched through the standard `httpfs` extension. If it is available as files that need to be filtered, it can be fetched using a standard `SELECT` statement. And if it requires a complex query that must be excuted cloud-side, it can be fectched using the proposed `SELECT THROUGH` syntax. Either way, this mechanism will work out of the box, on any platform (Linux, MacOS, Windows), with any client (*e.g.* Excel, Jupyter, RStudio).
