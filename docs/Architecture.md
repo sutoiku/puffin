@@ -28,5 +28,5 @@ These components are packaged into a pair of complementary [AWS CloudFormation](
 - [Lakehouse Template](../templates/lakehouse/README.md) — usually instantiated once
 - [Engine Template](../templates/engine/README.md) — usually instantiated multiple times
 
-## Client
+## Clientless Interface
 From the client side (browser, local application, online service), PuffinDB can be used through any HTTP client, or through [DuckDB](https://duckdb.org/) ([more](docs/Clientless.md)).
