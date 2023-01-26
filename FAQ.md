@@ -8,7 +8,7 @@ PuffinDB is a serverless data lake query engine powered by [Iceberg](https://ice
 ## Why should I use PuffinDB?
 PuffinDB makes it much easier to run [DuckDB](https://duckdb.org/) on serverless functions ([AWS Lambda](https://aws.amazon.com/lambda/), [Azure Function](https://learn.microsoft.com/en-us/azure/azure-functions/functions-overview), [Google Cloud Function](https://cloud.google.com/functions)) for executing read | write queries against objects managed by an Object Store ([Amazon S3](https://aws.amazon.com/s3/), [Azure Blob Storage](https://azure.microsoft.com/en-us/products/storage/blobs), [Google Cloud Storage](https://cloud.google.com/storage)) and tables managed by a Lakehouse ([Apache Iceberg](https://iceberg.apache.org/), [Apache Hudi](https://hudi.apache.org/), [Delta Lake](https://delta.io/)).
 
-If you are using DuckDB client-side with [any client application](docs/Clientless.md), adding PuffinDB (just a few clicks on the [AWS Marketplace](https://aws.amazon.com/marketplace) will let you:
+If you are using DuckDB client-side with [any client application](docs/Clientless.md), adding PuffinDB (just a few clicks on the [AWS Marketplace](https://aws.amazon.com/marketplace)) will let you:
 - Collaborate on the same [Iceberg tables](https://iceberg.apache.org/spec/) with multiple users
 - Write back to an Iceberg table with [ACID](https://en.wikipedia.org/wiki/ACID) transactional integrity
 - Handle datasets that would be too large for your client
