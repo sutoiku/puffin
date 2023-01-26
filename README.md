@@ -11,7 +11,7 @@ If you are using DuckDB client-side with [any client application](docs/Clientles
 - Accelerate queries that run too slow on your client
 - Integrate with external data sources (*Cf.* [Edge-Driven Data Integration](EDDI.md))
 - Accelerate the downloading of large tables to your client
-- Schedule fetching and caching of [remote datasets](docs/Clientless.md#scheduled-remote-data-fetching-and-local-caching)
+- Schedule fetching and client-side caching of [remote datasets](docs/Clientless.md#scheduled-remote-data-fetching-and-local-caching)
 - Cache tables and run computations at the edge ([Amazon CloudFront](https://aws.amazon.com/cloudfront/) × [Lambda@Edge](https://aws.amazon.com/lambda/edge/))
 
 And all it will take is an [AWS](https://aws.amazon.com/) account and a few clicks on the [AWS Marketplace](https://aws.amazon.com/marketplace).
