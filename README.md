@@ -39,7 +39,7 @@ All it takes is an [AWS](https://aws.amazon.com/) account and a few clicks on th
 - [Distributed SQL query planner](docs/Query%20Planner.md) powered by [DuckDB](https://duckdb.org/)
 - Distributed SQL query execution coordinated by [Redis](https://redis.io/) (using [Amazon ElastiCache for Redis](https://aws.amazon.com/elasticache/redis/))
 - Read queries executed by [DuckDB](https://duckdb.org/) (on [AWS Lambda](https://aws.amazon.com/lambda/)) or [Spark SQL](https://spark.apache.org/sql/) (on [AWS EMR](https://aws.amazon.com/emr/))
-- Write queries against Object Store objects executed by or [DuckDB](https://duckdb.org/)
+- Write queries against Object Store objects executed by [DuckDB](https://duckdb.org/)
 - Write queries against Lakehouse tables executed by [Spark SQL](https://spark.apache.org/sql/)
 - Built-in SQL dialect converter
 - Built-in SQL parser | stringifier
