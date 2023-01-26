@@ -16,6 +16,7 @@ If you are using DuckDB client-side with [any client application](docs/Clientles
 - Integrate with external data sources (*C.f.* [Edge-Driven Data Integration](EDDI.md))
 - Accelerate the downloading of large tables to your client
 - Schedule fetching and caching of [remote datasets](docs/Clientless.md#scheduled-remote-data-fetching-and-local-caching)
+- Cache tables and run computations at the edge ([Amazon CloudFront](https://aws.amazon.com/cloudfront/) × [Lambda@Edge](https://aws.amazon.com/lambda/edge/))
 
 ## What is Edge-Driven Data Integration?
 [Edge-Driven Data Integration](EDDI.md) (EDDI) is an inversion of control proposed by the PuffinDB project. Its main idea is that data integration should be driven at the edge by dynamic user-driven integration scenarios, rather than on the cloud with static data integration pipelines, yet without sacrificing solid architecture design and proper data governance ([read more](EDDI.md)).
