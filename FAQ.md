@@ -8,6 +8,14 @@ PuffinDB is a serverless data lake query engine powered by [Iceberg](https://ice
 ## Why should I use PuffinDB?
 PuffinDB makes it much easier to run [DuckDB](https://duckdb.org/) on serverless functions ([AWS Lambda](https://aws.amazon.com/lambda/), [Azure Function](https://learn.microsoft.com/en-us/azure/azure-functions/functions-overview), [Google Cloud Function](https://cloud.google.com/functions)) for executing read | write queries against objects managed by an Object Store ([Amazon S3](https://aws.amazon.com/s3/), [Azure Blob Storage](https://azure.microsoft.com/en-us/products/storage/blobs), [Google Cloud Storage](https://cloud.google.com/storage)) and tables managed by a Lakehouse ([Apache Iceberg](https://iceberg.apache.org/), [Apache Hudi](https://hudi.apache.org/), [Delta Lake](https://delta.io/)).
 
+If you are using DuckDB client-side, adding PuffinDB (just a few clicks on the [AWS Marketplace](https://aws.amazon.com/marketplace) will let you:
+- Collaborate on the same [Iceberg tables](https://iceberg.apache.org/spec/) with multiple users
+- Write back to an Iceberg table with [ACID](https://en.wikipedia.org/wiki/ACID) transactional integrity
+- Handle datasets that would be too large for your client
+- Accelerate queries that run too slow on your client
+- Integrate with external data sources (*C.f.* [Edge-Driven Data Integration](EDDI.md))
+- Schedule fetching and caching of [remote datasets](docs/Clientless.md#scheduled-remote-data-fetching-and-local-caching)
+
 ## What is Edge-Driven Data Integration?
 [Edge-Driven Data Integration](EDDI.md) (EDDI) is an inversion of control proposed by the PuffinDB project. Its main idea is that data integration should be driven at the edge by dynamic user-driven integration scenarios, rather than on the cloud with static data integration pipelines, yet without sacrificing solid architecture design and proper data governance ([read more](EDDI.md)).
 
@@ -17,8 +25,10 @@ While running [DuckDB](https://duckdb.org/) on your personal computer will work 
 - Ability to work with larger datasets by taking advantage of fleets of [AWS Lambda](https://aws.amazon.com/lambda/) functions and | or large [Amazon EC2](https://aws.amazon.com/ec2/) instances.
 - Enforcement of column and | or row-level access control policies.
 
-## Can I still run DuckDB client-side while using PuffinDB cloud-side?
-Of course! In fact, this is probably the best way to take advantage of PuffinDB. To do so with a plain-vanilla client-side version of [DuckDB](https://duckdb.org/), simply export your PuffinDB query results to your Object Store as [Apache Parquet](https://parquet.apache.org/) files, then download these files onto your client so that you can query them using your local DuckDB engine. Down the road, it is quite likely that DuckDB will directly support more advanced protocols to make this integration totally seamless (*C.f.* [#4](https://github.com/sutoiku/puffin/issues/4)).
+## Why should I run DuckDB both client-side and cloud-side?
+- Low-latency analytics on whatever amount of data you are willing to cache on your client.
+- Ability to handle datasets that are too large for your client.
+- Concurrent users editing the same cloud-side table.
 
 ## Can I use PuffinDB without a Lakehouse?
 Yes, you can use PuffinDB with just an Object Store like [Amazon S3](https://aws.amazon.com/s3/). But you should still take a look at [Iceberg](https://iceberg.apache.org/), for the following reasons:
