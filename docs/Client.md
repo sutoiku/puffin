@@ -51,7 +51,7 @@ Personal computers are becoming increasingly powerful, and DuckDB offers great p
 If remote data is available as files, it can be fetched through the standard `httpfs` extension. If it is available as files that need to be filtered, it can be fetched using a standard `SELECT` statement. And if it requires a complex query that must be excuted cloud-side, it can be fectched using the proposed `SELECT THROUGH` syntax. Either way, this straightfoward fetch-cache dataflow will work out of the box, on any platform (Linux, MacOS, Windows), with any client application (*e.g.* Excel, Jupyter, RStudio, Tableau, *etc.*).
 
 ## Edge Caching and Bursting
-PuffinDB will also support the caching of data on a CDN ([Amazon CloudFront](https://aws.amazon.com/cloudfront/)) and the execution of queries on edge functions ([Lambda@Edge](https://aws.amazon.com/lambda/edge/)).
+PuffinDB will support the caching of data on a CDN ([Amazon CloudFront](https://aws.amazon.com/cloudfront/)) and the execution of queries on edge functions ([Lambda@Edge](https://aws.amazon.com/lambda/edge/)).
 
 ## Benefits
 - Works on any platform (Linux, MacOS, Windows)
