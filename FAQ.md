@@ -18,7 +18,7 @@ While running [DuckDB](https://duckdb.org/) on your personal computer will work 
 - Enforcement of column and | or row-level access control policies.
 
 ## Can I still run DuckDB client-side while using PuffinDB cloud-side?
-Of course! In fact, this is probably the best way to take advantage of PuffinDB. To do so with a plain-vanilla client-side version of [DuckDB](https://duckdb.org/), simply export your PuffinDB query results to your Object Store as [Apache Parquet](https://parquet.apache.org/) files, then download these files onto your client so that you can query them using your local DuckDB engine. Down the road, it is quite likely that DuckDB will directly support more advanced protocols to make this integration totally seamless (*C.f.* [related issue](https://github.com/sutoiku/puffin/issues/4)).
+Of course! In fact, this is probably the best way to take advantage of PuffinDB. To do so with a plain-vanilla client-side version of [DuckDB](https://duckdb.org/), simply export your PuffinDB query results to your Object Store as [Apache Parquet](https://parquet.apache.org/) files, then download these files onto your client so that you can query them using your local DuckDB engine. Down the road, it is quite likely that DuckDB will directly support more advanced protocols to make this integration totally seamless (*C.f.* [#4](https://github.com/sutoiku/puffin/issues/4)).
 
 ## Can I use PuffinDB without a Lakehouse?
 Yes, you can use PuffinDB with just an Object Store like [Amazon S3](https://aws.amazon.com/s3/). But you should still take a look at [Iceberg](https://iceberg.apache.org/), for the following reasons:
