@@ -46,7 +46,7 @@ A Lakehouse like [Apache Iceberg](https://iceberg.apache.org/), [Apache Hudi](ht
 - [Serializable isolation](https://iceberg.apache.org/docs/latest/reliability/) makes table changes atomic and ensures that readers never see partial or uncommitted changes.
 - [Multiple concurrent writers](https://iceberg.apache.org/docs/latest/reliability/#concurrent-write-operations) use optimistic concurrency and transaction retry.
 
-Credits: feature descriptions courtesy of [Apache Iceberg](https://iceberg.apache.org/).
+**Credits**: feature descriptions courtesy of [Apache Iceberg](https://iceberg.apache.org/).
 
 ## Won't DuckDB support Iceberg soon?
 Yes, it will (or so we've [read](https://twitter.com/tabulario/status/1616467434772533250)). Nevertheless, this support is likely to be limited to [DuckDB](https://duckdb.org/) running on a single host (client, function, or VM). PuffinDB is designed to support DuckDB running on multiple functions in parallel, or multiple functions and a VM coordinating their work. Consequently, while DuckDB can directly request a [table scan](https://iceberg.apache.org/docs/latest/api/#scanning) through [Iceberg](https://iceberg.apache.org/)'s [Java API](https://iceberg.apache.org/docs/latest/api/) when running in single-host mode, this scan must be performed outside of DuckDB when running in multi-host mode. Furthermore, PuffinDB supports the optional execution of some read queries on [Spark SQL](), whenever such delegated execution would be faster or more cost-effective.
