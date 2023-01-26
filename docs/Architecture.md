@@ -1,6 +1,6 @@
-# Architecture
+# Serverless Architecture
 
-PuffinDB has a radical cloud-native architecture. Deployment on "private clouds" is not a priority.
+PuffinDB has a radical serverless and cloud-native architecture. Deployment on "private clouds" is not a priority.
 
 ## Core Principles
 - Do as much as possible with serverless functions ([AWS Lambda](https://aws.amazon.com/lambda/)).
