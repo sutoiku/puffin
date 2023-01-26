@@ -29,7 +29,7 @@ All it takes is an [AWS](https://aws.amazon.com/) account and a few clicks on th
 - Deployed on [AWS](https://aws.amazon.com/) first, then [Microsoft Azure](https://azure.microsoft.com/en-us) and [Google Cloud](https://cloud.google.com/)
 - Invoked through an HTTP endpoint served by [Amazon API Gateway](https://aws.amazon.com/api-gateway/)
 - Deployed as two [AWS Lambda](https://aws.amazon.com/lambda/) functions
-- Integrated with [AWS EMR](https://aws.amazon.com/emr/) (EKS or Serverless)
+- Integrated with [AWS EMR](https://aws.amazon.com/emr/) (Serverless by default, EKS as an option)
 - Packaged as an [AWS CloudFormation](https://aws.amazon.com/cloudformation/) template
 - Released as a free [AWS Marketplace](https://aws.amazon.com/marketplace) product
 - Running on your [Amazon VPC](https://aws.amazon.com/vpc/)
