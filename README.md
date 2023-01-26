@@ -14,7 +14,7 @@ If you are using DuckDB client-side with [any client application](docs/Clientles
 - Schedule fetching and client-side caching of [remote datasets](docs/Clientless.md#scheduled-remote-data-fetching-and-local-caching)
 - Cache tables and run computations at the edge ([Amazon CloudFront](https://aws.amazon.com/cloudfront/) × [Lambda@Edge](https://aws.amazon.com/lambda/edge/))
 
-And all it will take is an [AWS](https://aws.amazon.com/) account and a few clicks on the [AWS Marketplace](https://aws.amazon.com/marketplace).
+And all it will take is an [AWS](https://aws.amazon.com/) account and a few clicks on the [AWS Marketplace](https://aws.amazon.com/marketplace) (PuffinDB for AWS is free and runs on your VPC).
 
 ## Beliefs
 - Nothing beats [SQL](https://en.wikipedia.org/wiki/SQL) because nothing can beat [maths](https://en.wikipedia.org/wiki/Relational_algebra)
