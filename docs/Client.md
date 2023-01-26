@@ -53,6 +53,6 @@ If remote data is available as files, it can be fetched through the standard `ht
 ## Benefits
 - Works on any platform (Linux, MacOS, Windows)
 - Works with any client application (*e.g.* Excel, Jupyter, RStudio, Tableau, *etc.*)
-- No additional cient application or service (lightweight DuckDB extension only)
+- No additional client application or service (lightweight DuckDB extension only)
 - Zero-copy remote query execution
 - Direct read | write queries on data lake ([Apache Iceberg](https://iceberg.apache.org/), [Apache Hudi](https://hudi.apache.org/), [Delta Lake](https://delta.io/))
