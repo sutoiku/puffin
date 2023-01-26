@@ -11,7 +11,7 @@ PuffinDB makes it much easier to run [DuckDB](https://duckdb.org/) on serverless
 If you are using DuckDB client-side with [any client application](docs/Clientless.md), adding PuffinDB (just a few clicks on the [AWS Marketplace](https://aws.amazon.com/marketplace)) will let you:
 - Collaborate on the same [Iceberg tables](https://iceberg.apache.org/spec/) with multiple users
 - Write back to an Iceberg table with [ACID](https://en.wikipedia.org/wiki/ACID) transactional integrity
-- Handle datasets that would be too large for your client
+- Handle datasets that are too large for your client
 - Accelerate queries that run too slow on your client
 - Integrate with external data sources (*C.f.* [Edge-Driven Data Integration](EDDI.md))
 - Schedule fetching and caching of [remote datasets](docs/Clientless.md#scheduled-remote-data-fetching-and-local-caching)
