@@ -24,7 +24,7 @@ Features will be implemented in the following order. Please start an `Idea` [dis
 - [ ] Read queries executed by [Spark SQL](https://spark.apache.org/sql/) (running on [AWS EMR](https://aws.amazon.com/emr/))
 - [ ] Write queries against Object Store objects executed by [DuckDB](https://duckdb.org/)
 - [ ] Write queries against Lakehouse tables executed by [Spark SQL](https://spark.apache.org/sql/)
-- [ ] [Remote query engine](docs/Client.md) support
+- [ ] [Remote query engine](docs/Clientless.md) support
 - [ ] [Amazon ElastiCache for Redis](https://aws.amazon.com/elasticache/redis/) support
 - [ ] [Partition caching](FAQ.md#how-does-partition-caching-work) on [AWS Lambda](https://aws.amazon.com/lambda/) function
 - [ ] [Query result caching](FAQ.md#how-does-query-result-caching-work) on Object Store
