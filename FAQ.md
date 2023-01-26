@@ -68,19 +68,7 @@ Initially, PuffinDB will be deployed on [AWS Lambda](https://aws.amazon.com/lamb
 Fair question. Whenever PuffinDB is deployed on [Amazon EC2](https://aws.amazon.com/ec2/) instances, it still uses fleets of [AWS Lambda](https://aws.amazon.com/lambda/) for loading objects from the Object Store and for processing some parts of distributed queries, while using the EC2 instances for [reduction](https://en.wikipedia.org/wiki/Reduction_operator) purposes. The goal here is to be as serverless as possible, while remaining pragmatic (serverless Fargates remain much less powerful than the largest EC2 instances). Eventually, we expect Fargates to become more and more powerful, so much so that we do not need to rely on EC2 instances for the vast majority of applications and workloads.
 
 ## Do I need a specific client to use PuffinDB?
-No, all you need is the [AWS SDK](https://aws.amazon.com/developer/tools/) for the programming language of your choice:
-- C++
-- Go
-- Java
-- JavaScript
-- Kotlin
-- .NET
-- Node.js
-- PHP
-- Python
-- Ruby
-- Rust
-- Swift
+From the client-side (browser, local application, or online service), PuffinDB can be used through any HTTP client or through [DuckDB](https://duckdb.org/) ([more](docs/Client.md)).
 
 ## Why use a Redis cluster for storing query logs?
 [Query logs](docs/Logs.md) must be accessed with very low latency for looking up the Object Store URI where an earlier query result might be cached. [Amazon ElastiCache for Redis](https://aws.amazon.com/elasticache/redis/) provides submillisecond latency for such queries, at a very reasonable cost. Furthermore, Redis can also be used as a low-latency broker for queuing and synchronization, which is required for the execution of distributed queries.
