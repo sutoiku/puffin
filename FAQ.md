@@ -13,7 +13,7 @@ If you are using DuckDB client-side with [any client application](docs/Clientles
 - Write back to an Iceberg table with [ACID](https://en.wikipedia.org/wiki/ACID) transactional integrity
 - Handle datasets that are too large for your client
 - Accelerate queries that run too slow on your client
-- Integrate with external data sources (*C.f.* [Edge-Driven Data Integration](EDDI.md))
+- Integrate with external data sources (*Cf.* [Edge-Driven Data Integration](EDDI.md))
 - Accelerate the downloading of large tables to your client
 - Schedule fetching and caching of [remote datasets](docs/Clientless.md#scheduled-remote-data-fetching-and-local-caching)
 - Cache tables and run computations at the edge ([Amazon CloudFront](https://aws.amazon.com/cloudfront/) × [Lambda@Edge](https://aws.amazon.com/lambda/edge/))
