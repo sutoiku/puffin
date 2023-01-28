@@ -3,3 +3,6 @@ The distributed query engine is designed with the following requirements in mind
 - Deployed using standard [DuckDB](https://duckdb.org/) engines supercharged with the `puffindb` [extension](https://duckdb.org/docs/extensions/overview)
 - Abstracted with the [`SELECT THROUGH`](../EDDI.md#implementation) syntax to avoind unnecessary data copies
 - Powered by [Apache Arrow](https://arrow.apache.org/) to accelerate data transfers between DuckDB engines
+
+## Why use `SELECT THROUGH`?
+The proposed [`SELECT THROUGH`](../EDDI.md#implementation) syntax would allow a [distributed query plan](Query%20Planner.md) to be executed in a cascaded fashion by supercharged DuckDB engines, without the intermediation of any middleware. Using this syntax, distributed DuckDB engines can communicate with each other directly, thereby avoiding any unnecessary data copies and reducing latencies. This would not prevent some DuckDB engines from serializing stremed intermediary results on an Object Store (*e.g.* [Amazon S3](https://aws.amazon.com/s3/)), but this serialization (and the decision to perform it) could be done by the DuckDB engine itself.
