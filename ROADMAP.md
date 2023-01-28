@@ -34,7 +34,7 @@ Features will be implemented in the following order. Please start an `Idea` [dis
 - [ ] [Microsoft Azure](https://azure.microsoft.com/en-us) support
 - [ ] Joins across tables managed by different Lakehouse instances
 - [ ] Asynchronous invocations over [Apache Arrow](https://arrow.apache.org/)
-- [ ] [Apache Arrow Flight SQL](https://arrow.apache.org/docs/format/FlightSql.html) support
+- [ ] [Arrow Database Connectivity](https://arrow.apache.org/docs/dev/format/ADBC.html) support
 - [ ] [Amazon EC2](https://aws.amazon.com/ec2/) support
 - [ ] [AWS Fargate](https://aws.amazon.com/fargate/) support
 - [ ] [Amazon OpenSearch Service](https://aws.amazon.com/opensearch-service/) support
