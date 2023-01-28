@@ -13,7 +13,7 @@ The core [engine](../functions/engine/README.md) is packaged as a serverless fun
 - [Query planner](Query%20Planner.md) responsible for creating a distributed query plan
 - Query engine (DuckDB) responsible for executing the local query plan
 
-Combining all three components within the same serverless function reduces latencies and remove any unnecessary data copies.
+Combining all three components within the same serverless function reduces latencies and removes any unnecessary data copies.
 
 ## Registry
 The distributed execution of a query is made possible by the use of a low-latency **Registry** powered by [Redis](https://redis.io/). This allows small intermediate results to be cached with submillisecond latency. Using a large [Amazon ElastiCache for Redis](https://aws.amazon.com/elasticache/redis/) cluster, tens of millions of such intermediate results can be cached per second, for up to 340 TB of cached data (large intermediate results should use the Object Store). The registry can be used to trigger the Reduce phase of a MapReduce process once all Map operations have completed successfully, or to enable asynchronous communication between two DuckDB engines.
