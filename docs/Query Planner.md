@@ -37,6 +37,9 @@ The following techniques are being considered:
 - Initial set of optimizer rules bootstrapped by porting [Trinio's rules](https://github.com/trinodb/trino/tree/master/core/trino-main/src/main/java/io/trino/sql/planner/iterative/rule) from Java to DSL
 - Rule interpreter implemented in [Rust](https://www.rust-lang.org/)
 
+## Engine
+The distributed query planner will be used by the [distributed query engine](Query%20Engine.md).
+
 ## Credits
 
 Many thanks to [Jacques Nadeau](https://github.com/jacques-n) and [Andy Grove](https://github.com/andygrove) for their [help](https://github.com/sutoiku/puffin/issues/7) in giving us a better understanding of [Substrait](https://substrait.io/)'s awesome goodness.
