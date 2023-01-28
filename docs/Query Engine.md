@@ -8,7 +8,7 @@ The distributed query engine is designed around the following components:
 The proposed [`SELECT THROUGH`](../EDDI.md#implementation) syntax would allow a [distributed query plan](Query%20Planner.md) to be executed in a cascaded fashion by supercharged DuckDB engines, without the intermediation of any middleware. Using this syntax, distributed DuckDB engines could communicate with each other directly, thereby reducing latencies and avoiding any unnecessary data copies. This would not prevent some DuckDB engines from serializing streamed intermediate results on an Object Store (*e.g.* [Amazon S3](https://aws.amazon.com/s3/)), but this serialization (and the decision to perform it) could be made by the DuckDB engine itself. This syntax would also allow any DuckDB engine to join locally-cached data with intermediate query results produced by remote DuckDB engines.
 
 ## Core Engine
-The core [engine](../functions/Engine/README.md) is packaged as a serverless function and includes the following components:
+The core [engine](../functions/engine/README.md) is packaged as a serverless function and includes the following components:
 - Query handler responsible for handling inbound queries
 - [Query planner](Querry%20Planner.md) responsible for creating a distributed query plan
 - Query engine (DuckDB) responsible for executing the local query plan
