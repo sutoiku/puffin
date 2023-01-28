@@ -35,7 +35,7 @@ The following techniques are being considered:
 ## Optimizer
 - Optimizer rules written with a Domain Specific Language (DSL) similar to the one developed for [CockroachDB](https://www.cockroachlabs.com/blog/building-cost-based-sql-optimizer/)
 - Initial set of optimizer rules bootstrapped by porting [Trinio's rules](https://github.com/trinodb/trino/tree/master/core/trino-main/src/main/java/io/trino/sql/planner/iterative/rule) from Java to DSL
-- Rule interpreter implemented in [Node.js](https://nodejs.org/en/) and [Rust](https://www.rust-lang.org/)
+- Rule interpreter implemented in [Rust](https://www.rust-lang.org/)
 
 ## Credits
 
