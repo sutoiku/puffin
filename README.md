@@ -36,6 +36,7 @@ All it takes is an [AWS](https://aws.amazon.com/) account and a few clicks on th
 - Licensed under [MIT License](https://opensource.org/licenses/MIT)
 
 ## Features
+- [Distributed SQL query engine](docs/Query%20Engine.md) powered by [DuckDB](https://duckdb.org/)
 - [Distributed SQL query planner](docs/Query%20Planner.md) powered by [DuckDB](https://duckdb.org/)
 - Distributed SQL query execution coordinated by [Redis](https://redis.io/) (using [Amazon ElastiCache for Redis](https://aws.amazon.com/elasticache/redis/))
 - Read queries executed by [DuckDB](https://duckdb.org/) (on [AWS Lambda](https://aws.amazon.com/lambda/)) or [Spark SQL](https://spark.apache.org/sql/) (on [AWS EMR](https://aws.amazon.com/emr/))
@@ -59,7 +60,6 @@ All it takes is an [AWS](https://aws.amazon.com/) account and a few clicks on th
 - Transparent support for all file formats supported by [DuckDB](https://duckdb.org/) and the Lakehouse
 - Transparent support for all table lifecycle features offered by the Lakehouse
 - Planned support for deployment on [Amazon EC2](https://aws.amazon.com/ec2/) and [AWS Fargate](https://aws.amazon.com/fargate/)
-- Planned support for deployment across fleet of [AWS Lambda](https://aws.amazon.com/lambda/) functions
 
 ## Deployment
 PuffinDB will support four [complementary deployment options](FAQ.md#why-support-so-many-deployment-options):
