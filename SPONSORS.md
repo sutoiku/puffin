@@ -15,12 +15,12 @@ Sponsors receive the following benefits:
 - Marketing exposure
 - 100 karma points
 
-## Offer
-The first five sponsors will receive a 50% discount on their first-year membership. Please email info at stoic dot com for more information.
-
 ## Competitors
 Competitors should consider sponsoring PuffinDB, for the following reasons:
 - The project will happen (and succeed) with or without their support — *if you can't beat them, join them*.
 - This kind of open source project will happen with or without PuffinDB — the market has a systemic need for something like it.
 - Sponsorship will give competitors more visibility into what others are doing — good intelligence is priceless.
-- PuffinDB only covers the bottom layer of a next-generation data stack — most valuable innovation will happen on top.
+- PuffinDB only addresses the bottom layers of a next-generation data stack — most valuable innovation will happen on top.
+
+## Offer
+The first five sponsors will receive a 50% discount on their first-year membership. Please email info at stoic dot com for more information.
