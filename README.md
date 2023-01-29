@@ -25,6 +25,7 @@ All it takes is an [AWS](https://aws.amazon.com/) account and a few clicks on th
 - [Serverless architecture](docs/Architecture.md)
 - Implemented in [Node.js](https://nodejs.org/en/) and [Rust](https://www.rust-lang.org/)
 - Powered by [Arrow](https://arrow.apache.org/) × [DuckDB](https://duckdb.org/) × [Iceberg](https://iceberg.apache.org/)
+- Powered by [Redis](https://redis.io/) (using [Amazon ElastiCache for Redis] for superfast shuffles
 - Integrated with [Apache Iceberg](https://iceberg.apache.org/) first, then [Apache Hudi](https://hudi.apache.org/) and [Delta Lake](https://delta.io/)
 - Deployed on [AWS](https://aws.amazon.com/) first, then [Microsoft Azure](https://azure.microsoft.com/en-us) and [Google Cloud](https://cloud.google.com/)
 - Invoked through an HTTP endpoint served by [Amazon API Gateway](https://aws.amazon.com/api-gateway/)
