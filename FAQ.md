@@ -117,7 +117,7 @@ These [reference materials](docs/References.md) are a solid starting point.
 Not anytime soon. Instead, you will use your [Amazon VPC](https://aws.amazon.com/vpc/) and add PuffinDB from the [AWS Marketplace](https://aws.amazon.com/marketplace), for free. But others might.
 
 ## Why should my organization become a sponsor?
-Vendors and users alike should consider sponsoring the PuffinDB project, for several reasons outlined on our [sponsors](SPONSORS.md) page..
+Vendors and users alike should consider sponsoring the PuffinDB project, for several reasons outlined on our [sponsors](SPONSORS.md) page.
 
 ## When will PuffinDB be released?
 A first version with a naive distributed query engine (filter pushdown to serverless functions) should be released in Q2 (*Cf.* [prioritized roadmap](ROADMAP.md)).
