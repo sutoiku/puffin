@@ -11,6 +11,8 @@ Features will be implemented in the following order. Please start an `Idea` [dis
 - [ ] [Engine](functions/engine/README.md) serverless function
 - [ ] [Catalog](functions/catalog/README.md) serverless function
 - [ ] [DuckDB](https://duckdb.org/) integration
+- [ ] [PRQL](https://prql-lang.org/) to SQL translator
+- [ ] [Malloy](https://github.com/malloydata/malloy/tree/main/packages/malloy) to SQL translator
 - [ ] Authentication
 - [ ] Authorization
 - [ ] [Lakehouse template](templates/lakehouse/README.md)
@@ -38,7 +40,6 @@ Features will be implemented in the following order. Please start an `Idea` [dis
 - [ ] [Amazon EC2](https://aws.amazon.com/ec2/) support
 - [ ] [AWS Fargate](https://aws.amazon.com/fargate/) support
 - [ ] [Amazon OpenSearch Service](https://aws.amazon.com/opensearch-service/) support
-- [ ] [Malloy](https://github.com/malloydata/malloy/tree/main/packages/malloy) to SQL translator
 - [ ] SQL dialect converter
 - [ ] Project website
 - [ ] [AWS Marketplace](https://aws.amazon.com/marketplace) provisioning
