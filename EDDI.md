@@ -22,19 +22,19 @@ One should not think in terms of **big data** anymore. Instead, one should think
 ## Implementation
 While the vision outlined above might seem very ambitious, it could be implemented with a relatively-simple extension to the SQL syntax:
 
-```
-SELECT THROUGH 'https://myPuffinDB.com/' * FROM remoteTable;
+```sql
+SELECT * THROUGH 'https://myPuffinDB.com/' FROM remoteTable;
 ```
 
 With that syntax, `remoteTable` is local to `https://myPuffinDB.com/`, which itself is nothing more than an HTTP endpoint exposing DuckDB's query API. Initially, this remote query engine will only use the SQL syntax, but it should be possible to support complementary query engines and syntaxes down the road, such as the upcoming [Graph Query Language](https://www.gqlstandards.org/) (GQL), while offering the ability to nest one into the other, in both correlated and uncorrelated fashions.
 
 While similar results could be achieved with alternative syntaxes, using a `SELECT THROUGH` statement would allow this kind of query:
 
-```
+```sql
 SELECT *
   FROM
     localTable AS local,
-    (SELECT THROUGH 'https://myPuffinDB.com/' * FROM remoteTable) AS remote
+    (SELECT * THROUGH 'https://myPuffinDB.com/' FROM remoteTable) AS remote
   WHERE local.key = remote.key;
 ```
 
@@ -44,16 +44,19 @@ And if the remote query engine were to support this syntax as well, we would gai
 SELECT *
   FROM
     localTable AS local,
-    (SELECT THROUGH 'https://myFirstPuffinDB.com/' *
+    (SELECT * THROUGH 'https://myFirstPuffinDB.com/'
         FROM
           firstTable AS first,
-          (SELECT THROUGH 'https://mySecondPuffinDB.com/' * FROM secondTable) AS second
+          (SELECT * THROUGH 'https://mySecondPuffinDB.com/' FROM secondTable) AS second
         WHERE first.key = second.key
     ) AS remote
   WHERE local.key = remote.key;
 ```
 
 In this example, the client calls a first remote query engine, which in turns calls a second remote query engine, hence the cascade.
+
+**Note**: This syntax was developed with help from [@T0bias_Brandt](https://twitter.com/T0bias_Brandt).
+
 
 ## Components
 For this architecture to work, we need two things:
