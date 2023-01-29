@@ -84,7 +84,7 @@ From the client side (browser, local application, online service), PuffinDB can 
 
 ## Why use a Redis cluster for distributed shuffles?
 Distributed shuffles require low latency and large transient storage capacity. A large [Amazon ElastiCache for Redis](https://aws.amazon.com/elasticache/redis/) cluster can provides:
-- Submillisond latency
+- Submillisecond latency
 - Tens of millions of transactions per second
 - Up to 340 TB of in-memory storage
 
