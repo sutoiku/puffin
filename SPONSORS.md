@@ -16,7 +16,7 @@ Sponsors receive the following benefits:
 - 100 karma points
 
 ## Candidates
-Sponsirship is open to both vendors and user organizations. The later should consider sponsoring for the following reasons:
+Sponsorship is open to both vendors and user organizations. The later should consider sponsoring for the following reasons:
 - Immediate visibility on a critical open source project that could have a significant impact on next-generation data stacks.
 - Steering of project in a direction that benefits the end-user community.
 - Access to expert resources for architecture design and planning.
