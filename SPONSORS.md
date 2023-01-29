@@ -13,7 +13,7 @@ Sponsors receive the following benefits:
 - Addition of test cases to automated testing framework
 - Technical support
 - Marketing exposure
-- 100 karma points
+- 42 karma points
 
 ## Candidates
 Sponsorship is open to both vendors and user organizations. The later should consider sponsoring for the following reasons:
