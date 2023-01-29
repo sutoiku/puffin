@@ -33,4 +33,4 @@ Competitors should consider sponsoring PuffinDB, for the following reasons:
 *Coopetition works!*
 
 ## Offer
-The first five sponsors will receive a 50% discount on their first-year membership. Please email info at stoic dot com for more information.
+The first five sponsors will receive a 50% discount on their first-year membership. Please email info at puffindb dot io for more information.
