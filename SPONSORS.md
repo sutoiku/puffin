@@ -21,6 +21,7 @@ Competitors should consider sponsoring PuffinDB, for the following reasons:
 - This kind of open source project will happen, with or without PuffinDB — the market has a systemic need for something like it.
 - Sponsorship will give competitors more visibility into what others are doing — good intelligence is priceless.
 - PuffinDB only addresses the bottom layers of a next-generation data stack — most valuable innovation will happen on top.
+- A larger syndicate of vendors will be able to exert more influence with cloud providers ([AWS](https://aws.amazon.com/), [Microsoft Azure](https://azure.microsoft.com/en-us), [Google Cloud](https://cloud.google.com/)).
 
 ## Offer
 The first five sponsors will receive a 50% discount on their first-year membership. Please email info at stoic dot com for more information.
