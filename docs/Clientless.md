@@ -46,7 +46,7 @@ SELECT *
 
 In this example, the client calls a first remote query engine, which in turns calls a second remote query engine, hence the cascade.
 
-**Note**: This syntax was developed with help from [@T0bias_Brandt](https://twitter.com/T0bias_Brandt).
+**Note**: This syntax was developed with help from [snth](https://github.com/snth).
 
 ## Scheduled Remote Data Fetching and Local Caching
 Personal computers are becoming increasingly powerful, and DuckDB offers great performance on datasets that are 10GB to 100GB in size. Unfortunately, downloading that much data from the cloud to the local client can take a long time, especially if such large datasets change on a regular basis (*e.g.* Yesterday's transactions). Fortunately, if the user's local DuckDB client can be invoked through some kind of API by another client-side application like a scheduler, the user can easily create a schedule that would automatically trigger the download of large datasets at night, allowing interactive queries on local data during the day.
