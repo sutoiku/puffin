@@ -15,6 +15,12 @@ Sponsors receive the following benefits:
 - Marketing exposure
 - 100 karma points
 
+## Candidates
+Sponsirship is open to both vendors and user organizations. The later should consider sponsoring for the following reasons:
+- Immediate visibility on a critical open source project that has the potential of having a significant impact on next-generation data stacks.
+- Steering of project in a direction that benefits the end-user community.
+- Access to expert resources for architecture design and planning.
+
 ## Competitors
 Competitors should consider sponsoring PuffinDB, for the following reasons:
 - The project will happen (and succeed), with or without their support — *if you can't beat them, join them*.
