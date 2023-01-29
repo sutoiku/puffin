@@ -30,5 +30,7 @@ Competitors should consider sponsoring PuffinDB, for the following reasons:
 - A larger syndicate of vendors will develop better foundations — this next-generation data stack will benefit all parties involved.
 - A larger syndicate of vendors will have more leverage with cloud providers — united we are stronger.
 
+*Coopetition works!*
+
 ## Offer
 The first five sponsors will receive a 50% discount on their first-year membership. Please email info at stoic dot com for more information.
