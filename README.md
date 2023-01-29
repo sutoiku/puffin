@@ -44,6 +44,7 @@ All it takes is an [AWS](https://aws.amazon.com/) account and a few clicks on th
 - Write queries against Object Store objects executed by [DuckDB](https://duckdb.org/)
 - Write queries against Lakehouse tables executed by [Spark SQL](https://spark.apache.org/sql/)
 - Built-in [Malloy](https://github.com/malloydata/malloy/tree/main/packages/malloy) to SQL translator
+- Built-in [PRQL](https://prql-lang.org/) to SQL translator
 - Built-in SQL dialect converter
 - Built-in SQL parser | stringifier
 - Sub-500ms table scanning API (fetch table partitions from filter predicates) running on standalone function
