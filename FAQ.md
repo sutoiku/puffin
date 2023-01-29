@@ -83,7 +83,7 @@ Fair question. Whenever PuffinDB is deployed on [Amazon EC2](https://aws.amazon.
 From the client side (browser, local application, online service), PuffinDB can be used through any HTTP client, or through [DuckDB](https://duckdb.org/) ([more](docs/Clientless.md)).
 
 ## Why use a Redis cluster for distributed shuffles?
-Distributed shuffles require low latency and large transient storage capacity. A large [Amazon ElastiCache for Redis](https://aws.amazon.com/elasticache/redis/) cluster can provides:
+Distributed shuffles require low latency and large transient storage capacity. A large [Amazon ElastiCache for Redis](https://aws.amazon.com/elasticache/redis/) cluster can provide:
 - Submillisecond latency
 - Tens of millions of transactions per second
 - Up to 340 TB of in-memory storage
