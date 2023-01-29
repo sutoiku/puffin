@@ -123,4 +123,4 @@ Vendors and users alike should consider sponsoring the PuffinDB project, for sev
 A first version with a naive [distributed query engine](docs/Query%20Engine.md) (filter pushdown to serverless functions) should be released in Q2 (*Cf.* [roadmap](ROADMAP.md)).
 
 ## How may I contribute?
-Please send an email to info at stoic dot com.
+Please send an email to info at puffindb dot io.
