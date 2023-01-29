@@ -27,7 +27,7 @@ Competitors should consider sponsoring PuffinDB, for the following reasons:
 - The project will happen, with or without the support of any one organization — *if you can't beat them, join them!*
 - Sponsorship will give competitors more visibility into what others are doing — good intelligence is priceless.
 - PuffinDB only addresses the bottom layers of a next-generation data stack — most valuable innovations will happen on top.
-- A larger syndicate of vendors will develop better foundations that will benefit all parties involved.
+- A larger syndicate of vendors will develop better technical foundations for next-generation data stacks that will benefit all parties involved.
 - A larger syndicate of vendors will have more leverage with cloud providers ([Amazon Web Services](https://aws.amazon.com/), [Microsoft Azure](https://azure.microsoft.com/en-us), [Google Cloud](https://cloud.google.com/)).
 
 ## Offer
