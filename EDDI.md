@@ -40,7 +40,7 @@ SELECT *
 
 And if the remote query engine were to support this syntax as well, we would gain some kind of **Cascading Query Language** (CQL):
 
-```
+```sql
 SELECT *
   FROM
     localTable AS local,
