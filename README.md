@@ -107,6 +107,9 @@ We are also considering funding the following projects:
 
 This project was initially inspired by this excellent [article](https://towardsdatascience.com/boost-your-cloud-data-applications-with-duckdb-and-iceberg-api-67677666fbd3) from [Alon Agmon](https://medium.com/@alon.agmon).
 
+## Discussions
+Most discussions about this project are currently taking place on the [@ghalimi](https://twitter.com/ghalimi) Twitter account.
+
 ## Notes
 
 PuffinDB should not be confused with the [Puffin file format](https://iceberg.apache.org/puffin-spec/).
