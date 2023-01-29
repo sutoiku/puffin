@@ -14,3 +14,6 @@ Sponsors receive the following benefits:
 - Technical support
 - Marketing exposure
 - 100 karma points
+
+## Offer
+The first five sponsors will receive a 50% discount on their first-year membership. Please email info at stoic dot com for more information.
