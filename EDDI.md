@@ -55,7 +55,7 @@ SELECT *
 
 In this example, the client calls a first remote query engine, which in turns calls a second remote query engine, hence the cascade.
 
-**Note**: This syntax was developed with help from [@T0bias_Brandt](https://twitter.com/T0bias_Brandt).
+**Note**: This syntax was developed with help from [snth](https://github.com/snth).
 
 
 ## Components
