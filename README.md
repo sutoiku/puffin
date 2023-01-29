@@ -83,6 +83,9 @@ Please check our [Frequently Asked Questions](FAQ.md).
 ## Roadmap
 Please check our [Roadmap](ROADMAP.md).
 
+## Sponsors
+This project is funded by [STOIC](https://stoic.com/). Please check our [sponsors](SPONSORS.md) page for sponsorship opportunities.
+
 ## Credits
 This project leverages several [DuckDB](https://duckdb.org/) features implemented by [DuckDB Labs](https://duckdblabs.com/) and funded by [STOIC](https://stoic.com/):
 
