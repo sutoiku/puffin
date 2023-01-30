@@ -55,7 +55,7 @@ SELECT *
 
 In this example, the client calls a first remote query engine, which in turns calls a second remote query engine, hence the cascade.
 
-And here is how local tables could be created from remote tables:
+And here is how a local table could be created from a remote table:
 
 ```sql
 CREATE TABLE localTable AS SELECT * THROUGH 'https://myPuffinDB.com' FROM remoteTable;
