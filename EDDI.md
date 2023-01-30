@@ -68,4 +68,4 @@ The former will require a fairly sophisticated query planner, while the latter w
 This architecture should be based on [Arrow Database Connectivity](https://arrow.apache.org/docs/dev/format/ADBC.html).
 
 ## Bottomline
-PuffinDB's primary goal is to execute on that vision.
+One of PuffinDB's primary goals is to execute on that vision.
