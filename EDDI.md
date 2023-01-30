@@ -57,7 +57,7 @@ In this example, the client calls a first remote query engine, which in turns ca
 
 And here is how local tables could be created from remote tables:
 
-```
+```sql
 CREATE TABLE localTable AS SELECT * THROUGH 'https://myPuffinDB.com' FROM remoteTable;
 ```
 
