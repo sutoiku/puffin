@@ -111,7 +111,7 @@ This project was initially inspired by this excellent [article](https://towardsd
 ## Discussions
 Most discussions about this project are currently taking place on the [@ghalimi](https://twitter.com/ghalimi) Twitter account.
 
-For a low-frequency alternative, please follow [@PuffinDB](https://twitter.com/PuffinDB).
+For a lower-frequency alternative, please follow [@PuffinDB](https://twitter.com/PuffinDB).
 
 ## Notes
 
