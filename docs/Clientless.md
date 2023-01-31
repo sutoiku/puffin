@@ -5,7 +5,7 @@ From the client side (browser, local application, online service), PuffinDB can 
 ## DuckDB Extension
 PuffinDB will provide a simple extension that can be added to any DuckDB engine (client-side or cloud-side), directly from the SQL API:
 
-```
+```sql
 INSTALL 'puffindb';
 LOAD 'puffindb';
 ```
