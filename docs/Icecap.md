@@ -2,7 +2,7 @@
 
 **⚠ WARNING**: This project is under consideration and has not been confirmed.
 
-Icecap would be an alternative implementation of Iceberg tables using the native [DuckDB](https://duckdb.org/) file format.
+Icecap would be an alternative implementation of [Iceberg tables](https://iceberg.apache.org/spec/) using the native [DuckDB](https://duckdb.org/) file format.
 
 ## Overview
 
