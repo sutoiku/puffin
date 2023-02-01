@@ -10,5 +10,5 @@ Icecap would be an alternative implementation of [Iceberg tables](https://iceber
 - Powered by serverless functions, [Redis](https://redis.io/), and [DuckDB](https://duckdb.org/) (no Spark)
 
 ## Redis
-- Used as table catalog and transactional orchestrator
+- Used as table catalog and transactional orchestrator allowing multiple DuckDB engines to read | write the same tables
 - Accelerated with [Dragonfly](https://dragonflydb.io/) or [KeyDB](https://docs.keydb.dev/) (optional)
