@@ -91,6 +91,9 @@ Distributed shuffles require low latency and large transient storage capacity. A
 ## Why use a Redis cluster for storing query logs?
 [Query logs](docs/Logs.md) must be accessed with very low latency for looking up the Object Store URI where an earlier query result might be cached. [Amazon ElastiCache for Redis](https://aws.amazon.com/elasticache/redis/) provides submillisecond latency for such queries, at a very reasonable cost. Furthermore, Redis can also be used as a low-latency broker for queuing and synchronization, which is required for the execution of distributed queries.
 
+## What about Dragonfly or KeyDB?
+[Dragonfly](https://dragonflydb.io/) and [KeyDB](https://docs.keydb.dev/) are promising alternatives to [Redis](https://redis.io/). All three use the same API and should be supported equally well.
+
 ## Why embed PRQL and Malloy?
 PuffinDB embeds a [PRQL](https://prql-lang.org/) to SQL translator and a [Malloy](https://www.malloydata.dev/) to SQL translator. Many such translators are available today, for many different applications and syntaxes, but PuffinDB selected these two, because they address two complementary needs: PRQL is great for data preparation, while Malloy is unparalleled for data analytics. Both have been embedded to stress the platform in different ways, and to provide ready-to-use "applications" that can be used to convincingly showcase the platform's capabilities. Nevertheless, they are packaged as optional modules that can be omitted if so desired.
 
