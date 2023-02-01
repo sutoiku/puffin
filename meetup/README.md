@@ -20,4 +20,4 @@ PuffinDB will organize some activites, but participants will be free to spend th
 Good meals in Michelin starred restaurants will be served though.
 
 ## Credits
-Many thanks to our dear friend [Mila Dragojevic](https://new.sewanee.edu/programs-of-study/politics/faculty-staff/mila-dragojevic/) for having recommended to meetup's location.
+Many thanks to our dear friend [Mila Dragojević](https://new.sewanee.edu/programs-of-study/politics/faculty-staff/mila-dragojevic/) for having recommended to meetup's location.
