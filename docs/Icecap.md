@@ -1,6 +1,6 @@
 # Icecap
 
-Icecap would be an alternative implementation of [Iceberg tables](https://iceberg.apache.org/spec/) using the native [DuckDB](https://duckdb.org/) file format.
+Icecap would be an alternative implementation of [Iceberg tables](https://iceberg.apache.org/spec/) using the native [DuckDB](https://duckdb.org/) file format and [Redis](https://redis.io/).
 
 ## Overview
 - Optimized for low latency
