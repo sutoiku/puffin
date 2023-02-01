@@ -15,3 +15,5 @@ Icecap would be an alternative implementation of [Iceberg tables](https://iceber
 
 ## Updates in Place
 Object Stores like [Amazon S3](https://aws.amazon.com/s3/) do not currenlty support updates in place. Therefore, a serverless function must `GET` an entire object before applying updates to it and before it can be `PUT` back on the Object Store. Nevertheless, if the object uses a file format natively designed to support updates in place, this process can be accelerated. Furthermore, the serverless function can cache the object on its local filesystem, thereby allowing updates in place during the object's caching lifespan.
+
+Down the road, we expect Object Stores to add native support for updates in place when using certain file formats such as DuckDB's.
