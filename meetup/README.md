@@ -18,3 +18,6 @@ The [Grand Park Hotel Rovinj](https://www.maistra.com/properties/grand-park-hote
 PuffinDB will organize some activites, but participants will be free to spend their free time as they wish. This is **not** a bro party.
 
 Good meals in Michelin starred restaurants will be served though.
+
+## Credits
+Many thanks to our dear friend [Mila Dragojevic](https://new.sewanee.edu/programs-of-study/politics/faculty-staff/mila-dragojevic/) for having recommended to meetup's location.
