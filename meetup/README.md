@@ -6,7 +6,7 @@ This first gathering will set the benchmark for all future events — participan
 
 ## Logistics
 - Dates will be announced soon.
-- Participants shoudl fly through [Franjo Tuđman Airport Zagreb](https://www.zagreb-airport.hr/en).
+- Participants should fly through [Franjo Tuđman Airport Zagreb](https://www.zagreb-airport.hr/en). Or charter a sailboat for extra snobbery point.
 - Roundtrip transportation between Zagreb and Rovinj will be organized by PuffinDB.
 
 ## Accomodations
