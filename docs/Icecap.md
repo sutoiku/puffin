@@ -11,4 +11,4 @@ Icecap would be an alternative implementation of [Iceberg tables](https://iceber
 
 ## Redis
 - Used as table catalog and transactional orchestrator
-- Accelerated with [Dragonfly](https://dragonflydb.io/) or [KeyDB](https://docs.keydb.dev/)
+- Accelerated with [Dragonfly](https://dragonflydb.io/) or [KeyDB](https://docs.keydb.dev/) (optional)
