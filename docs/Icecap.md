@@ -6,7 +6,7 @@ Icecap would be an alternative implementation of [Iceberg tables](https://iceber
 
 ## Overview
 - Optimized for low latency
-- Supporting edits in place
+- Supporting updates in place
 - Powered by serverless functions, [Redis](https://redis.io/), and [DuckDB](https://duckdb.org/) (no Spark)
 
 ## Redis
