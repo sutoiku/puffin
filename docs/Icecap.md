@@ -25,4 +25,4 @@ In the meantime, updates will be managed in the following fashion:
 3. Updates applied in place by serverless functions
 4. Partitions serialized back onto object store
 
-According to this model, the DuckDB file format could be used on both object store and serverless functions, or just the latter, with Parquet on the former.
+According to this model, the DuckDB file format could be used on both object store and serverless functions, or just the latter.
