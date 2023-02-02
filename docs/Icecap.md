@@ -32,10 +32,10 @@ Icecap will make it possible to replicate every partition stored on the Object S
 **Why not use Spark SQL?**.  
 Because it's too slow and too expensive to deploy and operate.
 
-**Will Icecap support the Parquet file format?**.  
+**Will Icecap support the Parquet file format?**  
 Yes. Icecap will support any file format supported by [Apache Iceberg](https://iceberg.apache.org/), alongside the native DuckDB file format for updates in place.
 
-**Will Icecap support the Iceberg table format?**.  
+**Will Icecap support the Iceberg table format?**  
 Yes, Iceberg will support both the [Iceberg](https://iceberg.apache.org/) and [Delta Lake](https://delta.io/) table formats (not to be confused with file formats).
 
 **Which file formats will be supported on the underlying Object Store?**   
