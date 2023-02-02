@@ -38,7 +38,7 @@ Yes. Icecap will support any file format supported by [Apache Iceberg](https://i
 **Will Icecap support the Iceberg table format?**  
 Yes, Iceberg will support both the [Iceberg](https://iceberg.apache.org/) and [Delta Lake](https://delta.io/) table formats (not to be confused with file formats).
 
-**Which file formats will be supported on the underlying Object Store?**   
+**Which file formats will be supported in the underlying Object Store?**   
 All of them.
 
 **Which file formats will be supported in cache?**   
