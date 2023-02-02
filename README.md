@@ -23,7 +23,7 @@ All it takes is an [AWS](https://aws.amazon.com/) account and a few clicks on th
 
 ## Outline
 - [Serverless architecture](docs/Architecture.md)
-- Implemented in [Node.js](https://nodejs.org/en/) and [Rust](https://www.rust-lang.org/)
+- Implemented in [Node.js](https://nodejs.org/en/) (to be upgraded to [Bun](https://bun.sh/)) and [Rust](https://www.rust-lang.org/)
 - Powered by [Arrow](https://arrow.apache.org/) × [DuckDB](https://duckdb.org/) × [Iceberg](https://iceberg.apache.org/)
 - Powered by [Redis](https://redis.io/) (using [Amazon ElastiCache for Redis](https://aws.amazon.com/elasticache/redis/)) for superfast shuffles
 - Integrated with [Apache Iceberg](https://iceberg.apache.org/) first, then [Apache Hudi](https://hudi.apache.org/) and [Delta Lake](https://delta.io/)
