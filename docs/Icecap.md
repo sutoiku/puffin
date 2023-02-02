@@ -26,11 +26,11 @@ In the meantime, updates will be managed in the following fashion:
 According to this model, the DuckDB file format could be used on both object store and serverless functions, or just the latter.
 
 ## FAQ
-**Will Icecap support the Parquet file format?**
+**Will Icecap support the Parquet file format?**.  
 Yes. Icecap will support any file format support by [Apache Iceberg](https://iceberg.apache.org/), alongside the native DuckDB file format for updates in place.
 
-**Will Icecap support the Iceberg table format?**
+**Will Icecap support the Iceberg table format?**.  
 Yes, Iceberg will support both the [Iceberg](https://iceberg.apache.org/) and [Delta Lake](https://delta.io/) table formats (not to be confused with file formats).
 
-**Why not use Spark SQL?**
+**Why not use Spark SQL?**.  
 Because it's too slow and to expensive to deploy and operate.
