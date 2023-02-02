@@ -1,6 +1,6 @@
 # Icecap
 
-Icecap is an alternative implementation of [Iceberg tables](https://iceberg.apache.org/spec/) using [Redis](https://redis.io/) and [DuckDB](https://duckdb.org/) as an alternative to [Spark SQL](https://spark.apache.org/sql/).
+Icecap is an implementation of [Iceberg tables](https://iceberg.apache.org/spec/) using [Redis](https://redis.io/) and [DuckDB](https://duckdb.org/) as an alternative to [Spark SQL](https://spark.apache.org/sql/).
 
 ## Overview
 - Optimized for low latency
