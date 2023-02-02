@@ -12,7 +12,7 @@ Icecap is an implementation of [Iceberg tables](https://iceberg.apache.org/spec/
 - Accelerated with [Dragonfly](https://dragonflydb.io/) or [KeyDB](https://docs.keydb.dev/) (optional)
 
 ## Updates
-Object Stores like [Amazon S3](https://aws.amazon.com/s3/) do not currenlty support updates in place. Therefore, a serverless function must `GET` an entire object before applying updates to it and before it can be `PUT` back on the Object Store. Nevertheless, if the object uses a file format natively designed to support updates in place, this process can be accelerated. Furthermore, the serverless function can cache the object on its local filesystem, thereby allowing updates in place during the object's caching lifespan.
+Object Stores like [Amazon S3](https://aws.amazon.com/s3/) do not currenlty support updates in place. Therefore, a serverless function must `GET` an entire object before applying updates to it and before it can be `PUT` back on the Object Store. Nevertheless, if the object uses a file format natively designed to support updates in place (such as DuckDB's native file format), this process can be accelerated. Furthermore, the serverless function can cache the object on its local filesystem, thereby allowing updates in place during the object's caching lifespan.
 
 Down the road, we hope Object Stores will add native support for updates in place when using certain file formats such as DuckDB's.
 
@@ -24,3 +24,13 @@ In the meantime, updates will be managed in the following fashion:
 4. Partitions serialized back onto object store
 
 According to this model, the DuckDB file format could be used on both object store and serverless functions, or just the latter.
+
+## FAQ
+**Will Icecap support the Parquet file format?**
+Yes. Icecap will support any file format support by [Apache Iceberg](https://iceberg.apache.org/), alongside the native DuckDB file format for updates in place.
+
+**Will Icecap support the Iceberg table format?**
+Yes, Iceberg will support both the [Iceberg](https://iceberg.apache.org/) and [Delta Lake](https://delta.io/) table formats (not to be confused with file formats).
+
+**Why not use Spark SQL?**
+Because it's too slow and to expensive to deploy and operate.
