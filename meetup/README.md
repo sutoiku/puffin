@@ -2,11 +2,11 @@
 
 PuffinDB will hold a kickoff meeting for [sponsors](../SPONSORS.md) and committers in March 2023, at the [Grand Park Hotel](https://www.maistra.com/properties/grand-park-hotel-rovinj/#/) in Rovinj, Croatia. This event will take place over 3 days. Participants pay for travels expenses, while PuffinDB offers accomodations free of charge. The goal of the event is to finalize the architecture for PuffinDB, including [Icecap](../docs/Icecap.md). And to have some fun along the way...
 
-This first gathering will set the benchmark for all future events — participants will receive a highly collectible *"I was there"* [lapel pin](https://worn-vintage.com/products/70s-david-lynch-eraserhead-i-saw-it-pin).
+This first gathering will set the benchmark for all future events.
 
 ## Logistics
 - Dates will be announced soon.
-- Participants should fly through [Franjo Tuđman Airport Zagreb](https://www.zagreb-airport.hr/en). Or charter a sailboat for extra snobbery point.
+- Participants should fly through [Franjo Tuđman Airport Zagreb](https://www.zagreb-airport.hr/en).
 - Roundtrip transportation between Zagreb and Rovinj will be organized by PuffinDB.
 
 ## Accomodations
