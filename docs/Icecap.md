@@ -25,12 +25,21 @@ In the meantime, updates will be managed in the following fashion:
 
 According to this model, the DuckDB file format could be used on both object store and serverless functions, or just the latter.
 
+## File Format Replication
+Icecap will make it possible to replicate every partition stored on the Object Store across multiple file formats. For example, the same partition could be stored in both DuckDB and Parquet formats. This will allow any Parquet-compatible tool to query tables, while making it faster for Icecap to update tables by leveraging the fact that DuckDB's native file format supports updates in place.
+
 ## FAQ
+**Why not use Spark SQL?**.  
+Because it's too slow and too expensive to deploy and operate.
+
 **Will Icecap support the Parquet file format?**.  
-Yes. Icecap will support any file format support by [Apache Iceberg](https://iceberg.apache.org/), alongside the native DuckDB file format for updates in place.
+Yes. Icecap will support any file format supported by [Apache Iceberg](https://iceberg.apache.org/), alongside the native DuckDB file format for updates in place.
 
 **Will Icecap support the Iceberg table format?**.  
 Yes, Iceberg will support both the [Iceberg](https://iceberg.apache.org/) and [Delta Lake](https://delta.io/) table formats (not to be confused with file formats).
 
-**Why not use Spark SQL?**.  
-Because it's too slow and to expensive to deploy and operate.
+**Which file formats will be supported on the underlying Object Store?**   
+All of them.
+
+**Which file formats will be supported in cache?**   
+All of them.
