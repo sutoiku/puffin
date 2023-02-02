@@ -5,7 +5,7 @@ Icecap is an alternative implementation of [Iceberg tables](https://iceberg.apac
 ## Overview
 - Optimized for low latency
 - Supporting updates in place
-- Powered by serverless functions, [Redis](https://redis.io/), and [DuckDB](https://duckdb.org/) (no Spark)
+- Powered by serverless functions, [Redis](https://redis.io/), and [DuckDB](https://duckdb.org/) (*sans* Spark)
 
 ## Redis
 - Used as table catalog and transactional orchestrator allowing multiple DuckDB engines to read | write the same tables
