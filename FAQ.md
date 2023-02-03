@@ -55,7 +55,7 @@ Yes, it will (or so we've [read](https://twitter.com/tabulario/status/1616467434
 [Amazon Athena](https://aws.amazon.com/athena/) can be used to read | write any [Iceberg tables](https://iceberg.apache.org/spec/), but many read queries will be faster and more cost-effective with [DuckDB](https://duckdb.org/).
 
 ## Do I need Amazon Athena to query Iceberg tables with PuffinDB?
-If you just make read queries on [Iceberg tables](https://iceberg.apache.org/spec/), you do not. But you will need [Amazon Athena](https://aws.amazon.com/athena/) if you want to make write queries on these tables.
+If you just make read queries on [Iceberg tables](https://iceberg.apache.org/spec/), you do not. But you will need [Amazon Athena](https://aws.amazon.com/athena/) for write queries on these tables.
 
 Alternatively, you will be able to use [Icecap](docs/Icecap.md) once it becomes available.
 
