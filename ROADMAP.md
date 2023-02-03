@@ -23,9 +23,9 @@ Features will be implemented in the following order. Please start an `Idea` [dis
 - [ ] Asynchronous invocations over Object Store
 - [ ] [Query logs](docs/Logs.md) recorded as [JSON](https://redis.io/docs/stack/json/) values in [Redis](https://redis.io/) cluster (using [Amazon ElastiCache for Redis](https://aws.amazon.com/elasticache/redis/))
 - [ ] Read queries executed by [DuckDB](https://duckdb.org/) (running on [AWS Lambda](https://aws.amazon.com/lambda/))
-- [ ] Read queries executed by [Spark SQL](https://spark.apache.org/sql/) (running on [AWS EMR](https://aws.amazon.com/emr/))
+- [ ] Read queries executed by [Amazon Athena](https://aws.amazon.com/athena/)
 - [ ] Write queries against Object Store objects executed by [DuckDB](https://duckdb.org/)
-- [ ] Write queries against Lakehouse tables executed by [Spark SQL](https://spark.apache.org/sql/)
+- [ ] Write queries against Lakehouse tables executed by [Amazon Athena](https://aws.amazon.com/athena/)
 - [ ] [Remote query engine](docs/Clientless.md) support
 - [ ] [Amazon ElastiCache for Redis](https://aws.amazon.com/elasticache/redis/) support
 - [ ] [Partition caching](FAQ.md#how-does-partition-caching-work) on [AWS Lambda](https://aws.amazon.com/lambda/) function
