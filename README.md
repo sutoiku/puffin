@@ -116,6 +116,10 @@ For a lower-frequency alternative, please follow [@PuffinDB](https://twitter.com
 
 ## Notes
 
+PuffinDB is an initiative of STOIC and not [DuckDB Labs](https://duckdblabs.com/) or the [DuckDB Foundation](https://duckdb.org/foundation/).
+
+DuckDB and the DuckDB logo are trademarks of the DuckDB Foundation.
+
 PuffinDB should not be confused with the [Puffin file format](https://iceberg.apache.org/puffin-spec/).
 
 Ⓒ [Sutoiku, Inc.](https://stoic.com/)
