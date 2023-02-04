@@ -116,7 +116,7 @@ For a lower-frequency alternative, please follow [@PuffinDB](https://twitter.com
 
 ## Notes
 
-PuffinDB is an initiative of STOIC and not [DuckDB Labs](https://duckdblabs.com/) or the [DuckDB Foundation](https://duckdb.org/foundation/).
+PuffinDB is an initiative of STOIC (Sutoiku, Inc.), and not [DuckDB Labs](https://duckdblabs.com/) or the [DuckDB Foundation](https://duckdb.org/foundation/).
 
 DuckDB and the DuckDB logo are trademarks of the DuckDB Foundation.
 
