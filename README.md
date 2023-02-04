@@ -1,5 +1,5 @@
 # PuffinDB 🐧
-Serverless data lake query engine powered by [Arrow](https://arrow.apache.org/) × [DuckDB](https://duckdb.org/) × [Iceberg](https://iceberg.apache.org/)
+Serverless data lake HTAP engine powered by [Arrow](https://arrow.apache.org/) × [DuckDB](https://duckdb.org/) × [Iceberg](https://iceberg.apache.org/)
 
 ## Introduction
 This is a proposal for an open source project [sponsored](SPONSORS.md) by [STOIC](https://stoic.com/). Its purpose is to make it easier to run [DuckDB](https://duckdb.org/) on serverless functions ([AWS Lambda](https://aws.amazon.com/lambda/), [Azure Function](https://learn.microsoft.com/en-us/azure/azure-functions/functions-overview), [Google Cloud Function](https://cloud.google.com/functions)) for executing read | write queries against objects managed by an Object Store ([Amazon S3](https://aws.amazon.com/s3/), [Azure Blob Storage](https://azure.microsoft.com/en-us/products/storage/blobs), [Google Cloud Storage](https://cloud.google.com/storage)) and tables managed by a Lakehouse ([Apache Iceberg](https://iceberg.apache.org/), [Apache Hudi](https://hudi.apache.org/), [Delta Lake](https://delta.io/)).
@@ -23,6 +23,7 @@ All it takes is an [AWS](https://aws.amazon.com/) account and a few clicks on th
 
 ## Outline
 - [Serverless architecture](docs/Architecture.md)
+- Supporting both read and write queries
 - Implemented in [Node.js](https://nodejs.org/en/) (to be upgraded to [Bun](https://bun.sh/)) and [Rust](https://www.rust-lang.org/)
 - Powered by [Arrow](https://arrow.apache.org/) × [DuckDB](https://duckdb.org/) × [Iceberg](https://iceberg.apache.org/)
 - Powered by [Redis](https://redis.io/) (using [Amazon ElastiCache for Redis](https://aws.amazon.com/elasticache/redis/)) for superfast shuffles
