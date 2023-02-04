@@ -26,7 +26,7 @@ All it takes is an [AWS](https://aws.amazon.com/) account and a few clicks on th
 - Implemented in [Node.js](https://nodejs.org/en/) (to be upgraded to [Bun](https://bun.sh/)) and [Rust](https://www.rust-lang.org/)
 - Powered by [Arrow](https://arrow.apache.org/) × [DuckDB](https://duckdb.org/) × [Iceberg](https://iceberg.apache.org/)
 - Powered by [Redis](https://redis.io/) (using [Amazon ElastiCache for Redis](https://aws.amazon.com/elasticache/redis/)) for superfast shuffles
-- Integrated with [Apache Iceberg](https://iceberg.apache.org/) first, then [Apache Hudi](https://hudi.apache.org/) and [Delta Lake](https://delta.io/)
+- Integrated with [Apache Iceberg](https://iceberg.apache.org/), [Apache Hudi](https://hudi.apache.org/), and [Delta Lake](https://delta.io/)
 - Deployed on [AWS](https://aws.amazon.com/) first, then [Microsoft Azure](https://azure.microsoft.com/en-us) and [Google Cloud](https://cloud.google.com/)
 - Invoked through an HTTP endpoint served by [Amazon API Gateway](https://aws.amazon.com/api-gateway/)
 - Deployed as two [AWS Lambda](https://aws.amazon.com/lambda/) functions
@@ -48,7 +48,7 @@ All it takes is an [AWS](https://aws.amazon.com/) account and a few clicks on th
 - Built-in SQL dialect converter
 - Built-in SQL parser | stringifier
 - Sub-500ms table scanning API (fetch table partitions from filter predicates) running on standalone function
-- Concurrent support for multiple table formats ([Apache Iceberg](https://iceberg.apache.org/) first, then [Apache Hudi](https://hudi.apache.org/) and [Delta Lake](https://delta.io/))
+- Concurrent support for multiple table formats ([Apache Iceberg](https://iceberg.apache.org/), [Apache Hudi](https://hudi.apache.org/), and [Delta Lake](https://delta.io/))
 - Concurrent suport for multiple Lakehouse instances
 - Native support for all Lakehouse Catalogs ([AWS Glue Data Catalog](https://docs.aws.amazon.com/glue/latest/dg/catalog-and-crawler.html), [Amazon DynamoDB](https://aws.amazon.com/dynamodb/), and [Amazon RDS](https://aws.amazon.com/rds/))
 - Support for authentication and authorization
