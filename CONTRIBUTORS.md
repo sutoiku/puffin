@@ -15,5 +15,10 @@ The following people have made significant contributions to the PuffinDB project
 - Rust
 - RAPIDS
 - Node.js
+- DuckDB
 - Redis
+- Apache Arrow
+- Apache Iceberg
 - Distributed SQL query planning
+- Amazon Web Services
+- Microsoft Azure
