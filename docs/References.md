@@ -13,7 +13,7 @@ The following reading materials provide a solid introduction to SQL databases:
 - [Push-Based Execution in DuckDB](https://www.youtube.com/watch?v=MA0OsvYFGrc) — Mark Raasveldt · 2021
 - [Querying Parquet with Precision using DuckDB](https://duckdb.org/2021/06/25/querying-parquet.html) — Hannes Mühleisen, Mark Raasveldt · 2021
 - [Join Order Optimization with (Almost) No Statistics](https://homepages.cwi.nl/~boncz/msc/2022-TomEbergen.pdf) — Tom Ebergen · 2022
-- [Query Processing on Tensor Computation Runtimes](https://arxiv.org/pdf/2203.01877.pdf) — Dong He, Supun C Nakandala *et al.* · 2022
+- [Query Processing on Tensor Computation Runtimes](https://arxiv.org/pdf/2203.01877.pdf) — Dong He, Supun C Nakandala, *et al.* · 2022
 
 ## Credits
 Many thanks to [Sam Ansmink](https://github.com/samansmink) for having contributed the original list of reference materials.
