@@ -19,6 +19,7 @@ The following people have made significant contributions to the PuffinDB project
 - Redis
 - Apache Arrow
 - Apache Iceberg
+- Substrait
 - Distributed SQL query planning
 - Amazon Web Services
 - Microsoft Azure
