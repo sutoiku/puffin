@@ -33,7 +33,7 @@ All it takes is an [AWS](https://aws.amazon.com/) account and a few clicks on th
 - Invoked through an HTTP endpoint served by [Amazon API Gateway](https://aws.amazon.com/api-gateway/)
 - Deployed as two [AWS Lambda](https://aws.amazon.com/lambda/) functions
 - Integrated with [Amazon Athena](https://aws.amazon.com/athena/)
-- Packaged as an [AWS CloudFormation](https://aws.amazon.com/cloudformation/) template
+- Packaged as an [AWS CloudFormation](https://aws.amazon.com/cloudformation/) template (using [Terraform](https://www.terraform.io/))
 - Released as a free [AWS Marketplace](https://aws.amazon.com/marketplace) product
 - Running on your [Amazon VPC](https://aws.amazon.com/vpc/)
 - Licensed under [MIT License](https://opensource.org/licenses/MIT)
