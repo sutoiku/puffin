@@ -38,7 +38,7 @@ From there, we will soon realize that scaling out queries across multiple comput
 
 Then, you will realize that caching data on the monostore could be done at four different levels:
 
-1. Compressed on local solid state storage (NVMe ideally)
+1. Compressed on local solid state drives ([NVMe](https://en.wikipedia.org/wiki/NVM_Express) ideally)
 2. Compressed in CPU memory
 3. Uncompressed in CPU memory
 4. Uncompressed in GPU memory (if you are lucky enough to use a GPU-accelerated monostore like the [`p4de.24xlarge`](https://aws.amazon.com/ec2/instance-types/p4/))
