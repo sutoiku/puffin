@@ -80,4 +80,4 @@ Datasets come in all sizes, Here is how we like to think about them:
 - **Container**: Requires the use of at least one container (serverless functions are not enough).
 - **Cluster**: Requires the use of a cluster of containers.
 
-And while it is true that most organizations **produce** datasets that are medium in size or smaller (less than 100 GB), most organizations **consume** datasets that are much larger. For example, when I make a search on Google Search, I query a dataset that is larger than 100,000,000 gigabytes (that's 100 PB).
+And while it is true that most organizations **produce** datasets that are medium in size or smaller (less than 100 GB), everyone who is online (5.16 B at last count) **consume** datasets that are much larger. For example, when I make a search on Google Search, I query a dataset that is larger than 100,000,000 gigabytes (that's 100 PB).
