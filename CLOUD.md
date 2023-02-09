@@ -62,7 +62,7 @@ Fourth, if someone told you that your laptop is more secure than your cloud, you
 DuckDB is growing on the client very rapidly, but it will spread across the cloud even faster.
 
 ## Dataset Size
-Datasets come in all sizes, Here is how we like to think about them:
+Datasets come in all sizes. Here is how we like to think about them:
 
 | Code | Size | Size Range | Interactivity | Mult. Func. | Cloud | Basic Part. | Container | Adv. Part. | Cluster |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
