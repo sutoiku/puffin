@@ -20,7 +20,7 @@ All it takes is an [AWS](https://aws.amazon.com/) account and a few clicks on th
 - Nothing beats [SQL](https://en.wikipedia.org/wiki/SQL) because nothing can beat [maths](https://en.wikipedia.org/wiki/Relational_algebra)
 - [Arrow](https://arrow.apache.org/) × [DuckDB](https://duckdb.org/) × [Iceberg](https://iceberg.apache.org/) are game changers
 - [Edge-Driven Data Integration](EDDI.md) is the way forward
-- [Clientless](docs/Clientless.md) + [Serverless](docs/Architecture.md) = Goodness
+- [Clientless](docs/Clientless.md) + [Serverless](docs/Architecture.md) = [Goodness](CLOUD.md)
 
 ## Outline
 - [Serverless architecture](docs/Architecture.md)
