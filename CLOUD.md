@@ -10,3 +10,5 @@ When thinking about data, one should not think in terms of small data or big dat
 ```
 W = m·g
 ```
+
+According to this analogy, a cloud's gravitational constant `g` is a factor of its internal bandwidth (how fast can you move data from S3 to an EC2 instance), its external bandwidth (how fast can you download data from the cloud to your client computer), and its data egress cost (how much does it cost to do the latter).
