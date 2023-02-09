@@ -24,3 +24,5 @@ With that in mind, one could think of moving data from the object store to a com
 Can we justify this analogy in some quantitative fashion? Let us try?
 
 If we assume our Paris-Tokyo flight to cost $1,000 and our payload (passenger and luggage) to be 100kg, we get a cost of $10/kg. As a point of comparison, SpaceX's [Falcon Heavy](https://www.spacex.com/vehicles/falcon-heavy/) offers low-Earth orbit deliveries for as little as $1,400/kg, which is 140 times more expensive. And current missions to Mars cost about $200,000/kg, or 142 times more that low-Earth orbit deliveries. In other words, each jump is about two orders of magnitude more expensive than the previous one. Granted, SpaceX promises Starship missions to Mars for as little as $50/kg, but that remains to be seen, and low-cost carriers routinely take passengers across continents for less than $50. You get the point.
+
+From the hotel room where I am writing this article, I enjoy (suffer from) a bandwidth of just over 60 Mbps. As a point of comparison, a [`p4d.24xlarge`](https://aws.amazon.com/ec2/instance-types/p4/) instance gives me 400 Gbps of bandwith, which is 6,667 times greater.
