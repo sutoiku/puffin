@@ -46,4 +46,4 @@ After that, you might consider caching closer to their users small to medium dat
 This incremental caching of data closer and closer to the client and the distribution of queries across layers of caching is called **scale up**.
 
 ## Scale Out and Scale Up
-In order to take advantage of these complementary **scale out** and **scale up** strategies, the [distributed query engine](docs/Query%20Engine.md) will need a very powerful [distributed query planner](docs/Query%20Planner.md).
+In order to take full advantage of these complementary **scale out** and **scale up** strategies, the [distributed query engine](docs/Query%20Engine.md) will need a very powerful [distributed query planner](docs/Query%20Planner.md).
