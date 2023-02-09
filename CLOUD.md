@@ -77,5 +77,5 @@ Datasets come in all sizes, Here is how we like to think about them:
 - **Cloud**: Requires cloud-side processing.
 - **Basic Partitions**: Datasets must be partitioned.
 - **Advanced Partitions**: Partitions must be defined from actual table columns.
-- **Container**: Requires the use of at least one conatiner.
+- **Container**: Requires the use of at least one container (serverless functions are not enough).
 - **Cluster**: Requires the use of a cluster of containers.
