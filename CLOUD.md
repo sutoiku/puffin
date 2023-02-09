@@ -105,7 +105,7 @@ When Amazon launched Amazon Web Services back in 2006, [Virtual Private Clouds](
 ## Conclusions
 - Data is heavy, so keep it in the cloud where it belongs, across as many layers of caching as possible.
 - Scale out and scale up, using serverless options whenever possible.
-- Embrace the data lake, and use your laptop for what it was designed: a user interface.
+- Embrace the data lake, and use your laptop for what it was designed: a portable user interface.
 - Don't limit yourself to small datasets, large datasets are becoming more and more prevalent.
 - Don't limit yourself to a particular client, go clientless.
 - Do not give your data to a database vendor, demand to run your Cloud Data Engine on your Virtual Private Cloud.
