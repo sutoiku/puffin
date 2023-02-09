@@ -91,5 +91,5 @@ Hadoop-style Big Data is dead and should rest in peace. But datasets will keep g
 ## Conclusions
 - Data is heavy, so keep it in the cloud where it belongs, across as many layers of caching as possible.
 - Scale out and scale up, using serverless options whenever possible.
-- Embrace the data lake and use your laptop for what it was designed: a user interface.
+- Embrace the data lake, and use your laptop for what it was designed: a user interface.
 - Don't limit yourself to small datasets, large datasets are becoming more and more prevalent.
