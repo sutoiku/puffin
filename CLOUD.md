@@ -60,3 +60,22 @@ Third, contrary to what you might have been told, the cloud is a lot more reliab
 Fourth, if someone told you that your laptop is more secure than your cloud, you might want to exert some reasonable critical judgement. Considering the number of security experts constantly monitoring best in class cloud services like AWS or Azure, your laptop is at a much greater risk of being hacked than these cloud services. In 25 years of working with enterprise customers, I have only met one who had a different opinion: it was an oil and gas company, and their new oil field data was only accessible from dekstop computers, locked in a highly-secured room. But these were never connected to the Internet. And this type of security strategy probably involves less than 100,000 poor souls around the world. If you are part of the 99.998% remaining online population, you should consider the cloud as your data vault, and this is probably how your CISO sees it as well...
 
 DuckDB is growing on the client very rapidly, but it will spread across the cloud even faster.
+
+## Dataset Size
+Datasets come in all sizes, Here is how we like to think about them:
+
+| Code | Size | Size Range | Interactivity | Mult. Func. | Cloud | Basic Part. | Container | Adv. Part. | Cluster |
+| :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| **XS** | 1 MB | 0-10 MB | ✅ | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; |
+| **S** | 100 MB | 10 MB - 1 GB | ✅ | ✅ | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; |
+| **M** | 10 GB | 1 GB - 100 GB | ✅ | ✅ | ✅ | ✅ | ✅ | &nbsp; | &nbsp; |
+| **L** | 1 TB | 100 GB - 10 TB | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | &nbsp; |
+| **XL** | 100 TB | 10 TB - 1 PB | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+
+- **Interactivity**: Simple queries complete within 2 seconds or less.
+- **Multiple Functions**: Requires multiple serverless functions for initial scan.
+- **Cloud**: Requires cloud-side processing.
+- **Basic Partitions**: Datasets must be partitioned.
+- **Advanced Partitions**: Partitions must be defined from actual table columns.
+- **Container**: Requires the use of at least one conatiner.
+- **Cluster**: Requires the use of a cluster of containers.
