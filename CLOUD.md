@@ -88,6 +88,15 @@ Second, climate risk is slowly but surely affecting all of us, forcing organizat
 
 Hadoop-style Big Data is dead and should rest in peace. But datasets will keep getting larger and larger, whether we like it or not.
 
+## Virtual Private Cloud
+When Amazon launched Amazon Web Services back in 2006, [Virtual Private Clouds](https://aws.amazon.com/vpc/) (VPC) were not available (released in 2009), and neither were provisioning tools like [CloudFormation](https://aws.amazon.com/cloudformation/) (released in 2011). But in 2023, they work really well, and there is no reason for anyone to cede control of their data to a database vendor. Deploying your Cloud Data Engine on your VPC brings the following benefits:
+
+- Lower cost (when going serverless)
+- Higher security and stronger confidentiality (one less actor to trust)
+- More elasticity (no reliance on a single vendor operating on top of the cloud infrastructure)
+- More regional options (deploy on any region supported by your cloud provider)
+- More control (customize the provisioning templates to better suit your specific requirements)
+
 ## Conclusions
 - Data is heavy, so keep it in the cloud where it belongs, across as many layers of caching as possible.
 - Scale out and scale up, using serverless options whenever possible.
