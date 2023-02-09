@@ -61,6 +61,9 @@ Fourth, if someone told you that your laptop is more secure than your cloud, you
 
 DuckDB is growing on the client very rapidly, but it will spread across the cloud even faster.
 
+## Clientless Architecture
+The beauty of [DuckDB](https://duckdb.org/) is that you will soon find it on every client, embedded within all kinds of applications, from [Jupyter](https://jupyter.org/) and [Posit](https://posit.co/) to [Tableau](https://www.tableau.com/) and [Excel](https://www.microsoft.com/en-us/microsoft-365/excel). Therefore, make sure to select a Cloud Data Engine that is designed to be [clientless](docs/Clientless.md), in the sense that it works with any client embedding DuckDB, through a simple extension installed from the SQL API. And resist the temptation of using a client that comes with your Cloud Data Engine. Instead, work with your client application's vendor to improve its integration with your Cloud Data Engine.
+
 ## Dataset Size
 Datasets come in all sizes. Here is how we like to think about them:
 
@@ -88,9 +91,6 @@ Second, climate risk is slowly but surely affecting all of us, forcing organizat
 
 Hadoop-style Big Data is dead and should rest in peace. But datasets will keep getting larger and larger, whether we like it or not.
 
-## Clientless Architecture
-The beauty of [DuckDB](https://duckdb.org/) is that you will soon find it on every client, embedded within all kinds of applications, from [Jupyter](https://jupyter.org/) and [Posit](https://posit.co/) to [Tableau](https://www.tableau.com/) and [Excel](https://www.microsoft.com/en-us/microsoft-365/excel). Therefore, make sure to select a Cloud Data Engine that is designed to be [clientless](docs/Clientless.md), in the sense that it works with any client embedding DuckDB, through a simple extension installed from the SQL API. And resist the temptation of using a client that comes with your Cloud Data Engine. Instead, work with your client application's vendor to improve its integration with your Cloud Data Engine.
-
 ## Virtual Private Cloud
 When Amazon launched Amazon Web Services back in 2006, [Virtual Private Clouds](https://aws.amazon.com/vpc/) (VPC) were not available (released in 2009), and neither were provisioning tools like [CloudFormation](https://aws.amazon.com/cloudformation/) (released in 2011). But in 2023, they work really well, and there is no reason for anyone to cede control of their data to any database vendor. Deploying your Cloud Data Engine on your VPC brings the following benefits:
 
@@ -106,6 +106,6 @@ When Amazon launched Amazon Web Services back in 2006, [Virtual Private Clouds](
 - Data is heavy, so keep it in the cloud where it belongs, across as many layers of caching as possible.
 - Scale out and scale up, using serverless options whenever possible.
 - Embrace the data lake, and use your laptop for what it was designed: a portable user interface.
-- Don't limit yourself to small datasets, large datasets are becoming more and more prevalent.
 - Don't limit yourself to a particular client, go clientless.
+- Don't limit yourself to small datasets, large datasets are becoming more and more prevalent.
 - Do not give your data to a database vendor, demand to run your Cloud Data Engine on your Virtual Private Cloud.
