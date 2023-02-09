@@ -1,6 +1,10 @@
 # PuffinDB 🐧
 Serverless data lake [HTAP](https://en.wikipedia.org/wiki/Hybrid_transactional/analytical_processing) engine powered by [Arrow](https://arrow.apache.org/) × [DuckDB](https://duckdb.org/) × [Iceberg](https://iceberg.apache.org/)
 
+PuffinDB is an initiative of STOIC (Sutoiku, Inc.), and not [DuckDB Labs](https://duckdblabs.com/) or the [DuckDB Foundation](https://duckdb.org/foundation/).
+
+DuckDB and the DuckDB logo are trademarks of the DuckDB Foundation.
+
 ## Introduction
 This is a proposal for an open source project [sponsored](SPONSORS.md) by [STOIC](https://stoic.com/). Its purpose is to make it easier to run [DuckDB](https://duckdb.org/) on serverless functions ([AWS Lambda](https://aws.amazon.com/lambda/), [Azure Function](https://learn.microsoft.com/en-us/azure/azure-functions/functions-overview), [Google Cloud Function](https://cloud.google.com/functions)) for executing read | write queries against objects managed by an Object Store ([Amazon S3](https://aws.amazon.com/s3/), [Azure Blob Storage](https://azure.microsoft.com/en-us/products/storage/blobs), [Google Cloud Storage](https://cloud.google.com/storage)) and tables managed by a Lakehouse ([Apache Iceberg](https://iceberg.apache.org/), [Apache Hudi](https://hudi.apache.org/), [Delta Lake](https://delta.io/)).
 
@@ -116,11 +120,6 @@ Most discussions about this project are currently taking place on the [@ghalimi]
 For a lower-frequency alternative, please follow [@PuffinDB](https://twitter.com/PuffinDB).
 
 ## Notes
-
-PuffinDB is an initiative of STOIC (Sutoiku, Inc.), and not [DuckDB Labs](https://duckdblabs.com/) or the [DuckDB Foundation](https://duckdb.org/foundation/).
-
-DuckDB and the DuckDB logo are trademarks of the DuckDB Foundation.
-
 PuffinDB should not be confused with the [Puffin file format](https://iceberg.apache.org/puffin-spec/).
 
 Ⓒ [Sutoiku, Inc.](https://stoic.com/)
