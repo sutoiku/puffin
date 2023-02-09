@@ -1,7 +1,7 @@
 # PuffinDB 🐧
 Serverless data lake [HTAP](https://en.wikipedia.org/wiki/Hybrid_transactional/analytical_processing) engine powered by [Arrow](https://arrow.apache.org/) × [DuckDB](https://duckdb.org/) × [Iceberg](https://iceberg.apache.org/)
 
-PuffinDB is an initiative of STOIC (Sutoiku, Inc.), and not [DuckDB Labs](https://duckdblabs.com/) or the [DuckDB Foundation](https://duckdb.org/foundation/).
+PuffinDB is an initiative of [STOIC](https://stoic.com/), and not [DuckDB Labs](https://duckdblabs.com/) or the [DuckDB Foundation](https://duckdb.org/foundation/).
 
 DuckDB and the DuckDB logo are trademarks of the DuckDB Foundation.
 
