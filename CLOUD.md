@@ -94,7 +94,7 @@ When Amazon launched Amazon Web Services back in 2006, [Virtual Private Clouds](
 - Lower cost (when going serverless)
 - Higher security and stronger confidentiality (one less actor to trust)
 - More elasticity (no reliance on a single vendor operating on top of the cloud infrastructure)
-- More regional options (deploy on any region supported by your cloud provider)
+- More regional options (deploy in any region supported by your cloud provider)
 - More control (customize the provisioning templates to better suit your specific requirements)
 
 ## Conclusions
