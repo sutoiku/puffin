@@ -3,7 +3,7 @@
 Data lives in the cloud and has weight. A **Cloud Data Engine** must work against the cloud's gravitational pull.
 
 ## Data Weight
-When thinking about data, one should not think in terms of small data or big data. This volumetric classification isn't really helpful anymore. Instead, one should think in terms of **weight** (`W`). Data has **mass** (the larger the dataset, the larger its mass `m`), and lives within a cloud that exerts a gravitational pull (weight) on it, with a fixed [gravitational constant](https://en.wikipedia.org/wiki/Gravitational_constant) `g`. The larger data gets, the stronger a gravitational pull is exerted on it by the cloud it resides in. According to Newton's second law of motion: `W = m·g`
+When thinking about data, one should not think in terms of small data or big data. This volumetric classification isn't really helpful anymore. Instead, one should think in terms of **weight** (`W`). Data has **mass** (the larger the dataset, the larger its mass `m`), and lives within a cloud that exerts a gravitational pull (weight) on it, with a fixed [gravitational constant](https://en.wikipedia.org/wiki/Gravitational_constant) `g`. The larger data gets, the stronger the gravitational pull. According to Newton's second law of motion: `W = m·g`
 
 Following this analogy, a cloud's gravitational constant is a factor of its internal bandwidth (how fast can you move data from an object store to a compute engine), its external bandwidth (how fast can you download data from the cloud to your client computer), and its egress cost (how much does it cost to do the latter). Of course, like any other analogy, ours is imperfect, but it should be helpful to illustrate certain important points that follow.
 
