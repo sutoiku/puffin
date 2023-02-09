@@ -29,3 +29,5 @@ From the hotel room where I am writing this article, I enjoy (suffer from) a ban
 
 ## Data Caching
 As a result, since we cannot bring compute to data (until object stores get [upgraded](docs/Future-Proofing.md) with a full SQL engine like [DuckDB](https://duckdb.org/)), we need to bring data to compute, but we need to do so at the lowest possible cost. This is called **caching**, and it is the most important feature of any distributed database engine. Now, when we write about **cost**, we mean two things: first, money; second, latency, because time is money. Said another way, I want to query (or update) this dataset as quickly as possible, for as little money as possible.
+
+As explained earlier, data at rest lives in the object store, therefore will have to be moved from there to some compute engine. We could use a traditional container for that (*e.g.* [EC2 instance](https://aws.amazon.com/ec2/)).
