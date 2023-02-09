@@ -28,4 +28,4 @@ If we assume our Paris-Tokyo flight to cost $1,000 and our payload (passenger an
 From the hotel room where I am writing this article, I enjoy (suffer from) a bandwidth of just over 60 Mbps. As a point of comparison, a [`p4d.24xlarge`](https://aws.amazon.com/ec2/instance-types/p4/) instance gives me 400 Gbps of bandwith, which is 6,667 times greater. And the 3,000 Lambda functions that I can provision within a second or less give me an aggregated bandwidth from S3 of 2.4 Tbps, or 40,000 times greater. Therefore, if going to Mars is 20,000 times more expensive than flying from Paris to Tokyo, downloading a dataset to your laptop is indeed akin to going to Mars...
 
 ## Data Caching
-As a result, since we cannot bring compute to data (until cloud providers decide to run a full SQL engine like [DuckDB](https://duckdb.org/) directly within the object store)
+As a result, since we cannot bring compute to data (until object stores get [upgraded](docs/Future%20Proofing.md) with a full SQL engine like [DuckDB](https://duckdb.org/))
