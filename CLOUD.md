@@ -12,3 +12,6 @@ W = m·g
 ```
 
 Following this analogy, a cloud's gravitational constant `g` is a factor of internal bandwidth (how fast can you move data from S3 to EC2), external bandwidth (how fast can you download data from the cloud to your client computer), and data egress cost (how much does it cost to do the latter). This is an imperfect analogy of course, but it should be helpful to illustrate certain important points.
+
+## Data at Rest
+At rest, data lives in a Data Lake ([Apache Iceberg](https://iceberg.apache.org/), [Apache Hudi](https://hudi.apache.org/), [Delta Lake](https://delta.io/)), backed by an Object Store ([Amazon S3](https://aws.amazon.com/s3/), [Azure Blob Storage](https://azure.microsoft.com/en-us/products/storage/blobs), [Google Cloud Storage](https://cloud.google.com/storage)). According to our analogy, it is laying still on Earth's surface, wasting very little energy to do so (object stores are dirt cheap).
