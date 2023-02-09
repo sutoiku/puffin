@@ -42,3 +42,5 @@ Then, you will realize that caching data on the monostore could be done at four 
 4. Uncompressed in GPU memory (if you are lucky enough to use a GPU-accelerated monostore like the [`p4de.24xlarge`](https://aws.amazon.com/ec2/instance-types/p4/))
 
 After that, you might consider caching closer to their users small to medium datasets (*Cf.* [Dataset Sizes](https://github.com/stoic-doc/Community/discussions/905)) that are used very frequently, using a [Content Delivery Network](https://en.wikipedia.org/wiki/Content_delivery_network) (CDN) and some edge serverless functions for querying. And only when you have exhausted all these options should you consider caching datasets all the way to the client. Welcome to Mars!
+
+This incremental caching of data closer and closer to the client and the distribution of queries across these layers of caching is called **scale up**.
