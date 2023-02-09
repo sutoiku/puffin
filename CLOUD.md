@@ -87,3 +87,9 @@ First, the explosion of Artificial Intelligence is fueling the need for larger a
 Second, climate risk is slowly but surely affecting all of us, forcing organizations to implement more and more complex climate risk management strategies. This is especially true for banks and insurance companies, but anyone involved in planning and forecasting will need to up their game, for a simple reason: while climate disasters fueled by climate change tend to have a direct yet short-lived impact, indirect supply-chain disruptions have long-lasting effects. For example, regional conflicts are more and more attributable to the impact of climate change, and these can have consequences lasting decades. Organizations of all sizes and operating across virtually every industry will need to develop more and more sophisticated models planning and remediating such disruptive events.
 
 Hadoop-style Big Data is dead and should rest in peace. But datasets will keep getting larger and larger, whether we like it or not.
+
+## Conclusions
+- Data is heavy, so keep it in the cloud where it belongs, across as many layers of caching as possible.
+- Scale out and scale up, using serverless options whenever possible.
+- Embrace the data lake and use your laptop for what it was designed: a user interface.
+- Don't limit yourself to small datasets, large datasets are becoming more and more prevalent.
