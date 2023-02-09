@@ -93,3 +93,4 @@ Hadoop-style Big Data is dead and should rest in peace. But datasets will keep g
 - Scale out and scale up, using serverless options whenever possible.
 - Embrace the data lake, and use your laptop for what it was designed: a user interface.
 - Don't limit yourself to small datasets, large datasets are becoming more and more prevalent.
+- Do not give your data to a database vendor, demand to run the Cloud Data Engine on your Virtual Private Cloud.
