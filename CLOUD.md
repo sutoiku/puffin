@@ -34,7 +34,7 @@ From there, we will soon realize that scaling out queries across multiple comput
 
 Unfortunately, it only comes with 100 Gbps of network bandwidth (4 to 8 times more would be more appropriate), which means that filling its RAM with data would take at least 1,920 seconds (32 minutes). Even if you load data compressed at a 5× factor and cache it uncompressed in memory, you will need to wait 384 seconds (over 6 minutes) for the full dataset to be downloaded. And when you do so, you will want to scale out data downloads from the object store to the monostore by using a fleet of serverless functions in between, especially if data can be filtered at the source (*i.e.* **filter pushdown**).
 
-Then, you will realize that caching data on the monostore could be done at four different levels:
+Then, you will realize that caching data on the monostore could be done across four different levels:
 
 1. Compressed on local solid state drives ([NVMe](https://en.wikipedia.org/wiki/NVM_Express) ideally)
 2. Compressed in CPU memory
