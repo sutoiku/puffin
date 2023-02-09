@@ -43,4 +43,7 @@ Then, you will realize that caching data on the monostore could be done at four 
 
 After that, you might consider caching closer to their users small to medium datasets (*Cf.* [Dataset Sizes](https://github.com/stoic-doc/Community/discussions/905)) that are used very frequently, using a [Content Delivery Network](https://en.wikipedia.org/wiki/Content_delivery_network) (CDN) and some edge serverless functions for querying. And only when you have exhausted all these options should you consider caching datasets all the way to the client. Welcome to Mars!
 
-This incremental caching of data closer and closer to the client and the distribution of queries across these layers of caching is called **scale up**.
+This incremental caching of data closer and closer to the client and the distribution of queries across layers of caching is called **scale up**.
+
+## Scale Out and Scale Up
+In order to take advantage of these complementary **scale out** and **scale up** strategies, the [distributed query engine](docs/Query%20Engine.md) will need a powerful [distributed query planner](docs/Query%20Planner.md).
