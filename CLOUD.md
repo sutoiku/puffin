@@ -2,6 +2,15 @@
 
 Data lives in the cloud and has weight. A **Cloud Data Engine** must work against the cloud's gravitational pull, gently.
 
+In this article, we will attempt to answer the following questions:
+
+- Why should we cache data across multiple layers in the cloud?
+- Why should we use both scale out and scale up with serverless containers and functions?
+- Why should we embrace the data lake paradigm and not use laptops as an alternative?
+- Why should we go clientless?
+- Why should we not ignore large datasets?
+- Why should we run our Cloud Data Engine on our own Virtual Private Cloud?
+
 ## Data Weight
 When thinking about data, one should not think in terms of small data or big data. This volumetric classification isn't really helpful anymore. Instead, one should think in terms of **weight** (`W`). Data has **mass** (the larger the dataset, the larger its mass `m`), and lives within a cloud that exerts a gravitational pull (weight) on it, with a fixed [gravitational constant](https://en.wikipedia.org/wiki/Gravitational_constant) `g`. The larger data gets, the stronger the gravitational pull. According to Newton's second law of motion: `W = m·g`
 
