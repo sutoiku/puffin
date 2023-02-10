@@ -4,7 +4,7 @@ Data lives in the cloud and has weight. A **Cloud Data Engine** must work agains
 
 In this article, we will attempt to answer the following questions:
 
-- Why should we cache data across multiple layers in the cloud?
+- Why should we cache data across multiple cloud layers?
 - Why should we use both scale out and scale up with serverless containers and functions?
 - Why should we embrace the data lake paradigm and not use laptops as an alternative?
 - Why should we go clientless?
