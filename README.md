@@ -122,4 +122,6 @@ For a lower-frequency alternative, please follow [@PuffinDB](https://twitter.com
 ## Notes
 PuffinDB should not be confused with the [Puffin file format](https://iceberg.apache.org/puffin-spec/).
 
+Be stoic, be kind, be cool. Like a puffin...
+
 Ⓒ [Sutoiku, Inc.](https://stoic.com/)
