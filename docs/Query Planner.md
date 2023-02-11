@@ -26,7 +26,7 @@ The following techniques are being considered:
 - Piggybacking of [DuckDB](https://duckdb.org/)'s optimizer with simulated cost metrics for outlining logical distributed query plan
 - Implementation of [multirelational algebra](https://dl.acm.org/doi/pdf/10.1145/319996.320009)
 - Domain Specific Language (DSL) for [rule-based query optimization](https://www.querifylabs.com/blog/rule-based-query-optimization)
-- Automatic generation of rules using [WeTune](https://dl.acm.org/doi/10.1145/3514221.3526125)
+- Automatic generation of optimizer rules using [WeTune](https://dl.acm.org/doi/10.1145/3514221.3526125)
 - Dynamic injection of optimizer rules through standard SQL API
 - Memoization for [cost-based optimization](https://www.querifylabs.com/blog/memoization-in-cost-based-optimizers)
 - Parallelization of query planning across multiple serverless functions
