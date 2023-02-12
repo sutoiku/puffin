@@ -18,12 +18,21 @@ For most deployments, a Monostore is instantiated for a particular team (group o
 The minimum size of a Monostore should be set above the uncompressed size of the datasets that must be cached on it, with a 20% to 50% extra capacity for headroom. Using a larger monostore will accelerate most queries, but will increase costs. If budgets are limited, its size can be reduced to the size of compressed datasets, but this will slow queries down by a factor of 2 to 5.
 
 ## How large a Monostore can I get?
-When using [Amazon Web Services](), the [`u-24tb1.112xlarge`](https://aws.amazon.com/ec2/instance-types/high-memory/) instances will offer: 
+When using [Amazon Web Services](https://aws.amazon.com/), the [`u-24tb1.112xlarge`](https://aws.amazon.com/ec2/instance-types/high-memory/) instances will offer: 
 - 448 vCPUs
-- 24 TB of RAM
+- 24 TiB of RAM
 - 100 Gbps of network bandwidth
-- $218.40/hour (on-demand) — $9.1/TB·hour
+- $218.40/hour (on-demand) — $9.1/TiB·hour
 
 This is sufficient for reduced datasets of 20 TB in size compressed, or 100 TB to 200 TB in size uncompressed.
 
 A **reduced dataset** is a dataset produced by reducing the results of partial queries produced by a fleet of serverless functions.
+
+## What is the most efficient instance for a Monostore?
+If your dataset is 1 TB or smaller, the most efficient instance available on [Amazon Web Services](https://aws.amazon.com/) is the [`p4de.24xlarge`](https://aws.amazon.com/ec2/instance-types/p4/):
+- 96 vCPUs
+- 1,152 GiB of RAM
+- 8 × NVIDIA A100 GPUs
+- 640 GB of HBM2e GPU RAM
+- 400 Gbps ENA and EFA network bandwidth
+- $40.96/hour (on-demand) — $36.40/TiB·hour
