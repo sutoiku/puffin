@@ -24,7 +24,7 @@ When using [Amazon Web Services](https://aws.amazon.com/), the [`u-24tb1.112xlar
 - 448 vCPUs
 - 24 TiB of RAM
 - 100 Gbps of network bandwidth
-- 1,689 seconds (28 minutes) to fill 80% of RAM with data uncompressed
+- 169 seconds (less than 3 minutes) to fill 80% of RAM with data uncompressed
 - $218.40/hour (on-demand) — $9.1/TiB·hour
 
 This is sufficient for reduced datasets of 20 TB in size compressed, or 100 TB to 200 TB in size uncompressed.
@@ -39,5 +39,5 @@ If your dataset is 1 TB or smaller, the most powerful instance available on [Ama
 - 8 × NVIDIA A100 GPUs
 - 640 GB of HBM2e GPU RAM
 - 400 Gbps ENA and EFA network bandwidth
-- 20 seconds to fill 80% of RAM with data uncompressed
+- 2 seconds to fill 80% of RAM with data uncompressed
 - $40.96/hour (on-demand) — $36.40/TiB·hour
