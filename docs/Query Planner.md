@@ -60,6 +60,9 @@ Therefore, the distributed query planner will need to answer three main question
 - How should the query be distributed across [computing and caching tiers](Query%20Engine.md#physical-deployment)?
 - How should data be cached next to accelerate subsequent queries?
 
+## Partitioning *vs* Sharding
+Large tables managed by the Data Lake (*e.g.* [Apache Iceberg](https://iceberg.apache.org/) are partitioned across multiple objects on the Object Store (*e.g.* [Amazon S3](https://aws.amazon.com/s3/)). While serverless functions scan tables directly from the Object Store, the resulting data ends up being cached on the serverless functions, the Monostore, or the client. Therefore, it becomes critical to properly shard large tables across serverless functions, be they used in a stateful (with caching) or stateless (without caching) manner.
+
 ## Query Plan Lifecycle
 1. Query translated from non-SQL dialect (*e.g.* [Malloy](https://github.com/malloydata/malloy/tree/main/packages/malloy), [PRQL](https://prql-lang.org/)) to SQL
 2. Abstract syntax tree, relational tree, and logical query plan produced by [DuckDB](https://duckdb.org/)
