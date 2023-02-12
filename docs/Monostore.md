@@ -13,3 +13,6 @@ The Monostore serves multiple critical functions:
 
 ## What is the lifecycle of a Monostore?
 For most deployments, a Monostore is instantiated for a particular team (group of users), just before the start of the business day, and is shut down soon after its end. It is sized according to the team's planned needs for the day, based on historical usage patterns and occasional changes in business activity (up or down). This daily provisioning plays a criticol role in maximizing the value derived from limited cloud infrastructure budgets.
+
+## How should a Monostore be sized?
+The minimum size of a Monostore should be set above the uncompressed size of the datasets that must be cached on it, with a 25% to 50% extra capacity for headroom. Using a larger monostore will accelerate most queries, but will increase costs. If budgets are limited, its size can be reduced to the size of compressed datasets, but this will slow queries down by a factor of 2 to 5.
