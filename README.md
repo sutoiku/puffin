@@ -82,7 +82,7 @@ PuffinDB will support four [complementary deployment options](FAQ.md#why-support
 - **Minimalist architecture** — less dependencies is better
 - **Lowest latency** — every millisecond counts
 - **Elastic design** — from kilobytes to petabytes
-- **Less is goodness** — [serverless](docs/Architecture.md) &amp; [clientless](docs/Clientless.md)
+- **Less is goodness** — [clientless](docs/Clientless.md) &amp; [serverless](docs/Architecture.md) 
 
 ## FAQ
 Please check our [Frequently Asked Questions](FAQ.md).
