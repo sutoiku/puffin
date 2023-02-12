@@ -1,6 +1,6 @@
 # Query Planner
 
-Cross-platform distributed SQL planner powered by [DuckDB](https://duckdb.org/)
+Cross-platform distributed SQL planner powered for [Cloud Data](../DLOUD.md) by [DuckDB](https://duckdb.org/)
 
 ## Problem
 Multiple options have been considered for implementing the distributed query planner, including [Apache Calcite](https://calcite.apache.org/) and [DataFusion](https://github.com/apache/arrow-datafusion) (*Cf.* [#7](https://github.com/sutoiku/puffin/issues/7)). Apache Calcite has a very rich API and an unparalleled track record, but requires a JVM, which would make integration very challenging. DataFusion has been used successfully for projects like [`dask-sql`](https://github.com/dask-contrib/dask-sql), but would require migrating from [Node.js](https://nodejs.org/en/) to [Rust](https://www.rust-lang.org/), as well as integrating a secondary query engine, which would dramatically increase the footprint of our [Engine](../functions/engine/README.md) serverless function.
