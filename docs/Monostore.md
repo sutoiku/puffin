@@ -8,7 +8,7 @@ A Monostore is a single server-based container (*e.g.* [EC2](https://aws.amazon.
 The Monostore serves multiple critical functions:
 
 - Reducing the results of partial queries executed on fleets of serverless functions.
-- Executing parts of queries that cannot be distributed efficiently.
+- Executing parts of queries that cannot be distributed efficiently (*Cf.* [distributed query planner](docs/Query%20Planner.md)).
 - Offering a large directly-addressable in-memory cache for operations like sorting or shuffling.
 
 ## What is the lifecycle of a Monostore?
