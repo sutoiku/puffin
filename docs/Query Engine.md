@@ -36,7 +36,7 @@ This physical deployment model brings the following benefits:
 - Lowest latency thanks to multi-layer reactive caching
 
 ## Reactive Caching
-Data stored on the lake (([Apache Iceberg](https://iceberg.apache.org/), [Apache Hudi](https://hudi.apache.org/), [Delta Lake](https://delta.io/))) is automatically cached across the following layers:
+Data stored on the lake ([Apache Iceberg](https://iceberg.apache.org/), [Apache Hudi](https://hudi.apache.org/), [Delta Lake](https://delta.io/)) is automatically cached across the following layers:
 - Serverless functions
 - Monostore Solid State Drive (compressed or uncompressed)
 - Monostore CPU RAM (compressed or uncompressed)
