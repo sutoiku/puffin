@@ -47,6 +47,8 @@ The following techniques are being considered:
 8. Physical distributed query plan produced by assigning operations to serverless functions and containers
 9. Physical distributed query plan executed by [distributed query engine](Query%20Engine.md)
 
+**Note**: #4 can be executed in parallel with #5 and #6. #4 and #7 might be executed in parallel across many serverless functions.
+
 ## Credits
 
 Many thanks to [Jacques Nadeau](https://github.com/jacques-n) and [Andy Grove](https://github.com/andygrove) for their [help](https://github.com/sutoiku/puffin/issues/7) in giving us a better understanding of [Substrait](https://substrait.io/)'s awesome goodness.
