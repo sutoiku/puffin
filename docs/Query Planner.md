@@ -72,7 +72,7 @@ For performance reasons, three types of sharded tables must be supported:
 **Note**: implementing the last two sharding techniques can be avoided if multi-table datasets are statically denormalized in the Data Lake.
 
 ## Cost-Based Optimizer
-The distributed query planner will include a cost-based optimizer responsible for deciding which plan will deliver the best performance for a given query. Among other things, this cost-based optimizer will decide whether an existing sharding is sufficient for a given query, or whether tables involved in the query should be shared another way. Mature cost-based optimizers are currently under review.
+The distributed query planner will include a cost-based optimizer responsible for deciding which plan will deliver the best performance for a given query. Among other things, this cost-based optimizer will decide whether an existing sharding is sufficient for a given query, or whether tables involved in the query should be sharded another way. Mature cost-based optimizers are currently under review.
 
 ## Query Plan Lifecycle
 1. Query translated from non-SQL dialect (*e.g.* [Malloy](https://github.com/malloydata/malloy/tree/main/packages/malloy), [PRQL](https://prql-lang.org/)) to SQL
