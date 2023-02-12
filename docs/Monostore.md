@@ -12,4 +12,4 @@ The Monostore serves multiple critical functions:
 - Offering a large directly-addressable in-memory cache for operations like sorting or shuffling.
 
 ## What is the lifecycle of a Monostore?
-For most deployments, a Monostore is instantiated for a particular team (group of users), just before the start of the business day, and is shut down soon after its end. It is sized according to the team's planned needs for the day, based on historical usage patterns and occasional changes in business activity (up or down). This daily provisioning helps maximize the value derived from limited cloud infrastructure budgets.
+For most deployments, a Monostore is instantiated for a particular team (group of users), just before the start of the business day, and is shut down soon after its end. It is sized according to the team's planned needs for the day, based on historical usage patterns and occasional changes in business activity (up or down). This daily provisioning plays a criticol role in maximizing the value derived from limited cloud infrastructure budgets.
