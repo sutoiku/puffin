@@ -45,7 +45,7 @@ Because PuffinDB's [distributed query engine](Query%20Engine.md) will be deploye
 We fundamentally believe that first-order logic is the best approach, for several reasons:
 - It is cost-effective, fast, and sustainable (unlike manual curation)
 - It is efficient (unlike deep learning)
-- It leverages the fact that SQL is based on solid mathematical foundations (the [relational algebra](https://en.wikipedia.org/wiki/Relational_algebra))
+- It leverages the fact that SQL is based on solid mathematical foundations ([relational algebra](https://en.wikipedia.org/wiki/Relational_algebra))
 
 Therefore, PuffinDB's distributed query planner will do as much as possible with FOL, then add manually-curated rules for specific cases.
 
