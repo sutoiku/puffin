@@ -50,7 +50,7 @@ We fundamentally believe that first-order logic is the best approach, for severa
 Therefore, PuffinDB's distributed query planner will do as much as possible with FOL, then add manually-curated rules for specific cases.
 
 ## Serverless Architecture
-PuffinDB's [distributed query engine](Query%20Engine.md) is mostly serverless (with the exception of the Monostore, for good reasons) and will be deployed on up to tens of thousands of serverless functions (*e.g.* [AWS Lambda](https://aws.amazon.com/lambda/)), with [reactive caching](Query%20Engine.md#reactive-caching). This demands a radical rethinking of distributed SQL query planning, for several reasons:
+PuffinDB's [distributed query engine](Query%20Engine.md) is mostly serverless (with the exception of the Monostore, for good reasons) and will be deployed across tens of thousands or even hundreds of thousands of serverless functions (*e.g.* [AWS Lambda](https://aws.amazon.com/lambda/)), with [reactive caching](Query%20Engine.md#reactive-caching). This demands a radical rethinking of distributed SQL query planning, for several reasons:
 
 ## Query Plan Lifecycle
 1. Query translated from non-SQL dialect (*e.g.* [Malloy](https://github.com/malloydata/malloy/tree/main/packages/malloy), [PRQL](https://prql-lang.org/)) to SQL
