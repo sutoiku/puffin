@@ -36,6 +36,17 @@ The following techniques are being considered:
 - Parallelization of [metadata](https://www.querifylabs.com/blog/metadata-management-in-apache-calcite) lookups through concurrent invocations of the query engine
 - Dynamic cascading replanning at the edges
 
+## Philosophy
+Because PuffinDB's [distributed query engine](Query%20Engine.md) will be deployed across [multiple tiers](Query%20Engine.md#Deployment%20Model) and might run across tens of thousands of serverless functions with [reactive caching](Query%20Engine.md#Reactive%20Caching), its query planner is likely to become the most advanced one ever developed. Such a complex piece of software can be developed in three main ways:
+- Manufally curating hundreds of query optimizer rules
+- Using deep learning to automate the generation of query optimizer rules
+- Using first-order logic to automate the generation of query optimizer rules (*à la* [WeTune](https://ipads.se.sjtu.edu.cn/_media/publications/wetune_final.pdf))
+
+We fundamentally believe that first-order logic is the best approach, for several reasons:
+- It is cost-effective, fast, and sustainable (unlike manual curation)
+- It is efficient (unlike deep learning)
+- It leverages the fact that SQL is based on solid mathematical foundations (the [relational algebra](https://en.wikipedia.org/wiki/Relational_algebra))
+
 ## Query Plan Lifecycle
 1. Query translated from non-SQL dialect (*e.g.* [Malloy](https://github.com/malloydata/malloy/tree/main/packages/malloy), [PRQL](https://prql-lang.org/)) to SQL
 2. Abstract syntax tree, relational tree, and logical query plan produced by [DuckDB](https://duckdb.org/)
