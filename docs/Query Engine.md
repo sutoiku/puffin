@@ -25,7 +25,7 @@ In future releases, support for an auto-scaling cluster of serverless containers
 
 The execution model defined by the [distributed query planner](Query%20Planner.md) is pretty straightforward:
 1. Pushdown as much of the SQL query as possible onto the serverless functions (and cache data there by making them stateful)
-2. Pullup and cache as much data as possible on the Monostore and Client
+2. Pullup and cache as much data as possible on the Monostore and Client (through reactive caching)
 3. Execute as much of the SQL query as possible on cached data
 
 The Monostore is a single-host cloud-side container (server or serverless) used to execute parts of SQL queries that we cannot distribute efficiently across fleets of serverless functions or clusters of serverless containers. It is statically sized based on historical usage patterns. Best-in-class cloud providers like [Amazon Web Services](https://aws.amazon.com/) can offer very large Monostores on demand. For example, the [`u-24tb1.112xlarge`](https://aws.amazon.com/ec2/instance-types/high-memory/) instance comes with 448 vCPUs and 24 TB of RAM.
