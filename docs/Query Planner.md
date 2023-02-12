@@ -36,7 +36,7 @@ The following techniques are being considered:
 - Parallelization of [metadata](https://www.querifylabs.com/blog/metadata-management-in-apache-calcite) lookups through concurrent invocations of the query engine
 - Dynamic cascading replanning at the edges
 
-## Philosophy
+## Strategy
 Because PuffinDB's [distributed query engine](Query%20Engine.md) will be deployed across [multiple tiers](Query%20Engine.md#physical-deployment) and might run across tens of thousands of serverless functions with [reactive caching](Query%20Engine.md#reactive-caching), its query planner will be quite advanced. There are three main ways to approach that challenge:
 - Manufally curating hundreds of query optimizer rules
 - Using deep learning to automate the generation of query optimizer rules
