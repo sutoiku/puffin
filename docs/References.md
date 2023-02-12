@@ -10,6 +10,7 @@ The following reading materials provide a solid introduction to SQL databases:
 - [MonetDB/X100: Hyper-Pipelining Query Execution](https://www.researchgate.net/publication/45338800_MonetDBX100_Hyper-Pipelining_Query_Execution) — Peter Boncz, Marcin Zukowski, Niels Nes · 2005
 - [Morsel-Driven Parallelism: A NUMA-Aware Query Evaluation Framework for the Many-Core Age](https://dl.acm.org/doi/pdf/10.1145/2588555.2610507) — Viktor Leis, Peter Boncz, *et al.* · 2014
 - [How Good Are Query Optimizers, Really?](https://15721.courses.cs.cmu.edu/spring2020/papers/22-costmodels/p204-leis.pdf) — Viktor Leis, Andrey Gubichev, *et al.* · 2015
+- [Axiomatic Foundations and Algorithms for Deciding Semantic Equivalences of SQL Queries](https://www.vldb.org/pvldb/vol11/p1482-chu.pdf) — Shumo Chu, Brendan Murph, *et al.* · 2018
 - [Push-Based Execution in DuckDB](https://www.youtube.com/watch?v=MA0OsvYFGrc) — Mark Raasveldt · 2021
 - [Citus: Distributed PostgreSQL for Data-Intensive Applications](https://dl.acm.org/doi/pdf/10.1145/3448016.3457551) — Umur Cubukcu, Ozgun Erdogan, *et al.* · 2021
 - [Querying Parquet with Precision using DuckDB](https://duckdb.org/2021/06/25/querying-parquet.html) — Hannes Mühleisen, Mark Raasveldt · 2021
