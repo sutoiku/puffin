@@ -20,7 +20,7 @@ The minimum size of a Monostore should be set above the uncompressed size of the
 In addition, a Monostore should be sized in such a way that it can hold an entire column of the tallest table that needs to be analyzed, alongside a column of pointers. For columns encoded on 64 bits, this means 128 bits (16 Bytes) per row. For example, if your tallest table has 100 billion rows, you will want a Monostore with at least 1.92 TB of RAM (1.6 TB + 20%). This will make it possible to compute most univariate statistics on all columns of your table, including exact quantiles that require full sorting.
 
 ## How small a Monostore can I get?
-There really is no floor for a Monostore, but a good starting point on [Amazon Web Services](https://aws.amazon.com/) is the [`r5n.large`](https://aws.amazon.com/ec2/instance-types/r5/):
+A good starting point on [Amazon Web Services](https://aws.amazon.com/) is the [`r5n.large`](https://aws.amazon.com/ec2/instance-types/r5/):
 - 2 vCPUs
 - 16 GiB of RAM
 - Up to 25 Gbps of network bandwidth
