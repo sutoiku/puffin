@@ -26,18 +26,15 @@ The following techniques are being considered:
 - Piggybacking of [DuckDB](https://duckdb.org/)'s optimizer with simulated cost metrics for outlining logical query plan
 - Implementation of [multirelational algebra](https://dl.acm.org/doi/pdf/10.1145/319996.320009)
 - Domain Specific Language (DSL) for [rule-based query optimization](https://www.querifylabs.com/blog/rule-based-query-optimization)
+- Rule scripting powered by [TypeScript](https://www.typescriptlang.org/) for dynamic rule injection and client-side + cloud-side execution
+- Initial set of optimizer rules bootstrapped by porting [Trinio's rules](https://github.com/trinodb/trino/tree/master/core/trino-main/src/main/java/io/trino/sql/planner/iterative/rule) from Java to DSL
 - Automatic generation of optimizer rules using [WeTune](https://dl.acm.org/doi/10.1145/3514221.3526125)
 - Dynamic injection of optimizer rules through standard SQL API
+- Rule interpreter implemented in [Rust](https://www.rust-lang.org/)
 - Memoization for [cost-based optimization](https://www.querifylabs.com/blog/memoization-in-cost-based-optimizers)
 - Parallelization of query planning across multiple serverless functions
 - Parallelization of [metadata](https://www.querifylabs.com/blog/metadata-management-in-apache-calcite) lookups through concurrent invocations of the query engine
 - Dynamic cascading replanning at the edges
-
-## Optimizer
-- Optimizer rules written with a [YAML](https://yaml.org/) Domain Specific Language (DSL) similar to the one developed for [CockroachDB](https://www.cockroachlabs.com/blog/building-cost-based-sql-optimizer/)
-- Rule scripting powered by [TypeScript](https://www.typescriptlang.org/) for dynamic rule injection and client-side + cloud-side execution
-- Initial set of optimizer rules bootstrapped by porting [Trinio's rules](https://github.com/trinodb/trino/tree/master/core/trino-main/src/main/java/io/trino/sql/planner/iterative/rule) from Java to DSL
-- Rule interpreter implemented in [Rust](https://www.rust-lang.org/)
 
 ## Engine
 The distributed query planner will be used by the [distributed query engine](Query%20Engine.md).
