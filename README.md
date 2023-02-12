@@ -49,8 +49,8 @@ DuckDB and the DuckDB logo are trademarks of the DuckDB Foundation.
 - Read queries executed by [DuckDB](https://duckdb.org/) (on [AWS Lambda](https://aws.amazon.com/lambda/))
 - Write queries against Object Store objects executed by [DuckDB](https://duckdb.org/)
 - Write queries against Lakehouse tables executed by [Amazon Athena](https://aws.amazon.com/athena/)
-- Built-in [PRQL](https://prql-lang.org/) to SQL translator
 - Built-in [Malloy](https://github.com/malloydata/malloy/tree/main/packages/malloy) to SQL translator
+- Built-in [PRQL](https://prql-lang.org/) to SQL translator
 - Built-in SQL dialect converter
 - Built-in SQL parser | stringifier
 - Sub-500ms table scanning API (fetch table partitions from filter predicates) running on standalone function
