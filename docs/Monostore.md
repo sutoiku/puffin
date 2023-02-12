@@ -24,6 +24,7 @@ When using [Amazon Web Services](https://aws.amazon.com/), the [`u-24tb1.112xlar
 - 448 vCPUs
 - 24 TiB of RAM
 - 100 Gbps of network bandwidth
+- 1,689 seconds (28 minutes) to fill 80% of RAM with data uncompressed
 - $218.40/hour (on-demand) — $9.1/TiB·hour
 
 This is sufficient for reduced datasets of 20 TB in size compressed, or 100 TB to 200 TB in size uncompressed.
@@ -34,8 +35,9 @@ A **reduced dataset** is a dataset produced by reducing the results of partial q
 If your dataset is 1 TB or smaller, the most powerful instance available on [Amazon Web Services](https://aws.amazon.com/) is the [`p4de.24xlarge`](https://aws.amazon.com/ec2/instance-types/p4/):
 - 96 vCPUs
 - 1,152 GiB of RAM
+- 8 × 1 TB NVMe SSD
 - 8 × NVIDIA A100 GPUs
 - 640 GB of HBM2e GPU RAM
 - 400 Gbps ENA and EFA network bandwidth
-- 8 × 1 TB NVMe SSD
+- 20 seconds to fill 80% of RAM with data uncompressed
 - $40.96/hour (on-demand) — $36.40/TiB·hour
