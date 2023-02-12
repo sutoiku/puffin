@@ -30,8 +30,8 @@ This is sufficient for reduced datasets of 20 TB in size compressed, or 100 TB t
 
 A **reduced dataset** is a dataset produced by reducing the results of partial queries produced by a fleet of serverless functions.
 
-## What is the most efficient instance for a Monostore?
-If your dataset is 1 TB or smaller, the most efficient instance available on [Amazon Web Services](https://aws.amazon.com/) is the [`p4de.24xlarge`](https://aws.amazon.com/ec2/instance-types/p4/):
+## What is the most powerful instance for a 1 TB Monostore?
+If your dataset is 1 TB or smaller, the most powerful instance available on [Amazon Web Services](https://aws.amazon.com/) is the [`p4de.24xlarge`](https://aws.amazon.com/ec2/instance-types/p4/):
 - 96 vCPUs
 - 1,152 GiB of RAM
 - 8 × NVIDIA A100 GPUs
