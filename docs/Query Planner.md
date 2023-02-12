@@ -53,7 +53,7 @@ Therefore, PuffinDB's distributed query planner will do as much as possible with
 PuffinDB's [distributed query engine](Query%20Engine.md) is mostly serverless (with the exception of the Monostore, for good reasons) and will be deployed across tens of thousands or even hundreds of thousands of serverless functions (*e.g.* [AWS Lambda](https://aws.amazon.com/lambda/)), with [reactive caching](Query%20Engine.md#reactive-caching). This demands a radical rethinking of distributed SQL query planning, for several reasons:
 - The number of compute nodes is very large (most query planners are optimized for tens or hundreds of compute nodes)
 - Compute nodes are heterogeneous (serverless functions, serverless containers, server-based containers, and web browsers)
-- The aggressive use of serverless functions mandates a clear delineation between static partitioning and dynamic sharding (across functions)
+- Serverless functions mandates a clear delineation between static partitioning (object store) and dynamic sharding (functions)
 
 ## Query Plan Lifecycle
 1. Query translated from non-SQL dialect (*e.g.* [Malloy](https://github.com/malloydata/malloy/tree/main/packages/malloy), [PRQL](https://prql-lang.org/)) to SQL
