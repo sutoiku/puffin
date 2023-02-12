@@ -24,7 +24,7 @@ A much more attractive option would be to use [DuckDB](https://duckdb.org/) itse
 ## Ideas
 The following techniques are being considered:
 - Piggybacking of [DuckDB](https://duckdb.org/)'s optimizer with simulated cost metrics for outlining logical query plan
-- Implementation of [multirelational algebra](https://dl.acm.org/doi/pdf/10.1145/319996.320009)
+- Implementation of [multi-relational algebra](https://dl.acm.org/doi/pdf/10.1145/319996.320009)
 - Domain Specific Language (DSL) for [rule-based query optimization](https://www.querifylabs.com/blog/rule-based-query-optimization)
 - Rule scripting powered by [TypeScript](https://www.typescriptlang.org/) for dynamic rule injection and client-side + cloud-side execution
 - Initial set of optimizer rules bootstrapped by porting [Trinio's rules](https://github.com/trinodb/trino/tree/master/core/trino-main/src/main/java/io/trino/sql/planner/iterative/rule) from Java to DSL
@@ -38,6 +38,16 @@ The following techniques are being considered:
 
 ## Engine
 The distributed query planner will be used by the [distributed query engine](Query%20Engine.md).
+
+## Query Plan Lifecycle
+1. Query translated from non-SQL dialect (*e.g.* [Malloy](https://github.com/malloydata/malloy/tree/main/packages/malloy), [PRQL](https://prql-lang.org/)) to SQL.
+2. Abstract syntax tree, relational tree, and logical query plan produced by [DuckDB](https://duckdb.org/).
+3. Logical query plan optimized by [DuckDB](https://duckdb.org/).
+4. Logical query plan further optimized by [WeTune](https://dl.acm.org/doi/10.1145/3514221.3526125).
+5. Set of Object Store partitions looked-up from data lake (using [Iceberg Java API](https://iceberg.apache.org/docs/latest/api/) packaged as a serverless function).
+6. Set of cached partitions looked-up from Registry (powered by [Redis](https://redis.io/)))
+7. Logical distributed query plan generated with [multi-relational algebra](https://dl.acm.org/doi/pdf/10.1145/319996.320009) and SMT solver (using [Z3](https://github.com/Z3Prover/z3) theorem prover)
+8. Physical distributed query plan produced by assigning map operations to serverless functions and reduce operations to serverless functions and monostore.
 
 ## Credits
 
