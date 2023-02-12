@@ -36,9 +36,6 @@ The following techniques are being considered:
 - Parallelization of [metadata](https://www.querifylabs.com/blog/metadata-management-in-apache-calcite) lookups through concurrent invocations of the query engine
 - Dynamic cascading replanning at the edges
 
-## Engine
-The distributed query planner will be used by the [distributed query engine](Query%20Engine.md).
-
 ## Query Plan Lifecycle
 1. Query translated from non-SQL dialect (*e.g.* [Malloy](https://github.com/malloydata/malloy/tree/main/packages/malloy), [PRQL](https://prql-lang.org/)) to SQL
 2. Abstract syntax tree, relational tree, and logical query plan produced by [DuckDB](https://duckdb.org/)
@@ -48,6 +45,7 @@ The distributed query planner will be used by the [distributed query engine](Que
 6. Set of cached partitions looked-up from Registry (powered by [Redis](https://redis.io/))
 7. Logical distributed query plan generated with [multi-relational algebra](https://dl.acm.org/doi/pdf/10.1145/319996.320009) and [SMT](https://en.wikipedia.org/wiki/Satisfiability_modulo_theories) solver (using [Z3](https://github.com/Z3Prover/z3) theorem prover)
 8. Physical distributed query plan produced by assigning operations to serverless functions and containers
+9. Physical distributed query plan executed by [distributed query engine](Query%20Engine.md)
 
 ## Credits
 
