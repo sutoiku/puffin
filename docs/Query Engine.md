@@ -15,5 +15,20 @@ The core [engine](../functions/engine/README.md) is packaged as a serverless fun
 
 Combining all three components within the same serverless function reduces latencies and removes any unnecessary data copies.
 
+## Physical Deployment
+The distributed query engine is distributed across three main tiers:
+1. Client (web browser, native client application, or cloud-side client)
+2. Monostore (single-host cloud-side container)
+3. Fleet of serverless functions
+
+In future releases, an auto-scaling cluster of serverless containers (*e.g.* [AWS Fargates](https://aws.amazon.com/fargate/)) will be added.
+
+The execution model defined by the [distributed query planner](Query%20Planner.md) is pretty straightforward:
+1. Pushdown as much of the SQL query as possible on the serverless functions
+2. Pullup and cache as much data as possible on the Monostore and Client
+3. Execute as much of the SQL query as possible on cached data
+
+The Monostore is a single-host cloud-side container (serverless or not) used to execute the parts of SQL queries that cannot be efficiently distributed across fleets of serverless functions or clusters of serverless containers. It is statically sized based on historical usage patterns. Best-in-class cloud providers like [Amazon Web Services](https://aws.amazon.com/) can offer very large Monostores on demand. For example, the [`u-24tb1.112xlarge`](https://aws.amazon.com/ec2/instance-types/high-memory/) instance comes with 448 vCPUs and 24 TB of RAM.
+
 ## Registry
 The distributed execution of a query is made possible by the use of a low-latency **Registry** powered by [Redis](https://redis.io/). This allows small intermediate results to be cached with submillisecond latency. Using a large [Amazon ElastiCache for Redis](https://aws.amazon.com/elasticache/redis/) cluster, tens of millions of such intermediate results can be cached per second, for up to 340 TB of cached data (large intermediate results should use the Object Store). The registry can be used to trigger the Reduce phase of a MapReduce process once all Map operations have completed successfully, or to enable asynchronous communication between two DuckDB engines.
