@@ -21,7 +21,7 @@ The distributed query engine is distributed across three main tiers:
 2. Monostore (single-host cloud-side container)
 3. Fleet of serverless functions
 
-In future releases, an auto-scaling cluster of serverless containers (*e.g.* [AWS Fargates](https://aws.amazon.com/fargate/)) will be added.
+In future releases, support for an auto-scaling cluster of serverless containers (*e.g.* [AWS Fargates](https://aws.amazon.com/fargate/)) might be added.
 
 The execution model defined by the [distributed query planner](Query%20Planner.md) is pretty straightforward:
 1. Pushdown as much of the SQL query as possible on the serverless functions
