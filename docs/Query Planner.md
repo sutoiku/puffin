@@ -56,7 +56,7 @@ PuffinDB's [distributed query engine](Query%20Engine.md) is mostly serverless (w
 - Serverless functions mandate a clear delineation between static partitioning (object store) and dynamic sharding (functions)
 
 Therefore, the distributed query planner will need to answer three main questions:
-- Where is data partitioned on the Object Store and sharded acress the [reactive caching system](Query%20Engine.md#reactive-caching)?
+- How is data partitioned on the Object Store and sharded acress the [reactive caching system](Query%20Engine.md#reactive-caching)?
 - How should the query be distributed across [computing and caching tiers](Query%20Engine.md#physical-deployment)?
 - Where should the data be cached next to accelerate subsequent queries?
 
