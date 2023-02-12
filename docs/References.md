@@ -14,8 +14,10 @@ The following reading materials provide a solid introduction to SQL databases:
 - [Citus: Distributed PostgreSQL for Data-Intensive Applications](https://dl.acm.org/doi/pdf/10.1145/3448016.3457551) — Umur Cubukcu, Ozgun Erdogan, *et al.* · 2021
 - [Querying Parquet with Precision using DuckDB](https://duckdb.org/2021/06/25/querying-parquet.html) — Hannes Mühleisen, Mark Raasveldt · 2021
 - [TCUDB: Accelerating Database with Tensor Processors](https://arxiv.org/pdf/2112.07552.pdf) — Yu-Ching Hu, Yuliang Li, *et al.* · 2021
-- [Query Processing on Tensor Computation Runtimes](https://arxiv.org/pdf/2203.01877.pdf) — Dong He, Supun C Nakandala, *et al.* · 2022
 - [Join Order Optimization with (Almost) No Statistics](https://homepages.cwi.nl/~boncz/msc/2022-TomEbergen.pdf) — Tom Ebergen · 2022
+- [Query Processing on Tensor Computation Runtimes](https://arxiv.org/pdf/2203.01877.pdf) — Dong He, Supun C Nakandala, *et al.* · 2022
+- [WeTune: Automatic Discovery and Verification of Query Rewrite Rules](https://dl.acm.org/doi/10.1145/3514221.3526125) — Zhaoguo Wang
+Zhaoguo Wang, Zhou Zhou, *et al.* · 2022
 
 ## Credits
 Many thanks to [Sam Ansmink](https://github.com/samansmink) for having contributed the original list of reference materials.
