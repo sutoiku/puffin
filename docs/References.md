@@ -10,14 +10,14 @@ The following reading materials provide a solid introduction to SQL databases:
 - [MonetDB/X100: Hyper-Pipelining Query Execution](https://www.researchgate.net/publication/45338800_MonetDBX100_Hyper-Pipelining_Query_Execution) — Peter Boncz, Marcin Zukowski, Niels Nes · 2005
 - [Morsel-Driven Parallelism: A NUMA-Aware Query Evaluation Framework for the Many-Core Age](https://dl.acm.org/doi/pdf/10.1145/2588555.2610507) — Viktor Leis, Peter Boncz, *et al.* · 2014
 - [How Good Are Query Optimizers, Really?](https://15721.courses.cs.cmu.edu/spring2020/papers/22-costmodels/p204-leis.pdf) — Viktor Leis, Andrey Gubichev, *et al.* · 2015
-- [Axiomatic Foundations and Algorithms for Deciding Semantic Equivalences of SQL Queries](https://www.vldb.org/pvldb/vol11/p1482-chu.pdf) — Shumo Chu, Brendan Murphy, *et al.* · 2018
+- [Axiomatic Foundations and Algorithms for Deciding Semantic Equivalences of SQL Queries](https://www.vldb.org/pvldb/vol11/p1482-chu.pdf) — Shumo Chu *et al.* · 2018
 - [Push-Based Execution in DuckDB](https://www.youtube.com/watch?v=MA0OsvYFGrc) — Mark Raasveldt · 2021
 - [Citus: Distributed PostgreSQL for Data-Intensive Applications](https://dl.acm.org/doi/pdf/10.1145/3448016.3457551) — Umur Cubukcu, Ozgun Erdogan, *et al.* · 2021
 - [Querying Parquet with Precision using DuckDB](https://duckdb.org/2021/06/25/querying-parquet.html) — Hannes Mühleisen, Mark Raasveldt · 2021
 - [TCUDB: Accelerating Database with Tensor Processors](https://arxiv.org/pdf/2112.07552.pdf) — Yu-Ching Hu, Yuliang Li, *et al.* · 2021
 - [Join Order Optimization with (Almost) No Statistics](https://homepages.cwi.nl/~boncz/msc/2022-TomEbergen.pdf) — Tom Ebergen · 2022
 - [Query Processing on Tensor Computation Runtimes](https://arxiv.org/pdf/2203.01877.pdf) — Dong He, Supun C Nakandala, *et al.* · 2022
-- [WeTune: Automatic Discovery and Verification of Query Rewrite Rules](https://dl.acm.org/doi/10.1145/3514221.3526125) — Zhaoguo Wang
+- [WeTune: Automatic Discovery and Verification of Query Rewrite Rules](https://ipads.se.sjtu.edu.cn/_media/publications/wetune_final.pdf) — Zhaoguo Wang
 Zhaoguo Wang, Zhou Zhou, *et al.* · 2022
 
 ## Credits
