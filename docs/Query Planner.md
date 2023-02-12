@@ -42,7 +42,7 @@ The following techniques are being considered:
 3. Non-distributed logical query plan optimized by [DuckDB](https://duckdb.org/)
 4. Non-distributed logical query plan further optimized by [WeTune](https://dl.acm.org/doi/10.1145/3514221.3526125)
 5. Set of Object Store partitions looked-up from data lake (using [Iceberg Java API](https://iceberg.apache.org/docs/latest/api/) packaged as a serverless function)
-6. Set of cached partitions looked-up from Registry (powered by [Redis](https://redis.io/))
+6. Set of cached partitions looked-up from [Registry](Query%20Engine.md#Registry) (powered by [Redis](https://redis.io/))
 7. Distributed logical query plan generated with [multi-relational algebra](https://dl.acm.org/doi/pdf/10.1145/319996.320009) and [SMT](https://en.wikipedia.org/wiki/Satisfiability_modulo_theories) solver (using [Z3](https://github.com/Z3Prover/z3) theorem prover)
 8. Distributed physical query plan produced by assigning operations to serverless functions and containers
 9. Distributed physical query plan executed by [distributed query engine](Query%20Engine.md)
