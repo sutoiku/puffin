@@ -27,6 +27,8 @@ A good starting point on [Amazon Web Services](https://aws.amazon.com/) is the [
 - 5 seconds to fill 80% of RAM with data uncompressed
 - $0.149/hour (on-demand) — $26/month of 22 business days of 8 hours
 
+Alternatively, a [Fargate](https://aws.amazon.com/fargate/pricing/?nc=sn&loc=2) with 0.25 vCPU and 0.5 GB of RAM will cost as little as $0.0037 per hour ($0.65/month).
+
 ## How large a Monostore can I get?
 When using [Amazon Web Services](https://aws.amazon.com/), the [`u-24tb1.112xlarge`](https://aws.amazon.com/ec2/instance-types/high-memory/) instances will offer: 
 - 448 vCPUs
