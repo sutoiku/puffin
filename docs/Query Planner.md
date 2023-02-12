@@ -47,7 +47,7 @@ The distributed query planner will be used by the [distributed query engine](Que
 5. Set of Object Store partitions looked-up from data lake (using [Iceberg Java API](https://iceberg.apache.org/docs/latest/api/) packaged as a serverless function).
 6. Set of cached partitions looked-up from Registry (powered by [Redis](https://redis.io/)))
 7. Logical distributed query plan generated with [multi-relational algebra](https://dl.acm.org/doi/pdf/10.1145/319996.320009) and SMT solver (using [Z3](https://github.com/Z3Prover/z3) theorem prover)
-8. Physical distributed query plan produced by assigning map operations to serverless functions and reduce operations to serverless functions and monostore.
+8. Physical distributed query plan produced by assigning operations to serverless functions and containers.
 
 ## Credits
 
