@@ -37,4 +37,5 @@ If your dataset is 1 TB or smaller, the most efficient instance available on [Am
 - 8 × NVIDIA A100 GPUs
 - 640 GB of HBM2e GPU RAM
 - 400 Gbps ENA and EFA network bandwidth
+- 8 × 1 TB NVMe SSD
 - $40.96/hour (on-demand) — $36.40/TiB·hour
