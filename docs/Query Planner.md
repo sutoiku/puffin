@@ -40,14 +40,14 @@ The following techniques are being considered:
 Because PuffinDB's [distributed query engine](Query%20Engine.md) will be deployed across [multiple tiers](Query%20Engine.md#physical-deployment) and might run across tens of thousands of serverless functions with [reactive caching](Query%20Engine.md#reactive-caching), its query planner will be quite sophisticated. There are three main ways to approach that challenge:
 - Manufally curating hundreds of query optimizer rules
 - Using deep learning to automate the generation of such rules
-- Using first-order logic to automate the generation of such rules (*à la* [WeTune](https://ipads.se.sjtu.edu.cn/_media/publications/wetune_final.pdf))
+- Using first-order logic (FOL) to automate the generation of such rules (*à la* [WeTune](https://ipads.se.sjtu.edu.cn/_media/publications/wetune_final.pdf))
 
 We fundamentally believe that first-order logic is the best approach, for several reasons:
 - It is cost-effective, fast, and sustainable (unlike manual curation)
 - It is efficient (unlike deep learning)
 - It leverages the fact that SQL is based on solid mathematical foundations (the [relational algebra](https://en.wikipedia.org/wiki/Relational_algebra))
 
-Therefore, PuffinDB's distributed query planner will do as much as possible with first-order logic, then add manually-curated rules for specific cases.
+Therefore, PuffinDB's distributed query planner will do as much as possible with FOL, then add manually-curated rules for specific cases.
 
 ## Query Plan Lifecycle
 1. Query translated from non-SQL dialect (*e.g.* [Malloy](https://github.com/malloydata/malloy/tree/main/packages/malloy), [PRQL](https://prql-lang.org/)) to SQL
