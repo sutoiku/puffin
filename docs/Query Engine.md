@@ -18,7 +18,7 @@ Combining all three components within the same serverless function reduces laten
 ## Physical Deployment
 The distributed query engine is deployed across three main tiers:
 1. Client (web browser, native client application, or cloud-side client)
-2. Monostore (single-host cloud-side container)
+2. [Monostore](Monostore.md) (single-host cloud-side container)
 3. Fleet of serverless functions
 
 In future releases, support for an auto-scaling cluster of serverless containers (*e.g.* [AWS Fargates](https://aws.amazon.com/fargate/)) might be added.
