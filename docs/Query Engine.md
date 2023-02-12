@@ -30,7 +30,7 @@ The execution model defined by the [distributed query planner](Query%20Planner.m
 
 The Monostore is a single-host cloud-side container (server or serverless) used to execute parts of SQL queries that we cannot distribute efficiently across fleets of serverless functions or clusters of serverless containers. It is statically sized based on historical usage patterns. Best-in-class cloud providers like [Amazon Web Services](https://aws.amazon.com/) can offer very large Monostores on demand. For example, the [`u-24tb1.112xlarge`](https://aws.amazon.com/ec2/instance-types/high-memory/) instance comes with 448 vCPUs and 24 TB of RAM.
 
-This physical deployment models brings the following benefits:
+This physical deployment model brings the following benefits:
 - Maximum elasticity through aggressive use of serverless functions
 - Maximum performance for complex queries through the aggressive use of a large Monostore
 - Lowest latency through the aggressive use of multi-layer reactive caching
