@@ -17,7 +17,7 @@ For most deployments, a Monostore is instantiated for a particular team (group o
 ## How should a Monostore be sized?
 The minimum size of a Monostore should be set above the uncompressed size of the datasets that must be cached on it, with a 20% to 50% extra capacity for headroom. Using a larger monostore will accelerate most queries, but will increase costs. If budgets are limited, its size can be reduced to the size of compressed datasets, but this will slow queries down by a factor of 2 to 5.
 
-In addition, a Monostore should be sized in such a way that it can hold an entire column of the tallest table that needs to be analyzed, alongside a column of pointers. For columns oncoded on 64 bits, this means 128 bits (16 Bytes) per row. For example, if your tallest table has 100 billion rows, you will want a Monostore with at least 1.92 TB of RAM (1.6 TB + 20%). This will make it possible to compute most univariate statistics on all columns of your table, including exact quantiles that require full sorting.
+In addition, a Monostore should be sized in such a way that it can hold an entire column of the tallest table that needs to be analyzed, alongside a column of pointers. For columns encoded on 64 bits, this means 128 bits (16 Bytes) per row. For example, if your tallest table has 100 billion rows, you will want a Monostore with at least 1.92 TB of RAM (1.6 TB + 20%). This will make it possible to compute most univariate statistics on all columns of your table, including exact quantiles that require full sorting.
 
 ## How large a Monostore can I get?
 When using [Amazon Web Services](https://aws.amazon.com/), the [`u-24tb1.112xlarge`](https://aws.amazon.com/ec2/instance-types/high-memory/) instances will offer: 
