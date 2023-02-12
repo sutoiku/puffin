@@ -58,7 +58,7 @@ PuffinDB's [distributed query engine](Query%20Engine.md) is mostly serverless (w
 Therefore, the distributed query planner will need to answer three main questions:
 - How is data partitioned on the Object Store and sharded acress the [reactive caching system](Query%20Engine.md#reactive-caching)?
 - How should the query be distributed across [computing and caching tiers](Query%20Engine.md#physical-deployment)?
-- Where should the data be cached next to accelerate subsequent queries?
+- How should data be cached next to accelerate subsequent queries?
 
 ## Query Plan Lifecycle
 1. Query translated from non-SQL dialect (*e.g.* [Malloy](https://github.com/malloydata/malloy/tree/main/packages/malloy), [PRQL](https://prql-lang.org/)) to SQL
