@@ -61,7 +61,15 @@ Therefore, the distributed query planner will need to answer three main question
 - How should data be cached next to accelerate subsequent queries?
 
 ## Partitioning *vs.* Sharding
-Large tables managed by the Data Lake (*e.g.* [Apache Iceberg](https://iceberg.apache.org/)) are partitioned across multiple objects on the Object Store (*e.g.* [Amazon S3](https://aws.amazon.com/s3/)). While serverless functions scan tables directly from the Object Store, the resulting data ends up being cached on the serverless functions, the Monostore, or the client. Therefore, it becomes critical to properly shard large tables across serverless functions, be they used in a stateful (with caching) or stateless (without caching) manner.
+Large tables managed by the Data Lake (*e.g.* [Apache Iceberg](https://iceberg.apache.org/)) are partitioned across multiple objects on the Object Store (*e.g.* [Amazon S3](https://aws.amazon.com/s3/)). While serverless functions scan tables directly from the Object Store, the resulting data ends up being cached on the serverless functions, the Monostore, or the client. Therefore, it becomes critical to properly shard large tables across serverless functions, be they used in a stateful or stateless manner (with or without caching).
+
+For performance reasons, three types of sharded tables must be supported:
+
+- **Distributed tables**: one serverless function per partition
+- **Co-located tables**: partitions of tables sharded across the same dimensions are co-located within the same serverless functions
+- **Replicated tables**: small tables are replicated across all severless functions that might need them for joins
+
+**Note**: implementing the last two sharding techniques can be avoided if multi-table datasets are statically denormalized in the Data Lake.
 
 ## Query Plan Lifecycle
 1. Query translated from non-SQL dialect (*e.g.* [Malloy](https://github.com/malloydata/malloy/tree/main/packages/malloy), [PRQL](https://prql-lang.org/)) to SQL
