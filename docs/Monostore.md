@@ -25,7 +25,7 @@ There really is no floor for a Monostore, but a good starting point on [Amazon W
 - 16 GiB of RAM
 - Up to 25 Gbps of network bandwidth
 - 5 seconds to fill 80% of RAM with data uncompressed
-- $0.149/hour (on-demand) — $24/month of 20 business days of 8 hours
+- $0.149/hour (on-demand) — $26/month of 22 business days of 8 hours
 
 ## How large a Monostore can I get?
 When using [Amazon Web Services](https://aws.amazon.com/), the [`u-24tb1.112xlarge`](https://aws.amazon.com/ec2/instance-types/high-memory/) instances will offer: 
