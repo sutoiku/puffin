@@ -22,6 +22,7 @@ When using [Amazon Web Services](), the [`u-24tb1.112xlarge`](https://aws.amazon
 - 448 vCPUs
 - 24 TB of RAM
 - 100 Gbps of network bandwidth
+- $218.40/hour (on-demand) — $9.1/TB·hour
 
 This is sufficient for reduced datasets of 20 TB in size compressed, or 100 TB to 200 TB in size uncompressed.
 
