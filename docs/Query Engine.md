@@ -16,7 +16,7 @@ The core [engine](../functions/engine/README.md) is packaged as a serverless fun
 Combining all three components within the same serverless function reduces latencies and removes any unnecessary data copies.
 
 ## Physical Deployment
-The distributed query engine is distributed across three main tiers:
+The distributed query engine is deployed across three main tiers:
 1. Client (web browser, native client application, or cloud-side client)
 2. Monostore (single-host cloud-side container)
 3. Fleet of serverless functions
