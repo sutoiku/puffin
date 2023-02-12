@@ -25,4 +25,4 @@ When using [Amazon Web Services](), the [`u-24tb1.112xlarge`](https://aws.amazon
 
 This is sufficient for reduced datasets of 20 TB in size compressed, or 100 TB to 200 TB in size uncompressed.
 
-A **reduced dataset** is the intermediary dataset produced by reducing the results of partial queries produced by the fleet of serverless functions.
+A **reduced dataset** is an intermediary dataset produced by reducing the results of partial queries produced by a fleet of serverless functions.
