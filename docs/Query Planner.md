@@ -65,7 +65,7 @@ Large tables managed by the Data Lake (*e.g.* [Apache Iceberg](https://iceberg.a
 
 For performance reasons, three types of sharded tables must be supported:
 
-- **Distributed tables**: one serverless function per partition
+- **Distributed tables**: one serverless function per partition or group of partitions
 - **Co-located tables**: partitions of tables sharded across the same dimensions are co-located within the same serverless functions
 - **Replicated tables**: small tables are replicated across all severless functions that might need them for joins
 
