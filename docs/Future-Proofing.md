@@ -4,6 +4,7 @@ PuffinDB is designed to take advantage of the very latest serverless technologie
 
 - Serverless containers ([AWS Fargates](https://aws.amazon.com/fargate/)) that could start in 15s instead of 60 to 90s
 - Serverless functions ([AWS Lambda](https://aws.amazon.com/lambda/)) that could "officially" be used in a stateful manner
+- Serverless functions that could be provisioned in very large numbers (hundreds of thousands)
 - Serverless containers and functions that could be instantiated in larger numbers (thousands and tens of thousands respectively)
 - Serverless containers and functions with 2 to 4 times more vCPUs and memory
 - Serverless containers and functions with 2 to 4 times higher bandwidth/memory ratio
