@@ -105,8 +105,8 @@ This project leverages several [DuckDB](https://duckdb.org/) features implemente
 - Support for map-reduced queries with binary map results using new [`COMBINE`](https://github.com/duckdb/duckdb/pull/2998) function (released)
 - Support for import of Hive partitions (released)
 - Support for [partitioned exports](https://github.com/duckdb/duckdb/pull/5964) with `COPY ... TO ... PARTITION_BY` (released)
-- Support for SQL query parsing | stringifying through standard query API (development starting soon)
-- Support for [Azure Blob Storage](https://azure.microsoft.com/en-us/products/storage/blobs) (development to start a bit later)
+- Support for SQL query parsing | stringifying through standard query API ([under development](https://twitter.com/ghalimi/status/1625172235895046146))
+- Support for [Azure Blob Storage](https://azure.microsoft.com/en-us/products/storage/blobs) (development starting soon)
 
 We are also considering funding the following projects:
 
