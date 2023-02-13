@@ -23,7 +23,7 @@ A much more attractive option is to use [DuckDB](https://duckdb.org/) itself, by
 
 ## Ideas
 The following techniques are being considered:
-- Piggybacking of [DuckDB](https://duckdb.org/)'s optimizer with simulated cost metrics for outlining logical query plan
+- Logical query optimization using [DuckDB](https://duckdb.org/)'s optimizer
 - Implementation of [multi-relational algebra](https://dl.acm.org/doi/pdf/10.1145/319996.320009)
 - Domain Specific Language (DSL) for [rule-based query optimization](https://www.querifylabs.com/blog/rule-based-query-optimization)
 - Rule scripting powered by [TypeScript](https://www.typescriptlang.org/) for dynamic rule injection and client-side + cloud-side execution
