@@ -37,7 +37,7 @@ The following techniques are being considered:
 - Dynamic cascading replanning at the edges
 
 ## Strategy
-Because PuffinDB's [distributed query engine](Query%20Engine.md) will be deployed across [multiple tiers](Query%20Engine.md#physical-deployment) and might run across tens of thousands of serverless functions with [reactive caching](Query%20Engine.md#reactive-caching), its query planner will be quite sophisticated. There are three main ways to approach that challenge:
+Because PuffinDB's [distributed query engine](Query%20Engine.md) will be deployed across [multiple tiers](Query%20Engine.md#physical-deployment) and might run across tens of thousands of serverless functions with [reactive caching](Query%20Engine.md#reactive-caching), its query planner will be quite sophisticated. There are three main ways to approach such a challenge:
 - Manufally curating hundreds of query optimizer rules
 - Using deep learning to automate the generation of such rules
 - Using first-order logic (FOL) to automate the generation of such rules (*à la* [WeTune](https://ipads.se.sjtu.edu.cn/_media/publications/wetune_final.pdf))
