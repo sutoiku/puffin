@@ -18,9 +18,9 @@ All it takes is an [AWS](https://aws.amazon.com/) account and a few clicks on th
 
 PuffinDB is an initiative of [STOIC](https://stoic.com/), and not [DuckDB Labs](https://duckdblabs.com/) or the [DuckDB Foundation](https://duckdb.org/foundation/).
 
-STOIC is a Silver Member of the DuckDB Foundation.
-
 DuckDB and the DuckDB logo are trademarks of the DuckDB Foundation.
+
+STOIC is a Silver Member of the DuckDB Foundation.
 
 ## Beliefs
 - Nothing beats [SQL](https://en.wikipedia.org/wiki/SQL) because nothing can beat [maths](https://en.wikipedia.org/wiki/Relational_algebra)
