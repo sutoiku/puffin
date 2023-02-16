@@ -5,8 +5,8 @@ Data lives in the cloud and has weight. A **Cloud Data Engine** must work agains
 - **Cloud Data** is heavy and its center of gravity is the data lake
 - **Cloud Data** is collaborative (multiple users edit data and metadata)
 - **Cloud Data** is real-time (updated with submillisecond latency)
-- **Cloud Data** is agnostic (it can be manipulated by any application)
 - **Cloud Data** is small or large (from megabytes to petabytes)
+- **Cloud Data** is agnostic (it can be manipulated by any application)
 
 ## Overview
 In this article, we will attempt to answer the following questions:
