@@ -2,7 +2,7 @@
 
 Data lives in the cloud and has weight. A **Cloud Data Engine** must work against the cloud's gravitational pull, gently.
 
-- **Cloud Data** lives in a data lake ([Apache Iceberg](https://iceberg.apache.org/), [Apache Hudi](https://hudi.apache.org/), [Delta Lake](https://delta.io/))
+- **Cloud Data** is heavy and its center of gravity is the data lake
 - **Cloud Data** is small or large (from megabytes to petabytes)
 - **Cloud Data** is agnostic (it can be manipulated by any application)
 - **Cloud Data** is collaborative (multiple users edit data and metadata)
