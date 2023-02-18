@@ -17,7 +17,7 @@ The [Grand Park Hotel Rovinj](https://www.maistra.com/properties/grand-park-hote
 ![Hotel](https://user-images.githubusercontent.com/1074452/216159090-525d221e-838c-4746-a311-99c71b4a828d.jpeg)
 
 ## Activities
-PuffinDB will organize some activites, but participants will be free to spend their free time as they wish. This is **not** a bro party.
+PuffinDB will organize some activites, but participants will be free to spend their free time as they wish.
 
 Good meals in Michelin starred restaurants will be served though.
 
