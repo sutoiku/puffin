@@ -19,7 +19,7 @@ The [Grand Park Hotel Rovinj](https://www.maistra.com/properties/grand-park-hote
 ## Activities
 PuffinDB will organize some activites, but participants will be free to spend their free time as they wish.
 
-Good meals in Michelin starred restaurants will be served though.
+Good meals in Michelin starred restaurants will be offered.
 
 ## Credits
 Many thanks to our dear friend [Mila Dragojević](https://new.sewanee.edu/programs-of-study/politics/faculty-staff/mila-dragojevic/) for having recommended the meetup's location.
