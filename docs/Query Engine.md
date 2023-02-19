@@ -1,6 +1,6 @@
 # Distributed Query Engine
 This distributed query engine for [Cloud Data](../CLOUD.md) is designed around the following components:
-- Deployed using standard [DuckDB](https://duckdb.org/) engines supercharged with the `puffindb` [extension](https://duckdb.org/docs/extensions/overview)
+- Deployed using standard [DuckDB](https://duckdb.org/) engines supercharged with the `puffindb` [extension](Extension.md)
 - Abstracted with the [`SELECT ... THROUGH`](../EDDI.md#implementation) syntax to avoid unnecessary data copies
 - Powered by [Apache Arrow](https://arrow.apache.org/) to accelerate data transfers between DuckDB engines
 
