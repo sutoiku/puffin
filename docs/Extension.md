@@ -8,7 +8,9 @@ PuffinDB includes a [DuckDB Extension](https://duckdb.org/docs/extensions/overvi
 - [SQL dialect translation](Query%20Proxy.md#dialect-translation)
 - Remote [curl](https://curl.se/) invocation
 - [Remote query generation](Query%20Proxy.md)
+- Query Logging
 
 ## With Cloud-Side Template
 - [Remote query optimization](Query%20Proxy.md#query-optimization)
 - [Scale-out and scale-up](../CLOUD.md#scale-out-and-scale-up)
+- Query result sharing
