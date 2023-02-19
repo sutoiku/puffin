@@ -21,5 +21,12 @@ PuffinDB will organize some activites, but participants will be free to spend th
 
 Good meals in Michelin starred restaurants will be offered.
 
+## Agenda
+- Project overview
+- [DuckDB Extension](Extension.md)
+- [Query Proxy](Query%20Proxy.md)
+- [Query Planner](Query%20Planner.md)
+- [Query Engine](Query%20engine.md)
+
 ## Credits
 Many thanks to our dear friend [Mila Dragojević](https://new.sewanee.edu/programs-of-study/politics/faculty-staff/mila-dragojevic/) for having recommended the meetup's location.
