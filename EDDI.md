@@ -71,7 +71,7 @@ For this architecture to work, we need two things:
 
 The former will require a fairly sophisticated query planner, while the latter will just need a relatively-simple protocol. For performance and scalability reasons, this protocol should support both synchronous and asynchronous requests. With a synchronous request, the query's result should be returned as a simple response to the HTTP request. With an asynchronous request, the response should just include an Object Store URI from which the query's result could be fetched at a later time (with polling or notification).
 
-This architecture should be based on [Arrow Database Connectivity](https://arrow.apache.org/docs/dev/format/ADBC.html).
+This architecture should be based on [Arrow Database Connectivity](https://arrow.apache.org/docs/dev/format/ADBC.html) and should take advantage of the [Query Proxy](docs/Query%20Proxy.md).
 
 ## Bottomline
 One of PuffinDB's primary goals is to execute on that vision.
