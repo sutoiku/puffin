@@ -10,6 +10,7 @@ INSTALL 'puffindb';
 LOAD 'puffindb';
 ```
 
+## SELECT THROUGH
 This extension will implement the `SELECT THROUGH` syntax:
 
 
