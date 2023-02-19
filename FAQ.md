@@ -87,8 +87,8 @@ Fair question. Whenever PuffinDB is deployed on [Amazon EC2](https://aws.amazon.
 ## Do I need a specific client to use PuffinDB?
 From the client side (browser, local application, online service), PuffinDB can be used through any HTTP client, or through [DuckDB](https://duckdb.org/) ([more](docs/Clientless.md)).
 
-## Can I use PuffinDB from Python?
-Of course. There are many ways to do that. One of them is to use any Python package that embeds [DuckDB](https://duckdb.org/), such as [duckdb - PyPi](https://pypi.org/project/duckdb/), then install the [PuffinDB extension](docs/Extension.md) through the SQL API. The same mechanism will be used to add support for PuffinDB from [Ibis](https://ibis-project.org/), thereby giving Ibis access to [Apache Iceberg](https://iceberg.apache.org/), [Apache Hudi](https://hudi.apache.org/), and [Delta Lake](https://delta.io/) tables. In addition, the [Python](../functions/python/README.me) serverless function will provide a cloud-side Python runtime and several critical Python libraries.
+## Can I use PuffinDB with Python?
+Of course! There are many ways to do that. One of them is to use any Python package that embeds [DuckDB](https://duckdb.org/), such as [duckdb - PyPi](https://pypi.org/project/duckdb/), then install the [PuffinDB extension](docs/Extension.md) through the SQL API. The same mechanism will be used to add support for PuffinDB from [Ibis](https://ibis-project.org/), thereby giving Ibis access to [Apache Iceberg](https://iceberg.apache.org/), [Apache Hudi](https://hudi.apache.org/), and [Delta Lake](https://delta.io/) tables. In addition, the [Python](../functions/python/README.me) serverless function will provide a cloud-side Python runtime and several critical Python libraries.
 
 ## Why use a Redis cluster for distributed shuffles?
 Distributed shuffles require low latency and large transient storage capacity. A large [Amazon ElastiCache for Redis](https://aws.amazon.com/elasticache/redis/) cluster can provide:
