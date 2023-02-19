@@ -21,7 +21,7 @@ The `puffindb` DuckDB extension is installed once by the user. From there, suppo
 Several options are currently being considered for the packaging of the Query Generator. One of them is to use [WebAssembly](https://webassembly.org/), which would allow both client-side and cloud-side execution. This proposed meta-extension mechanism would also make it easier to develop certain DuckDB extensions, without having to compile them for different platforms (to be confirmed).
 
 ## Query Optimization
-The exact same mechanism used for remote query generation will be used for remote query optimization by the [distributed query planner](Query%20Planner.md). Furthermore, the integration of technologies like [WeTune](https://ipads.se.sjtu.edu.cn/_media/publications/wetune_final.pdf) within the distributed query planner will ensure that machine-generatred queries are properly optimized, even in cases where DuckDB's built-in optimizer might be sub-optimal.
+The exact same mechanism used for remote query generation will be used for remote query optimization by the [distributed query planner](Query%20Planner.md). Furthermore, the integration of technologies like [WeTune](https://ipads.se.sjtu.edu.cn/_media/publications/wetune_final.pdf) within the distributed query planner will ensure that machine-generatred queries are properly optimized, even in cases where DuckDB's built-in optimizer might prove suboptimal.
 
 ## Benefits for Vendors
 - No need to develop and distribute any proprietary DuckDB extension
