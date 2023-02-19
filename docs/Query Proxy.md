@@ -28,7 +28,7 @@ The exact same mechanism used for remote query generation will be used for remot
 - No need to develop yet another SQL parser | serializer
 - Access to the metadata of tables managed by the most popular data lakes ([Apache Iceberg](https://iceberg.apache.org/), [Apache Hudi](https://hudi.apache.org/), [Delta Lake](https://delta.io/))
 - Direct integration with the user's VPC
-- [Scale-out and scale-up](../CLOUD.md#scale-out-and-scale-up) of complex queries through [distributed SQL engine](Query%20Engine.md)
+- [Scale-out and scale-up](../CLOUD.md#scale-out-and-scale-up) of complex and | or large queries through [distributed SQL engine](Query%20Engine.md)
 - IP protection when running query generator on vendor's cloud
 
 ## Benefits for Users
