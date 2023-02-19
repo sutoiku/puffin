@@ -1,6 +1,6 @@
 # Meetup
 
-PuffinDB will hold a kickoff meeting for [sponsors](../SPONSORS.md) and [contributors](../CONTRIBUTORS.md) on March 29 and 30, 2023, at the [Grand Park Hotel](https://www.maistra.com/properties/grand-park-hotel-rovinj/#/) in Rovinj, Croatia. Participants pay for travels expenses, while PuffinDB offers accomodations free of charge. The goal of the event is to finalize the architecture for PuffinDB, including [Icecap](../docs/Icecap.md). And to have some fun along the way...
+PuffinDB will hold a kickoff meetup for [sponsors](../SPONSORS.md) and [contributors](../CONTRIBUTORS.md) on March 29 and 30, 2023, at the [Grand Park Hotel](https://www.maistra.com/properties/grand-park-hotel-rovinj/#/) in Rovinj, Croatia. Participants pay for travels expenses, while PuffinDB offers accomodations free of charge. The goal of the event is to finalize the architecture for PuffinDB, including [Icecap](../docs/Icecap.md). And to have some fun along the way...
 
 This meetup is open to corporate sponsors and potential investors as well.
 
