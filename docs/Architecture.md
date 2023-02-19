@@ -16,7 +16,7 @@ PuffinDB is architected around the following serverless components:
 
 - [Catalog](../functions/catalog/README.md) — Java serverless function packaging [Iceberg's Java API](https://iceberg.apache.org/docs/latest/api/)
 - [Engine](../functions/engine/README.md) — Node.js serverless function packaging the query handler, [query planner](Query%20Planner.md), and [DuckDB](https://duckdb.org/) query engine
-- [Python](../functions/python/README.md) — Python serverless function packaging a cloud-side Python runtime, [Ibis](https://ibis-project.org/), and [SQLGlot](https://github.com/tobymao/sqlglot)
+- [Python](../functions/python/README.md) — Python serverless function packaging a cloud-side Python runtime, [DuckDB](https://duckdb.org/), [Ibis](https://ibis-project.org/), and [SQLGlot](https://github.com/tobymao/sqlglot)
 - [Amazon Athena](https://aws.amazon.com/athena/) for executing write queries on lakehouse tables (eventually replaced by [Icecap](Icecap.md))
 - [Amazon ElastiCache for Redis](https://aws.amazon.com/elasticache/redis/) for logging, queuing, and synchronization
 - [Amazon S3](https://aws.amazon.com/s3/) for object storage
