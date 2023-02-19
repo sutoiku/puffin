@@ -7,7 +7,7 @@ This meetup is open to corporate sponsors and potential investors as well.
 This first gathering will set the benchmark for all future events.
 
 ## Logistics
-- March 29-30 (two nights).
+- March 29-30 (two nights, but best to plan an overnight in Zagreb on March 28).
 - Participants should fly through [Franjo Tuđman Airport Zagreb](https://www.zagreb-airport.hr/en).
 - Roundtrip transportation between Zagreb and Rovinj will be organized by PuffinDB.
 
