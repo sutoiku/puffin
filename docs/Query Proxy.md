@@ -25,4 +25,4 @@ The `puffindb` DuckDB extension is installed once by the user. From there, suppo
 - [Scale-out and scale-up](../CLOUD.md#scale-out-and-scale-up) of complex queries through [distributed SQL engine](Query%20Engine.md)
 
 ## Benefits for Users
-- No need to install one DuckDB extension per query generator
+- No need to install one DuckDB extension for every query generator
