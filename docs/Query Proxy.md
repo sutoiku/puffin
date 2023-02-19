@@ -34,7 +34,27 @@ The exact same architecture will be used for delegating queries to third-party e
 - *etc.*
 
 ## Dialect Translation
-When delegating a subquery to a third-party SQL engine with [`SELECT THROUGH`](Clientless.md#select-through), the PuffinDB extension will handle SQL dialect translation, using a serverless function running [SQLGlot](https://github.com/tobymao/sqlglot). This will make it possible to write composite queries involving multiple SQL engines while using a single dialect.
+When delegating a subquery to a third-party SQL engine with [`SELECT THROUGH`](Clientless.md#select-through), the PuffinDB extension will handle SQL dialect translation, using a serverless function running [SQLGlot](https://github.com/tobymao/sqlglot). This will make it possible to write composite queries involving multiple SQL engines while using a single dialect. The following dialects are currently supported:
+
+- BigQuery
+- ClickHouse
+- Databricks
+- Drill
+- DuckDB
+- Hive
+- MySQL
+- Oracle
+- Postgres
+- Presto
+- Redshift
+- Snowflake
+- Spark
+- SQLite
+- StarRocks
+- Tableau
+- Teradata
+- Trino
+- TSQL
 
 ## Benefits for Vendors
 - No need to develop and distribute any proprietary DuckDB extension
