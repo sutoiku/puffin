@@ -35,6 +35,20 @@ The exact same architecture will be used for delegating queries to third-party e
 - Synthetic data generation
 - *etc.*
 
+Out of the box, PuffinDB will provide integration with the following databases:
+
+- [Athena](https://aws.amazon.com/athena/)
+- [Databricks](https://www.databricks.com/)
+- [RDS for Aurora](https://aws.amazon.com/rds/aurora/)
+- [RDS for MariaDB](https://aws.amazon.com/rds/mariadb/)
+- [RDS for MySQL](https://aws.amazon.com/rds/mysql/)
+- [RDS for Oracle](https://aws.amazon.com/rds/oracle/)
+- [RDS for PostgreSQL](https://aws.amazon.com/rds/postgresql/)
+- [RDS for SQL Server](https://aws.amazon.com/rds/sqlserver/)
+- [Redshift](https://aws.amazon.com/redshift/)
+- [Snowflake](https://www.snowflake.com/en/)
+
+
 ## Dialect Translation
 When delegating a subquery to a third-party SQL engine with [`SELECT THROUGH`](Clientless.md#select-through), the PuffinDB extension will handle SQL dialect translation, using a serverless function running [SQLGlot](https://github.com/tobymao/sqlglot). This will make it possible to write composite queries involving multiple SQL engines while using a single dialect. The following dialects are currently supported:
 
