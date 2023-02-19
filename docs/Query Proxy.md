@@ -35,4 +35,4 @@ The exact same mechanism used for remote query generation will be used for remot
 - No need to install one DuckDB extension for every query generator
 - Cloud-side acceleration of query generation and query optimization
 - Faster queries (through query pre-optimization)
-- Data and metadata confidentiality when running query generator on user's VPC
+- Data and metadata confidentiality when running query generator on user's VPC or user's client
