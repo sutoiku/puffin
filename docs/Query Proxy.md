@@ -25,6 +25,8 @@ The exact same mechanism used for remote query generation will be used for remot
 
 ## Query Delegation
 The exact same architecture will be used for delegating queries to third-party engines with [`SELECT THROUGH`](Clientless.md#select-through). This feature can be used for:
+
+- Data integration
 - Data validation
 - Outlier detection
 - Error correction
