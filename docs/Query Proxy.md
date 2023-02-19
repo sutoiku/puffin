@@ -33,6 +33,9 @@ The exact same architecture will be used for delegating queries to third-party e
 - Synthetic data generation
 - *etc.*
 
+## Dialect Translation
+When delegating a query or sub-query to a third-party SQL engine with [`SELECT THROUGH`](Clientless.md#select-through), the PuffinDB extension will handle SQL dialect translation.
+
 ## Benefits for Vendors
 - No need to develop and distribute any proprietary DuckDB extension
 - No need to develop yet another SQL parser | serializer
