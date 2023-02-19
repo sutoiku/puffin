@@ -5,7 +5,7 @@ PuffinDB includes a [DuckDB Extension](https://duckdb.org/docs/extensions/overvi
 ## Without Cloud-Side Template
 - Data lake connectivity ([Apache Iceberg](https://iceberg.apache.org/), [Apache Hudi](https://hudi.apache.org/), [Delta Lake](https://delta.io/))
 - Integration with [other database engines](Query%20Proxy.md#query-delegation) (Athena, Databricks, Snowflake, *etc.*)
-- [SQL dialect translation](Query%20Proxy.md#dialect-translation)
+- [SQL dialect translation](Query%20Proxy.md#dialect-translation) (powered by [SQLGlot](https://github.com/tobymao/sqlglot))
 - Remote [curl](https://curl.se/) invocation
 - [Remote query generation](Query%20Proxy.md)
 - Query Logging
