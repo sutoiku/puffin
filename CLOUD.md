@@ -78,7 +78,7 @@ Fourth, if someone told you that your laptop is more secure than your cloud, you
 DuckDB is growing on the client very rapidly, but it will spread across the cloud even faster.
 
 ## Clientless Architecture
-The beauty of [DuckDB](https://duckdb.org/) is that you will soon find it on every client, embedded within all kinds of applications, from [Jupyter](https://jupyter.org/) and [Posit](https://posit.co/) to [Tableau](https://www.tableau.com/) and [Excel](https://www.microsoft.com/en-us/microsoft-365/excel). Therefore, make sure to select a Cloud Data Engine that is designed to be [clientless](docs/Clientless.md), in the sense that it works with any client embedding DuckDB, through a simple extension installed from the SQL API. And resist the temptation of using a client that comes with your Cloud Data Engine. Instead, work with your client application's vendor to improve its integration with your Cloud Data Engine.
+The beauty of [DuckDB](https://duckdb.org/) is that you will soon find it on every client, embedded within all kinds of applications, from [Jupyter](https://jupyter.org/) and [Posit](https://posit.co/) to [Tableau](https://www.tableau.com/) and [Excel](https://www.microsoft.com/en-us/microsoft-365/excel). Therefore, make sure to select a Cloud Data Engine that is designed to be [clientless](docs/Clientless.md), in the sense that it works with any client embedding DuckDB, through a simple [extension](docs/Extension.md) installed from the SQL API. And resist the temptation of using a client that comes with your Cloud Data Engine. Instead, work with your client application's vendor to improve its integration with your Cloud Data Engine.
 
 ## Dataset Size
 Datasets come in all sizes. Here is how we like to think about them:
