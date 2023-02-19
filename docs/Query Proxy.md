@@ -17,6 +17,8 @@ To achieve these goals, PuffinDB is architected around two main components:
 
 The `puffindb` DuckDB extension is installed once by the user. From there, support for any number of query generators can be added from DuckDB's SQL API, using the public **Registry** managed by PuffinDB. Once a query is submitted by the user through DuckDB's SQL API, it is sent to the cloud-side **PuffinDB Proxy**, which forwards it to the **Query Generator**. The query is then translated into SQL and sent back to the user's DuckDB engine for execution.
 
+Several options are being considered for the packaging of the Query Generator. One of them is to use [WebAssembly](https://webassembly.org/), which would allow both client-side and cloud-side execution.
+
 ## Benefits for Vendors
 - No need to develop and distribute any proprietary DuckDB extension
 - No need to develop yet another SQL parser | serializer
