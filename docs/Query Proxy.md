@@ -30,3 +30,4 @@ Several options are currently being considered for the packaging of the Query Ge
 ## Benefits for Users
 - No need to install one DuckDB extension for every query generator
 - Data and metadata confidentiality when running query generator on user's VPC
+- Cloud-side acceleration of query generation and query optimization
