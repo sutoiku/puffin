@@ -34,6 +34,7 @@ Features will be implemented in the following order. Please start an `Idea` [dis
 - [ ] [Query result caching](FAQ.md#how-does-query-result-caching-work) on CDN ([Amazon CloudFront](https://aws.amazon.com/cloudfront/))
 - [ ] Basic [distributed query planner](docs/Query%20Planner.md)
 - [ ] Distributed query execution across multiple serverless functions
+- [ ] [Query proxy](docs/Query%20Proxy.md)
 - [ ] [Microsoft Azure](https://azure.microsoft.com/en-us) support
 - [ ] Joins across tables managed by different Lakehouse instances
 - [ ] Asynchronous invocations over [Apache Arrow](https://arrow.apache.org/)
