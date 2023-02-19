@@ -7,3 +7,10 @@ PuffinDB is built upon the strong belief that [SQL](https://en.wikipedia.org/wik
 - SQL parsing | serializing
 - [Scale-out and scale-up](../CLOUD.md#scale-out-and-scale-up)
 - IP protection
+
+## Architecture
+To achieve these goals, PuffinDB is architected around two main components:
+- A [DuckDB extension](Extension.md)
+- A cloud-side proxy operated by PuffinDB
+
+The `puffindb` DuckDB extension is installed once by the end-user. From there, support for any number of query generators can be added from DuckDB's SQL API, using a public registry managed by PuffinDB.
