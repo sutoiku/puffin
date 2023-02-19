@@ -24,7 +24,7 @@ Several options are currently being considered for the packaging of Query Genera
 The exact same mechanism used for remote query generation will be used for remote query optimization by the [distributed query planner](Query%20Planner.md). Furthermore, the integration of technologies like [WeTune](https://ipads.se.sjtu.edu.cn/_media/publications/wetune_final.pdf) within the distributed query planner will ensure that machine-generated queries are properly optimized, even in cases where DuckDB's built-in optimizer might prove suboptimal (**query pre-optimization**).
 
 ## Query Delegation
-The exact same architecture will be used for delegating queries to third-party engines. This feature can be used for:
+The exact same architecture will be used for delegating queries to third-party engines with [`SELECT THROUGH`](Clientless.md#select-through). This feature can be used for:
 - Data validation
 - Outlier detection
 - Error correction
