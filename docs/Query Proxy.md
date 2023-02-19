@@ -20,4 +20,5 @@ The `puffindb` DuckDB extension is installed once by the user. From there, suppo
 ## Benefits for Vendors
 - No need to develop and distribute any proprietary DuckDB extension
 - No need to develop yet another SQL parser | serializer
-- Access the metadata of tables managed by the most popular data lakes ([Apache Iceberg](https://iceberg.apache.org/), [Apache Hudi](https://hudi.apache.org/), [Delta Lake](https://delta.io/))
+- Access to the metadata of tables managed by the most popular data lakes ([Apache Iceberg](https://iceberg.apache.org/), [Apache Hudi](https://hudi.apache.org/), [Delta Lake](https://delta.io/))
+- Direct integration with the user's VPC
