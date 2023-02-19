@@ -2,7 +2,7 @@
 
 PuffinDB includes a [DuckDB Extension](https://duckdb.org/docs/extensions/overview.html) implementing the following features:
 
-## Without Cloud-Side Templane
+## Without Cloud-Side Template
 - Data lake connectivity ([Apache Iceberg](https://iceberg.apache.org/), [Apache Hudi](https://hudi.apache.org/), [Delta Lake](https://delta.io/))
 - Integration with other database engines ([Snowflake](https://www.snowflake.com/en/), [Databricks](https://www.databricks.com/), [Athena](https://aws.amazon.com/athena/), *etc.*)
 - [SQL dialect translation](Query%20Proxy.md#dialect-translation)
