@@ -22,7 +22,7 @@ PuffinDB will organize some activites, but participants will be free to spend th
 Good meals in Michelin starred restaurants will be offered.
 
 ## Agenda
-- Project overview
+- [Project Overview](../README.md)
 - [DuckDB Extension](Extension.md)
 - [Query Proxy](Query%20Proxy.md)
 - [Query Planner](Query%20Planner.md)
