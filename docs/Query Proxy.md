@@ -54,7 +54,7 @@ When delegating a subquery to a third-party SQL engine with [`SELECT THROUGH`](C
 - Tableau
 - Teradata
 - Trino
-- TSQL
+- T-SQL
 
 ## Benefits for Vendors
 - No need to develop and distribute any proprietary DuckDB extension
