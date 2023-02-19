@@ -14,8 +14,8 @@ PuffinDB has a radical serverless and cloud-native architecture. Deployment on "
 ## Serverless Components
 PuffinDB is architected around the following serverless components:
 
-- [Engine](../functions/engine/README.md) — Node.js serverless function packaging the query handler, [query planner](Query%20Planner.md), and [DuckDB](https://duckdb.org/) query engine
 - [Catalog](../functions/catalog/README.md) — Java serverless function packaging [Iceberg's Java API](https://iceberg.apache.org/docs/latest/api/)
+- [Engine](../functions/engine/README.md) — Node.js serverless function packaging the query handler, [query planner](Query%20Planner.md), and [DuckDB](https://duckdb.org/) query engine
 - [Python](../functions/python/README.md) — Python serverless function packaging a cloud-side Python runtime and the [SQLGlot](https://github.com/tobymao/sqlglot) SQL Parser and Transpiler
 - [Amazon Athena](https://aws.amazon.com/athena/) for executing write queries on lakehouse tables (eventually replaced by [Icecap](Icecap.md))
 - [Amazon ElastiCache for Redis](https://aws.amazon.com/elasticache/redis/) for logging, queuing, and synchronization
