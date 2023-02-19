@@ -26,7 +26,7 @@ Good meals in Michelin starred restaurants will be offered.
 - [DuckDB Extension](../docs/Extension.md)
 - [Query Proxy](../docs/Query%20Proxy.md)
 - [Query Planner](../docs/Query%20Planner.md)
-- [Query Engine](../docs/Query%20engine.md)
+- [Query Engine](../docs/Query%20Engine.md)
 
 ## Credits
 Many thanks to our dear friend [Mila Dragojević](https://new.sewanee.edu/programs-of-study/politics/faculty-staff/mila-dragojevic/) for having recommended the meetup's location.
