@@ -10,7 +10,7 @@ PuffinDB is built upon the strong belief that [SQL](https://en.wikipedia.org/wik
 
 ## Architecture
 To achieve these goals, query generation is architected around four main components:
-- A [DuckDB extension](Extension.md)
+- A client-side [DuckDB extension](Extension.md)
 - A cloud-side **PuffinDB Proxy** operated by PuffinDB
 - A cloud-side **Query Generator** running on the vendor's cloud or the user's VPC (depending on IP protection requirements)
 - A cloud-side **Registry** of query generators managed by PuffinDB
