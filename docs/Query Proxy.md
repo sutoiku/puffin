@@ -39,6 +39,8 @@ Out of the box, PuffinDB will provide integration with the following databases:
 
 - [Athena](https://aws.amazon.com/athena/)
 - [Databricks](https://www.databricks.com/)
+- [DuckDB](https://duckdb.org/)
+- [EMR Spark SQL](https://aws.amazon.com/emr/)
 - [RDS for Aurora](https://aws.amazon.com/rds/aurora/)
 - [RDS for MariaDB](https://aws.amazon.com/rds/mariadb/)
 - [RDS for MySQL](https://aws.amazon.com/rds/mysql/)
@@ -47,6 +49,7 @@ Out of the box, PuffinDB will provide integration with the following databases:
 - [RDS for SQL Server](https://aws.amazon.com/rds/sqlserver/)
 - [Redshift](https://aws.amazon.com/redshift/)
 - [Snowflake](https://www.snowflake.com/en/)
+- [SQLite](https://www.sqlite.org/)
 
 
 ## Dialect Translation
