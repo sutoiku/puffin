@@ -23,6 +23,8 @@ The `puffindb` DuckDB extension is installed once by the user. From there, suppo
 - Access to the metadata of tables managed by the most popular data lakes ([Apache Iceberg](https://iceberg.apache.org/), [Apache Hudi](https://hudi.apache.org/), [Delta Lake](https://delta.io/))
 - Direct integration with the user's VPC
 - [Scale-out and scale-up](../CLOUD.md#scale-out-and-scale-up) of complex queries through [distributed SQL engine](Query%20Engine.md)
+- IP protection when running query generator on vendor's cloud
 
 ## Benefits for Users
 - No need to install one DuckDB extension for every query generator
+- Data and metadata confidentiality when running query generator on user's VPC
