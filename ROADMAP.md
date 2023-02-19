@@ -10,6 +10,7 @@ Features will be implemented in the following order. Please start an `Idea` [dis
 - [ ] Integration testing framework
 - [ ] [Engine](functions/engine/README.md) serverless function
 - [ ] [Catalog](functions/catalog/README.md) serverless function
+- [ ] [DuckDB](https://duckdb.org/) extension
 - [ ] [DuckDB](https://duckdb.org/) integration
 - [ ] [PRQL](https://prql-lang.org/) to SQL translator
 - [ ] [Malloy](https://github.com/malloydata/malloy/tree/main/packages/malloy) to SQL translator
