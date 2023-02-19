@@ -27,6 +27,7 @@ The exact same mechanism used for remote query generation will be used for remot
 The exact same architecture will be used for delegating queries to third-party engines. This feature can be used for:
 - Data validation
 - Outlier detection
+- Error correction
 - Prediction
 - Recommendation
 - Synthetic data generation
