@@ -6,17 +6,20 @@ Serverless [HTAP](https://en.wikipedia.org/wiki/Hybrid_transactional/analytical_
 ## Introduction
 PuffinDB is an open source project [sponsored](SPONSORS.md) by [STOIC](https://stoic.com/). Its primary purpose is to make it easier to run [DuckDB](https://duckdb.org/) on serverless functions ([AWS Lambda](https://aws.amazon.com/lambda/), [Azure Function](https://learn.microsoft.com/en-us/azure/azure-functions/functions-overview), [Google Cloud Function](https://cloud.google.com/functions)) for executing read | write queries against objects managed by an Object Store ([Amazon S3](https://aws.amazon.com/s3/), [Azure Blob Storage](https://azure.microsoft.com/en-us/products/storage/blobs), [Google Cloud Storage](https://cloud.google.com/storage)) and tables managed by a data lake ([Apache Iceberg](https://iceberg.apache.org/), [Apache Hudi](https://hudi.apache.org/), [Delta Lake](https://delta.io/)).
 
-If you are using DuckDB client-side with [any client application](docs/Clientless.md), adding PuffinDB will let you:
+If you are using DuckDB client-side with [any client application](docs/Clientless.md), adding the [PuffinDB extension](docs/Extension.md) will let you:
 - Collaborate on the same [Iceberg tables](https://iceberg.apache.org/spec/) with other users
 - Write back to an Iceberg table with [ACID](https://en.wikipedia.org/wiki/ACID) transactional integrity
+- Accelerate and | or schedule the downloading of large tables to your client
+- Execute [cross-database joins](Query%20Proxy.md#query-delegation) joins (*Cf.* [Edge-Driven Data Integration](EDDI.md))
+- Translate between 19 [SQL dialects](Query%20Proxy.md#dialect-translation) (powered by [SQLGlot](https://github.com/tobymao/sqlglot))
+- Invoke [remote query generators](Query%20Proxy.md)
+- Invoke [curl](https://curl.se/) commands
+- Logs all your queries on your data lake
+
+Furthermore, adding a single [CloudFormation](https://aws.amazon.com/cloudformation/) template to your [AWS](https://aws.amazon.com/) account will let you:
 - Handle datasets that are too large for your client
 - Accelerate queries that run too slow on your client
-- Integrate with external data sources (*Cf.* [Edge-Driven Data Integration](EDDI.md))
-- Accelerate the downloading of large tables to your client
-- Schedule fetching and client-side caching of [remote datasets](docs/Clientless.md#scheduled-remote-data-fetching-and-local-caching)
 - Cache tables and run computations at the edge ([Amazon CloudFront](https://aws.amazon.com/cloudfront/) × [Lambda@Edge](https://aws.amazon.com/lambda/edge/))
-
-All it takes is an [AWS](https://aws.amazon.com/) account and a few clicks on the [AWS Marketplace](https://aws.amazon.com/marketplace) (PuffinDB is free and [runs on your VPC](FAQ.md#why-support-so-many-deployment-options)).
 
 PuffinDB is an initiative of [STOIC](https://stoic.com/), and not [DuckDB Labs](https://duckdblabs.com/) or the [DuckDB Foundation](https://duckdb.org/foundation/).
 
