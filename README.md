@@ -44,7 +44,7 @@ STOIC is a Silver Member of the DuckDB Foundation.
 - Integrated with [Apache Iceberg](https://iceberg.apache.org/), [Apache Hudi](https://hudi.apache.org/), and [Delta Lake](https://delta.io/)
 - Deployed on [AWS](https://aws.amazon.com/) first, then [Microsoft Azure](https://azure.microsoft.com/en-us) and [Google Cloud](https://cloud.google.com/)
 - Invoked through an HTTP endpoint served by [Amazon API Gateway](https://aws.amazon.com/api-gateway/)
-- Deployed as two [AWS Lambda](https://aws.amazon.com/lambda/) functions
+- Deployed as three [AWS Lambda functions](functions/) and one [Amazon EC2](https://aws.amazon.com/ec2/) instance.
 - Integrated with [Amazon Athena](https://aws.amazon.com/athena/)
 - Packaged as an [AWS CloudFormation](https://aws.amazon.com/cloudformation/) template (using [Terraform](https://www.terraform.io/))
 - Released as a free [AWS Marketplace](https://aws.amazon.com/marketplace) product
