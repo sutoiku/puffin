@@ -38,7 +38,7 @@ STOIC is a Silver Member of the DuckDB Foundation.
 ## Outline
 - [Serverless architecture](docs/Architecture.md)
 - Supporting both read and write queries ([HTAP](https://en.wikipedia.org/wiki/Hybrid_transactional/analytical_processing))
-- Implemented in [Node.js](https://nodejs.org/en/) (to be upgraded to [Bun](https://bun.sh/)) and [Rust](https://www.rust-lang.org/)
+- Implemented in [Node.js](https://nodejs.org/en/) (to be upgraded to [Bun](https://bun.sh/)), [Python](https://www.python.org/), and [Rust](https://www.rust-lang.org/)
 - Powered by [Arrow](https://arrow.apache.org/) × [DuckDB](https://duckdb.org/) × [Iceberg](https://iceberg.apache.org/)
 - Powered by [Redis](https://redis.io/) (using [Amazon ElastiCache for Redis](https://aws.amazon.com/elasticache/redis/)) for superfast shuffles
 - Integrated with [Apache Iceberg](https://iceberg.apache.org/), [Apache Hudi](https://hudi.apache.org/), and [Delta Lake](https://delta.io/)
