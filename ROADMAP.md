@@ -1,5 +1,10 @@
 # Roadmap
 
+- Q2: PuffinDB 0.1 with basic query planner (filter pushdown).
+- Q4: PuffinDB 1.0 with advanced query planner (including support for full [TPC-H](https://www.tpc.org/tpch/) benchmark)
+- 2024: PuffinDB 2.0 (support for full [TPC-DS](https://www.tpc.org/tpcds/) benchmark)
+
+## Features
 Features will be implemented in the following order. Please start an `Idea` [discussion](https://github.com/sutoiku/puffin/discussions) to discuss any element of this proposed roadmap.
 
 - [x] [GitHub repository](https://github.com/sutoiku/puffin)
