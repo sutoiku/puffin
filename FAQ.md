@@ -3,19 +3,22 @@
 Please ask new questions as a `Q&A` in [discussions](https://github.com/sutoiku/puffin/discussions).
 
 ## What is PuffinDB?
-PuffinDB is a serverless data lake query engine powered by [Iceberg](https://iceberg.apache.org/) × [DuckDB](https://duckdb.org/) × [Arrow](https://arrow.apache.org/).
+PuffinDB is a serverless [HTAP](https://en.wikipedia.org/wiki/Hybrid_transactional/analytical_processing) data mesh platform powered by [Arrow](https://arrow.apache.org/) × [DuckDB](https://duckdb.org/) × [Iceberg](https://iceberg.apache.org/).
 
 ## Why should I use PuffinDB?
-PuffinDB makes it much easier to run [DuckDB](https://duckdb.org/) on serverless functions ([AWS Lambda](https://aws.amazon.com/lambda/), [Azure Function](https://learn.microsoft.com/en-us/azure/azure-functions/functions-overview), [Google Cloud Function](https://cloud.google.com/functions)) for executing read | write queries against objects managed by an Object Store ([Amazon S3](https://aws.amazon.com/s3/), [Azure Blob Storage](https://azure.microsoft.com/en-us/products/storage/blobs), [Google Cloud Storage](https://cloud.google.com/storage)) and tables managed by a Lakehouse ([Apache Iceberg](https://iceberg.apache.org/), [Apache Hudi](https://hudi.apache.org/), [Delta Lake](https://delta.io/)).
-
-If you are using DuckDB client-side with [any client application](docs/Clientless.md), adding PuffinDB (just a few clicks on the [AWS Marketplace](https://aws.amazon.com/marketplace)) will let you:
+If you are using DuckDB client-side with [any client application](docs/Clientless.md), adding the [PuffinDB extension](docs/Extension.md) will let you:
 - Collaborate on the same [Iceberg tables](https://iceberg.apache.org/spec/) with other users
 - Write back to an Iceberg table with [ACID](https://en.wikipedia.org/wiki/ACID) transactional integrity
-- Handle datasets that are too large for your client
-- Accelerate queries that run too slow on your client
-- Integrate with external data sources (*Cf.* [Edge-Driven Data Integration](EDDI.md))
-- Accelerate the downloading of large tables to your client
-- Schedule fetching and caching of [remote datasets](docs/Clientless.md#scheduled-remote-data-fetching-and-local-caching)
+- Accelerate and | or schedule the downloading of large tables to your client
+- Execute [cross-database joins](docs/Query%20Proxy.md#query-delegation) (*Cf.* [Edge-Driven Data Integration](EDDI.md))
+- Translate between 19 [SQL dialects](docs/Query%20Proxy.md#dialect-translation) (powered by [SQLGlot](https://github.com/tobymao/sqlglot))
+- Invoke [remote query generators](docs/Query%20Proxy.md)
+- Invoke [curl](https://curl.se/) commands
+- Log queries on your data lake
+
+Furthermore, adding a single [CloudFormation](https://aws.amazon.com/cloudformation/) template to your [AWS](https://aws.amazon.com/) account will let you:
+- Handle datasets that are too large for your client (using 100TB+ of RAM from serverless functions)
+- Accelerate queries that run too slow on your client (using 100,000+ vCPUs from serverless functions)
 - Cache tables and run computations at the edge ([Amazon CloudFront](https://aws.amazon.com/cloudfront/) × [Lambda@Edge](https://aws.amazon.com/lambda/edge/))
 
 ## What is Cloud Data?
