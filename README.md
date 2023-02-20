@@ -55,8 +55,8 @@ STOIC is a Silver Member of the DuckDB Foundation.
 - Write queries against Lakehouse tables executed by [Amazon Athena](https://aws.amazon.com/athena/)
 - Built-in [Malloy](https://github.com/malloydata/malloy/tree/main/packages/malloy) to SQL translator
 - Built-in [PRQL](https://prql-lang.org/) to SQL translator
-- Built-in SQL dialect converter
-- Built-in SQL parser | stringifier
+- Built-in [SQL dialect converter](https://github.com/tobymao/sqlglot)
+- Built-in [SQL parser | stringifier](https://twitter.com/ghalimi/status/1625172235895046146)
 - Sub-500ms table scanning API (fetch table partitions from filter predicates) running on standalone function
 - Concurrent support for multiple table formats ([Apache Iceberg](https://iceberg.apache.org/), [Apache Hudi](https://hudi.apache.org/), and [Delta Lake](https://delta.io/))
 - Concurrent suport for multiple Lakehouse instances
