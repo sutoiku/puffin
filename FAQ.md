@@ -76,8 +76,8 @@ Initially, [AWS](https://aws.amazon.com/). Support for [Microsoft Azure](https:/
 
 ## Why support so many deployment options?
 So that you can pick the one that will work best for you:
-- **Hard**: [Node.js](https://nodejs.org/en/) module deeply integrated within your own tool or application
-- **Easy**:[AWS Lambda](https://aws.amazon.com/lambda/) deployed within your own cloud platform
+- **Hard**: [Node.js](https://nodejs.org/en/) module or [Python](https://www.python.org/) library deeply integrated within your own tool or application
+- **Easy**: [AWS Lambda functions](functions/) deployed within your own cloud platform
 - **Easier**: [AWS CloudFormation](https://aws.amazon.com/cloudformation/) template deployed within your own [VPC](https://aws.amazon.com/vpc/)
 - **Easiest**: [AWS Marketplace](https://aws.amazon.com/marketplace) product added to your own cloud environment
 
