@@ -1,5 +1,5 @@
 # PuffinDB 🐧
-Serverless data lake [HTAP](https://en.wikipedia.org/wiki/Hybrid_transactional/analytical_processing) engine powered by [Arrow](https://arrow.apache.org/) × [DuckDB](https://duckdb.org/) × [Iceberg](https://iceberg.apache.org/)
+Serverless [HTAP](https://en.wikipedia.org/wiki/Hybrid_transactional/analytical_processing) data mesh platform powered by [Arrow](https://arrow.apache.org/) × [DuckDB](https://duckdb.org/) × [Iceberg](https://iceberg.apache.org/)
 
 **Kickoff meetup**: [Rovinj, Croatia, March 29-30, 2023](meetup)
 
