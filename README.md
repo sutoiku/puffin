@@ -14,7 +14,7 @@ If you are using DuckDB client-side with [any client application](docs/Clientles
 - Translate between 19 [SQL dialects](Query%20Proxy.md#dialect-translation) (powered by [SQLGlot](https://github.com/tobymao/sqlglot))
 - Invoke [remote query generators](Query%20Proxy.md)
 - Invoke [curl](https://curl.se/) commands
-- Logs all your queries on your data lake
+- Log queries on your data lake
 
 Furthermore, adding a single [CloudFormation](https://aws.amazon.com/cloudformation/) template to your [AWS](https://aws.amazon.com/) account will let you:
 - Handle datasets that are too large for your client
