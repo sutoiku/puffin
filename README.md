@@ -74,7 +74,7 @@ STOIC is a Silver Member of the DuckDB Foundation.
 - [Query logs](docs/Logs.md) recorded as [JSON](https://redis.io/docs/stack/json/) values in [Redis](https://redis.io/) cluster or on data lake using Parquet file
 - Transparent support for all file formats supported by [DuckDB](https://duckdb.org/) and the Lakehouse
 - Transparent support for all table lifecycle features offered by the Lakehouse
-- Planned support for deployment on [Amazon EC2](https://aws.amazon.com/ec2/) and [AWS Fargate](https://aws.amazon.com/fargate/)
+- Planned support for deployment on [AWS Fargate](https://aws.amazon.com/fargate/)
 
 ## Deployment
 PuffinDB will support four [complementary deployment options](FAQ.md#why-support-so-many-deployment-options):
