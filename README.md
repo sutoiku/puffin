@@ -10,7 +10,7 @@ If you are using DuckDB client-side with [any client application](docs/Clientles
 - Collaborate on the same [Iceberg tables](https://iceberg.apache.org/spec/) with other users
 - Write back to an Iceberg table with [ACID](https://en.wikipedia.org/wiki/ACID) transactional integrity
 - Accelerate and | or schedule the downloading of large tables to your client
-- Execute [cross-database joins](Query%20Proxy.md#query-delegation) joins (*Cf.* [Edge-Driven Data Integration](EDDI.md))
+- Execute [cross-database joins](Query%20Proxy.md#query-delegation) (*Cf.* [Edge-Driven Data Integration](EDDI.md))
 - Translate between 19 [SQL dialects](Query%20Proxy.md#dialect-translation) (powered by [SQLGlot](https://github.com/tobymao/sqlglot))
 - Invoke [remote query generators](Query%20Proxy.md)
 - Invoke [curl](https://curl.se/) commands
