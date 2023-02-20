@@ -71,7 +71,7 @@ STOIC is a Silver Member of the DuckDB Foundation.
 - Small filtered partitions [cached](FAQ.md#how-does-partition-caching-work) on [AWS Lambda](https://aws.amazon.com/lambda/) function
 - Query results returned as HTTP response, serialized on Object Store, or streamed through [Apache Arrow](https://arrow.apache.org/)
 - Query results [cached](FAQ.md#how-does-query-result-caching-work) on Object Store ([Amazon S3](https://aws.amazon.com/s3/)) and CDN ([Amazon CloudFront](https://aws.amazon.com/cloudfront/))
-- [Query logs](docs/Logs.md) recorded as [JSON](https://redis.io/docs/stack/json/) values in [Redis](https://redis.io/) cluster (using [Amazon ElastiCache for Redis](https://aws.amazon.com/elasticache/redis/))
+- [Query logs](docs/Logs.md) recorded as [JSON](https://redis.io/docs/stack/json/) values in [Redis](https://redis.io/) cluster or on data lake using Parquet file
 - Transparent support for all file formats supported by [DuckDB](https://duckdb.org/) and the Lakehouse
 - Transparent support for all table lifecycle features offered by the Lakehouse
 - Planned support for deployment on [Amazon EC2](https://aws.amazon.com/ec2/) and [AWS Fargate](https://aws.amazon.com/fargate/)
