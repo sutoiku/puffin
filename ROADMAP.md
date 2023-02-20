@@ -1,7 +1,7 @@
 # Roadmap
 
 - **Q2**: PuffinDB 0.1 with basic [distributed query planner](docs/Query%20Planner.md) (filter pushdown)
-- **Q4**: PuffinDB 1.0 with advanced distributed query planner (including support for full [TPC-H](https://www.tpc.org/tpch/) benchmark)
+- **Q4**: PuffinDB 1.0 with advanced distributed query planner (support for full [TPC-H](https://www.tpc.org/tpch/) benchmark)
 - **2024**: PuffinDB 2.0 (support for full [TPC-DS](https://www.tpc.org/tpcds/) benchmark)
 
 ## Features
