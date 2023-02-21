@@ -15,7 +15,7 @@ If you are using DuckDB client-side with [any client application](docs/Clientles
 - Log queries on your data lake
 
 Furthermore, adding a single [CloudFormation](https://aws.amazon.com/cloudformation/) template to your [AWS](https://aws.amazon.com/) account will let you:
-- Run queries across tens of thousands of serverless functions and a [Monostore](docs/Monostore.md)
+- Distribute queries across tens of thousands of serverless functions and a [Monostore](docs/Monostore.md)
 - Cache tables and run computations at the edge ([Amazon CloudFront](https://aws.amazon.com/cloudfront/) × [Lambda@Edge](https://aws.amazon.com/lambda/edge/))
 
 PuffinDB is an initiative of [STOIC](https://stoic.com/), and not [DuckDB Labs](https://duckdblabs.com/) or the [DuckDB Foundation](https://duckdb.org/foundation/).
