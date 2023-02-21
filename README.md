@@ -1,4 +1,4 @@
-# PuffinDB <img src="https://user-images.githubusercontent.com/1074452/220389778-245dd23e-3f09-4615-bdf1-24cd1eb8b819.png" width="30">
+# PuffinDB <img src="https://user-images.githubusercontent.com/1074452/220389778-245dd23e-3f09-4615-bdf1-24cd1eb8b819.png" style="margin-left: 1em" width="28">
 
 Serverless [HTAP](https://en.wikipedia.org/wiki/Hybrid_transactional/analytical_processing) data mesh platform powered by [Arrow](https://arrow.apache.org/) × [DuckDB](https://duckdb.org/) × [Iceberg](https://iceberg.apache.org/)
 
