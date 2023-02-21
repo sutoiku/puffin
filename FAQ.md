@@ -17,8 +17,7 @@ If you are using DuckDB client-side with [any client application](docs/Clientles
 - Log queries on your data lake
 
 Furthermore, adding a single [CloudFormation](https://aws.amazon.com/cloudformation/) template to your [AWS](https://aws.amazon.com/) account will let you:
-- Handle datasets that are too large for your client (using 100TB+ of RAM from serverless functions)
-- Accelerate queries that run too slow on your client (using 100,000+ vCPUs from serverless functions)
+- Distribute queries across tens of thousands of serverless functions and a [Monostore](docs/Monostore.md)
 - Cache tables and run computations at the edge ([Amazon CloudFront](https://aws.amazon.com/cloudfront/) × [Lambda@Edge](https://aws.amazon.com/lambda/edge/))
 
 ## What is Cloud Data?
