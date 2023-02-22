@@ -27,7 +27,7 @@ PuffinDB is an initiative of [STOIC](https://stoic.com/), and not [DuckDB Labs](
 
 DuckDB and the DuckDB logo are trademarks of the DuckDB Foundation.
 
-PuffinDB and the PuffinDB logo are trademarks of STOIC.
+PuffinDB and the PuffinDB logo are trademarks of STOIC (Sutoiku, Inc.).
 
 STOIC is a Silver Member of the DuckDB Foundation.
 
