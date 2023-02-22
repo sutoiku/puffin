@@ -2,6 +2,8 @@
 
 Serverless [HTAP](https://en.wikipedia.org/wiki/Hybrid_transactional/analytical_processing) data mesh platform powered by [Arrow](https://arrow.apache.org/) × [DuckDB](https://duckdb.org/) × [Iceberg](https://iceberg.apache.org/)
 
+Accelerate DuckDB with 10,000 [AWS Lambda functions](https://aws.amazon.com/lambda/).
+
 **Kickoff meetup**: [Rovinj, Croatia, March 29-30, 2023](meetup)
 
 ## Introduction
