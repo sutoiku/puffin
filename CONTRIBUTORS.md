@@ -3,6 +3,7 @@
 The following people have made significant contributions to the PuffinDB project:
 
 - Tobias Brandt — [snth](https://github.com/snth)
+- Marcin Copik — [mcopik](https://github.com/mcopik)
 - Mimoune Djouallah — [djouallah](https://github.com/djouallah)
 - Philippe Entzmann — [phe](https://github.com/PhE)
 - Ismael Ghalimi — [ghalimi](https://github.com/ghalimi)
