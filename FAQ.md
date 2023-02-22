@@ -92,8 +92,8 @@ From the client side (browser, local application, online service), PuffinDB can 
 ## Can I use PuffinDB with Python?
 Of course! There are many ways to do that. One of them is to use any Python package that embeds [DuckDB](https://duckdb.org/), such as [duckdb - PyPi](https://pypi.org/project/duckdb/), then install the [PuffinDB extension](docs/Extension.md) through the SQL API. Another one is to use the [Python](functions/python/README.md) serverless function, which provides a cloud-side Python runtime embedding [DuckDB](https://duckdb.org/), the [DuckDB Python API](https://duckdb.org/docs/api/python/overview.html), and several critical Python libraries (*e.g.* [Ibis](https://ibis-project.org/), [SQLGlot](https://github.com/tobymao/sqlglot)).
 
-## Why use a Redis cluster for distributed shuffles?
-Distributed shuffles require low latency and large transient storage capacity. A large [Amazon ElastiCache for Redis](https://aws.amazon.com/elasticache/redis/) cluster can provide:
+## Why use a Redis cluster for distributed query orchestration?
+Distributed query orchestration requires low latency and high throughput. A large [Amazon ElastiCache for Redis](https://aws.amazon.com/elasticache/redis/) cluster can provide:
 - Submillisecond latency
 - Tens of millions of transactions per second
 - Up to 340 TB of in-memory storage
