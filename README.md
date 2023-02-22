@@ -83,7 +83,7 @@ STOIC is a Silver Member of the DuckDB Foundation.
 - Planned support for deployment on [AWS Fargate](https://aws.amazon.com/fargate/)
 
 ## Deployment
-PuffinDB will support four [complementary deployment options](FAQ.md#why-support-so-many-deployment-options):
+PuffinDB will support four [incremental deployment options](FAQ.md#why-support-so-many-deployment-options):
 - [Node.js](https://nodejs.org/en/) and [Python](https://www.python.org/) modules deeply integrated within your own tool or application
 - [AWS Lambda functions](functions/) deployed within your own cloud platform
 - [AWS CloudFormation](https://aws.amazon.com/cloudformation/) template deployed within your own [VPC](https://aws.amazon.com/vpc/)
