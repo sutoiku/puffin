@@ -89,7 +89,7 @@ Initially, PuffinDB will be deployed on [AWS Lambda](https://aws.amazon.com/lamb
 Fair question. Whenever PuffinDB is deployed on [Amazon EC2](https://aws.amazon.com/ec2/) instances, it still uses fleets of [AWS Lambda](https://aws.amazon.com/lambda/) for loading objects from the Object Store and for processing some parts of distributed queries, while using the EC2 instances for [reduction](https://en.wikipedia.org/wiki/Reduction_operator) purposes. The goal here is to be as serverless as possible, while remaining pragmatic (serverless Fargates remain much less powerful than the largest EC2 instances). Eventually, we expect Fargates to become more and more powerful, so much so that we will not need to rely on EC2 instances anymore for the vast majority of applications and workloads.
 
 ## Do I need a specific client to use PuffinDB?
-From the client side (browser, local application, online service), PuffinDB can be used through any HTTP client, or through [DuckDB](https://duckdb.org/) ([more](docs/Clientless.md)).
+No. PuffinDB has a [clientless](docs/Clientless.md) architecture and can be used from any application embedding the [DuckDB](https://duckdb.org/) engine, using a simple [extension](docs/Extension.md).
 
 ## Can I use PuffinDB with Python?
 Of course! The [PuffinDB Extension](docs/Extension.md) for DuckDB provides bindings for [CPython](https://github.com/python/cpython) (barebone or via [Pyodide](https://pyodide.org/)).
