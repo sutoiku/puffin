@@ -1,6 +1,6 @@
 # Python Engine
 
-The **Python Engine** function is a [Python](https://www.python.org/) serverless function providing a cloud-side Python runtime. It embeds the following components:
+The **Python Engine** function is a serverless function providing a cloud-side [Python](https://www.python.org/) runtime. It embeds the following components:
 
 - [DuckDB](https://duckdb.org/) with [Python API](https://duckdb.org/docs/api/python/overview.html)
 - [Distributed Query Planner](../../docs/Query%20Planner.md)
