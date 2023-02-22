@@ -8,8 +8,7 @@ PuffinDB has a radical serverless and cloud-native architecture. Deployment on "
 - Do the last bits with a single server-based container ([Monostore](Monostore.md)) vwith as much capacity as possible ([Amazon EC2](https://aws.amazon.com/ec2/)).
 - Cache data in memory as aggressively as possible.
 - Use an auto-scaling [Redis](https://redis.io/) cluster for synchronization (submillisecond transactions, millions of transactions per second).
-- Use the same [Redis](https://redis.io/) cluster for small shuffles.
-- Use the Object Store ([Amazon S3](https://aws.amazon.com/s3/)) for larger shuffles.
+- Use [NAT hole punching](https://github.com/spcl/tcpunch) for data shuffles.
 
 ## Serverless Components
 PuffinDB is architected around the following serverless components:
