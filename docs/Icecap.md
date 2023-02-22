@@ -18,7 +18,7 @@ Down the road, we hope that Object Stores will add native support for updates in
 
 In the meantime, updates will be managed in the following fashion:
 
-1. Updates on table buffered on Redis
+1. Table updates buffered on Redis
 2. Partitions of tables loaded from object store and cached on serverless functions
 3. Updates applied in place by serverless functions
 4. Partitions serialized back onto object store
