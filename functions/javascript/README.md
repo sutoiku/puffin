@@ -1,4 +1,4 @@
-# JavaScript
+# JavaScript Function
 
 The **JavaScript** function is a serverless function providing a cloud-side [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) runtime. It embeds the following components::
 
