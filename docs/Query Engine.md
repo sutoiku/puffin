@@ -50,7 +50,7 @@ Whenever a query is executed, its distributed physical plan is generated to take
 When data is brought up from a certain caching layer, it is moved as close to the client as practically possible, and removed from its current caching layer (unless stored on the object store's lowest layer). For example, if data is cached on a serverless function and needs to be brought up, it will be moved to Monostore CPU RAM uncompressed (GPU RAM is only used for certain operations). From there, it might be brought down to free-up CPU RAM, first to CPU RAM compressed, then SSD uncompressed, then SSD compressed, and so on...
 
 ## Orchestration
-The orchestration of a distributed query is made possible by the use of a low-latency **Registry** powered by [Redis](https://redis.io/).
+The orchestration of distributed queries is enabled by a low-latency **Registry** powered by [Redis](https://redis.io/).
 
 ## Shuffling
 The shuffling of data between serverless functions is enabled by [NAT hole punching](https://github.com/spcl/tcpunch).
