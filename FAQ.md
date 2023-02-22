@@ -75,7 +75,7 @@ Initially, [AWS](https://aws.amazon.com/). Support for [Microsoft Azure](https:/
 
 ## Why support so many deployment options?
 So that you can pick the one that will work best for you:
-- **Hard**: [Node.js](https://nodejs.org/en/) module or [Python](https://www.python.org/) library deeply integrated within your own tool or application
+- **Hard**: [Bun](https://bun.sh/) and [Python](https://www.python.org/) modules deeply integrated within your own tool or application
 - **Easy**: [AWS Lambda functions](functions/) deployed within your own cloud platform
 - **Easier**: [AWS CloudFormation](https://aws.amazon.com/cloudformation/) template deployed within your own [VPC](https://aws.amazon.com/vpc/)
 - **Easiest**: [AWS Marketplace](https://aws.amazon.com/marketplace) product added to your own cloud environment
@@ -90,7 +90,7 @@ Fair question. Whenever PuffinDB is deployed on [Amazon EC2](https://aws.amazon.
 From the client side (browser, local application, online service), PuffinDB can be used through any HTTP client, or through [DuckDB](https://duckdb.org/) ([more](docs/Clientless.md)).
 
 ## Can I use PuffinDB with Python?
-Of course! There are many ways to do that. One of them is to use any Python package that embeds [DuckDB](https://duckdb.org/), such as [duckdb - PyPi](https://pypi.org/project/duckdb/), then install the [PuffinDB extension](docs/Extension.md) through the SQL API. Another one is to use the [Python](functions/python/README.md) serverless function, which provides a cloud-side Python runtime embedding [DuckDB](https://duckdb.org/), the [DuckDB Python API](https://duckdb.org/docs/api/python/overview.html), and several critical Python libraries (*e.g.* [Ibis](https://ibis-project.org/), [SQLGlot](https://github.com/tobymao/sqlglot)).
+Of course! The [PuffinDB Extension](docs/Extension.md) for DuckDB provides bindings for [CPython](https://github.com/python/cpython) (barebone or via [Pyodide](https://pyodide.org/)).
 
 ## Why use a Redis cluster for distributed query orchestration?
 Distributed query orchestration requires low latency and high throughput. A large [Amazon ElastiCache for Redis](https://aws.amazon.com/elasticache/redis/) cluster can provide:
