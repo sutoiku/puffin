@@ -15,8 +15,8 @@ PuffinDB has a radical serverless and cloud-native architecture. Deployment on "
 PuffinDB is architected around the following serverless components:
 
 - [Catalog](../functions/catalog/README.md) — Java serverless function packaging [Iceberg's Java API](https://iceberg.apache.org/docs/latest/api/)
-- [Engine](../functions/engine/README.md) — Node.js serverless function packaging the query handler, [query planner](Query%20Planner.md), and [DuckDB](https://duckdb.org/) query engine
-- [Python](../functions/python/README.md) — Python serverless function packaging a cloud-side Python runtime, [DuckDB](https://duckdb.org/), [Ibis](https://ibis-project.org/), and [SQLGlot](https://github.com/tobymao/sqlglot)
+- [JavaScript Engine](../functions/javascript/README.md) — [Bun](https://bun.sh/) serverless function packaging the query handler, [query planner](Query%20Planner.md), and [DuckDB](https://duckdb.org/) query engine
+- [Python Engine](../functions/python/README.md) — [Python](https://www.python.org/) serverless function packaging the query handler, [query planner](Query%20Planner.md), [DuckDB](https://duckdb.org/) query engine, and other libraries
 - [Amazon Athena](https://aws.amazon.com/athena/) for executing write queries on lakehouse tables (eventually replaced by [Icecap](Icecap.md))
 - [Amazon ElastiCache for Redis](https://aws.amazon.com/elasticache/redis/) for logging, queuing, and synchronization
 - [Amazon S3](https://aws.amazon.com/s3/) for object storage
