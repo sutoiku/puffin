@@ -66,7 +66,7 @@ CREATE TABLE localTable AS SELECT * THROUGH 'https://myPuffinDB.com' FROM remote
 
 ## Components
 For this architecture to work, we need two things:
-1. The [client-side query engine](docs/Clientless.md) and first remote query engine must support this new `SELECT THROUGH` syntax.
+1. The [client-side query engine](docs/Clientless.md) and first [remote query engine](functions/engine/README.md) must support this new `SELECT THROUGH` syntax.
 2. Both remote query engines must expose themselves as HTTP endpoints.
 
 The former will require a fairly sophisticated query planner, while the latter will just need a relatively-simple protocol. For performance and scalability reasons, this protocol should support both synchronous and asynchronous requests. With a synchronous request, the query's result should be returned as a simple response to the HTTP request. With an asynchronous request, the response should just include an Object Store URI from which the query's result could be fetched at a later time (with polling or notification).
