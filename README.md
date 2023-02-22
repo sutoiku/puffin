@@ -54,8 +54,8 @@ STOIC is a Silver Member of the DuckDB Foundation.
 - Licensed under [MIT License](https://opensource.org/licenses/MIT)
 
 ## Features
-- [Distributed SQL query engine](docs/Query%20Engine.md) powered by [DuckDB](https://duckdb.org/)
 - [Distributed SQL query planner](docs/Query%20Planner.md) powered by [DuckDB](https://duckdb.org/)
+- [Distributed SQL query engine](docs/Query%20Engine.md) powered by [DuckDB](https://duckdb.org/)
 - Distributed SQL query execution coordinated by [Redis](https://redis.io/) (using [Amazon ElastiCache for Redis](https://aws.amazon.com/elasticache/redis/))
 - Distributed data shuffles enabled by direct Lambda-to-Lambda communication through [NAT hole punching](https://github.com/spcl/tcpunch)
 - Read queries executed by [DuckDB](https://duckdb.org/) (on [AWS Lambda](https://aws.amazon.com/lambda/))
