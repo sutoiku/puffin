@@ -7,6 +7,7 @@ The following features are available without having to install any [CloudFormati
 - Read-Write data lake connectivity ([Apache Iceberg](https://iceberg.apache.org/), [Apache Hudi](https://hudi.apache.org/), [Delta Lake](https://delta.io/))
 - Binding to local [CPython](https://github.com/python/cpython) runtime (barebone CPython or [Pyodide](https://pyodide.org/))
 - Installation of [Micropip](https://micropip.pyodide.org/en/stable/project/api.html) Python extensions through DuckDB's SQL API
+- Read-write integration with hundreds of applications using any [Airbyte connector](https://airbyte.com/connectors)
 - [Cross-database](Query%20Proxy.md#query-delegation) joins (Athena, Databricks, Snowflake, *etc.*)
 - [SQL dialect translation](Query%20Proxy.md#dialect-translation) (powered by [SQLGlot](https://github.com/tobymao/sqlglot))
 - Remote [curl](https://curl.se/) invocation
