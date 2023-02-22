@@ -34,7 +34,7 @@ The following techniques are being considered:
 - Memoization for [cost-based optimization](https://www.querifylabs.com/blog/memoization-in-cost-based-optimizers)
 - Parallelization of query planning across multiple serverless functions
 - Parallelization of [metadata](https://www.querifylabs.com/blog/metadata-management-in-apache-calcite) lookups through concurrent invocations of the query engine
-- Dynamic cascading replanning at the edges
+- Dynamic cascaded replanning at the edges
 
 ## Strategy
 Because PuffinDB's [distributed query engine](Query%20Engine.md) will be deployed across [multiple tiers](Query%20Engine.md#physical-deployment) and might run across tens of thousands of serverless functions with [reactive caching](Query%20Engine.md#reactive-caching), its query planner will be quite sophisticated. There are three main ways to approach such a challenge:
