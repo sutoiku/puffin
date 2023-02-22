@@ -10,6 +10,7 @@ Accelerate DuckDB with 10,000 [AWS Lambda functions](https://aws.amazon.com/lamb
 If you are using DuckDB client-side with [any client application](docs/Clientless.md), adding the [PuffinDB extension](docs/Extension.md) will let you:
 - Collaborate on the same [Iceberg tables](https://iceberg.apache.org/spec/) with other users
 - Write back to an Iceberg table with [ACID](https://en.wikipedia.org/wiki/ACID) transactional integrity
+- Read from and write to hundreds of applications using any [Airbyte connector](https://airbyte.com/connectors)
 - Accelerate and | or schedule the downloading of large tables to your client
 - Execute [cross-database joins](docs/Query%20Proxy.md#query-delegation) (*Cf.* [Edge-Driven Data Integration](EDDI.md))
 - Translate between 19 [SQL dialects](docs/Query%20Proxy.md#dialect-translation)
