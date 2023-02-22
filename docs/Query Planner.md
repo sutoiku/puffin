@@ -19,7 +19,7 @@ A much more attractive option is to use [DuckDB](https://duckdb.org/) itself, by
 - Zero additional dependencies
 - In-browser deployment option
 - Access to a rapidly-growing community of [contributors](https://github.com/duckdb/duckdb/graphs/contributors)
-- Commercial support from [DuckDBLabs](https://duckdblabs.com/) through [STOIC](https://stoic.com/)'s sponsorship.
+- Commercial support from [DuckDBLabs](https://duckdblabs.com/) through [STOIC](https://stoic.com/)'s sponsorship
 
 ## Ideas
 The following techniques are being considered:
