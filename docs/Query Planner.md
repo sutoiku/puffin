@@ -14,7 +14,7 @@ A much more attractive option is to use [DuckDB](https://duckdb.org/) itself, by
 - Aligned with constraints of [serverless architecture](Architecture.md)
 - Aligned with target SQL dialect and primary query engine
 - Built-in query engine to lookup metadata related to remote tables
-- Built-in query engine for dynamic cascading replanning at the edges
+- Built-in query engine for dynamic cascaded replanning at the edges
 - Lowest-possible latency through co-location of query handler, query planner, and query engine
 - Zero additional dependencies
 - In-browser deployment option
