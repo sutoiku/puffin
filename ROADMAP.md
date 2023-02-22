@@ -13,7 +13,8 @@ Features will be implemented in the following order. Please start an `Idea` [dis
 - [ ] Core project framework
 - [ ] Unit testing framework
 - [ ] Integration testing framework
-- [ ] [Engine](functions/engine/README.md) serverless function
+- [ ] [JavaScript Engine](functions/javascript/README.md) serverless function
+- [ ] [Python Engine](functions/python/README.md) serverless function
 - [ ] [Catalog](functions/catalog/README.md) serverless function
 - [ ] [DuckDB extension](docs/Extension.md)
 - [ ] [DuckDB](https://duckdb.org/) integration
