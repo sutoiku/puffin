@@ -38,12 +38,12 @@ This physical deployment model brings the following benefits:
 ## Reactive Caching
 Data stored on the lake ([Apache Iceberg](https://iceberg.apache.org/), [Apache Hudi](https://hudi.apache.org/), [Delta Lake](https://delta.io/)) is automatically cached across the following layers:
 - Serverless functions (yes indeed, these can be made stateful)
-- Monostore Solid State Drive (compressed or uncompressed)
-- Monostore CPU RAM (compressed or uncompressed)
-- Monostore GPU RAM (if GPU available, uncompressed)
-- Client Solid State Drive (compressed or uncompressed)
-- Client CPU RAM (compressed or uncompressed)
-- Client GPU RAM (if GPU available, uncompressed)
+- Monostore's Solid State Drive (compressed or uncompressed)
+- Monostore's CPU RAM (compressed or uncompressed)
+- Monostore's GPU RAM (if GPU available, uncompressed)
+- Client's Solid State Drive (compressed or uncompressed)
+- Client's CPU RAM (compressed or uncompressed)
+- Client's GPU RAM (if GPU available, uncompressed)
 
 Whenever a query is executed, its distributed physical plan is generated to take advantage of cached data, by using caches that are as close to the client as possible. Once the query has been executed, data is automatically copied in a reactive manner onto higher caching layers in order to accelerate subsequent queries that might be made on the same dataset.
 
