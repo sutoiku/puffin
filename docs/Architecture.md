@@ -5,7 +5,7 @@ PuffinDB has a radical serverless and cloud-native architecture. Deployment on "
 ## Core Principles
 - Do as much as possible with serverless functions ([AWS Lambda](https://aws.amazon.com/lambda/)).
 - Do as much as possible of the remaining parts with serverless containers ([AWS Fargates](https://aws.amazon.com/fargate/)).
-- Do the last bits with a single server-based container with as much capacity as possible ([Amazon EC2](https://aws.amazon.com/ec2/)).
+- Do the last bits with a single server-based container ([Monostore](Monostore.md)) vwith as much capacity as possible ([Amazon EC2](https://aws.amazon.com/ec2/)).
 - Cache data in memory as aggressively as possible.
 - Use an auto-scaling [Redis](https://redis.io/) cluster for synchronization (submillisecond transactions, millions of transactions per second).
 - Use the same [Redis](https://redis.io/) cluster for small shuffles.
