@@ -64,7 +64,7 @@ If remote data is available as files, it can be fetched through the standard `ht
 PuffinDB will support the caching of data on a CDN ([Amazon CloudFront](https://aws.amazon.com/cloudfront/)) and the execution of queries on edge functions ([Lambda@Edge](https://aws.amazon.com/lambda/edge/)).
 
 ## Excel Client
-DuckDB is being natively integrated within more and more client-side applications, and PuffinDB is not interested in developing any native clients or any extensions to client-applications (these will become available everywhere sooner or later). Nevertheless, no add-in for Excel is available at this time, and PuffinDB will develop one if necessary – Proper support of DuckDB from Excel is a must.
+DuckDB is being natively integrated within more and more client-side applications, and PuffinDB is not interested in developing any native clients or any extensions to client-applications (these will become available everywhere sooner or later). Nevertheless, no add-in for Excel is available at this time, and PuffinDB will develop one if necessary – proper support of DuckDB from Excel is a must.
 
 ## Benefits
 - Works on any platform (Linux, MacOS, Windows)
