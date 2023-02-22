@@ -3,7 +3,7 @@
 The **Engine** is a [Bun](https://bun.sh/) serverless function providing a cloud-side [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) runtime. It embeds the following components:
 
 - [DuckDB](https://duckdb.org/) with [Node.js API](https://duckdb.org/docs/api/nodejs/overview.html)
-- [PuffinDB Extension](../../Extension.md) with [CPython](https://github.com/python/cpython) binding
+- [PuffinDB Extension](../../docs/Extension.md) with [CPython](https://github.com/python/cpython) binding
 - [Distributed Query Planner](../../docs/Query%20Planner.md)
 - [Distributed Query Engine](../../docs/Query%20Engine.md)
 - [CPython](https://github.com/python/cpython) Python runtime
