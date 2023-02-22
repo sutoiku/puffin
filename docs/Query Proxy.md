@@ -53,7 +53,7 @@ Out of the box, PuffinDB will provide integration with the following databases:
 
 
 ## Dialect Translation
-When delegating a subquery to a third-party SQL engine with [`SELECT THROUGH`](Clientless.md#select-through), the PuffinDB extension will handle SQL dialect translation, using a serverless function running [SQLGlot](https://github.com/tobymao/sqlglot). This will make it possible to write composite queries involving multiple SQL engines while using a single dialect. The following dialects are currently supported:
+When delegating a subquery to a third-party SQL engine with [`SELECT THROUGH`](Clientless.md#select-through), the PuffinDB extension will handle SQL dialect translation, using [SQLGlot](https://github.com/tobymao/sqlglot). This will make it possible to write composite queries involving multiple SQL engines while using a single dialect. The following dialects are currently supported:
 
 - BigQuery
 - ClickHouse
