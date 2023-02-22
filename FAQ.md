@@ -9,9 +9,11 @@ PuffinDB is a serverless [HTAP](https://en.wikipedia.org/wiki/Hybrid_transaction
 If you are using DuckDB client-side with [any client application](docs/Clientless.md), adding the [PuffinDB extension](docs/Extension.md) will let you:
 - Collaborate on the same [Iceberg tables](https://iceberg.apache.org/spec/) with other users
 - Write back to an Iceberg table with [ACID](https://en.wikipedia.org/wiki/ACID) transactional integrity
+- Read from and write to hundreds of applications using any [Airbyte connector](https://airbyte.com/connectors)
+- Deploy compilation-free extensions written in Python and install any [Micropip](https://micropip.pyodide.org/en/stable/project/api.html) Python library
 - Accelerate and | or schedule the downloading of large tables to your client
 - Execute [cross-database joins](docs/Query%20Proxy.md#query-delegation) (*Cf.* [Edge-Driven Data Integration](EDDI.md))
-- Translate between 19 [SQL dialects](docs/Query%20Proxy.md#dialect-translation) (powered by [SQLGlot](https://github.com/tobymao/sqlglot))
+- Translate between 19 [SQL dialects](docs/Query%20Proxy.md#dialect-translation)
 - Invoke [remote query generators](docs/Query%20Proxy.md)
 - Invoke [curl](https://curl.se/) commands
 - Log queries on your data lake
