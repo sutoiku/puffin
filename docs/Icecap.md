@@ -29,7 +29,7 @@ According to this model, the DuckDB file format could be used on both object sto
 Icecap will make it possible to replicate every partition stored on the Object Store across multiple file formats. For example, the same partition could be stored in both DuckDB and Parquet formats. This will allow any Parquet-compatible tool to query tables, while making it faster for Icecap to update tables by leveraging the fact that DuckDB's native file format supports updates in place. Considering that storage costs on the Object Store usually represents a tiny fraction of the overall cost of operating a data lake, this transparent replication will probably be attractive to many organizations.
 
 ## FAQ
-**Why not use Spark SQL?**.  
+**Why not use Spark SQL?**  
 Because it's too slow and too expensive to deploy and operate.
 
 **Will Icecap support the Parquet file format?**  
