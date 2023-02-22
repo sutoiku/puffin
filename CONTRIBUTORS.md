@@ -11,10 +11,11 @@ The following people have made significant contributions to the PuffinDB project
 
 ## Join our Team
 [STOIC](https://stoic.com/) is hiring software engineers interested in working on the PuffinDB project. Relevant skills include:
+- Bun | Node.js
 - C++
+- Python
 - Rust
 - RAPIDS
-- Node.js
 - DuckDB
 - Redis
 - Apache Arrow
