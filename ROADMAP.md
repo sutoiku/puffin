@@ -9,6 +9,7 @@ Features will be implemented in the following order. Please start an `Idea` [dis
 
 - [x] [GitHub repository](https://github.com/sutoiku/puffin)
 - [x] [Domain name](http://PuffinDB.io/)
+- [x] [Logo](media/) design
 - [x] [Core architecture design](docs/Architecture.md)
 - [ ] Core project framework
 - [ ] Unit testing framework
