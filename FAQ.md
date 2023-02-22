@@ -72,7 +72,7 @@ No. You will only be billed for [AWS Lambda](https://aws.amazon.com/lambda/) fun
 ## Which cloud platforms will be supported?
 Initially, [AWS](https://aws.amazon.com/). Support for [Microsoft Azure](https://azure.microsoft.com/en-us) and [Google Cloud](https://cloud.google.com/) will be added in future releases.
 
-## Which lakehouse platforms will be supported?
+## Which Lakehouse platforms will be supported?
 [Apache Iceberg](https://iceberg.apache.org/), [Apache Hudi](https://hudi.apache.org/), and [Delta Lake](https://delta.io/).
 
 ## Why support so many deployment options?
