@@ -32,15 +32,16 @@ Features will be implemented in the following order. Please start an `Idea` [dis
 - [ ] Lakehouse catalog integration ([AWS Glue Data Catalog](https://docs.aws.amazon.com/glue/latest/dg/catalog-and-crawler.html), [Amazon DynamoDB](https://aws.amazon.com/dynamodb/), and [Amazon RDS](https://aws.amazon.com/rds/))
 - [ ] [Remote query engine](docs/Clientless.md) running on [AWS Lambda](https://aws.amazon.com/lambda/) functions
 - [ ] [Query logs](docs/Logs.md) recorded as [JSON](https://redis.io/docs/stack/json/) values in [Redis](https://redis.io/) cluster (using [Amazon ElastiCache for Redis](https://aws.amazon.com/elasticache/redis/))
+- [ ] [Query proxy](docs/Query%20Proxy.md)
 - [ ] [PRQL](https://prql-lang.org/) to SQL translator
 - [ ] [Malloy](https://github.com/malloydata/malloy/tree/main/packages/malloy) to SQL translator
+- [ ] [Remote query engine](docs/Clientless.md) running on [Monostore](docs/Monostore.md)
 - [ ] [Amazon ElastiCache for Redis](https://aws.amazon.com/elasticache/redis/) support
 - [ ] [Partition caching](FAQ.md#how-does-partition-caching-work) on [AWS Lambda](https://aws.amazon.com/lambda/) function
 - [ ] [Query result caching](FAQ.md#how-does-query-result-caching-work) on Object Store
 - [ ] [Query result caching](FAQ.md#how-does-query-result-caching-work) on CDN ([Amazon CloudFront](https://aws.amazon.com/cloudfront/))
 - [ ] Basic [distributed query planner](docs/Query%20Planner.md)
 - [ ] Distributed query execution across multiple serverless functions
-- [ ] [Query proxy](docs/Query%20Proxy.md)
 - [ ] [Microsoft Azure](https://azure.microsoft.com/en-us) support
 - [ ] Joins across tables managed by different Lakehouse instances
 - [ ] Asynchronous invocations over [Apache Arrow](https://arrow.apache.org/)
