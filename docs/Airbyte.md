@@ -26,7 +26,7 @@ The syntax for write operations is currently under development.
 ## Why Airbyte?
 - Solid architecture
 - Best collection of read | write connectors currently available under a liberal open source license
-- Great company ready to provide commercial support if necessary
+- Developed by great company that could provide commercial support if necessary
 
 ## Benefits
 - No need to develop and | or install one DuckDB extension per application
