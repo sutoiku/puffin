@@ -56,11 +56,11 @@ Features will be implemented in the following order. Please start an `Idea` [dis
 - [ ] Basic [distributed query planner](docs/Query%20Planner.md)
 
 ### Other Features
+- [ ] [AWS Marketplace](https://aws.amazon.com/marketplace) provisioning
 - [ ] [Microsoft Azure](https://azure.microsoft.com/en-us) support
 - [ ] Joins across tables managed by different Lakehouse instances
 - [ ] Asynchronous invocations over [Apache Arrow](https://arrow.apache.org/)
 - [ ] [Arrow Database Connectivity](https://arrow.apache.org/docs/dev/format/ADBC.html) support
-- [ ] [AWS Marketplace](https://aws.amazon.com/marketplace) provisioning
 - [ ] Concurrent suport for multiple Lakehouse instances
 - [ ] Advanced [distributed query planner](docs/Query%20Planner.md)
 - [ ] [Delta Lake](https://delta.io/) support
