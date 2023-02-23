@@ -25,8 +25,6 @@ Features will be implemented in the following order. Please start an `Idea` [dis
 - [ ] Support for [`SELECT THROUGH`](docs/Clientless.md#select-through) syntax
 - [ ] Authentication
 - [ ] Authorization
-- [ ] Read queries against Object Store objects executed by [DuckDB](https://duckdb.org/) (running on [AWS Lambda](https://aws.amazon.com/lambda/))
-- [ ] Write queries against Object Store objects executed by [DuckDB](https://duckdb.org/)
 
 ### Basic Distributed Query Engine
 - [ ] [Engine serverless function](functions/engine/README.md)
