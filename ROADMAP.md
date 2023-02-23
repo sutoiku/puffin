@@ -7,6 +7,7 @@
 ## Features
 Features will be implemented in the following order. Please start an `Idea` [discussion](https://github.com/sutoiku/puffin/discussions) to discuss any element of this proposed roadmap.
 
+### Project Framework
 - [x] [GitHub repository](https://github.com/sutoiku/puffin)
 - [x] [Domain name](http://PuffinDB.io/)
 - [x] [Logo](https://github.com/sutoiku/puffin/blob/main/media/PuffinDB.svg) design
@@ -14,6 +15,8 @@ Features will be implemented in the following order. Please start an `Idea` [dis
 - [ ] Core project framework
 - [ ] Unit testing framework
 - [ ] Integration testing framework
+
+### DuckDB Extension
 - [ ] [DuckDB extension](docs/Extension.md)
 - [ ] [Airbyte](https://airbyte.com/) connector framework (with [DuckDB Python API](https://duckdb.org/docs/api/python/overview.html) only)
 - [ ] [Airbyte](https://airbyte.com/) connector framework (with any [DuckDB](https://duckdb.org/) client)
@@ -22,28 +25,37 @@ Features will be implemented in the following order. Please start an `Idea` [dis
 - [ ] Support for [`SELECT THROUGH`](docs/Clientless.md#select-through) syntax
 - [ ] Authentication
 - [ ] Authorization
-- [ ] Read queries executed by [DuckDB](https://duckdb.org/) (running on [AWS Lambda](https://aws.amazon.com/lambda/))
-- [ ] Read queries executed by [Amazon Athena](https://aws.amazon.com/athena/)
+- [ ] Read queries against Object Store objects executed by [DuckDB](https://duckdb.org/) (running on [AWS Lambda](https://aws.amazon.com/lambda/))
 - [ ] Write queries against Object Store objects executed by [DuckDB](https://duckdb.org/)
-- [ ] Write queries against Lakehouse tables executed by [Amazon Athena](https://aws.amazon.com/athena/)
+
+### Basic Distributed Query Engine
 - [ ] [Engine serverless function](functions/engine/README.md)
 - [ ] [Engine template](templates/engine/README.md)
+- [ ] [Remote query engine](docs/Clientless.md) running on [AWS Lambda](https://aws.amazon.com/lambda/) functions
+- [ ] [Query logs](docs/Logs.md) recorded as [JSON](https://redis.io/docs/stack/json/) values in [Redis](https://redis.io/) cluster (using [Amazon ElastiCache for Redis](https://aws.amazon.com/elasticache/redis/))
+
+### Iceberg Integration
 - [ ] [Catalog serverless function](functions/catalog/README.md)
 - [ ] [Lakehouse template](templates/lakehouse/README.md)
 - [ ] Lakehouse catalog integration ([AWS Glue Data Catalog](https://docs.aws.amazon.com/glue/latest/dg/catalog-and-crawler.html), [Amazon DynamoDB](https://aws.amazon.com/dynamodb/), and [Amazon RDS](https://aws.amazon.com/rds/))
-- [ ] [Remote query engine](docs/Clientless.md) running on [AWS Lambda](https://aws.amazon.com/lambda/) functions
-- [ ] [Query logs](docs/Logs.md) recorded as [JSON](https://redis.io/docs/stack/json/) values in [Redis](https://redis.io/) cluster (using [Amazon ElastiCache for Redis](https://aws.amazon.com/elasticache/redis/))
+- [ ] Read queries against Lakehouse tables executed by [Amazon Athena](https://aws.amazon.com/athena/)
+- [ ] Write queries against Lakehouse tables executed by [Amazon Athena](https://aws.amazon.com/athena/)
+
+### Query Proxy
 - [ ] [Query proxy](docs/Query%20Proxy.md)
 - [ ] [PRQL](https://prql-lang.org/) to SQL translator
 - [ ] [Malloy](https://github.com/malloydata/malloy/tree/main/packages/malloy) to SQL translator
 - [ ] SQL dialect converter
+
+### Advanced Distributed Query Engine
 - [ ] [Remote query engine](docs/Clientless.md) running on [Monostore](docs/Monostore.md)
 - [ ] [Amazon ElastiCache for Redis](https://aws.amazon.com/elasticache/redis/) support
 - [ ] [Partition caching](FAQ.md#how-does-partition-caching-work) on [AWS Lambda](https://aws.amazon.com/lambda/) function
 - [ ] [Query result caching](FAQ.md#how-does-query-result-caching-work) on Object Store
 - [ ] [Query result caching](FAQ.md#how-does-query-result-caching-work) on CDN ([Amazon CloudFront](https://aws.amazon.com/cloudfront/))
 - [ ] Basic [distributed query planner](docs/Query%20Planner.md)
-- [ ] Distributed query execution across multiple serverless functions
+
+### Other Features
 - [ ] [Microsoft Azure](https://azure.microsoft.com/en-us) support
 - [ ] Joins across tables managed by different Lakehouse instances
 - [ ] Asynchronous invocations over [Apache Arrow](https://arrow.apache.org/)
