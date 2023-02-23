@@ -29,7 +29,7 @@ Features will be implemented in the following order. Please start an `Idea` [dis
 - [ ] [Engine template](templates/engine/README.md)
 - [ ] [Catalog serverless function](functions/catalog/README.md)
 - [ ] [Catalog template](templates/catalog/README.md)
-- [ ] Lakehouse catalog integration ([AWS Glue Data Catalog](https://docs.aws.amazon.com/glue/latest/dg/catalog-and-crawler.html), [Amazon DynamoDB](https://aws.amazon.com/dynamodb/), and [Amazon RDS](https://aws.amazon.com/rds/)
+- [ ] Lakehouse catalog integration ([AWS Glue Data Catalog](https://docs.aws.amazon.com/glue/latest/dg/catalog-and-crawler.html), [Amazon DynamoDB](https://aws.amazon.com/dynamodb/), and [Amazon RDS](https://aws.amazon.com/rds/))
 - [ ] [Remote query engine](docs/Clientless.md) running on [AWS Lambda](https://aws.amazon.com/lambda/) functions
 - [ ] [Query logs](docs/Logs.md) recorded as [JSON](https://redis.io/docs/stack/json/) values in [Redis](https://redis.io/) cluster (using [Amazon ElastiCache for Redis](https://aws.amazon.com/elasticache/redis/))
 - [ ] [PRQL](https://prql-lang.org/) to SQL translator
