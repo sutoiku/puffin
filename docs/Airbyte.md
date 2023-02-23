@@ -27,3 +27,9 @@ The syntax for write operations is currently under development.
 - Solid architecture
 - Best collection of read-write connectors currently available under a liberal open source license
 - Great company ready to provide commercial support if necessary
+
+## Benefits
+- No need to install one DuckDB extension per application
+- Ability to perform joins across application
+- Ability to integrate with hundreds of applications through SQL
+- Ability to use SQL query generators like [PRQL](https://prql-lang.org/) or [Malloy](https://www.malloydata.dev/) (*Cf.* [Query Proxy](Query%20Proxy.md))
