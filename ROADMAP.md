@@ -14,9 +14,13 @@ Features will be implemented in the following order. Please start an `Idea` [dis
 - [ ] Core project framework
 - [ ] Unit testing framework
 - [ ] Integration testing framework
+- [ ] [DuckDB extension](docs/Extension.md)
+- [ ] [Airbyte](https://airbyte.com/) connector framework (with [DuckDB Python API](https://duckdb.org/docs/api/python/overview.html) only)
+- [ ] [Airbyte](https://airbyte.com/) connector framework (with any [DuckDB](https://duckdb.org/) client)
+- [ ] [Cross-database joins](docs/Query%20Proxy.md#query-delegation) powered by [Ibis](https://ibis-project.org/)
+- [ ] Support for [`SELECT THROUGH`](docs/Clientless.md#select-through) syntax
 - [ ] [Engine](functions/engine/README.md) serverless function
 - [ ] [Catalog](functions/catalog/README.md) serverless function
-- [ ] [DuckDB extension](docs/Extension.md)
 - [ ] [DuckDB](https://duckdb.org/) integration
 - [ ] [PRQL](https://prql-lang.org/) to SQL translator
 - [ ] [Malloy](https://github.com/malloydata/malloy/tree/main/packages/malloy) to SQL translator
