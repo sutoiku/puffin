@@ -19,25 +19,24 @@ Features will be implemented in the following order. Please start an `Idea` [dis
 - [ ] [Airbyte](https://airbyte.com/) connector framework (with any [DuckDB](https://duckdb.org/) client)
 - [ ] [Cross-database joins](docs/Query%20Proxy.md#query-delegation) powered by [Ibis](https://ibis-project.org/)
 - [ ] Support for [`SELECT THROUGH`](docs/Clientless.md#select-through) syntax
-- [ ] [Engine](functions/engine/README.md) serverless function
-- [ ] [Catalog](functions/catalog/README.md) serverless function
-- [ ] [DuckDB](https://duckdb.org/) integration
-- [ ] [PRQL](https://prql-lang.org/) to SQL translator
-- [ ] [Malloy](https://github.com/malloydata/malloy/tree/main/packages/malloy) to SQL translator
 - [ ] Authentication
 - [ ] Authorization
-- [ ] [Lakehouse template](templates/lakehouse/README.md)
-- [ ] [Engine template](templates/engine/README.md)
-- [ ] [Iceberg Java API](https://iceberg.apache.org/docs/latest/api/)
-- [ ] Lakehouse catalog integration ([AWS Glue Data Catalog](https://docs.aws.amazon.com/glue/latest/dg/catalog-and-crawler.html), [Amazon DynamoDB](https://aws.amazon.com/dynamodb/), and [Amazon RDS](https://aws.amazon.com/rds/)
-- [ ] Synchronous invocations
-- [ ] Asynchronous invocations over Object Store
-- [ ] [Query logs](docs/Logs.md) recorded as [JSON](https://redis.io/docs/stack/json/) values in [Redis](https://redis.io/) cluster (using [Amazon ElastiCache for Redis](https://aws.amazon.com/elasticache/redis/))
 - [ ] Read queries executed by [DuckDB](https://duckdb.org/) (running on [AWS Lambda](https://aws.amazon.com/lambda/))
 - [ ] Read queries executed by [Amazon Athena](https://aws.amazon.com/athena/)
 - [ ] Write queries against Object Store objects executed by [DuckDB](https://duckdb.org/)
 - [ ] Write queries against Lakehouse tables executed by [Amazon Athena](https://aws.amazon.com/athena/)
-- [ ] [Remote query engine](docs/Clientless.md) support
+- [ ] [Engine serverless function](functions/engine/README.md)
+- [ ] [Engine template](templates/engine/README.md)
+- [ ] [Catalog serverless function](functions/catalog/README.md)
+- [ ] [Catalog template](templates/catalog/README.md)
+- [ ] [Iceberg Java API](https://iceberg.apache.org/docs/latest/api/)
+- [ ] [DuckDB](https://duckdb.org/) integration
+- [ ] Lakehouse catalog integration ([AWS Glue Data Catalog](https://docs.aws.amazon.com/glue/latest/dg/catalog-and-crawler.html), [Amazon DynamoDB](https://aws.amazon.com/dynamodb/), and [Amazon RDS](https://aws.amazon.com/rds/)
+- [ ] [Remote query engine](docs/Clientless.md) running on [AWS Lambda](https://aws.amazon.com/lambda/) functions
+- [ ] [Query logs](docs/Logs.md) recorded as [JSON](https://redis.io/docs/stack/json/) values in [Redis](https://redis.io/) cluster (using [Amazon ElastiCache for Redis](https://aws.amazon.com/elasticache/redis/))
+- [ ] [PRQL](https://prql-lang.org/) to SQL translator
+- [ ] [Malloy](https://github.com/malloydata/malloy/tree/main/packages/malloy) to SQL translator
+- [ ] [Lakehouse template](templates/lakehouse/README.md)
 - [ ] [Amazon ElastiCache for Redis](https://aws.amazon.com/elasticache/redis/) support
 - [ ] [Partition caching](FAQ.md#how-does-partition-caching-work) on [AWS Lambda](https://aws.amazon.com/lambda/) function
 - [ ] [Query result caching](FAQ.md#how-does-query-result-caching-work) on Object Store
