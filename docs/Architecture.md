@@ -11,7 +11,7 @@ PuffinDB has a radical serverless and cloud-native architecture. Deployment on "
 - Use [NAT hole punching](https://github.com/spcl/tcpunch) for data shuffles.
 
 ## Why Serverless?
-The largest [Amazon EC2](https://aws.amazon.com/ec2/) instance ([`u-24tb1.112xlarge`](https://aws.amazon.com/ec2/instance-types/high-memory/)) has 448 vCPUs, 24 TB of RAM, and 100 Gbps of network bandwidth. In comparison, 10,000 [AWS Lambda](https://aws.amazon.com/lambda/) functions offer an aggregated 60,000 vCPUs (134×), 200 TB of RAM (8×), and 8 Tbps of network bandwidth (80×).
+The largest [Amazon EC2](https://aws.amazon.com/ec2/) instance available today ([`u-24tb1.112xlarge`](https://aws.amazon.com/ec2/instance-types/high-memory/)) has 448 vCPUs, 24 TB of RAM, and 100 Gbps of network bandwidth. In comparison, 10,000 [AWS Lambda](https://aws.amazon.com/lambda/) functions offer an aggregated 60,000 vCPUs (134×), 200 TB of RAM (8×), and 8 Tbps of network bandwidth (80×).
 
 ## Serverless Components
 PuffinDB is architected around the following serverless components:
