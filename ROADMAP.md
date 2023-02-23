@@ -60,7 +60,6 @@ Features will be implemented in the following order. Please start an `Idea` [dis
 - [ ] Joins across tables managed by different Lakehouse instances
 - [ ] Asynchronous invocations over [Apache Arrow](https://arrow.apache.org/)
 - [ ] [Arrow Database Connectivity](https://arrow.apache.org/docs/dev/format/ADBC.html) support
-- [ ] [Amazon OpenSearch Service](https://aws.amazon.com/opensearch-service/) support
 - [ ] [AWS Marketplace](https://aws.amazon.com/marketplace) provisioning
 - [ ] Concurrent suport for multiple Lakehouse instances
 - [ ] Advanced [distributed query planner](docs/Query%20Planner.md)
