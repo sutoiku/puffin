@@ -1,6 +1,6 @@
 # Airbyte
 
-The [PuffinDB extension](Extension.md) for [DuckDB](https://duckdb.org/) will make it possible to use any [Airbyte Connector](https://airbyte.com/connectors) from DuckDB.
+The [PuffinDB extension](Extension.md) for [DuckDB](https://duckdb.org/) will make it possible to use any [Airbyte Connector](https://airbyte.com/connectors) directly from DuckDB.
 
 ## Architecture
 Support for Airbyte connectors will be offered using the following components:
