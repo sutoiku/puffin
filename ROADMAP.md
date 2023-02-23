@@ -46,7 +46,6 @@ Features will be implemented in the following order. Please start an `Idea` [dis
 - [ ] Joins across tables managed by different Lakehouse instances
 - [ ] Asynchronous invocations over [Apache Arrow](https://arrow.apache.org/)
 - [ ] [Arrow Database Connectivity](https://arrow.apache.org/docs/dev/format/ADBC.html) support
-- [ ] [Amazon EC2](https://aws.amazon.com/ec2/) support
 - [ ] [AWS Fargate](https://aws.amazon.com/fargate/) support
 - [ ] [Amazon OpenSearch Service](https://aws.amazon.com/opensearch-service/) support
 - [ ] SQL dialect converter
