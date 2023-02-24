@@ -7,20 +7,17 @@ PuffinDB is a serverless [HTAP](https://en.wikipedia.org/wiki/Hybrid_transaction
 
 ## Why should I use PuffinDB?
 If you are using DuckDB client-side with [any client application](docs/Clientless.md), adding the [PuffinDB extension](docs/Extension.md) will let you:
+- Distribute queries across thousands of serverless functions and a [Monostore](docs/Monostore.md)
 - Read from and write to hundreds of applications using any [Airbyte connector](https://airbyte.com/connectors)
-- Deploy compilation-free extensions written in Python and install any [Micropip](https://micropip.pyodide.org/en/stable/project/api.html) Python library
-- Accelerate and | or schedule the downloading of large tables to your client
+- Collaborate on the same [Iceberg tables](https://iceberg.apache.org/spec/) with other users
+- Write back to an Iceberg table with [ACID](https://en.wikipedia.org/wiki/ACID) transactional integrity
 - Execute [cross-database joins](docs/Query%20Proxy.md#query-delegation) (*Cf.* [Edge-Driven Data Integration](EDDI.md))
 - Translate between 19 [SQL dialects](docs/Query%20Proxy.md#dialect-translation)
 - Invoke [remote query generators](docs/Query%20Proxy.md)
 - Invoke [curl](https://curl.se/) commands
-- Log queries on your data lake
-
-Furthermore, adding a single [CloudFormation](https://aws.amazon.com/cloudformation/) template to your [AWS](https://aws.amazon.com/) account will let you:
-- Collaborate on the same [Iceberg tables](https://iceberg.apache.org/spec/) with other users
-- Write back to an Iceberg table with [ACID](https://en.wikipedia.org/wiki/ACID) transactional integrity
-- Distribute queries across tens of thousands of serverless functions and a [Monostore](docs/Monostore.md)
+- Accelerate and | or schedule the downloading of large tables to your client
 - Cache tables and run computations at the edge ([Amazon CloudFront](https://aws.amazon.com/cloudfront/) × [Lambda@Edge](https://aws.amazon.com/lambda/edge/))
+- Log queries on your data lake
 
 ## What is Cloud Data?
 [Cloud Data](CLOUD.md) is what comes after Big Data.
