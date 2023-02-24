@@ -120,6 +120,7 @@ We are also considering funding the following projects:
 
 - Support for `SELECT * THROUGH 'https://myPuffinDB.com/' FROM remoteTable` syntax (*Cf.* [EDDI](EDDI.md))
 - Support for `FIXED` fixed-length character strings (*Cf.* [#3](https://github.com/sutoiku/puffin/issues/3))
+- Support for `C` and `S` options in `tpch` [extension](https://duckdb.org/docs/extensions/overview.html)
 
 This project was initially inspired by this excellent [article](https://towardsdatascience.com/boost-your-cloud-data-applications-with-duckdb-and-iceberg-api-67677666fbd3) from [Alon Agmon](https://medium.com/@alon.agmon).
 
