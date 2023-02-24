@@ -12,7 +12,6 @@ If you are using DuckDB client-side with [any client application](docs/Clientles
 - Read from and write to hundreds of applications using any [Airbyte connector](https://airbyte.com/connectors)
 - Collaborate on the same [Iceberg tables](https://iceberg.apache.org/spec/) with other users
 - Write back to an Iceberg table with [ACID](https://en.wikipedia.org/wiki/ACID) transactional integrity
-- Deploy compilation-free extensions written in Python and install any [Micropip](https://micropip.pyodide.org/en/stable/project/api.html) Python library
 - Accelerate and | or schedule the downloading of large tables to your client
 - Cache tables and run computations at the edge ([Amazon CloudFront](https://aws.amazon.com/cloudfront/) × [Lambda@Edge](https://aws.amazon.com/lambda/edge/))
 - Execute [cross-database joins](docs/Query%20Proxy.md#query-delegation) (*Cf.* [Edge-Driven Data Integration](EDDI.md))
