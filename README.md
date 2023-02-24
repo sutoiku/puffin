@@ -8,7 +8,7 @@ Accelerate DuckDB with 10,000 [AWS Lambda functions](https://aws.amazon.com/lamb
 
 ## Introduction
 If you are using DuckDB client-side with [any client application](docs/Clientless.md), adding the [PuffinDB extension](docs/Extension.md) will let you:
-- Distribute queries across tens of thousands of serverless functions and a [Monostore](docs/Monostore.md)
+- Distribute queries across thousands of serverless functions and a [Monostore](docs/Monostore.md)
 - Read from and write to hundreds of applications using any [Airbyte connector](https://airbyte.com/connectors)
 - Collaborate on the same [Iceberg tables](https://iceberg.apache.org/spec/) with other users
 - Write back to an Iceberg table with [ACID](https://en.wikipedia.org/wiki/ACID) transactional integrity
