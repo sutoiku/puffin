@@ -20,8 +20,7 @@ Features will be implemented in the following order. Please start an `Idea` [dis
 ### DuckDB Extension
 - [ ] Project website
 - [ ] [DuckDB extension](docs/Extension.md) (with minimal set of features)
-- [ ] [Airbyte](https://airbyte.com/) connector framework version 1 (with [DuckDB Python API](https://duckdb.org/docs/api/python/overview.html) only)
-- [ ] [Airbyte](https://airbyte.com/) connector framework version 2 (with any [DuckDB](https://duckdb.org/) client)
+- [ ] [Airbyte](https://airbyte.com/) connector framework
 - [ ] Support for [`SELECT THROUGH`](docs/Clientless.md#select-through) syntax
 - [ ] Authentication
 - [ ] Authorization
