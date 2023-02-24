@@ -88,9 +88,6 @@ Fair question. Whenever PuffinDB is deployed on [Amazon EC2](https://aws.amazon.
 ## Do I need a specific client to use PuffinDB?
 No. PuffinDB has a [clientless](docs/Clientless.md) architecture and can be used from any application embedding the [DuckDB](https://duckdb.org/) engine, using a simple [extension](docs/Extension.md).
 
-## Can I use PuffinDB with Python?
-Of course! The [PuffinDB Extension](docs/Extension.md) for DuckDB provides bindings for [CPython](https://github.com/python/cpython) (barebone or via [Pyodide](https://pyodide.org/)).
-
 ## Why use a Redis cluster for distributed query orchestration?
 Distributed query orchestration requires low latency and high throughput. A large [Amazon ElastiCache for Redis](https://aws.amazon.com/elasticache/redis/) cluster can provide:
 - Submillisecond latency
