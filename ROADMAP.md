@@ -36,7 +36,7 @@ Features will be implemented in the following order. Please start an `Idea` [dis
 - [ ] [Catalog serverless function](functions/catalog/README.md)
 - [ ] [Lakehouse template](templates/lakehouse/README.md)
 - [ ] Lakehouse catalog integration ([AWS Glue Data Catalog](https://docs.aws.amazon.com/glue/latest/dg/catalog-and-crawler.html), [Amazon DynamoDB](https://aws.amazon.com/dynamodb/), and [Amazon RDS](https://aws.amazon.com/rds/))
-- [ ] Read queries against Lakehouse tables executed by [Amazon Athena](https://aws.amazon.com/athena/)
+- [ ] Read queries against Lakehouse tables executed by [DuckDB](https://duckdb.org/)
 - [ ] Write queries against Lakehouse tables executed by [Amazon Athena](https://aws.amazon.com/athena/)
 
 ### Query Proxy
