@@ -47,11 +47,10 @@ Features will be implemented in the following order. Please start an `Idea` [dis
 
 ### Advanced Distributed Query Engine
 - [ ] [Remote query engine](docs/Clientless.md) running on [Monostore](docs/Monostore.md)
-- [ ] [Amazon ElastiCache for Redis](https://aws.amazon.com/elasticache/redis/) support
+- [ ] Basic [distributed query planner](docs/Query%20Planner.md)
 - [ ] [Partition caching](FAQ.md#how-does-partition-caching-work) on [AWS Lambda](https://aws.amazon.com/lambda/) function
 - [ ] [Query result caching](FAQ.md#how-does-query-result-caching-work) on Object Store
 - [ ] [Query result caching](FAQ.md#how-does-query-result-caching-work) on CDN ([Amazon CloudFront](https://aws.amazon.com/cloudfront/))
-- [ ] Basic [distributed query planner](docs/Query%20Planner.md)
 
 ### Other Features
 - [ ] [AWS Marketplace](https://aws.amazon.com/marketplace) provisioning
