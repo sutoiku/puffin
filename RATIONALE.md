@@ -137,7 +137,7 @@ Many SQL engines primarily targeted at public cloud deployment have limited exte
 - Lower integration costs
 
 ## Designed for embedability
-The vast majority of SQL engines primarily targeted at public cloud deployment are designed for standalone deployment. Instead, PuffinDB takes advantage of its true [serverless architecture](docs/Architecture.md) and its packaging as a [Terraform](https://www.terraform.io/) template to make itself fully embedable within third-party systems and applications.
+The vast majority of SQL engines primarily targeted at public cloud deployment are designed for standalone deployment. Instead, PuffinDB takes advantage of its true [serverless architecture](docs/Architecture.md) and its packaging as a self-provisioned and self-managed [Terraform](https://www.terraform.io/) template to make itself fully embedable within third-party systems and applications.
 
 ## Optimized for machine-generated queries
 Coming soon...
