@@ -103,7 +103,7 @@ Most SQL engines are designed for conventional file formats like CSV or Parquet.
 - Lower data update latency
 
 ## Designed for data lakes
-Most SQL engines designed for cloud deployment have been designed for Object Stores only (*e.g.* [Amazon S3](https://aws.amazon.com/s3/)). Instead, PuffinDB has been natively designed to take advantage of Data Lakes such as [Apache Iceberg](https://iceberg.apache.org/), [Apache Hudi](https://hudi.apache.org/), and [Delta Lake](https://delta.io/). This is one of the critical design elements that gives it full OLTP capabilities with ACID properties, while allowing it to connect to a wide range of data sources that are being migrated to data lakes.
+Most SQL engines targeted at public cloud deployment have been designed for Object Stores only (*e.g.* [Amazon S3](https://aws.amazon.com/s3/)). Instead, PuffinDB has been natively designed to take advantage of Data Lakes such as [Apache Iceberg](https://iceberg.apache.org/), [Apache Hudi](https://hudi.apache.org/), and [Delta Lake](https://delta.io/). This is one of the critical design elements that gives it full OLTP capabilities with ACID properties, while allowing it to connect to a wide range of data sources that are being migrated to data lakes.
 
 **Benefits**:
 - Enhanced transactional integrity
