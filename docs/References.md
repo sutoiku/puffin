@@ -17,7 +17,7 @@ The following reading materials provide a solid introduction to SQL databases:
 - [TCUDB: Accelerating Database with Tensor Processors](https://arxiv.org/pdf/2112.07552.pdf) — Yu-Ching Hu, Yuliang Li, *et al.* · 2021
 - [Join Order Optimization with (Almost) No Statistics](https://homepages.cwi.nl/~boncz/msc/2022-TomEbergen.pdf) — Tom Ebergen · 2022
 - [Query Processing on Tensor Computation Runtimes](https://arxiv.org/pdf/2203.01877.pdf) — Dong He, Supun C Nakandala, *et al.* · 2022
-- [WeTune: Automatic Discovery and Verification of Query Rewrite Rules](https://ipads.se.sjtu.edu.cn/_media/publications/wetune_final.pdf) — Zhaoguo Wang
+- [WeTune: Automatic Discovery and Verification of Query Rewrite Rules](http://www.news.cs.nyu.edu/~jinyang/pub/wetune-sigmod22.pdf) — Zhaoguo Wang
 Zhaoguo Wang, Zhou Zhou, *et al.* · 2022
 
 ## Credits
