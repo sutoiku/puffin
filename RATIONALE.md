@@ -12,7 +12,7 @@ There are many excellent distributed SQL engines currently available on the mark
 - [Designed for next-generation query engine](#designed-for-next-generation-query-engine)
 - [Designed for next-generation file formats](#designed-for-next-generation-file-formats)
 - [Designed for data lakes](#designed-for-data-lakes)
-- [Designed for integration](#designed-for-integration)
+- [Designed for data mesh integration](#designed-for-data-mesh-integration)
 - [Designed for all users](#designed-for-all-users)
 - [Designed for extensibility](#designed-for-extensibility)
 - [Designed for embedability](#designed-for-embedability)
@@ -103,17 +103,24 @@ Most SQL engines are designed for conventional file formats like CSV or Parquet.
 - Lower data update latency
 
 ## Designed for data lakes
-Most SQL engines targeted at public cloud deployment have been designed for Object Stores only (*e.g.* [Amazon S3](https://aws.amazon.com/s3/)). Instead, PuffinDB has been natively designed to take advantage of Data Lakes such as [Apache Iceberg](https://iceberg.apache.org/), [Apache Hudi](https://hudi.apache.org/), and [Delta Lake](https://delta.io/). This is one of the critical design elements that gives it full OLTP capabilities with ACID properties, while allowing it to connect to a wide range of data sources that are being migrated to data lakes.
+Most SQL engines targeted at public cloud deployment have been designed for Object Stores only (*e.g.* [Amazon S3](https://aws.amazon.com/s3/)). Instead, PuffinDB has been natively designed to take advantage of Data Lakes such as [Apache Iceberg](https://iceberg.apache.org/), [Apache Hudi](https://hudi.apache.org/), and [Delta Lake](https://delta.io/). This is one of the critical design elements that gives it full OLTP capabilities with ACID properties, while allowing it to connect to a wide range of data sources that are being migrated to data lakes at an accelerating pace.
 
 **Benefits**:
 - Enhanced transactional integrity
 - Lower data integration costs
 
-## Designed for integration
-Coming soon...
+## Designed for data mesh integration
+CMost SQL engines are designed as standalone data silos. Instead, PuffinDB embraces the [data mesh philosophy](https://martinfowler.com/articles/data-mesh-principles.html) and is natively designed to distribute SQL queries across heterogeneous and remote databases and applications, thanks to its extensive collection of database and application connectors, and its built-in data pipeline execution engine.
+
+**Benefits**:
+- Lower data integration costs
+- Faster development cycles
+- Lower data update latency
+- Better data quality
+- Enhanced data governance
 
 ## Designed for all users
-Coming soon...
+Many SQL engines require advanced technical skills for deployment, monitoring, and maintenance. PuffinDB takes a radically-different approach, allowing direct deployment from any [DuckDB](https://duckdb.org/) client, thanks to a simple [DuckDB extension](docs/Extension.md).
 
 ## Designed for extensibility
 Coming soon...
