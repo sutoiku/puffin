@@ -65,6 +65,7 @@ Most OLAP engines and cloud data warehousing platforms are designed to be used a
 - Lower development costs
 - Lower licensing costs
 - Faster development cycles
+- Lower data update latency
 - Better data quality
 - Enhanced data governance
 
