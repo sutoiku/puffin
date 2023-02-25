@@ -38,7 +38,7 @@ Many excellent distributed SQL engines are available today. Why do we need yet a
 - [Designed for extensibility](RATIONALE.md/#designed-for-extensibility)
 - [Designed for embedability](RATIONALE.md/#designed-for-embedability)
 - [Optimized for machine-generated queries](RATIONALE.md/#optimized-for-machine-generated-queries)
-- [Scalable through large user bases](RATIONALE.md/#scalable-through-large-user-bases)
+- [Scalable across large user bases](RATIONALE.md/#scalable-across-large-user-bases)
 
 ## What is Cloud Data?
 [Cloud Data](CLOUD.md) is what comes after Big Data.
