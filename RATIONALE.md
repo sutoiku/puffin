@@ -5,6 +5,7 @@ There are many excellent distributed SQL engines currently available on the mark
 - [True serverless architecture](#true-serverless-architecture)
 - [Future-proof architecture](#future-proof-architecture)
 - [Designed for VPC deployment](#designed-for-vpc-deployment)
+- [Designed for small to large databasets](#designed-for-small-to-large-databasets)
 - [Designed for real-time analytics](#designed-for-real-time-analytics)
 - [Designed for interactive analytics](#designed-for-interactive-analytics)
 - [Designed for transformation and analytics](#designed-for-transformation-and-analytics)
@@ -45,6 +46,13 @@ Most distributed SQL engines available on public clouds are designed for multi-t
 - Better data confidentiality
 - Better integration with existing cloud assets
 - More predictable Quality of Service
+
+## Designed for small to large databasets
+Most SQL engines are designed for small datasets and optimize for usability, or for large datasets and require advanced technical skills. PuffinDB is designed for [Cloud Data](CLOUD.md) and can scale from kilobytes to petabytes in a very progressive manner, without sacrificing usability.
+
+**Benefits**:
+- Broader userbase accessibility
+- Lower total cost of operations
 
 ## Designed for real-time analytics
 Most OLAP engines are designed to support analytics workloads on datasets that are updated at relatively low frequency (daily or longer). PuffinDB is designed for real-time analytics with much higher update frequencies (sub-second). This dramatically broadens the range of use cases for which the engine can be used, while increasing the value of insights it gives access to.
