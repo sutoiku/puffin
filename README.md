@@ -39,7 +39,7 @@ STOIC is a Silver Member of the DuckDB Foundation.
 - [Clientless](docs/Clientless.md) + [Serverless](docs/Architecture.md) = [Goodness](CLOUD.md)
 
 ## Rationale
-There are many excellent distributed SQL engines available today. Why do we need yet another one?
+Many excellent distributed SQL engines are available today. Why do we need yet another one?
 
 - [True serverless architecture](RATIONALE.md/#true-serverless-architecture)
 - [Future-proof architecture](RATIONALE.md/#future-proof-architecture)
