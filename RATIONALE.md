@@ -70,7 +70,7 @@ Most OLAP engines and cloud data warehousing platforms are designed to be used a
 - Enhanced data governance
 
 ## Designed for analytics and transactions
-By definition, OLAP (online analytical processing) engines are designed to work on immutable data, and are used downstream of OLTP (online transaction processing) system.
+By definition, OLAP (online analytical processing) engines are designed to work on immutable data, and are commonly used downstream of OLTP (online transaction processing) system.
 
 ## Designed for data lakes
 Coming soon...
