@@ -3,7 +3,7 @@
 There are many excellent distributed SQL engines currently available on the market. Why do we need yet another one?
 
 ## True serverless architecture
-Coming soon...
+Most distributed SQL engines are designed to be deployed on conventional containers (*e.g.* [Amazon EC2](https://aws.amazon.com/ec2/) instances). PuffinDB is designed to run on serverless functions (*e.g.* [AWS Lambda](https://aws.amazon.com/lambda/) functions)
 
 ## Future-proof architecture
 Coming soon...
