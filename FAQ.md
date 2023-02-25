@@ -22,22 +22,22 @@ If you are using DuckDB client-side with [any client application](docs/Clientles
 ## Why develop yet another distributed SQL engine?
 There are many excellent distributed SQL engines currently available on the market. Why do we need yet another one?
 
-- [True serverless architecture](../RATIONALE.md/#true-serverless-architecture)
-- [Future-proof architecture](../RATIONALE.md/#future-proof-architecture)
-- [Designed for VPC deployment](../RATIONALE.md/#designed-for-vpc-deployment)
-- [Designed for real-time analytics](../RATIONALE.md/#designed-for-real-time-analytics)
-- [Designed for interactive analytics](../RATIONALE.md/#designed-for-interactive-analytics)
-- [Designed for transformation and analytics](../RATIONALE.md/#designed-for-transformation-and-analytics)
-- [Designed for analytics and transactions](../RATIONALE.md/#designed-for-analytics-and-transactions)
-- [Designed for next-generation query engine](../RATIONALE.md/#designed-for-next-generation-query-engine)
-- [Designed for next-generation file formats](../RATIONALE.md/#designed-for-next-generation-file-formats)
-- [Designed for data lakes](../RATIONALE.md/#designed-for-data-lakes)
-- [Designed for data mesh integration](../RATIONALE.md/#designed-for-data-mesh-integration)
-- [Designed for all users](../RATIONALE.md/#designed-for-all-users)
-- [Designed for extensibility](../RATIONALE.md/#designed-for-extensibility)
-- [Designed for embedability](../RATIONALE.md/#designed-for-embedability)
-- [Optimized for machine-generated queries](../RATIONALE.md/#optimized-for-machine-generated-queries)
-- [Scalable through large user bases](../RATIONALE.md/#scalable-through-large-user-bases)
+- [True serverless architecture](RATIONALE.md/#true-serverless-architecture)
+- [Future-proof architecture](RATIONALE.md/#future-proof-architecture)
+- [Designed for VPC deployment](RATIONALE.md/#designed-for-vpc-deployment)
+- [Designed for real-time analytics](RATIONALE.md/#designed-for-real-time-analytics)
+- [Designed for interactive analytics](RATIONALE.md/#designed-for-interactive-analytics)
+- [Designed for transformation and analytics](RATIONALE.md/#designed-for-transformation-and-analytics)
+- [Designed for analytics and transactions](RATIONALE.md/#designed-for-analytics-and-transactions)
+- [Designed for next-generation query engine](RATIONALE.md/#designed-for-next-generation-query-engine)
+- [Designed for next-generation file formats](RATIONALE.md/#designed-for-next-generation-file-formats)
+- [Designed for data lakes](RATIONALE.md/#designed-for-data-lakes)
+- [Designed for data mesh integration](RATIONALE.md/#designed-for-data-mesh-integration)
+- [Designed for all users](RATIONALE.md/#designed-for-all-users)
+- [Designed for extensibility](RATIONALE.md/#designed-for-extensibility)
+- [Designed for embedability](RATIONALE.md/#designed-for-embedability)
+- [Optimized for machine-generated queries](RATIONALE.md/#optimized-for-machine-generated-queries)
+- [Scalable through large user bases](RATIONALE.md/#scalable-through-large-user-bases)
 
 ## What is Cloud Data?
 [Cloud Data](CLOUD.md) is what comes after Big Data.
