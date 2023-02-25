@@ -1,6 +1,6 @@
-# Rationale for a new distributed SQL database engines
+# Rationale for a new distributed SQL engine
 
-There are many excellent distributed SQL database engines currently available on the market. Why do we need yet another one?
+There are many excellent distributed SQL engines currently available on the market. Why do we need yet another one?
 
 ## True serverless architecture
 Coming soon...
