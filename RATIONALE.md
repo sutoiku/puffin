@@ -30,7 +30,11 @@ Most distributed SQL engines available on public clouds are designed for multi-t
 - More predictable Quality of Service
 
 ## Designed for real-time analytics
-Coming soon...
+Most OLAP engines are designed to support analytics workloads on datasets that are updated at relatively low frequency (daily or longer). PuffinDB is designed for real-time analytics with much higher update frequencies (sub-second). This dramatically widens the range of use cases for which the engine can be used, while increasing the value of insights it gives access to.
+
+**Benefits**:
+- Wider applicability across use cases
+- Higher business value
 
 ## Designed for interactive analytics
 Coming soon...
