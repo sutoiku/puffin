@@ -101,7 +101,7 @@ So that you can pick the one that will work best for you:
 - **Easiest**: [AWS Marketplace](https://aws.amazon.com/marketplace) product added to your own cloud environment
 
 ## Why not support private cloud deployment?
-Modern public clouds like [Amazon Web Services](https://aws.amazon.com/), [Microsoft Azure](https://azure.microsoft.com/en-us), and [Google Cloud](https://cloud.google.com/) are true marvels of engineering, and have reached a level of sophistication and scale that is far beyond the reach of any corporate IT organization. And as time goes by, the very concept of private cloud is becoming less and less sensical, and we have no interest in spending any resources to deliver a sub-par user experience that will be of interest to less and less organization.
+Modern public clouds like [Amazon Web Services](https://aws.amazon.com/), [Microsoft Azure](https://azure.microsoft.com/en-us), and [Google Cloud](https://cloud.google.com/) are true marvels of engineering, and have reached a level of sophistication and scale that is far beyond the reach of any corporate IT organization. And as time goes by, the very concept of private cloud is becoming less and less sensical. We have zero interest in spending any resources to deliver a sub-par user experience that will be of interest to less and less organization.
 
 *Be on the right side of history...*
 
