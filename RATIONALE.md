@@ -14,9 +14,9 @@ There are many excellent distributed SQL engines currently available on the mark
 - [Designed for data lakes](#designed-for-data-lakes)
 - [Designed for integration](#designed-for-integration)
 - [Designed for all users](#designed-for-all-users)
-- [Optimized for machine-generated queries](#optimized-for-machine-generated-queries)
 - [Designed for extensibility](#designed-for-extensibility)
 - [Designed for embedability](#designed-for-embedability)
+- [Optimized for machine-generated queries](#optimized-for-machine-generated-queries)
 - [Scalable through large user bases](#scalable-through-large-user-bases)
 
 ## True serverless architecture
@@ -94,13 +94,13 @@ Coming soon...
 ## Designed for all users
 Coming soon...
 
-## Optimized for machine-generated queries
-Coming soon...
-
 ## Designed for extensibility
 Coming soon...
 
 ## Designed for embedability
+Coming soon...
+
+## Optimized for machine-generated queries
 Coming soon...
 
 ## Scalable through large user bases
