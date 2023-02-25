@@ -34,6 +34,26 @@ STOIC is a Silver Member of the DuckDB Foundation.
 - [Edge-Driven Data Integration](EDDI.md) is the way forward
 - [Clientless](docs/Clientless.md) + [Serverless](docs/Architecture.md) = [Goodness](CLOUD.md)
 
+## Rationale
+There are many excellent distributed SQL engines currently available on the market. Why do we need yet another one?
+
+- [True serverless architecture](#true-serverless-architecture)
+- [Future-proof architecture](#future-proof-architecture)
+- [Designed for VPC deployment](#designed-for-vpc-deployment)
+- [Designed for real-time analytics](#designed-for-real-time-analytics)
+- [Designed for interactive analytics](#designed-for-interactive-analytics)
+- [Designed for transformation and analytics](#designed-for-transformation-and-analytics)
+- [Designed for analytics and transactions](#designed-for-analytics-and-transactions)
+- [Designed for next-generation query engine](#designed-for-next-generation-query-engine)
+- [Designed for next-generation file formats](#designed-for-next-generation-file-formats)
+- [Designed for data lakes](#designed-for-data-lakes)
+- [Designed for data mesh integration](#designed-for-data-mesh-integration)
+- [Designed for all users](#designed-for-all-users)
+- [Designed for extensibility](#designed-for-extensibility)
+- [Designed for embedability](#designed-for-embedability)
+- [Optimized for machine-generated queries](#optimized-for-machine-generated-queries)
+- [Scalable through large user bases](#scalable-through-large-user-bases)
+
 ## Outline
 - True [serverless architecture](docs/Architecture.md) (run [DuckDB](https://duckdb.org/) on 10,000 [Lambda functions](https://aws.amazon.com/lambda/))
 - Supporting both read and write queries ([HTAP](https://en.wikipedia.org/wiki/Hybrid_transactional/analytical_processing))
