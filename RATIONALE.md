@@ -12,7 +12,7 @@ Most distributed SQL engines are designed to be deployed on conventional contain
 - Higher elasticity
 
 ## Future-proof architecture
-Coming soon...
+Most distributed SQL engines have been designed to be deployed on conventional data centers, and the few that were natively designed for public cloud deployment were inspired by decade-old cloud architectures. PuffinDB is designed for contemporary public clouds, and anticipates [future developments](docs/Future-Proofing.md) that are considered likely to happen within the next 3 to 5 years.
 
 ## Designed for VPC deployment
 Coming soon...
