@@ -75,6 +75,7 @@ By definition, OLAP (online analytical processing) engines are designed to work 
 **Benefits**:
 - Broader use case applicability
 - Lower data update latency
+- Lower integration costs
 
 ## Designed for data lakes
 Coming soon...
