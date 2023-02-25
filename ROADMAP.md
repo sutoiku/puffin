@@ -54,7 +54,6 @@ Features will be implemented in the following order. Please start an `Idea` [dis
 ### Other Features
 - [ ] [AWS Marketplace](https://aws.amazon.com/marketplace) provisioning
 - [ ] [Microsoft Azure](https://azure.microsoft.com/en-us) support
-- [ ] [Cross-database joins](docs/Query%20Proxy.md#query-delegation) powered by [Ibis](https://ibis-project.org/)
 - [ ] Joins across tables managed by different Lakehouse instances
 - [ ] Asynchronous invocations over [Apache Arrow](https://arrow.apache.org/)
 - [ ] [Arrow Database Connectivity](https://arrow.apache.org/docs/dev/format/ADBC.html) support
