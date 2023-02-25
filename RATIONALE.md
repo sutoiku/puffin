@@ -1,0 +1,33 @@
+# Rationale for a new distributed SQL database engines
+
+There are many excellent distributed SQL database engines currently available on the market. Why do we need yet another one?
+
+## True serverless architecture
+Coming soon...
+
+## Future-proof architecture
+Coming soon...
+
+## Designed for VPC deployment
+Coming soon...
+
+## Designed for real-time analytics
+Coming soon...
+
+## Designed for interactive analytics
+Coming soon...
+
+## OLTP + OLAP = HTAP
+Coming soon...
+
+## Transformation and Analysis
+Coming soon...
+
+## Designed for data lakes
+Coming soon...
+
+## Optimized for machine-generated queries
+Coming soon...
+
+## Scalable through large user bases
+Coming soon...
