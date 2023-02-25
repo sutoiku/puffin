@@ -4,7 +4,7 @@ Serverless [HTAP](https://en.wikipedia.org/wiki/Hybrid_transactional/analytical_
 
 Accelerate DuckDB with 10,000 [AWS Lambda functions](https://aws.amazon.com/lambda/)
 
-**Kickoff meetup**: [Rovinj, Croatia, March 29-31, 2023](meetup)
+**Kickoff meeting**: [Rovinj, Croatia, March 29-31, 2023](meetup)
 
 ## Introduction
 If you are using DuckDB client-side with [any client application](docs/Clientless.md), adding the [PuffinDB extension](docs/Extension.md) will let you:
