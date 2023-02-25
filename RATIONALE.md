@@ -39,7 +39,7 @@ Most OLAP engines are designed to support analytics workloads on datasets that a
 ## Designed for interactive analytics
 Coming soon...
 
-## OLTP + OLAP = HTAP
+## Designed for analytics and transactions
 Coming soon...
 
 ## Transformation and Analysis
