@@ -6,6 +6,8 @@ Accelerate DuckDB with 10,000 [AWS Lambda functions](https://aws.amazon.com/lamb
 
 **Kickoff meetup**: [Rovinj, Croatia, March 29-31, 2023](meetup)
 
+**Note**: This repository only contains design documents (*Cf.* [Roadmap](ROADMAP.md))
+
 ## Introduction
 If you are using DuckDB client-side with [any client application](docs/Clientless.md), adding the [PuffinDB extension](docs/Extension.md) will let you:
 - Distribute queries across thousands of serverless functions and a [Monostore](docs/Monostore.md)
