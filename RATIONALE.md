@@ -152,7 +152,7 @@ The query optimizers of most SQL engines have been optimized for human-designed 
 - Lower query processing times for users
 
 ## Scalable through large user bases
-Most OLAP engines are designed for small groups of data analysts and data scientists, and would be prohibitive to make available to large groups of end users, especially if these have limited technical skills. On the contrary, thanks to its [clientless](docs/Clientless.md) and [serverless](docs/Architecture.md) architectures, and its advanced governor features, PuffinDB can be made available to large group of users, at low and predictable costs.
+Most OLAP engines are designed for small groups of data analysts and data scientists, and would be prohibitive to make available to large groups of end users, especially if these have limited technical skills. On the contrary, thanks to its [clientless](docs/Clientless.md) and [serverless](docs/Architecture.md) architectures, and its advanced governor features, PuffinDB can be made available to large groups of users, at low and predictable costs.
 
 **Benefits**:
 - Broader userbase accessibility
