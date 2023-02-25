@@ -21,7 +21,7 @@ Most distributed SQL engines have been designed to be deployed on conventional d
 - Higher elasticity
 
 ## Designed for VPC deployment
-Most distributed SQL engines available on public clouds are designed for multi-tenancy and operated by their vendors. PuffinDB is designed for single-tenancy and deployed on the customer's Virtual Private Cloud (VPC). This is made possible by a true serverless architecture and an unprecedented level of automation for provisioning, monitoring, and maintenance.
+Most distributed SQL engines available on public clouds are designed for multi-tenancy and operated by their vendors. PuffinDB is designed for single-tenancy and deployed on the customer's Virtual Private Cloud (VPC). This is made possible thanks to a true [serverless architecture](docs/Architecture.md) and an unprecedented level of automation for provisioning, monitoring, and maintenance.
 
 **Benefits**:
 - Better security
