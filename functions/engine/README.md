@@ -5,6 +5,7 @@ The **Engine** is a [Bun](https://bun.sh/) serverless function providing a cloud
 - [DuckDB](https://duckdb.org/) with [Node.js API](https://duckdb.org/docs/api/nodejs/overview.html)
 - [PuffinDB Extension](../../docs/Extension.md) with [CPython](https://github.com/python/cpython) binding
 - [CPython](https://github.com/python/cpython) Python runtime
+- [Wasmtime](https://github.com/bytecodealliance/wasmtime) WASM runtime
 - [TCPunch](https://github.com/spcl/tcpunch) NAT hole puncher
 - [Distributed Query Planner](../../docs/Query%20Planner.md)
 - [Distributed Query Engine](../../docs/Query%20Engine.md)
