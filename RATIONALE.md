@@ -52,7 +52,11 @@ Most OLAP engines are designed to support analytics workloads on datasets that a
 - Higher business value
 
 ## Designed for interactive analytics
-Coming soon...
+Most OLAP engines are designed for queries that can take minutes or even hours to complete. While PuffinDB is capable of handling such long-running queries, it is optimized for interactive analytics workloads with queries completing within seconds. This is made possible thanks to a true [serverless architecture](docs/Architecture.md) offering two to three orders of magnitude more bandwidth and compute power. Going from minutes or hours to seconds increases user satisfaction and allows data analysts to run more queries or more complex queries.
+
+**Benefits**:
+- Increased user satisfaction
+- Higher business value
 
 ## Designed for transformation and analytics
 Coming soon...
