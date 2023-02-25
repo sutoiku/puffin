@@ -30,7 +30,7 @@ There are many excellent distributed SQL engines available today. Why do we need
 - [Designed for interactive analytics](RATIONALE.md/#designed-for-interactive-analytics)
 - [Designed for transformation and analytics](RATIONALE.md/#designed-for-transformation-and-analytics)
 - [Designed for analytics and transactions](RATIONALE.md/#designed-for-analytics-and-transactions)
-- [Designed for next-generation query engine](RATIONALE.md/#designed-for-next-generation-query-engine)
+- [Designed for next-generation query engines](RATIONALE.md/#designed-for-next-generation-query-engines)
 - [Designed for next-generation file formats](RATIONALE.md/#designed-for-next-generation-file-formats)
 - [Designed for data lakes](RATIONALE.md/#designed-for-data-lakes)
 - [Designed for data mesh integration](RATIONALE.md/#designed-for-data-mesh-integration)
