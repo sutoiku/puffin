@@ -24,7 +24,7 @@ There are many excellent distributed SQL engines available today. Why do we need
 
 - [True serverless architecture](RATIONALE.md/#true-serverless-architecture)
 - [Future-proof architecture](RATIONALE.md/#future-proof-architecture)
-- [Designed for VPC deployment](RATIONALE.md/#designed-for-vpc-deployment)
+- [Designed for virtual private cloud deployment](RATIONALE.md/#designed-for-virtual-private-cloud-deployment)
 - [Designed for small to large datasets](RATIONALE.md/#designed-for-small-to-large-datasets)
 - [Designed for real-time analytics](RATIONALE.md/#designed-for-real-time-analytics)
 - [Designed for interactive analytics](RATIONALE.md/#designed-for-interactive-analytics)
