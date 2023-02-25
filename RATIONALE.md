@@ -77,7 +77,7 @@ By definition, OLAP (online analytical processing) engines are designed to work 
 **Benefits**:
 - Broader use case applicability
 - Lower data update latency
-- Lower integration costs
+- Lower data integration costs
 
 ## Designed for next-generation query engine
 Most distributed SQL engines are built using proprietary query engines, or open source tabular query engines like [MySQL](https://www.mysql.com/) or [PostgreSQL](https://www.postgresql.org/). PuffinDB is designed around the next-generation [DuckDB](https://duckdb.org/) in-process columnar query engine, which offers a truly unique set of features:
@@ -90,11 +90,24 @@ Most distributed SQL engines are built using proprietary query engines, or open 
 - Support for Arrow and Parquet
 - Small footprint and no dependencies
 
+**Benefits**:
+- Lower development costs for vendor
+- Richer feature set for users
+
 ## Designed for next-generation file formats
-Coming soon...
+Most SQL engines are designed for conventional file formats like CSV or Parquet. PuffinDB is designed to take advantage of next-generation files formats like [Puffin](https://iceberg.apache.org/puffin-spec/) (not to be confused with PuffinDB) (advanced file metadata), [Lance](https://github.com/eto-ai/lance) (high-performance random access), and the DuckDB native file format (updates in place).
+
+**Benefits**:
+- Lower query processing times and costs through enhanced query planning
+- Higher performance for random access
+- Lower data update latency
 
 ## Designed for data lakes
-Coming soon...
+Most SQL engines designed for cloud deployment have been designed for Object Stores only (*e.g.* [Amazon S3](https://aws.amazon.com/s3/)). Instead, PuffinDB has been natively designed to take advantage of Data Lakes such as [Apache Iceberg](https://iceberg.apache.org/), [Apache Hudi](https://hudi.apache.org/), and [Delta Lake](https://delta.io/). This is one of the critical design elements that gives it full OLTP capabilities with ACID properties, while allowing it to connect to a wide range of data sources that are being migrated to data lakes.
+
+**Benefits**:
+- Enhanced transactional integrity
+- Lower data integration costs
 
 ## Designed for integration
 Coming soon...
