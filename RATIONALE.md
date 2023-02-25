@@ -120,7 +120,7 @@ CMost SQL engines are designed as standalone data silos. Instead, PuffinDB embra
 - Enhanced data governance
 
 ## Designed for all users
-Many SQL engines require advanced technical skills for deployment, monitoring, and maintenance. PuffinDB takes a radically-different approach, allowing direct deployment from any [DuckDB](https://duckdb.org/) client, thanks to a simple [DuckDB extension](docs/Extension.md), and a [Terraform](https://www.terraform.io/) template automatically deployed on the user's virtual private cloud (VPC). Furthermore, its true serverless architecture dramatically reduces efforts required for monitoring and maintenance.
+Many SQL engines require advanced technical skills for deployment, monitoring, and maintenance. PuffinDB takes a radically-different approach, allowing direct deployment from any [DuckDB](https://duckdb.org/) client, thanks to a simple [DuckDB extension](docs/Extension.md), and a [Terraform](https://www.terraform.io/) template automatically deployed on the user's virtual private cloud (VPC). Furthermore, its true [serverless architecture](docs/Architecture.md) dramatically reduces efforts required for monitoring and maintenance.
 
 **Benefits**:
 - End-user empowerment
@@ -130,8 +130,14 @@ Many SQL engines require advanced technical skills for deployment, monitoring, a
 ## Designed for extensibility
 Many SQL engines primarily targeted at public cloud deployment have limited extensibility with regards to user-defined functions (UDFs), user-defined aggregation functions (UDAFs), SQL semantics, indexing structures, connectivity, file format support, *etc.* Instead, PuffinDB fully leverages DuckDB's [extension](https://duckdb.org/docs/extensions/overview.html) mechanisms, while embedding runtimes for languages like [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript), [Python](https://www.python.org/), or [Rust](https://www.rust-lang.org/) within its [serverless function](functions/engine/README.md) and [Monostore](docs/Monostore.md). This makes it possible to develop high-performance UDFs and UDAFs, extend the SQL language with constructs like [`SELECT THROUGH`](docs/Clientless.md#select-through), add advanced indexing structures for use cases like graph analysis, geospatial analysis, or time series analysis, integrate with remote databases and applications, and provide support for specific file formats.
 
+**Benefits**:
+- Richer feature set
+- Enhanced user experience
+- Higher performance
+- Lower integration costs
+
 ## Designed for embedability
-Coming soon...
+The vast majority of SQL engines primarily targeted at public cloud deployment are designed for standalone deployment. Instead, PuffinDB takes advantage of its true [serverless architecture](docs/Architecture.md) and its packaging as a [Terraform](https://www.terraform.io/) template to make itself fully embedable within third-party systems and applications.
 
 ## Optimized for machine-generated queries
 Coming soon...
