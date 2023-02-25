@@ -45,10 +45,10 @@ Most distributed SQL engines available on public clouds are designed for multi-t
 - More predictable Quality of Service
 
 ## Designed for real-time analytics
-Most OLAP engines are designed to support analytics workloads on datasets that are updated at relatively low frequency (daily or longer). PuffinDB is designed for real-time analytics with much higher update frequencies (sub-second). This dramatically widens the range of use cases for which the engine can be used, while increasing the value of insights it gives access to.
+Most OLAP engines are designed to support analytics workloads on datasets that are updated at relatively low frequency (daily or longer). PuffinDB is designed for real-time analytics with much higher update frequencies (sub-second). This dramatically broadens the range of use cases for which the engine can be used, while increasing the value of insights it gives access to.
 
 **Benefits**:
-- Wider applicability across use cases
+- Broader use case applicability
 - Higher business value
 
 ## Designed for interactive analytics
@@ -70,7 +70,11 @@ Most OLAP engines and cloud data warehousing platforms are designed to be used a
 - Enhanced data governance
 
 ## Designed for analytics and transactions
-By definition, OLAP (online analytical processing) engines are designed to work on immutable data, and are commonly used downstream of OLTP (online transaction processing) systems. While PuffinDB is not designed to be used as primary system of records for high-frequency transactional applications, it is designed to support real-time updates and manual edits (adjustments) to data. As such, it can be considered as an analytics-oriented HTAP (hybrid transaction/analytical processing) engine.
+By definition, OLAP (online analytical processing) engines are designed to work on immutable data, and are commonly used downstream of OLTP (online transaction processing) systems. While PuffinDB is not designed to be used as primary system of records for high-frequency transactional applications, it is designed to support real-time updates and manual edits (adjustments) on data. As such, it can be considered as an analytics-oriented HTAP (hybrid transaction/analytical processing) engine.
+
+**Benefits**:
+- Broader use case applicability
+- Lower data update latency
 
 ## Designed for data lakes
 Coming soon...
