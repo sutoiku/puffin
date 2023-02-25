@@ -20,7 +20,7 @@ If you are using DuckDB client-side with [any client application](docs/Clientles
 - Log queries on your data lake
 
 ## Why develop yet another distributed SQL engine?
-There are many excellent distributed SQL engines currently available on the market. Why do we need yet another one?
+There are many excellent distributed SQL engines available today. Why do we need yet another one?
 
 - [True serverless architecture](RATIONALE.md/#true-serverless-architecture)
 - [Future-proof architecture](RATIONALE.md/#future-proof-architecture)
