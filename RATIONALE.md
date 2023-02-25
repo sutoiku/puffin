@@ -53,10 +53,10 @@ Most OLAP engines are designed to support analytics workloads on datasets that a
 ## Designed for interactive analytics
 Coming soon...
 
-## Designed for analytics and transactions
+## Desgined for transformation and analytics
 Coming soon...
 
-## Transformation and Analysis
+## Designed for analytics and transactions
 Coming soon...
 
 ## Designed for data lakes
