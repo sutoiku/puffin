@@ -95,7 +95,7 @@ Most distributed SQL engines are built using proprietary query engines, or open 
 - Richer feature set for users
 
 ## Designed for next-generation file formats
-Most SQL engines are designed for traditional file formats like CSV or Parquet. PuffinDB is designed to take advantage of next-generation file formats like [Puffin](https://iceberg.apache.org/puffin-spec/) (not to be confused with PuffinDB — advanced file metadata), [Lance](https://github.com/eto-ai/lance) (high-performance random access), and the DuckDB native file format (updates in place).
+Most SQL engines are designed for traditional file formats like CSV or Parquet. PuffinDB is designed to take advantage of next-generation file formats like [Puffin](https://iceberg.apache.org/puffin-spec/) (not to be confused with PuffinDB — advanced file metadata), [Lance](https://github.com/eto-ai/lance) (high-performance random access), and the upcoming DuckDB native file format (updates in place).
 
 **Benefits**:
 - Lower query processing times and costs through enhanced query planning
