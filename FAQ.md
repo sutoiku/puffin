@@ -25,6 +25,7 @@ There are many excellent distributed SQL engines currently available on the mark
 - [True serverless architecture](RATIONALE.md/#true-serverless-architecture)
 - [Future-proof architecture](RATIONALE.md/#future-proof-architecture)
 - [Designed for VPC deployment](RATIONALE.md/#designed-for-vpc-deployment)
+- [Designed for small to large databasets](RATIONALE.md/#designed-for-small-to-large-databasets)
 - [Designed for real-time analytics](RATIONALE.md/#designed-for-real-time-analytics)
 - [Designed for interactive analytics](RATIONALE.md/#designed-for-interactive-analytics)
 - [Designed for transformation and analytics](RATIONALE.md/#designed-for-transformation-and-analytics)
