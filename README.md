@@ -2,7 +2,7 @@
 
 Serverless [HTAP](https://en.wikipedia.org/wiki/Hybrid_transactional/analytical_processing) data mesh platform powered by [Arrow](https://arrow.apache.org/) × [DuckDB](https://duckdb.org/) × [Iceberg](https://iceberg.apache.org/)
 
-Accelerate DuckDB with 10,000 [AWS Lambda functions](https://aws.amazon.com/lambda/) running on your VPC
+Accelerate DuckDB with 10,000 [AWS Lambda functions](https://aws.amazon.com/lambda/) running on your own VPC
 
 **Note**: This repository only contains preliminary design documents (*Cf.* [Roadmap](ROADMAP.md))
 
