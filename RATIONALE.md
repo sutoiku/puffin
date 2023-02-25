@@ -110,7 +110,7 @@ Most SQL engines targeted at public cloud deployment have been designed for Obje
 - Lower data integration costs
 
 ## Designed for data mesh integration
-Most SQL engines are designed as standalone data silos. Instead, PuffinDB embraces the [data mesh philosophy](https://martinfowler.com/articles/data-mesh-principles.html) and is natively designed to distribute SQL queries across heterogeneous and remote databases and applications, thanks to its extensive collection of database and application connectors, and its built-in data pipeline execution engine.
+Most SQL engines are designed as standalone data silos. Instead, PuffinDB embraces the [data mesh philosophy](https://martinfowler.com/articles/data-mesh-principles.html), and is natively designed to distribute SQL queries across heterogeneous and remote databases and applications, thanks to its extensive collection of database and application connectors, and its built-in data pipeline execution engine.
 
 **Benefits**:
 - Lower data integration costs
