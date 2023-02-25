@@ -15,6 +15,9 @@ The core [engine](../functions/engine/README.md) is packaged as a serverless fun
 
 Combining all three components within the same serverless function reduces latencies and removes any unnecessary data copies.
 
+## Orchestration
+The orchestration of distributed queries is enabled by a low-latency **Registry** powered by [Redis](https://redis.io/).
+
 ## Physical Deployment
 The distributed query engine is deployed across three main tiers:
 1. Client (web browser, native client application, or cloud-side client)
@@ -35,6 +38,15 @@ This physical deployment model brings the following benefits:
 - Maximum performance for complex SQL queries with large Monostore
 - Lowest latency thanks to multi-layer [reactive caching](#Reactive%20Caching)
 
+
+## Execution
+The physical query plan is defined as a [directed acyclic graph](https://en.wikipedia.org/wiki/Directed_acyclic_graph):
+
+- Its start and end vertices are executed on the client.
+- The start vertex is connected to a single vertex executed on any serverless function.
+- The end vertex is connected to a single vertex executed on the Monostore.
+- All other vertices are executed on serverless functions (by default) or the Monostore (when more CPU or RAM are needed).
+
 ## Reactive Caching
 Data stored on the lake ([Apache Iceberg](https://iceberg.apache.org/), [Apache Hudi](https://hudi.apache.org/), [Delta Lake](https://delta.io/)) is automatically cached across the following layers:
 - Serverless functions (yes indeed, these can be made stateful)
@@ -48,9 +60,6 @@ Data stored on the lake ([Apache Iceberg](https://iceberg.apache.org/), [Apache 
 Whenever a query is executed, its distributed physical plan is generated to take advantage of cached data, by using caches that are as close to the client as possible. Once the query has been executed, data is automatically copied in a reactive manner onto higher caching layers in order to accelerate subsequent queries that might be made on the same dataset.
 
 When data is brought up from a certain caching layer, it is moved as close to the client as practically possible, and removed from its current caching layer (unless stored on the object store's lowest layer). For example, if data is cached on a serverless function and needs to be brought up, it will be moved to Monostore CPU RAM uncompressed (GPU RAM is only used for certain operations). From there, it might be brought down to free-up CPU RAM, first to CPU RAM compressed, then SSD uncompressed, then SSD compressed, and so on...
-
-## Orchestration
-The orchestration of distributed queries is enabled by a low-latency **Registry** powered by [Redis](https://redis.io/).
 
 ## Shuffling
 The shuffling of data between serverless functions is enabled by [NAT hole punching](https://github.com/spcl/tcpunch).
