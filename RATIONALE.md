@@ -10,7 +10,7 @@ There are many excellent distributed SQL engines available today. Why do we need
 - [Designed for interactive analytics](#designed-for-interactive-analytics)
 - [Designed for transformation and analytics](#designed-for-transformation-and-analytics)
 - [Designed for analytics and transactions](#designed-for-analytics-and-transactions)
-- [Designed for next-generation query engine](#designed-for-next-generation-query-engine)
+- [Designed for next-generation query engines](#designed-for-next-generation-query-engines)
 - [Designed for next-generation file formats](#designed-for-next-generation-file-formats)
 - [Designed for data lakes](#designed-for-data-lakes)
 - [Designed for data mesh integration](#designed-for-data-mesh-integration)
@@ -87,7 +87,7 @@ By definition, OLAP (online analytical processing) engines are designed to work 
 - Lower data update latency
 - Lower data integration costs
 
-## Designed for next-generation query engine
+## Designed for next-generation query engines
 Most distributed SQL engines are built using proprietary query engines, or open source tabular query engines like [MySQL](https://www.mysql.com/) or [PostgreSQL](https://www.postgresql.org/). PuffinDB is designed around the next-generation [DuckDB](https://duckdb.org/) in-process columnar query engine, which offers a truly unique set of features:
 - In process, serverless
 - Columnar and vectorized
