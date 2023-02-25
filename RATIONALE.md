@@ -120,7 +120,7 @@ Most SQL engines are designed as standalone data silos. Instead, PuffinDB embrac
 - Enhanced data governance
 
 ## Designed for all users
-Many SQL engines require advanced technical skills for deployment, monitoring, and maintenance. PuffinDB takes a radically-different approach, allowing direct deployment from any [DuckDB](https://duckdb.org/) client, thanks to a simple [DuckDB extension](docs/Extension.md), and a [Terraform](https://www.terraform.io/) template automatically deployed on the user's virtual private cloud (VPC). Furthermore, its true [serverless architecture](docs/Architecture.md) dramatically reduces efforts required for monitoring and maintenance.
+Many SQL engines require advanced technical skills for deployment, monitoring, and maintenance. PuffinDB takes a radically-different approach, allowing direct deployment from any [DuckDB](https://duckdb.org/) client, thanks to a simple [DuckDB extension](docs/Extension.md), and a [Terraform](https://www.terraform.io/) template automatically deployed on the user's virtual private cloud (VPC), from the DuckDB client. Furthermore, its true [serverless architecture](docs/Architecture.md) dramatically reduces efforts required for monitoring and maintenance.
 
 **Benefits**:
 - End-user empowerment
