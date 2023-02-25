@@ -4,7 +4,7 @@ There are many excellent distributed SQL engines available today. Why do we need
 
 - [True serverless architecture](#true-serverless-architecture)
 - [Future-proof architecture](#future-proof-architecture)
-- [Designed for VPC deployment](#designed-for-vpc-deployment)
+- [Designed for virtual private cloud deployment](#designed-for-virtual-private-cloud-deployment)
 - [Designed for small to large datasets](#designed-for-small-to-large-datasets)
 - [Designed for real-time analytics](#designed-for-real-time-analytics)
 - [Designed for interactive analytics](#designed-for-interactive-analytics)
@@ -38,7 +38,7 @@ Most distributed SQL engines have been designed to be deployed on conventional d
 - Higher availability
 - Higher elasticity
 
-## Designed for VPC deployment
+## Designed for virtual private cloud deployment
 Most distributed SQL engines available on public clouds are designed for multi-tenancy and operated by their vendors. PuffinDB is designed for single-tenancy (with support for multiple teams) and deployed on the customer's Virtual Private Cloud (VPC). This is made possible thanks to a true [serverless architecture](docs/Architecture.md), and an unprecedented level of automation for provisioning, monitoring, and maintenance.
 
 **Benefits**:
