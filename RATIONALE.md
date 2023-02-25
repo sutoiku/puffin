@@ -2,19 +2,20 @@
 
 There are many excellent distributed SQL engines currently available on the market. Why do we need yet another one?
 
-- [True serverless architecture]()
-- [Future-proof architecture]()
-- [Designed for VPC deployment]()
-- [Designed for real-time analytics]()
-- [Designed for interactive analytics]()
-- [Desgined for transformation and analytics]()
-- [Designed for analytics and transactions]()
-- [Designed for data lakes]()
-- [Designed for integration]()
-- [Optimized for machine-generated queries]()
-- [Designed for extensibility]()
-- [Designed for embedability]()
-- [Scalable through large user bases]()
+- [True serverless architecture](#true-serverless-architecture)
+- [Future-proof architecture](#future-proof-architecture)
+- [Designed for VPC deployment](#designed-for-vpc-deployment)
+- [Designed for real-time analytics](#designed-for-real-time-analytics)
+- [Designed for interactive analytics](#designed-for-interactive-analytics)
+- [Desgined for transformation and analytics](#desgined-for-transformation-and-analytics)
+- [Designed for analytics and transactions](#designed-for-analytics-and-transactions)
+- [Designed for data lakes](#designed-for-data-lakes)
+- [Designed for integration](#designed-for-integration)
+- [Designed for all users](#designed-for-all-users)
+- [Optimized for machine-generated queries](#optimized-for-machine-generated-queries)
+- [Designed for extensibility](#designed-for-extensibility)
+- [Designed for embedability](#designed-for-embedability)
+- [Scalable through large user bases](#scalable-through-large-user-bases)
 
 ## True serverless architecture
 Most distributed SQL engines are designed to be deployed on conventional containers (*e.g.* [Amazon EC2](https://aws.amazon.com/ec2/) instances). PuffinDB is designed to run on serverless functions (*e.g.* [AWS Lambda](https://aws.amazon.com/lambda/) functions). The largest currently-available [Amazon EC2](https://aws.amazon.com/ec2/) instance ([`u-24tb1.112xlarge`](https://aws.amazon.com/ec2/instance-types/high-memory/)) has 448 vCPUs, 24 TB of RAM, and 100 Gbps of network bandwidth, and its on-demand availability is not guaranteed. In comparison, 10,000 [AWS Lambda](https://aws.amazon.com/lambda/) functions offer an aggregated 60,000 vCPUs (134×), 200 TB of RAM (8×), and 8 Tbps of network bandwidth (80×). Furthermore, EC2 instances are billed from instantiation to termination (usually several hours at a time), while Lambda functions are billed by the millisecond, and only for the time during which they are actually used.
@@ -53,7 +54,7 @@ Most OLAP engines are designed to support analytics workloads on datasets that a
 ## Designed for interactive analytics
 Coming soon...
 
-## Desgined for transformation and analytics
+## Designed for transformation and analytics
 Coming soon...
 
 ## Designed for analytics and transactions
@@ -63,6 +64,9 @@ Coming soon...
 Coming soon...
 
 ## Designed for integration
+Coming soon...
+
+## Designed for all users
 Coming soon...
 
 ## Optimized for machine-generated queries
