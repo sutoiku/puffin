@@ -98,6 +98,8 @@ Most distributed SQL engines are built using proprietary query engines, or open 
 - Support for Arrow and Parquet
 - Small footprint and no dependencies
 
+Alongside DuckDB, more innovative query engines are likely to emerge, many powered by [Apache Arrow](https://arrow.apache.org/) and | or accelerated by GPUs.
+
 **Benefits**:
 - Lower development costs for vendor
 - Richer feature set for users
