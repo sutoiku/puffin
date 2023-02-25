@@ -7,7 +7,7 @@ There are many excellent distributed SQL engines currently available on the mark
 - [Designed for VPC deployment](#designed-for-vpc-deployment)
 - [Designed for real-time analytics](#designed-for-real-time-analytics)
 - [Designed for interactive analytics](#designed-for-interactive-analytics)
-- [Desgined for transformation and analytics](#desgined-for-transformation-and-analytics)
+- [Designed for transformation and analytics](#desgined-for-transformation-and-analytics)
 - [Designed for analytics and transactions](#designed-for-analytics-and-transactions)
 - [Designed for data lakes](#designed-for-data-lakes)
 - [Designed for integration](#designed-for-integration)
