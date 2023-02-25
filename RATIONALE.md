@@ -9,6 +9,8 @@ There are many excellent distributed SQL engines currently available on the mark
 - [Designed for interactive analytics](#designed-for-interactive-analytics)
 - [Designed for transformation and analytics](#designed-for-transformation-and-analytics)
 - [Designed for analytics and transactions](#designed-for-analytics-and-transactions)
+- [Designed for next-generation query engine]()
+- [Designed for next-generation file formats]()
 - [Designed for data lakes](#designed-for-data-lakes)
 - [Designed for integration](#designed-for-integration)
 - [Designed for all users](#designed-for-all-users)
@@ -76,6 +78,12 @@ By definition, OLAP (online analytical processing) engines are designed to work 
 - Broader use case applicability
 - Lower data update latency
 - Lower integration costs
+
+## Designed for next-generation query engine
+Coming soon...
+
+## Designed for next-generation file formats
+Coming soon...
 
 ## Designed for data lakes
 Coming soon...
