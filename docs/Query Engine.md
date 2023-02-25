@@ -47,6 +47,8 @@ The physical query plan is defined as a [directed acyclic graph](https://en.wiki
 - The end vertex is connected to a single vertex executed on the Monostore.
 - All other vertices are executed on serverless functions (by default) or the Monostore (when more CPU or RAM are needed).
 
+Direct communication between nodes (vertices) is achieved through [NAT hole punching](https://github.com/spcl/tcpunch).
+
 ## Reactive Caching
 Data stored on the lake ([Apache Iceberg](https://iceberg.apache.org/), [Apache Hudi](https://hudi.apache.org/), [Delta Lake](https://delta.io/)) is automatically cached across the following layers:
 - Serverless functions (yes indeed, these can be made stateful)
