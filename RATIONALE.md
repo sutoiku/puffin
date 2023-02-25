@@ -59,7 +59,14 @@ Most OLAP engines are designed for queries that can take minutes or even hours t
 - Higher business value
 
 ## Designed for transformation and analytics
-Coming soon...
+Most OLAP engines and cloud data warehousing platforms are designed to be used alongside data preparation tools for ETL and reverse ETL. PuffinDB is in and by itself a powerful data extraction, transformation, and loading tool, thanks to its extensive collection of database and application connectors, and its built-in data pipeline execution engine.
+
+**Benefits**:
+- Lower development costs
+- Lower licensing costs
+- Faster development cycles
+- Better data quality
+- Enhanced data governance
 
 ## Designed for analytics and transactions
 Coming soon...
