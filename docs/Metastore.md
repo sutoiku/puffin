@@ -15,3 +15,7 @@ This approach would offer the following benefits over the proposed [Iceberg Pufi
 - Low-latency lookup of statistics for specific columns
 - Much smaller file size
 - Totally independent from [Iceberg Table Format](https://iceberg.apache.org/spec/) (compatible with [Delta Lake](https://delta.io/) and [Hudi](https://hudi.apache.org/) table formats).
+
+This approach would offer the following benefits over a key-value store like [DynamoDB](https://aws.amazon.com/dynamodb/) or [Redis](https://redis.io/):
+- Lower cost
+- Higher throughput (when using up to one serverless function per partition)
