@@ -26,12 +26,12 @@ This approach would offer the following benefits over a key-value store like [Dy
 - One row per column of the related table
 - Ordered as columns are ordered in the related table
 
-## `frequencies.parquet`
+### `frequencies.parquet`
 - Columns for column, value, and frequency
 - One row per pair of column·value
 - Ordered by column (as columns are ordered in the related table) and decreasing frequency
 
-## `histograms.parquet`
+### `histograms.parquet`
 - One column per column of the related table
 - One row per bin (1,000 ot 10,000 bins)
 - Ordered by increasing bin minimum value
