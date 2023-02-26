@@ -89,6 +89,7 @@ Many excellent distributed SQL engines are available today. Why do we need yet a
 - Built-in [SQL dialect converter](https://github.com/tobymao/sqlglot)
 - Built-in [SQL parser | stringifier](https://twitter.com/ghalimi/status/1625172235895046146)
 - Sub-500ms table scanning API (fetch table partitions from filter predicates) running on standalone function
+- Advanced table metadata managed by serverless [Metastore](docs/Metastore.md)
 - Concurrent support for multiple table formats ([Apache Iceberg](https://iceberg.apache.org/), [Apache Hudi](https://hudi.apache.org/), and [Delta Lake](https://delta.io/))
 - Concurrent suport for multiple Lakehouse instances
 - Native support for all Lakehouse Catalogs ([AWS Glue Data Catalog](https://docs.aws.amazon.com/glue/latest/dg/catalog-and-crawler.html), [Amazon DynamoDB](https://aws.amazon.com/dynamodb/), and [Amazon RDS](https://aws.amazon.com/rds/))
