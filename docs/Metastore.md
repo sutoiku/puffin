@@ -7,6 +7,7 @@ The Metastore manages partition-level column statistics that are physically stor
 
 ### Requirements
 - Support tables with fairly large numbers of columns (hundreds or even thousands)
+- Support user-defined summary statistics
 - Optimize partial lookups for subsets of columns
 - Optimize partial lookups for top frequencies
 - Optimize partial lookups for histogram subsets
