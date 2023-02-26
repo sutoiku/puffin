@@ -7,8 +7,8 @@ The Metastore manages partition-level column statistics that are physically stor
 
 These statistics are captured across three files per partition:
 - A Parquet file for summary statistics (minimum, maximum, mean, etc.), with one column per summary statistic and one row per column
-- A parquet file for the histograms of numerical columns, with one column per column and one row per bin (1,000 or 10,000)
 - A parquet file the the frequencies of discrete column, with columns for the column, value, and frequency, and one row per column·value
+- A parquet file for the histograms of numerical columns, with one column per column and one row per bin (1,000 or 10,000)
 
 This approach would offer the following benefits over the proposed [Iceberg Pufin](https://iceberg.apache.org/puffin-spec/) file format:
 - No need to develop and maintain a new parser | serializer
@@ -20,3 +20,18 @@ This approach would offer the following benefits over a key-value store like [Dy
 - Lower cost
 - Higher scalability (when serving large numbers of concurrent requests)
 - Higher throughput (when using up to one serverless function per partition)
+
+### `statistics.parquet`
+- One column per summary statistic (minimum, maximum, mean, *etc.*)
+- One row per column of the related table
+- Ordered as columns are ordered in the related table
+
+## `frequencies.parquet`
+- Columns for column, value, and frequency
+- One row per pair of column·value
+- Ordered by column (as columns are ordered in the related table) and decreasing frequency
+
+## `histograms.parquet`
+- One column per column of the related table
+- One row per bin (1,000 ot 10,000 bins)
+- Ordered by increasing bin minimum value
