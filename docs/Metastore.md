@@ -19,3 +19,4 @@ This approach would offer the following benefits over the proposed [Iceberg Pufi
 This approach would offer the following benefits over a key-value store like [DynamoDB](https://aws.amazon.com/dynamodb/) or [Redis](https://redis.io/):
 - Lower cost
 - Higher throughput (when using up to one serverless function per partition)
+- Higher scalability (when serving large numbers of concurrent requests)
