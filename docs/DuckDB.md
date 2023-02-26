@@ -5,6 +5,7 @@ PuffinDB is based on the recognition that [DuckDB](https://duckdb.org/) is much 
 - A [pervasive client](Clientless.md)
 - A [data integration vector](../EDDI.md)
 - A [SQL dialect](Query%20Proxy.md#dialect-translation)
+- A [SQL parser](https://twitter.com/ghalimi/status/1625172235895046146)
 - A [thriving community](https://github.com/duckdb/duckdb)
 - A growing ecosystem
 - A change agent
