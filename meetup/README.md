@@ -24,6 +24,7 @@ Good meals in Michelin starred restaurants will be offered.
 ## Agenda
 - [Project Overview](../README.md)
 - [DuckDB Extension](../docs/Extension.md)
+- [Metastore](../docs/Metastore.md)
 - [Query Proxy](../docs/Query%20Proxy.md)
 - [Query Planner](../docs/Query%20Planner.md)
 - [Query Engine](../docs/Query%20Engine.md)
