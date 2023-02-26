@@ -11,6 +11,8 @@ The Metastore manages partition-level column statistics that are physically stor
 - Optimize partial lookups for subsets of columns
 - Optimize partial lookups for top frequencies
 - Optimize partial lookups for histogram subsets
+- Keep metadata files as small as possible
+- Reduce development costs as much as possible
 
 In order to fulfill these requirements, statistics are captured across three files per partition:
 - A Parquet file for summary statistics (minimum, maximum, mean, etc.), with one column per summary statistic and one row per column
