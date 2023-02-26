@@ -147,9 +147,11 @@ These [reference materials](docs/References.md) are a solid starting point.
 
 ## Which languages is PuffinDB written in?
 PuffinDB uses the following languages:
-- [C++](https://en.wikipedia.org/wiki/C%2B%2B) for most of the [DuckDB extension](docs/Extension.md)
+- [C++](https://en.wikipedia.org/wiki/C%2B%2B) for most parts of the [DuckDB extension](docs/Extension.md)
 - [TypeScript](https://www.typescriptlang.org/) for most of the middleware code executed by the [Engine](functions/engine/README.md) function
+- [SMT-LIB](https://smtlib.cs.uiowa.edu/) for the formal models of the [distributed query planner](docs/Query%20Planner.md)
 - [Rust](https://www.rust-lang.org/) for the routines of the [distributed query planner](docs/Query%20Planner.md)
+- [Java](https://en.wikipedia.org/wiki/Java_(programming_language)) for the [connectors](docs/Connectors.md) to databases
 - [Python](https://www.python.org/) for the [connectors](docs/Connectors.md) to applications
 
 ## Why is STOIC initiating and funding this open source project?
