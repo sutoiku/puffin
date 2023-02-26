@@ -145,6 +145,13 @@ Whenever you execute a read query, its result can be cached on the Object Store 
 ## Where can I learn more about SQL query engines?
 These [reference materials](docs/References.md) are a solid starting point.
 
+## Which languages is PuffinDB written in?
+PuffinDB uses the following languages:
+- [C++](https://en.wikipedia.org/wiki/C%2B%2B) for most of the [DuckDB extension](docs/Extension.md)
+- [TypeScript](https://www.typescriptlang.org/) for most of the middleware code executed by the [Engine](functions/engine/README.md) function
+- [Rust](https://www.rust-lang.org/) for the routines of the [distributed query planner](docs/Query%20Planner.md)
+- [Python](https://www.python.org/) for the [connectors](docs/Connectors.md) to applications
+
 ## Why is STOIC initiating and funding this open source project?
 [STOIC](https://stoic.com/) is in the business of developing and selling a progressive data platform allowing any data citizen to interact with datasets of any size, from kilobytes to petabytes. In that context, we need to perform read | write SQL queries on large datasets, with low latency (2s or less) and low cost (one or two orders of magnitude lower than conventional solutions). And we need the required query engine to properly support the top-three cloud platforms and the top-three table formats. Furthermore, we want it powered by [Arrow](https://arrow.apache.org/) and [DuckDB](https://duckdb.org/), because there are no better technologies available today. We could not find such an engine distributed under a liberal open source license, so we decided to build one. And because this component is a means to an end for us, yet could benefit countless other projects and organizations, we decided to develop it as an open source project.
 
