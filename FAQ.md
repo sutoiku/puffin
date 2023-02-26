@@ -153,6 +153,7 @@ PuffinDB uses the following languages:
 - [Rust](https://www.rust-lang.org/) for the routines of the [distributed query planner](docs/Query%20Planner.md)
 - [Java](https://en.wikipedia.org/wiki/Java_(programming_language)) for the [connectors](docs/Connectors.md) to databases
 - [Python](https://www.python.org/) for the [connectors](docs/Connectors.md) to applications
+- [HCL](https://github.com/hashicorp/hcl) for the [Terraform](https://www.terraform.io/) templates
 
 ## Why is STOIC initiating and funding this open source project?
 [STOIC](https://stoic.com/) is in the business of developing and selling a progressive data platform allowing any data citizen to interact with datasets of any size, from kilobytes to petabytes. In that context, we need to perform read | write SQL queries on large datasets, with low latency (2s or less) and low cost (one or two orders of magnitude lower than conventional solutions). And we need the required query engine to properly support the top-three cloud platforms and the top-three table formats. Furthermore, we want it powered by [Arrow](https://arrow.apache.org/) and [DuckDB](https://duckdb.org/), because there are no better technologies available today. We could not find such an engine distributed under a liberal open source license, so we decided to build one. And because this component is a means to an end for us, yet could benefit countless other projects and organizations, we decided to develop it as an open source project.
