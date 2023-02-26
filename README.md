@@ -30,7 +30,7 @@ DuckDB and the DuckDB logo are trademarks of the DuckDB Foundation.
 
 PuffinDB and the PuffinDB logo are trademarks of STOIC (Sutoiku, Inc.).
 
-STOIC is a Silver Member of the DuckDB Foundation.
+STOIC is a member of the DuckDB Foundation.
 
 ## Beliefs
 - Nothing beats [SQL](https://en.wikipedia.org/wiki/SQL) because nothing can beat [maths](https://en.wikipedia.org/wiki/Relational_algebra)
