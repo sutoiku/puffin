@@ -34,9 +34,9 @@ STOIC is a Silver Member of the DuckDB Foundation.
 
 ## Beliefs
 - Nothing beats [SQL](https://en.wikipedia.org/wiki/SQL) because nothing can beat [maths](https://en.wikipedia.org/wiki/Relational_algebra)
+- The [public cloud](FAQ.md#why-not-support-private-cloud-deployment) is the only truly elastic platform
 - [Arrow](https://arrow.apache.org/) × [DuckDB](https://duckdb.org/) × [Iceberg](https://iceberg.apache.org/) are game changers
 - [Edge-Driven Data Integration](EDDI.md) is the way forward
-- The [public cloud](FAQ.md#why-not-support-private-cloud-deployment) is the only truly elastic platform
 - [Clientless](docs/Clientless.md) + [Serverless](docs/Architecture.md) = [Goodness](CLOUD.md)
 
 ## Rationale
