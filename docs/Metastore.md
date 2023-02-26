@@ -10,7 +10,7 @@ These statistics are captured across three files per partition:
 - A parquet file for the histograms of numerical columns, with one column per column and one row per bin (1,000 or 10,000)
 - A parquet file the the frequencies of discrete column, with columns for the column, value, and frequency, and one row per column·value
 
-This approach would offer the following benefits over the proposed [Iceberg Pufin](https://iceberg.apache.org/puffin-spec/):
+This approach would offer the following benefits over the proposed [Iceberg Pufin](https://iceberg.apache.org/puffin-spec/) file format:
 - No need to develop and maintain a new parser | serializer
 - Low-latency lookup of statistics for specific columns
 - Much smaller file size
