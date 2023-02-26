@@ -5,7 +5,13 @@ The Metastore is a metadata store for PuffinDB tables. It extends the data lake'
 ## Partition-Level Column Statistics
 The Metastore manages partition-level column statistics that are physically stored on the Object Store (*e.g.* [Amazon S3](https://aws.amazon.com/s3/)). These statistics are critical for helping the [distributed query planner](Query%20Planner.md) perform certain optimizations, or for allowing user interfaces to rapidly display quantitatively-rich previews of tables before querying (*e.g.* [STOIC Table Editor](https://github.com/stoic-doc/Community/discussions/534)).
 
-These statistics are captured across three files per partition:
+### Requirements
+- Support tables with fairly large numbers of columns (hundreds or even thousands)
+- Optimize partial lookups for subsets of columns
+- Optimize partial lookups for top frequencies
+- Optimize partial lookups for histogram subsets
+
+In order to fulfill these requirements, statistics are captured across three files per partition:
 - A Parquet file for summary statistics (minimum, maximum, mean, etc.), with one column per summary statistic and one row per column
 - A parquet file the the frequencies of discrete column, with columns for the column, value, and frequency, and one row per column·value
 - A parquet file for the histograms of numerical columns, with one column per column and one row per bin (1,000 or 10,000)
