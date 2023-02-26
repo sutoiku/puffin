@@ -6,6 +6,7 @@ The Metastore is a metadata store for PuffinDB tables. It extends the data lake'
 The Metastore manages partition-level column statistics that are physically stored on the Object Store (*e.g.* [Amazon S3](https://aws.amazon.com/s3/)). These statistics are critical for helping the [distributed query planner](Query%20Planner.md) perform certain optimizations, or for allowing user interfaces to rapidly display quantitatively-rich previews of tables before querying (*e.g.* [STOIC Table Editor](https://github.com/stoic-doc/Community/discussions/534)).
 
 ### Requirements
+- Support all major table formats ([Iceberg](https://iceberg.apache.org/), [Delta](https://delta.io/), [Hudi](https://hudi.apache.org/))
 - Support tables with fairly large numbers of columns (hundreds or even thousands)
 - Support user-defined summary statistics
 - Optimize partial lookups for subsets of columns
