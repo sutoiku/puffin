@@ -80,10 +80,20 @@ While [quantiles](https://en.wikipedia.org/wiki/Quantile) can be accurately appr
 - From there, each serverless function computes a histogram of its partition-level column, with as many bins as there are functions
 - These partition-level histograms are then streamed from the serverless functions to the Monostore.
 - Histograms are then reduced with bin-wise summation of counts by the Monostore.
-- From there, a uniform set of value ranges with equal numbers of values is generated, with as many ranges as there are serverless functions.
+- From there, a uniform set of value ranges with equal numbers of values is generated, with as many ranges as there are functions.
 - This set is then broadcasted by the Monostore to the serverless function.
 - From there, each serverless function scatters its sorted partition-level column values to all other serverless functions.
 - This scattering is done according to value ranges, using [NAT hole punching](https://github.com/spcl/tcpunch) for direct function-to-function communication.
+- From there, each serverless function sorts its values locally and sends its last value and its rank to the next function.
+- This last value·rank exchange is then used to offset local ranks in order to produce global ranks.
+- From there, accurate quantiles can be computed through simple reduction to the Monostore.
+
+**Note**: computed ranks could be stored into a `ranks.parquet` file that would accelerate rank updates following random data updates:
+- Columns for column, value, and rank
+- One row per pair of column·value
+- Ordered by column (as columns are ordered in the related table) and increasing rank
+
+This table format is optimized for columns with large numbers of distinct values and potentially-large numbers of duplicate values.
 
 ## Performance
 In most instances, the lookup of statistics for a given partition should take less than 100 ms, and this lookup can be parallelized across 10,000 serverless functions or more. If partitions are 50 MB in size compressed (500 MB uncompressed), 10,000 serverless functions could lookup column statistics for 500 GB of compressed data (5 TB uncompressed) in 100 ms. Moving to partitions that are 1 GB in size compressed (10 GB uncompressed) would let 10,000 serverless functions lookup the same column statistics for 10 TB of data compressed (100 TB uncompressed) within the same 100 ms. This suggests that larger partitions would be preferable (for the Metastore at least).
