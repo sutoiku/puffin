@@ -77,7 +77,7 @@ While [quantiles](https://en.wikipedia.org/wiki/Quantile) can be accurately appr
 
 - Partition-level columns are first sorted by the serveless functions.
 - Then, their minimums and maximums are reduced by the [Monostore](Monostore.md) to compute minimum and maximum values for the entire column.
-- From there, each serverless function computes a histogram of its partition-level column, with as many bins as there are functions
+- From there, each serverless function computes a histogram of its partition-level column, with as many bins as there are functions.
 - These partition-level histograms are then streamed from the serverless functions to the Monostore.
 - Histograms are then reduced with bin-wise summation of counts by the Monostore.
 - From there, a uniform set of value ranges with equal numbers of values is generated, with as many ranges as there are functions.
