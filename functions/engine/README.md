@@ -6,6 +6,7 @@ The **Engine** is a [Bun](https://bun.sh/) serverless function providing a cloud
 - [PuffinDB Extension](../../docs/Extension.md) with [CPython](https://github.com/python/cpython) binding
 - [CPython](https://github.com/python/cpython) Python runtime
 - [Wasmtime](https://github.com/bytecodealliance/wasmtime) WASM runtime
+- [Redpanda](https://redpanda.com/) Kafka-compatible streaming engine
 - [Distributed Query Planner](../../docs/Query%20Planner.md)
 - [Distributed Query Engine](../../docs/Query%20Engine.md)
 - [SQLGlot](https://github.com/tobymao/sqlglot) SQL parser and transpiler
