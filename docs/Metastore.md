@@ -82,7 +82,7 @@ While [quantiles](https://en.wikipedia.org/wiki/Quantile) can be accurately appr
 - Histograms are then reduced with bin-wise summation of counts by the Monostore.
 - From there, a uniform set of value ranges with equal numbers of values is generated, with as many ranges as there are functions.
 - This set is then broadcasted by the Monostore to the serverless function.
-- From there, each serverless function scatters its sorted partition-level column values to all other serverless functions.
+- From there, each serverless function scatters its sorted partition-level column values across all other serverless functions.
 - This scattering is done according to value ranges, using [NAT hole punching](https://github.com/spcl/tcpunch) for direct function-to-function communication.
 - From there, each serverless function sorts its values locally and sends its last value and its rank to the next function.
 - This last value·rank exchange is then used to offset local ranks in order to produce global ranks.
