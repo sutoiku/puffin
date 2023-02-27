@@ -10,7 +10,7 @@ The following table maps [DuckDB types](https://duckdb.org/docs/sql/data_types/o
 | `DATE` | Calendar date (year, month day) | `date32` | `date` |
 | `DOUBLE` | Double precision floating-point number (8 bytes) | `float64` | `double` |
 | `DECIMAL` | Fixed-precision floating point number | `decimal128` | `decimal` |
-| `HUGEINT` | Signed sixteen-byte integer | Cast to `int64` | Cast to `long` ([with loss](https://github.com/sutoiku/puffin/issues/2)) |
+| `HUGEINT` | Signed sixteen-byte integer | Cast to `int64` (with loss) | Cast to `long` ([with loss](https://github.com/sutoiku/puffin/issues/2)) |
 | `INTEGER` | Signed four-byte integer | `int32` | `int` |
 | `INTERVAL` | Date \| time delta | `month_day_nano_interval` | Cast to `long` |
 | `LIST` | List with elements of any data type | `list_` | `list` |
