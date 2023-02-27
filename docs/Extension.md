@@ -18,5 +18,5 @@ PuffinDB includes a [DuckDB Extension](https://duckdb.org/docs/extensions/overvi
 The PuffinDB extension allows the invocation of [curl](https://curl.se/) directly from [DuckDB](https://duckdb.org/), using the following syntax:
 
 ```sql
-SELECT * FROM curl(url="https://myURL", content-type="text/jsonl")
+SELECT * FROM curl(url="https://myURL", content-type="text/jsonl");
 ```
