@@ -31,3 +31,5 @@ The following table maps [DuckDB types](https://duckdb.org/docs/sql/data_types/o
 | Cast to `VARCHAR` | Fixed-length character string | Cast to `string` | `fixed` |
 
 **Note**: A `FIXED` type for fixed-length character strings [might be added](README.md#credits) to [DuckDB](https://duckdb.org/docs/sql/data_types/overview).
+
+**Note**: The [`dictionary`](https://arrow.apache.org/docs/python/generated/pyarrow.dictionary.html#pyarrow.dictionary), [`field`](https://arrow.apache.org/docs/python/generated/pyarrow.field.html#pyarrow.field), and [`schema`](https://arrow.apache.org/docs/python/generated/pyarrow.schema.html#pyarrow.schema) Apache Arrow types are ignored for now.
