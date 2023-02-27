@@ -73,7 +73,7 @@ Finally, if the sum of counts of partition-level distinct values is strictly gre
 **Note**: an implementation of the Bloom filter can be found in [DuckDB](https://duckdb.org/) and was used to implement support for [range joins](https://duckdb.org/2022/05/27/iejoin.html).
 
 ## Computations of Ranks
-While [quantiles](https://en.wikipedia.org/wiki/Quantile) can be accurately approximated with the powerful [t-digest](https://github.com/tdunning/t-digest) algorithm, exact quantiles are required for certain applications. In such a case, ranks must be computed for column values through distributed sorting.
+While [quantiles](https://en.wikipedia.org/wiki/Quantile) can be accurately approximated with the most recent versions of the [t-digest](https://github.com/tdunning/t-digest) algorithm, exact quantiles are required for certain applications. In such a case, ranks must be computed for column values through distributed sorting.
 
 ## Performance
 In most instances, the lookup of statistics for a given partition should take less than 100 ms, and this lookup can be parallelized across 10,000 serverless functions or more. If partitions are 50 MB in size compressed (500 MB uncompressed), 10,000 serverless functions could lookup column statistics for 500 GB of compressed data (5 TB uncompressed) in 100 ms. Moving to partitions that are 1 GB in size compressed (10 GB uncompressed) would let 10,000 serverless functions lookup the same column statistics for 10 TB of data compressed (100 TB uncompressed) within the same 100 ms. This suggests that larger partitions would be preferable (for the Metastore at least).
