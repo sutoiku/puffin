@@ -70,6 +70,8 @@ Otherwise, the Monostore computes the sum of counts of partition-level distinct 
 
 Finally, if the sum of counts of partition-level distinct values is strictly greater than 4,294,967,295, a similar process is implemented in batches: the number of `b` batches is defined by dividing the total number of values by 4,294,967,295. From there, each serverless function streams to the Monostore `b` subsets of its partition-level frequency distribution, ordered by column value. Each batch is then consolidated by the Monostore within a dedicated Redis hash. After counts for values overlaping multiple consecutive batches have been consolidated and hashes have been shuffled to support ordering by decreasing count, we again have an exhaustive frequency distribution, which includes all values and their counts.
 
+**Note**: an implementation of the Bloom filter can be found in DuckDB and was used to implement support for [range joins](https://duckdb.org/2022/05/27/iejoin.html).
+
 ## Performance
 In most instances, the lookup of statistics for a given partition should take less than 100 ms, and this lookup can be parallelized across 10,000 serverless functions or more. If partitions are 50 MB in size compressed (500 MB uncompressed), 10,000 serverless functions could lookup column statistics for 500 GB of compressed data (5 TB uncompressed) in 100 ms. Moving to partitions that are 1 GB in size compressed (10 GB uncompressed) would let 10,000 serverless functions lookup the same column statistics for 10 TB of data compressed (100 TB uncompressed) within the same 100 ms. This suggests that larger partitions would be preferable (for the Metastore at least).
 
