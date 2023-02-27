@@ -13,3 +13,10 @@ PuffinDB includes a [DuckDB Extension](https://duckdb.org/docs/extensions/overvi
 - Accelerate and | or schedule the downloading of large tables to your client
 - Cache tables and run computations at the edge ([Amazon CloudFront](https://aws.amazon.com/cloudfront/) × [Lambda@Edge](https://aws.amazon.com/lambda/edge/))
 - Log queries on your data lake
+
+## `curl` Integration
+The PuffinDB extension allows the invocation of [curl](https://curl.se/) directly from [DuckDB](https://duckdb.org/), using the following syntax:
+
+```sql
+SELECT * FROM curl(url="https://myURL", content-type="text/jsonl")
+```
