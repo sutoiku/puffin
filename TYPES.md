@@ -28,6 +28,7 @@ The following table maps [DuckDB types](https://duckdb.org/docs/sql/data_types/o
 | `UTINYINT` | Unsigned one-byte integer | `uint8` | Cast to `int` |
 | `UUID` | UUID data type | Cast to `string` | Cast to `fixed` |
 | `VARCHAR` | Variable-length character string | `string` | `string` |
+| Cast to `BIGINT` | Duration in nanoseconds | `duration` | Cast to `long` |
 | Cast to `VARCHAR` | Fixed-length character string | Cast to `string` | `fixed` |
 
 **Note**: A `FIXED` type for fixed-length character strings [might be added](README.md#credits) to [DuckDB](https://duckdb.org/docs/sql/data_types/overview).
