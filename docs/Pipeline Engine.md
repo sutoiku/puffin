@@ -7,7 +7,7 @@ PuffinDB embeds a powerful data pipeline engine with the following features:
 - Multi-threaded execution of sequential steps
 - Direct function-to-function communication through [NAT hole punching](https://github.com/spcl/tcpunch)
 - Pipelines defined using [JSON](https://www.json.org/) or [YAML](https://yaml.org/) syntax including [Python](https://www.python.org/) and [TypeScript](https://www.typescriptlang.org/) scripting
-- Steps defined with SQL or [PRQL](https://prql-lang.org/) extended with user-defined functions powered by [Python](https://www.python.org/), [TypeScript](https://www.typescriptlang.org/), and [WebAssembly](https://webassembly.org/)
+- Steps defined with [SQL](https://github.com/sutoiku/puffin/blob/main/docs/Query%20Proxy.md#dialect-translation) or [PRQL](https://prql-lang.org/) extended with user-defined functions powered by [Python](https://www.python.org/), [TypeScript](https://www.typescriptlang.org/), and [WebAssembly](https://webassembly.org/)
 - Support for step invoking [curl](https://curl.se/) commands or any [Airbyte connector](https://airbyte.com/connectors)
 - Incremental pipeline execution
 - Real-time observability
