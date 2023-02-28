@@ -13,4 +13,4 @@ PuffinDB will support most [NVIDIA](https://www.nvidia.com/) GPU accelerators, w
 
 &nbsp;
 
-![Grace Hopper](https://user-images.githubusercontent.com/1074452/221723431-6acc8f4e-4763-4f02-9e73-4c9cb85bcfeb.png)
+![Grace Hopper](https://user-images.githubusercontent.com/1074452/221724159-7208b694-b6f4-4d56-9208-33e6001e539b.png)
