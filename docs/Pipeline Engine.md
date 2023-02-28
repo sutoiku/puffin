@@ -1,6 +1,6 @@
 # Pipeline Engine
 
-PuffinDB embeds a powerful engine for the execution of **incremental and observable data pipelines** offering the following features:
+PuffinDB embeds a powerful engine for the execution of **incremental and observable data pipelines**:
 
 - Integration with data lakes like [Iceberg](https://iceberg.apache.org/), [Delta Lake](https://delta.io/), and [Hudi](https://hudi.apache.org/)
 - Execution of multi-step data transformation pipelines orchestred by [Redis](https://redis.io/)
