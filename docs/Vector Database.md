@@ -5,4 +5,5 @@ PuffinDB is turning [DuckDB](https://duckdb.org/) into a full-blown vector datab
 - Support for the [Lance](https://github.com/eto-ai/lance) file format
 - Acceleration of [Faiss](https://github.com/facebookresearch/faiss) on GPU
 - Custom SQL functions for vector processing
+- Data pipeline automation with support for [PRQL](https://prql-lang.org/)
 - Storage of very large vectors on data lakes such as [Iceberg](https://iceberg.apache.org/), [Delta Lake](https://delta.io/), and [Hudi](https://hudi.apache.org/).
