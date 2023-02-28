@@ -10,6 +10,7 @@ PuffinDB includes a [DuckDB Extension](https://duckdb.org/docs/extensions/overvi
 - Translate between 19 [SQL dialects](Query%20Proxy.md#dialect-translation)
 - Invoke [remote query generators](Query%20Proxy.md)
 - Invoke [curl](https://curl.se/) commands
+- Execute incremental and observable [data pipelines](Pipeline%20Engine.md)
 - Turn DuckDB into a next-generation [vector database](Vector%20Database.md)
 - Support the [Lance](https://github.com/eto-ai/lance) file format for 100× faster random access
 - Accelerate and | or schedule the downloading of large tables to your client
