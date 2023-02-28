@@ -69,7 +69,7 @@ Most OLAP engines are designed for queries that can take minutes or even hours t
 - Higher business value
 
 ## Designed for transformation and analytics
-Most OLAP engines and cloud data warehousing platforms are designed to be used alongside third-party data preparation tools for ETL and reverse ETL. PuffinDB is in and by itself a powerful data extraction, transformation, and loading tool, thanks to its extensive collection of database and application [connectors](docs/Connectors.md), and its built-in data pipeline execution engine.
+Most OLAP engines and cloud data warehousing platforms are designed to be used alongside third-party data preparation tools for ETL and reverse ETL. PuffinDB is in and by itself a powerful data extraction, transformation, and loading tool, thanks to its extensive collection of database and application [connectors](docs/Connectors.md), and its built-in [data pipeline execution engine](docs/Pipeline%20Engine.md).
 
 **Benefits**:
 - Lower development costs
@@ -120,7 +120,7 @@ Most SQL engines targeted at public cloud deployment have been designed for Obje
 - Lower data integration costs
 
 ## Designed for data mesh integration
-Most SQL engines are designed as standalone data silos. Instead, PuffinDB embraces the [data mesh philosophy](https://martinfowler.com/articles/data-mesh-principles.html), and is natively designed to distribute SQL queries across heterogeneous and remote databases and applications, thanks to its extensive collection of database and application [connectors](docs/Connectors.md), and its built-in data pipeline execution engine.
+Most SQL engines are designed as standalone data silos. Instead, PuffinDB embraces the [data mesh philosophy](https://martinfowler.com/articles/data-mesh-principles.html), and is natively designed to distribute SQL queries across heterogeneous and remote databases and applications, thanks to its extensive collection of database and application [connectors](docs/Connectors.md), and its built-in [data pipeline execution engine](docs/Pipeline%20Engine.md).
 
 **Benefits**:
 - Lower data integration costs
