@@ -1,6 +1,6 @@
 # Vector Database
 
-PuffinDB is turning [DuckDB](https://duckdb.org/) into a full-blown vector database with the following features:
+PuffinDB is turning [DuckDB](https://duckdb.org/) into a next-generation vector database with the following features:
 
 - Storage of very large vectors on data lakes such as [Iceberg](https://iceberg.apache.org/), [Delta Lake](https://delta.io/), and [Hudi](https://hudi.apache.org/).
 - Support for the [Lance](https://github.com/eto-ai/lance) file format
