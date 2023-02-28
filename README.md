@@ -20,6 +20,7 @@ If you are using DuckDB client-side with [any client application](docs/Clientles
 - Translate between 19 [SQL dialects](docs/Query%20Proxy.md#dialect-translation)
 - Invoke [remote query generators](docs/Query%20Proxy.md)
 - Invoke [curl](https://curl.se/) commands
+- Execute incremental and observable [data pipelines](Pipeline%20Engine.md)
 - Turn DuckDB into a next-generation [vector database](docs/Vector%20Database.md)
 - Support the [Lance](https://github.com/eto-ai/lance) file format for 100× faster random access
 - Accelerate and | or schedule the downloading of large tables to your client
