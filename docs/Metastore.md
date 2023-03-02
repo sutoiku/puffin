@@ -59,6 +59,19 @@ Table-level column statistics are managed in a similar fashion and are generated
 
 **Note**: as an option, the table-level `frequencies.parquet` file could include the frequency distribution of every value across every partition. This would dramatically accelerate the identification of partitions that contain certain values for a categorical column. Of course, this would also increase the size of this file, but Parquet makes it easy to retrieve only certain columns, therefore it should not affect the lookup performance of total frequencies (frequencies of values across all partitions). This would also make it more expensive to update this file whenever updates are made to a particular partition, but this overhead might be small in relation to the benefits offered by the consolidation of these frequency distributions. If this feature is implemented, frequency distributions should be stored in two complementary ways: vectors for dense distributions, and hashes for sparse distributions.
 
+## Computation of Frequencies
+The computation of frequencies is implemented with three complementary algorithms:
+
+1. Low count of distinct values
+2. Low count of duplicate values
+3. All other cases
+
+The following process is implemented to decide which algorithm to use:
+
+- Partition-level frequencies are first computed by the serverless functions.
+- Then, counts of distinct and duplicate values are sent by the serverless functions to the Monostore.
+- If the sum of counts of distinct values is lower than a threshold defined by the Monostore's size (1M for a small instace), algorithm `#1` is selected.
+
 ## Computations of Ranks
 While [quantiles](https://en.wikipedia.org/wiki/Quantile) can be accurately approximated with the most recent versions of the [t-digest](https://github.com/tdunning/t-digest) algorithm, exact quantiles are required for certain applications. In such cases, ranks must be computed for column values through distributed sorting. The following algorithm implements distributed sorting in a fixed number of steps, without requiring a large amount of memory in a centralized location.
 
