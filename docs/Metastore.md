@@ -74,6 +74,15 @@ The following process is implemented to decide which algorithm to use:
 - Algorithm `#2` if the sum of count of duplicate values is such that all duplicate values could be handled by a single serverless function.
 - Algorithm `#3` otherwise.
 
+### Low count of distinct values
+- All serverless functions stream their frequencies to the Monostore.
+- All values are passed through a [Bloom filter](https://en.wikipedia.org/wiki/Bloom_filter) running on the Monostore.
+- All possible duplicates are consolidated on a [Redis](https://redis.io/) running on the Monostore.
+- Once all values have been filtered, all possible duplicates are broadcasted to the serverless functions, which confirm actual duplicates.
+- Actual duplicates are sent by the serverless functions to the Monostore.
+- Frequencies for duplicates are reduced using the Redis instance running on the Monostore.
+- Distinct values are ommited from the frequency distribution to save space, unless an exhaustive list of values is required.
+
 ## Computations of Ranks
 While [quantiles](https://en.wikipedia.org/wiki/Quantile) can be accurately approximated with the most recent versions of the [t-digest](https://github.com/tdunning/t-digest) algorithm, exact quantiles are required for certain applications. In such cases, ranks must be computed for column values through distributed sorting. The following algorithm implements distributed sorting in a fixed number of steps, without requiring a large amount of memory in a centralized location.
 
