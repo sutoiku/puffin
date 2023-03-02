@@ -70,7 +70,9 @@ The following process is implemented to decide which algorithm to use:
 
 - Partition-level frequencies are first computed by the serverless functions.
 - Then, counts of distinct and duplicate values are sent by the serverless functions to the Monostore.
-- If the sum of counts of distinct values is lower than a threshold defined by the Monostore's size (1M for a small instace), algorithm `#1` is selected.
+- If the sum of counts of distinct values is lower than a threshold defined by the Monostore's size (1M for a small one), algorithm `#1` is used.
+- If the sum of count of duplicate values is such that all duplicate values could be handled by a single serverless function, algorithm `#2` is used.
+- Otherwise, algorithm `3` is used.
 
 ## Computations of Ranks
 While [quantiles](https://en.wikipedia.org/wiki/Quantile) can be accurately approximated with the most recent versions of the [t-digest](https://github.com/tdunning/t-digest) algorithm, exact quantiles are required for certain applications. In such cases, ranks must be computed for column values through distributed sorting. The following algorithm implements distributed sorting in a fixed number of steps, without requiring a large amount of memory in a centralized location.
