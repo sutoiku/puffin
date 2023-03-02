@@ -10,3 +10,10 @@ PuffinDB is turning [DuckDB](https://duckdb.org/) into a next-generation vector 
 - Data pipeline automation with support for [PRQL](https://prql-lang.org/)
 
 PuffinDB will support most [NVIDIA](https://www.nvidia.com/) GPU accelerators, while developing specific optimizations for the [Grace Hopper Superchip](https://www.nvidia.com/en-us/data-center/grace-hopper-superchip/)
+
+## Benefits over conventional vector database
+- Full support for SQL
+- [Clientless architecture](Clientless.md)
+- [Serverless architecture](Architecture.md)
+- [Pipeilne engine](Pipeline%20Engine.md)
+- [Connector framework](Airbyte.md)
