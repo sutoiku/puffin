@@ -69,7 +69,7 @@ The computation of frequencies is implemented with three complementary algorithm
 The following process is implemented to decide which algorithm to use:
 
 - Partition-level frequencies are first computed by the serverless functions.
-- Then, counts of distinct and duplicate values are sent by the serverless functions to the Monostore.
+- From there, counts of distinct and duplicate values are sent by the serverless functions to the Monostore, which then picks the right algorithm.
 - Algorithm `#1` if the sum of counts of distinct values is lower than a threshold defined by the Monostore's size (1M for a small one).
 - Algorithm `#2` if the sum of count of duplicate values is such that all duplicate values could be handled by a single serverless function.
 - Algorithm `#3` otherwise.
