@@ -90,6 +90,9 @@ The following process is implemented to decide which algorithm to use:
 ### All other cases
 It is assumed that unique values of a categorical column for which frequencies must be computed in this case can be uniformly binned locally, in a fully distributed manner. This is true for dense ordinals and randomly-generated indentifiers (*e.g.* [UUID](https://en.wikipedia.org/wiki/Universally_unique_identifier)). This assumption is reasonable, as categorical columns that have neither a low count of distinct values nor a low count of duplicate values are likely to be relationship columns, which are usually encoided using ordinals or randomly-generated identifiers. One case for which this assumption might not hold true is when data has been filtered, thereby resulting in a non-uniform distribution of unique values. In such a case, the algorithm outlined below will still work, albeit with sub-optimal performance.
 
+- Partition-level frequencies are binned by values by the serverless functions, with as many bins as there are serverless functions.
+- Bin-level frequencies are scattered across all serverless functions, using [NAT hole punching](https://github.com/spcl/tcpunch) for direct function-to-function communication.
+
 ## Computations of Ranks
 While [quantiles](https://en.wikipedia.org/wiki/Quantile) can be accurately approximated with the most recent versions of the [t-digest](https://github.com/tdunning/t-digest) algorithm, exact quantiles are required for certain applications. In such cases, ranks must be computed for column values through distributed sorting. The following algorithm implements distributed sorting in a fixed number of steps, without requiring a large amount of memory in a centralized location.
 
