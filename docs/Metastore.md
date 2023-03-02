@@ -76,12 +76,19 @@ The following process is implemented to decide which algorithm to use:
 
 ### Low count of distinct values
 - All serverless functions stream their frequencies to the Monostore.
+- All frequencies are reduced using the Redis instance running on the Monostore.
+
+### Low count of duplicate values
+- All serverless functions stream their frequencies to the Monostore.
 - All values are passed through a [Bloom filter](https://en.wikipedia.org/wiki/Bloom_filter) running on the Monostore.
 - All possible duplicates are consolidated on a [Redis](https://redis.io/) instance running on the Monostore.
 - Once all values have been filtered, all possible duplicates are broadcasted to the serverless functions, which confirm actual duplicates.
 - Actual duplicates are sent by the serverless functions to the Monostore.
-- Frequencies for duplicates are reduced using the Redis instance running on the Monostore.
+- The frequencies of duplicates are reduced using the Redis instance running on the Monostore.
 - Distinct values are ommited from the frequency distribution to save space, unless an exhaustive list of values is required.
+
+### All other cases
+It is assumed that unique values of a categorical column for which frequencies must be computed in this case can be uniformly binned locally, in a fully distributed manner. This is true for dense ordinals and randomly-generated indentifiers (*e.g.* [UUID](https://en.wikipedia.org/wiki/Universally_unique_identifier)). This assumption is reasonable, as categorical columns that have neither a low count of distinct values nor a low count of duplicate values are likely to be relationship columns, which are usually encoided using ordinals or randomly-generated identifiers.
 
 ## Computations of Ranks
 While [quantiles](https://en.wikipedia.org/wiki/Quantile) can be accurately approximated with the most recent versions of the [t-digest](https://github.com/tdunning/t-digest) algorithm, exact quantiles are required for certain applications. In such cases, ranks must be computed for column values through distributed sorting. The following algorithm implements distributed sorting in a fixed number of steps, without requiring a large amount of memory in a centralized location.
