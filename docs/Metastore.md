@@ -77,7 +77,7 @@ The following process is implemented to decide which algorithm to use:
 ### Low count of distinct values
 - All serverless functions stream their frequencies to the Monostore.
 - All values are passed through a [Bloom filter](https://en.wikipedia.org/wiki/Bloom_filter) running on the Monostore.
-- All possible duplicates are consolidated on a [Redis](https://redis.io/) running on the Monostore.
+- All possible duplicates are consolidated on a [Redis](https://redis.io/) instance running on the Monostore.
 - Once all values have been filtered, all possible duplicates are broadcasted to the serverless functions, which confirm actual duplicates.
 - Actual duplicates are sent by the serverless functions to the Monostore.
 - Frequencies for duplicates are reduced using the Redis instance running on the Monostore.
