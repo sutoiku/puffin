@@ -15,7 +15,7 @@ PuffinDB will support most [NVIDIA](https://www.nvidia.com/) GPU accelerators, w
 - [Full SQL support](Query%20Proxy.md#dialect-translation)
 - [Clientless architecture](Clientless.md)
 - [Serverless architecture](Architecture.md)
-- [Pipeilne engine](Pipeline%20Engine.md)
+- [Data pipeline engine](Pipeline%20Engine.md)
 - [Connector framework](Airbyte.md)
 - Easier integration
 - Lower costs
