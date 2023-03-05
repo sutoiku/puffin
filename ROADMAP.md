@@ -1,6 +1,6 @@
 # Roadmap
 
-- **Q1**: Preliminary [DuckDB extension](docs/Extension.md)
+- **Q1**: Preliminary [DuckDB extension](docs/Extension.md) (with limited subset of planned features)
 - **Q2**: PuffinDB 0.1 with basic [distributed query planner](docs/Query%20Planner.md) (filter pushdown)
 - **Q4**: PuffinDB 1.0 with advanced distributed query planner (including support for full [TPC-H](https://www.tpc.org/tpch/) benchmark)
 - **2024**: PuffinDB 2.0 (including support for full [TPC-DS](https://www.tpc.org/tpcds/) benchmark)
