@@ -16,7 +16,6 @@ Features will be implemented in the following order. Please start an `Idea` [dis
 - [x] Permanent [GitHub organization](https://github.com/PuffinDB)
 - [x] [DuckDB extension repository](https://github.com/PuffinDB/duckdb-extension) (private for now)
 - [x] [PuffinDB engine repository](https://github.com/PuffinDB/engine) (private for now)
-- [ ] Core project framework
 - [ ] Continuous integration framework
 - [ ] Unit testing framework
 - [ ] Integration testing framework
