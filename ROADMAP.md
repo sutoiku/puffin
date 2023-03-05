@@ -8,10 +8,11 @@
 Features will be implemented in the following order. Please start an `Idea` [discussion](https://github.com/sutoiku/puffin/discussions) to discuss any element of this proposed roadmap.
 
 ### Project Framework
-- [x] [GitHub repository](https://github.com/sutoiku/puffin)
+- [x] Temporary [GitHub repository](https://github.com/sutoiku/puffin)
 - [x] [Domain name](http://PuffinDB.io/)
 - [x] [Logo](https://github.com/sutoiku/puffin/blob/main/media/PuffinDB.svg) design
 - [x] [Core architecture design](docs/Architecture.md)
+- [x] Permanent [GitHub organization](https://github.com/PuffinDB)
 - [ ] Core project framework
 - [ ] Continuous integration framework
 - [ ] Unit testing framework
