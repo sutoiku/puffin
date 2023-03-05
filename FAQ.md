@@ -151,8 +151,8 @@ PuffinDB uses the following languages:
 - [TypeScript](https://www.typescriptlang.org/) for most of the middleware code executed by the [Engine](functions/engine/README.md) serverless function
 - [SMT-LIB](https://smtlib.cs.uiowa.edu/) for the formal models of the [distributed query planner](docs/Query%20Planner.md)
 - [Rust](https://www.rust-lang.org/) for the routines of the [distributed query planner](docs/Query%20Planner.md)
-- [Java](https://en.wikipedia.org/wiki/Java_(programming_language)) for the [connectors](docs/Connectors.md) to databases
-- [Python](https://www.python.org/) for the [connectors](docs/Connectors.md) to applications
+- [Java](https://en.wikipedia.org/wiki/Java_(programming_language)) for the [connectors](docs/Airbyte.md) to databases
+- [Python](https://www.python.org/) for the [connectors](docs/Airbyte.md) to applications
 - [HCL](https://github.com/hashicorp/hcl) for the [Terraform](https://www.terraform.io/) templates
 
 ## Why is STOIC initiating and funding this open source project?
