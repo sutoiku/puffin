@@ -2,7 +2,7 @@
 
 Data lives in the cloud and has weight. A **Cloud Data Engine** must work against the cloud's gravitational pull, gently.
 
-- **Cloud Data** is heavy and its center of gravity is the data lake
+- **Cloud Data** is heavy and its center of gravity is the lakehouse
 - **Cloud Data** is collaborative (multiple users edit data and metadata)
 - **Cloud Data** is real-time (updated with submillisecond latency)
 - **Cloud Data** is small or large (from megabytes to petabytes)
@@ -13,7 +13,7 @@ In this article, we will attempt to answer the following questions:
 
 - Why should we cache data across multiple cloud layers?
 - Why should we use both scale out and scale up with serverless containers and functions?
-- Why should we embrace the data lake paradigm and not use laptops as an alternative?
+- Why should we embrace the lakehouse paradigm and not use laptops as an alternative?
 - Why should we go clientless?
 - Why should we not ignore large datasets?
 - Why should we run our Cloud Data Engine on our own Virtual Private Cloud?
@@ -67,7 +67,7 @@ In order to take full advantage of these complementary **scale out** and **scale
 ## Data Analytics on Laptop
 You desktop or laptop computer is part of the overall cloud, as a client. But as explained earlier, this client is as far from your cloud data as Mars is from Earth, and moving data to your client is really expensive. By the same token, you are likely to get introduced to [DuckDB](https://duckdb.org/)'s goodness through a client application, be it [Jupyter](https://jupyter.org/), [Posit](https://posit.co/), or countless others. And when you do, you will want to do **less** analytics on your latop rather than **more**, for several reasons:
 
-First, moving data from your laptop to the cloud will make it a lot easier to share your work with others, especially when using DuckDB in combination with a data lake ([Iceberg](https://iceberg.apache.org/), [Delta Lake](https://delta.io/), [Hudi](https://hudi.apache.org/)) and | or a git-based collaboration platform ([GitHub](https://github.com/), [GitLab](https://about.gitlab.com/), [BitBucket](https://bitbucket.org/product)).
+First, moving data from your laptop to the cloud will make it a lot easier to share your work with others, especially when using DuckDB in combination with a lakehouse ([Iceberg](https://iceberg.apache.org/), [Delta Lake](https://delta.io/), [Hudi](https://hudi.apache.org/)) and | or a git-based collaboration platform ([GitHub](https://github.com/), [GitLab](https://about.gitlab.com/), [BitBucket](https://bitbucket.org/product)).
 
 Second, contrary to what some might want you to believe, your laptop is **not** faster than your data warehouse. Unless you are stuck with decade-old data warehouse technology, the cloud is orders of magnitude more powerful than your laptop will ever be. And even if you were to switch to a beefed-up desktop computer, I highly doubt that it packs 448 vCPUs, 24 TB of RAM, or 8× NVIDIA A100 GPUs. But if it does, I sure hope that you and your roommates have good ear protection...
 
@@ -121,7 +121,7 @@ When Amazon launched Amazon Web Services back in 2006, [Virtual Private Clouds](
 ## Conclusions
 - Data is heavy, so keep it in the cloud where it belongs, across as many layers of caching as possible.
 - Scale out and scale up, using serverless options whenever possible.
-- Embrace the data lake, and use your laptop for what it was designed: a portable user interface.
+- Embrace the lakehouse, and use your laptop for what it was designed: a portable user interface.
 - Do not limit yourself to a particular client, go clientless.
 - Do not limit yourself to small datasets, large datasets are becoming more and more prevalent.
 - Do not give your data to a database vendor, demand to run your Cloud Data Engine on your Virtual Private Cloud.
