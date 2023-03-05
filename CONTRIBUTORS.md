@@ -9,6 +9,7 @@ The following people have made significant contributions to the PuffinDB project
 - Philippe Entzmann — [phe](https://github.com/PhE)
 - Ismael Ghalimi — [ghalimi](https://github.com/ghalimi)
 - James McNeill — [jpmmcneill](https://github.com/jpmmcneill)
+- Maxime Petitjean — [maxime-petitjean](https://github.com/maxime-petitjean)
 - Benjamin Rothschild — [bnroths](https://bnroths.com/)
 
 ## Join our Team
