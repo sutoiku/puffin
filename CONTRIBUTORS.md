@@ -2,6 +2,7 @@
 
 The following people have made significant contributions to the PuffinDB project:
 
+- Jim Alateras — [jalateras](https://github.com/jalateras)
 - Tobias Brandt — [snth](https://github.com/snth)
 - Marcin Copik — [mcopik](https://github.com/mcopik)
 - Mimoune Djouallah — [djouallah](https://github.com/djouallah)
