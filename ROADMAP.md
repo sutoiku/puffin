@@ -9,10 +9,10 @@
 Features will be implemented in the following order. Please start an `Idea` [discussion](https://github.com/sutoiku/puffin/discussions) to discuss any element of this proposed roadmap.
 
 ### Project Framework
-- [x] Temporary [GitHub repository](https://github.com/sutoiku/puffin)
 - [x] [Domain name](http://PuffinDB.io/)
 - [x] [Logo](https://github.com/sutoiku/puffin/blob/main/media/PuffinDB.svg) design
 - [x] [Core architecture design](docs/Architecture.md)
+- [x] Temporary [GitHub repository](https://github.com/sutoiku/puffin)
 - [x] Permanent [GitHub organization](https://github.com/PuffinDB)
 - [x] [DuckDB extension repository](https://github.com/PuffinDB/duckdb-extension) (private for now)
 - [x] [PuffinDB engine repository](https://github.com/PuffinDB/engine) (private for now)
