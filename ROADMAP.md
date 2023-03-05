@@ -14,6 +14,8 @@ Features will be implemented in the following order. Please start an `Idea` [dis
 - [x] [Logo](https://github.com/sutoiku/puffin/blob/main/media/PuffinDB.svg) design
 - [x] [Core architecture design](docs/Architecture.md)
 - [x] Permanent [GitHub organization](https://github.com/PuffinDB)
+- [x] [DuckDB extension repository](https://github.com/PuffinDB/duckdb-extension) (private for now)
+- [x] [PuffinDB engine repository](https://github.com/PuffinDB/engine) (private for now)
 - [ ] Core project framework
 - [ ] Continuous integration framework
 - [ ] Unit testing framework
