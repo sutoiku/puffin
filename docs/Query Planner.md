@@ -61,7 +61,7 @@ Therefore, the distributed query planner will need to answer three main question
 - How should data be cached next to accelerate subsequent queries?
 
 ## Partitioning *vs.* Sharding
-Large tables managed by the Data Lake (*e.g.* [Apache Iceberg](https://iceberg.apache.org/)) are partitioned across multiple objects on the Object Store (*e.g.* [Amazon S3](https://aws.amazon.com/s3/)). While serverless functions scan tables directly from the Object Store, the resulting data ends up being cached on the serverless functions, the [Monostore](Monostore.md), or clients. Therefore, it becomes critical to properly shard large tables across serverless functions, be they used in a stateful or stateless manner (with or without caching).
+Large tables managed by the lakehouse (*e.g.* [Apache Iceberg](https://iceberg.apache.org/)) are partitioned across multiple objects on the Object Store (*e.g.* [Amazon S3](https://aws.amazon.com/s3/)). While serverless functions scan tables directly from the Object Store, the resulting data ends up being cached on the serverless functions, the [Monostore](Monostore.md), or clients. Therefore, it becomes critical to properly shard large tables across serverless functions, be they used in a stateful or stateless manner (with or without caching).
 
 For performance reasons, three types of sharded tables must be supported:
 
