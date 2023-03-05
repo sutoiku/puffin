@@ -3,7 +3,7 @@
 PuffinDB is turning [DuckDB](https://duckdb.org/) into a next-generation vector database with the following features:
 
 - Integration with all client applications embedding [DuckDB](https://duckdb.org/) through [clientless architecture](Clientless.md)
-- Storage of very large vectors on data lakes such as [Iceberg](https://iceberg.apache.org/), [Delta Lake](https://delta.io/), and [Hudi](https://hudi.apache.org/)
+- Storage of very large vectors on lakehouses such as [Iceberg](https://iceberg.apache.org/), [Delta Lake](https://delta.io/), and [Hudi](https://hudi.apache.org/)
 - Support for the [Lance](https://github.com/eto-ai/lance) file format
 - GPU acceleration
 - Custom SQL functions for vector processing
