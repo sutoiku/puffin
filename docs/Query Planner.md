@@ -69,7 +69,7 @@ For performance reasons, three types of sharded tables must be supported:
 - **Co-located tables**: partitions of tables sharded across the same dimensions are co-located within the same serverless functions
 - **Replicated tables**: small tables are replicated across all severless functions that might need them for joins
 
-**Note**: implementing the last two sharding techniques can be avoided if multi-table datasets are statically denormalized in the Data Lake.
+**Note**: implementing the last two sharding techniques can be avoided if multi-table datasets are statically denormalized in the lakehouse.
 
 ## Cost-Based Optimizer
 The distributed query planner will include a cost-based optimizer responsible for deciding which plan will deliver the best performance for a given query. Among other things, this cost-based optimizer will decide whether an existing sharding is sufficient for a given query, or whether tables involved in the query should be sharded another way. Mature cost-based optimizers are currently under review.
@@ -79,7 +79,7 @@ The distributed query planner will include a cost-based optimizer responsible fo
 2. Abstract syntax tree, relational tree, and logical query plan produced by [DuckDB](https://duckdb.org/)
 3. Non-distributed logical query plan optimized by [DuckDB](https://duckdb.org/)
 4. Non-distributed logical query plan further optimized by [WeTune](https://dl.acm.org/doi/10.1145/3514221.3526125)
-5. Set of Object Store partitions looked-up from data lake (using [Iceberg Java API](https://iceberg.apache.org/docs/latest/api/) packaged as a serverless function)
+5. Set of Object Store partitions looked-up from lakehouse (using [Iceberg Java API](https://iceberg.apache.org/docs/latest/api/) packaged as a serverless function)
 6. Set of cached partitions looked-up from [Registry](Query%20Engine.md#Registry) (powered by [Redis](https://redis.io/))
 7. Distributed logical query plan generated with [multi-relational algebra](https://dl.acm.org/doi/pdf/10.1145/319996.320009) and [SMT](https://en.wikipedia.org/wiki/Satisfiability_modulo_theories) solver (using [Z3](https://github.com/Z3Prover/z3) theorem prover)
 8. Distributed physical query plan produced by assigning operations to serverless functions and containers
