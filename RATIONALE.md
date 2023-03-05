@@ -12,7 +12,7 @@ Many excellent distributed SQL engines are available today. Why do we need yet a
 - [Designed for analytics and transactions](#designed-for-analytics-and-transactions)
 - [Designed for next-generation query engines](#designed-for-next-generation-query-engines)
 - [Designed for next-generation file formats](#designed-for-next-generation-file-formats)
-- [Designed for data lakes](#designed-for-data-lakes)
+- [Designed for lakehouses](#designed-for-lakehouses)
 - [Designed for data mesh integration](#designed-for-data-mesh-integration)
 - [Designed for all users](#designed-for-all-users)
 - [Designed for extensibility](#designed-for-extensibility)
@@ -112,8 +112,8 @@ Most SQL engines are designed for traditional file formats like CSV or Parquet. 
 - Higher performance for random access
 - Lower data update latency
 
-## Designed for data lakes
-Most SQL engines targeted at public cloud deployment have been designed for Object Stores only (*e.g.* [Amazon S3](https://aws.amazon.com/s3/)). Instead, PuffinDB has been natively designed to take advantage of Data Lakes such as [Apache Iceberg](https://iceberg.apache.org/), [Apache Hudi](https://hudi.apache.org/), and [Delta Lake](https://delta.io/). This is one of the critical design elements that give it full OLTP capabilities with ACID properties, while allowing it to connect to a wide range of data sources that are being migrated to data lakes at an accelerating pace.
+## Designed for lakehouses
+Most SQL engines targeted at public cloud deployment have been designed for Object Stores only (*e.g.* [Amazon S3](https://aws.amazon.com/s3/)). Instead, PuffinDB has been natively designed to take advantage of lakehouses such as [Apache Iceberg](https://iceberg.apache.org/), [Apache Hudi](https://hudi.apache.org/), and [Delta Lake](https://delta.io/). This is one of the critical design elements that give it full OLTP capabilities with ACID properties, while allowing it to connect to a wide range of data sources that are being migrated to lakehouses at an accelerating pace.
 
 **Benefits**:
 - Enhanced transactional integrity
