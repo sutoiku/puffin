@@ -71,4 +71,4 @@ DuckDB is being natively integrated within more and more client-side application
 - Works with any client application (*e.g.* Excel, Jupyter, RStudio, Tableau, *etc.*)
 - No additional client application or service (lightweight DuckDB extension only)
 - Zero-copy remote query execution
-- Direct read | write queries on data lake ([Apache Iceberg](https://iceberg.apache.org/), [Apache Hudi](https://hudi.apache.org/), [Delta Lake](https://delta.io/))
+- Direct read | write queries on lakehouse ([Apache Iceberg](https://iceberg.apache.org/), [Apache Hudi](https://hudi.apache.org/), [Delta Lake](https://delta.io/))
