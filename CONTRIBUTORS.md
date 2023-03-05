@@ -11,6 +11,7 @@ The following people have made significant contributions to the PuffinDB project
 - James McNeill — [jpmmcneill](https://github.com/jpmmcneill)
 - Maxime Petitjean — [maxime-petitjean](https://github.com/maxime-petitjean)
 - Benjamin Rothschild — [bnroths](https://bnroths.com/)
+- Jiacheng Yang — [jiachengy](https://github.com/jiachengy)
 
 ## Join our Team
 [STOIC](https://stoic.com/) is hiring software engineers interested in working on the PuffinDB project. Relevant skills include:
