@@ -7,7 +7,7 @@ PuffinDB will provide a free trial option for users who have an AWS account with
 - $100 AWS credits
 - [CloudFormation](https://aws.amazon.com/cloudformation/) template deployed on PuffinDB's virtual private cloud (VPC)
 
-## Session
+## Sessions
 Once the CloudFormation template has been deployed, trial users can start and stop evaluation sessions at any time during the 30-days trial period. The [Monostore](Monostore.md) is started at the beginning of every session (this usually takes 2 to 3 minutes), and automatically stopped after 15 minutes of inactivity. When starting a session, the user selects one of three options for the Monostore:
 
 | Instance | Dataset Size | vCPUs | CPU RAM | GPUs | GPU RAM | Bandwidth | Hours |
