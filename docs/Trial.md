@@ -15,3 +15,5 @@ Once the CloudFormation template has been deployed, trial users can start and st
 |[`g5.8xlarge`](https://aws.amazon.com/ec2/instance-types/g5/)| 100 GB | 32 | 128 GB | 1 | 32 GB | 25 Gbps | 75 |
 |[`g5.24xlarge`](https://aws.amazon.com/ec2/instance-types/g5/)| 250 GB | 96 | 384 GB | 4 | 96 GB | 50 Gbps | 25 |
 |[`p4d.24xlarge`](https://aws.amazon.com/ec2/instance-types/p4/)| 1 TB | 96 | 1,152 GB | 8 | 320 GB | 400 Gbps | 5 |
+
+Assuming 25 days of evaluation, this translates into 3 hours a day for 100 GB datasets, 1 hour a day for 250 GB datasets, or 1 hour a week for 1 TB datasets.
