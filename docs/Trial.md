@@ -24,3 +24,6 @@ Assuming 25 days of actual evaluation, this translates into:
 - 3 hours a day for 100 GB datasets
 - 1 hour a day for 250 GB datasets
 - 1 hour a week for 1 TB datasets
+
+## STOIC
+The free trial for PuffinDB will include unlimited seats for [STOIC](https://github.com/stoic-doc/Community/discussions/1).
