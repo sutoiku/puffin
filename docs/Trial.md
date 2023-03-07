@@ -8,7 +8,7 @@ PuffinDB will provide a free trial option for users who have an AWS account with
 - [CloudFormation](https://aws.amazon.com/cloudformation/) template deployed on PuffinDB's virtual private cloud (VPC)
 
 ## Session
-Once the CloudFormation template has been deployed, trial users can start and stop evaluation sessions at any time during the 30-days trial period. The [Monostore](Monostore.md) is instanciated at the beginning of every session (this takes 2 to 3 minutes). When starting a session, the user selects one of three options for the Monostore:
+Once the CloudFormation template has been deployed, trial users can start and stop evaluation sessions at any time during the 30-days trial period. The [Monostore](Monostore.md) is nstantiated at the beginning of every session (this takes 2 to 3 minutes). When starting a session, the user selects one of three options for the Monostore:
 
 | Instance | Dataset Size |
 | -------- | ------------ |
