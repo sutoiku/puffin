@@ -1,6 +1,6 @@
 # Free Trial
 
-PuffinDB will provide a free trial option for users who have an AWS account with limited privileges (access to S3 bucket only).
+STOIC will provide a free trial option for PuffinDB to users who have an AWS account with limited privileges (access to S3 bucket only).
 
 Users who have an AWS accout with proper privileges can use PuffinDB on their own virtual private cloud (VPC), without any limitations.
 
