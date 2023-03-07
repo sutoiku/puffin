@@ -14,10 +14,10 @@ Once the CloudFormation template has been deployed, trial users can start and st
 
 | Size | Instance | Dataset Size | vCPUs | CPU RAM | GPUs | GPU RAM | Bandwidth | Hours |
 | ---- | -------- | ------------ | ----- | ------- | ---- | ------- | --------- | ----- |
-| Tiny | [`g5.2xlarge`](https://aws.amazon.com/ec2/instance-types/g5/)| Up to 25 GB | 8 | 32 GB | 1 | 16 GB | up to 10 Gbps | 200 |
-| Small | [`g5.8xlarge`](https://aws.amazon.com/ec2/instance-types/g5/)| Up to 100 GB | 32 | 128 GB | 1 | 32 GB | 25 Gbps | 75 |
-| Medium | [`g5.24xlarge`](https://aws.amazon.com/ec2/instance-types/g5/)| Up to 250 GB | 96 | 384 GB | 4 | 96 GB | 50 Gbps | 25 |
-| Large | [`p4d.24xlarge`](https://aws.amazon.com/ec2/instance-types/p4/)| Up to 1 TB | 96 | 1,152 GB | 8 | 320 GB | 400 Gbps | 5 |
+| XS | [`g5.2xlarge`](https://aws.amazon.com/ec2/instance-types/g5/)| Up to 25 GB | 8 | 32 GB | 1 | 16 GB | up to 10 Gbps | 200 |
+| S | [`g5.8xlarge`](https://aws.amazon.com/ec2/instance-types/g5/)| Up to 100 GB | 32 | 128 GB | 1 | 32 GB | 25 Gbps | 75 |
+| M | [`g5.24xlarge`](https://aws.amazon.com/ec2/instance-types/g5/)| Up to 250 GB | 96 | 384 GB | 4 | 96 GB | 50 Gbps | 25 |
+| L | [`p4d.24xlarge`](https://aws.amazon.com/ec2/instance-types/p4/)| Up to 1 TB | 96 | 1,152 GB | 8 | 320 GB | 400 Gbps | 5 |
 
 Assuming 25 days of actual evaluation, this translates into:
 - 8 hours a day for 25 GB datasets
