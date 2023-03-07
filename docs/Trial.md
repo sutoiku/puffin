@@ -2,7 +2,7 @@
 
 PuffinDB will provide a free trial option for users who have an AWS account with limited privileges (access to S3 bucket only).
 
-Of course, users who have an AWS accout with proper privileges can use PuffinDB on their own virtual private cloud (VPC), without any limitations.
+Users who have an AWS accout with proper privileges can use PuffinDB on their own virtual private cloud (VPC), without any limitations.
 
 ## Outline
 - 30 days
