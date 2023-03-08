@@ -65,7 +65,7 @@ Many excellent distributed SQL engines are available today. Why do we need yet a
 
 ## Outline
 - True [serverless architecture](docs/Architecture.md) (run [DuckDB](https://duckdb.org/) on 10,000 [Lambda functions](https://aws.amazon.com/lambda/))
-- Supporting both read and write queries ([HTAP](https://en.wikipedia.org/wiki/Hybrid_transactional/analytical_processing))
+- Supporting both read and write queries ([HTAP](docs/HTAP.md))
 - Implemented in [Python](https://www.python.org/), [Rust](https://www.rust-lang.org/), and [TypeScript](https://www.typescriptlang.org/) (using [Bun](https://bun.sh/))
 - Powered by [Arrow](https://arrow.apache.org/) × [DuckDB](https://duckdb.org/) × [Iceberg](https://iceberg.apache.org/)
 - Powered by [Redis](https://redis.io/) (using [Amazon ElastiCache for Redis](https://aws.amazon.com/elasticache/redis/)) for state management
