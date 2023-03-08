@@ -3,7 +3,7 @@
 Please ask new questions as a `Q&A` in [discussions](https://github.com/sutoiku/puffin/discussions).
 
 ## What is PuffinDB?
-PuffinDB is a serverless [HTAP](https://en.wikipedia.org/wiki/Hybrid_transactional/analytical_processing) cloud data platform powered by [Arrow](https://arrow.apache.org/) × [DuckDB](https://duckdb.org/) × [Iceberg](https://iceberg.apache.org/).
+PuffinDB is a serverless [HTAP](docs/HTAP.md) cloud data platform powered by [Arrow](https://arrow.apache.org/) × [DuckDB](https://duckdb.org/) × [Iceberg](https://iceberg.apache.org/).
 
 ## Why should I use PuffinDB?
 If you are using DuckDB client-side with [any client application](docs/Clientless.md), adding the [PuffinDB extension](docs/Extension.md) will let you:
