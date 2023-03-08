@@ -14,7 +14,7 @@ Once the CloudFormation template has been deployed, trial users can start and st
 
 | Size | Instance | Dataset Size | vCPUs | CPU RAM | GPUs | GPU RAM | Network BW | EBS BW | Hours |
 | ---- | -------- | ------------ | ----- | ------- | ---- | ------- | ---------- | ------ | ----- |
-| XXS | [`g4dn.xlarge`](https://aws.amazon.com/ec2/instance-types/g4/)| Up to 10 GB | 4 | 16 GB | 1 | 8 GB | Up to 25 Gbps | Up to 3.5 Gbps | 400 |
+| XXS | [`g4dn.xlarge`](https://aws.amazon.com/ec2/instance-types/g4/)| Up to 10 GB | 4 | 16 GB | 1 | 16 GB | Up to 25 Gbps | Up to 3.5 Gbps | 400 |
 | XS | [`g4dn.2xlarge`](https://aws.amazon.com/ec2/instance-types/g4/)| Up to 25 GB | 8 | 32 GB | 1 | 16 GB | Up to 25 Gbps | Up to 3.5 Gbps | 300 |
 | S | [`g5.8xlarge`](https://aws.amazon.com/ec2/instance-types/g5/)| Up to 100 GB | 32 | 128 GB | 1 | 32 GB | 25 Gbps | 16 Gbps | 75 |
 | M | [`g5.24xlarge`](https://aws.amazon.com/ec2/instance-types/g5/)| Up to 250 GB | 96 | 384 GB | 4 | 96 GB | 50 Gbps | 19 Gbps | 25 |
