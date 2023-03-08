@@ -1,6 +1,6 @@
 # PuffinDB <img src="https://user-images.githubusercontent.com/1074452/220389778-245dd23e-3f09-4615-bdf1-24cd1eb8b819.png" style="margin-left: 0.25em" width="24">
 
-Serverless [HTAP]docs/HTAP.md) cloud data platform powered by [Arrow](https://arrow.apache.org/) × [DuckDB](https://duckdb.org/) × [Iceberg](https://iceberg.apache.org/)
+Serverless [HTAP](docs/HTAP.md) cloud data platform powered by [Arrow](https://arrow.apache.org/) × [DuckDB](https://duckdb.org/) × [Iceberg](https://iceberg.apache.org/)
 
 Accelerate DuckDB with 10,000 [AWS Lambda functions](https://aws.amazon.com/lambda/) running on your own VPC
 
