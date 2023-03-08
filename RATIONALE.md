@@ -80,7 +80,7 @@ Most OLAP engines and cloud data warehousing platforms are designed to be used a
 - Enhanced data governance
 
 ## Designed for analytics and transactions
-By definition, OLAP (online analytical processing) engines are designed to work on immutable data, and are commonly used downstream of OLTP (online transaction processing) systems. While PuffinDB is not designed to be used as primary system of records for high-frequency transactional applications, it is designed to support real-time updates and manual edits (adjustments) on data. As such, it can be considered an analytics-oriented HTAP (hybrid transaction/analytical processing) engine.
+By definition, OLAP (online analytical processing) engines are designed to work on immutable data, and are commonly used downstream of OLTP (online transaction processing) systems. While PuffinDB is not designed to be used as primary system of records for high-frequency transactional applications, it is designed to support real-time updates and manual edits (adjustments) on data. As such, it can be considered an analytics-oriented [HTAP](docs/HTAP.md) (hybrid transaction/analytical processing) engine.
 
 **Benefits**:
 - Broader use case applicability
