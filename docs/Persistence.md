@@ -24,9 +24,9 @@ Some logs are both persistent and transient (*e.g.* sequences and steps for [dat
 
 ## Benefits
 
+- Ultra-low latency for entities that really need it (transient logs)
+- Unlimited capacity (never run out of memory or storage)
 - 100% automated provisioning and maintenance
 - High elasticity
 - Scale-to-zero
 - Super low cost
-- Ultra-low latency for entities that really need it (transient logs)
-- Unlimited capacity (never run out of memory or storage)
