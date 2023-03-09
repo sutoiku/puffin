@@ -11,7 +11,7 @@ PuffinDB uses multiple engines and serverless services for persistence and trans
 These are used for the following entities:
 
 - **Table Metadata**: Lakehouse Catalog
-- **Table Summaries**: Object Store
+- **Table Summaries**: Object Store (*Cf.* [Metastore Statistics](Metastore.md))
 - **Edits**: Key-Value Store
 - **Sharings**: Key-Value Store
 - **Persistent Logs**: Block Store during [Monostore](Monostore.md)'s life, then Object Store
