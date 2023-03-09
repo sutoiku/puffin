@@ -10,7 +10,7 @@ PuffinDB uses multiple engines and serverless services for persistence and trans
 
 **Note**: Block store volumes can be provisioned on the fly when the Monostore gets started (scale-to-zero).
 
-These are used for the following entities:
+These engines and serverless services are used for the following entities:
 
 - **Table Metadata**: Lakehouse Catalog
 - **Table Summaries**: Object Store (*Cf.* [Metastore Statistics](Metastore.md))
