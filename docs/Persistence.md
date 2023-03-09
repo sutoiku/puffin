@@ -10,7 +10,7 @@ PuffinDB uses multiple engines and serverless services for persistence and trans
 - **Table Caches Metadata**: In-Memory Metastore
 - **Transient Logs**: In-Memory Metastore
 
-Some logs are both persistent and transient (sequences and steps for [data pipelines](Pipeline%20Engine.md)).
+Some logs are both persistent and transient (*e.g.* sequences and steps for [data pipelines](Pipeline%20Engine.md)).
 
 ## Implementations
 Engines and services are implemented in the following fashion:
