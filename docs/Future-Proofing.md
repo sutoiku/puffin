@@ -13,6 +13,7 @@ PuffinDB is designed to take advantage of the very latest serverless technologie
 - Serverless [Redis](https://redis.io/) cluster ([Amazon ElastiCache for Redis](https://aws.amazon.com/elasticache/redis/), but serverless)
 - SSD tier for Object Store ([Amazon S3](https://aws.amazon.com/s3/))
 - In-memory tier for Object Store ([Amazon S3](https://aws.amazon.com/s3/))
+- [Parquet](https://parquet.apache.org/) export when using [`SelectObjectContent`](https://docs.aws.amazon.com/AmazonS3/latest/API/API_SelectObjectContent.html)
 - [DuckDB](https://duckdb.org/) embedded within Object Store (as an upgrade from [`SelectObjectContent`](https://docs.aws.amazon.com/AmazonS3/latest/API/API_SelectObjectContent.html))
 - Object updates in place within Object Store (powered by file formats that support them, such as DuckDB's native file format)
 - [SQL Superchips](https://twitter.com/ghalimi/status/1621904627334791170)
