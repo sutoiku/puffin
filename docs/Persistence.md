@@ -12,8 +12,9 @@ These are used for the following entities:
 
 - **Table Metadata**: Lakehouse Catalog
 - **Table Summaries**: Object Store (*Cf.* [Metastore Statistics](Metastore.md))
-- **Edits**: Key-Value Store
 - **Sharings**: Key-Value Store
+- **Edits**: Key-Value Store
+- **Updates**: Block Store during [Monostore](Monostore.md)'s life, then Object Store
 - **Persistent Logs**: Block Store during [Monostore](Monostore.md)'s life, then Object Store
 - **Table Caches Metadata**: In-Memory Metastore
 - **Transient Logs**: In-Memory Metastore
