@@ -21,10 +21,11 @@ Once the CloudFormation template has been deployed, trial users can start and st
 | L | [`p4d.24xlarge`](https://aws.amazon.com/ec2/instance-types/p4/)| Up to 1 TB | 96 | 1,152 GB | 8 | 320 GB | 400 Gbps | 19 Gbps | 5 |
 
 Assuming 25 days of actual evaluation, this translates into:
-- 8 hours a day for 25 GB datasets
-- 3 hours a day for 100 GB datasets
-- 1 hour a day for 250 GB datasets
-- 1 hour a week for 1 TB datasets
+- 10 hours a day for 10 GB reduced datasets
+- 8 hours a day for 25 GB reduced datasets
+- 3 hours a day for 100 GB reduced datasets
+- 1 hour a day for 250 GB reduced datasets
+- 1 hour a week for 1 TB reduced datasets
 
 ## STOIC
 The free trial for PuffinDB will include unlimited seats for [STOIC](https://github.com/stoic-doc/Community/discussions/1).
