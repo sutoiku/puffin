@@ -11,7 +11,7 @@ Features will be implemented in the following order. Please start an `Idea` [dis
 ### Project Framework
 - [x] [Domain name](http://PuffinDB.io/)
 - [x] [Logo](https://github.com/sutoiku/puffin/blob/main/media/PuffinDB.svg) design
-- [x] [Core architecture design](docs/Architecture.md)
+- [x] [Core architecture design](docs/Serverless.md)
 - [x] Temporary [GitHub repository](https://github.com/sutoiku/puffin)
 - [x] Permanent [GitHub organization](https://github.com/PuffinDB)
 - [x] [DuckDB extension repository](https://github.com/PuffinDB/duckdb-extension) (private for now)
