@@ -11,8 +11,8 @@ PuffinDB is designed to take advantage of emerging **cloudless architectures**:
 ## Benefits
 
 - Easy onboarding without any cloud credentials
-- Out-of-the-box integration of all required components and services
 - Fully automated provisioning and maintenance
+- Out-of-the-box integration of all required components and services
 - Lower risk of service disruption due to incorrect configuration
 - Downstream migration and consolidation
 
