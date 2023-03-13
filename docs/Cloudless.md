@@ -14,3 +14,10 @@ PuffinDB is designed to take advantage of emerging **cloudless architectures**:
 - Out-of-the-box integration of all required components and services
 - Fully automated provisioning and maintenance
 - Lower risk of service disruption due to incorrect configuration
+- Downstream migration and consolidation
+
+## Migration
+Whenever PuffinDB is deployed using a cloudless option, it can be easily migrated to a cloud account owned and operated by the customer.
+
+## Consolidation
+Multiple cloudless PuffinDB account can be consolidated into a single one (cloudless and not).
