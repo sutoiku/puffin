@@ -1,6 +1,6 @@
 # Future-Proofing
 
-PuffinDB is designed to take advantage of the very latest serverless technologies (*Cf.* [Architecture](Architecture.md)), and what is likely to come next:
+PuffinDB is designed to take advantage of the very latest serverless technologies (*Cf.* [Architecture](Serverless.md)), and what is likely to come next:
 
 - Serverless containers ([AWS Fargates](https://aws.amazon.com/fargate/)) that could start in 15s instead of 60 to 90s
 - Serverless functions ([AWS Lambda](https://aws.amazon.com/lambda/)) that could "officially" be used in a stateful manner
