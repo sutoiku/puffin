@@ -40,7 +40,7 @@ STOIC is a member of the DuckDB Foundation.
 - The [public cloud](FAQ.md#why-not-support-private-cloud-deployment) is the only truly elastic platform
 - [Arrow](https://arrow.apache.org/) × [DuckDB](https://duckdb.org/) × [Iceberg](https://iceberg.apache.org/) are game changers
 - [Edge-Driven Data Integration](EDDI.md) is the way forward
-- [Clientless](docs/Clientless.md) + [Serverless](docs/Architecture.md) = [Goodness](CLOUD.md)
+- [Clientless](docs/Clientless.md) + [Serverless](docs/Serverless.md) = [Goodness](CLOUD.md)
 
 ## Rationale
 Many excellent distributed SQL engines are available today. Why do we need yet another one?
