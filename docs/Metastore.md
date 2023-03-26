@@ -47,7 +47,7 @@ This table format is optimized for columns with large numbers of distinct values
 
 ### `histograms.parquet`
 - One column per column of the related table
-- One row per bin (1,000 ot 10,000 bins)
+- One row per bin (1,000 to 10,000 bins)
 - Ordered by increasing bin minimum value
 
 This table format is optimized for storing high-resolution histograms.
