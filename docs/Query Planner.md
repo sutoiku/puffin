@@ -27,7 +27,7 @@ The following techniques are being considered:
 - Implementation of [multi-relational algebra](https://dl.acm.org/doi/pdf/10.1145/319996.320009)
 - Domain Specific Language (DSL) for [rule-based query optimization](https://www.querifylabs.com/blog/rule-based-query-optimization)
 - Rule scripting powered by [TypeScript](https://www.typescriptlang.org/) for dynamic rule injection and client-side + cloud-side execution
-- Initial set of optimizer rules bootstrapped by porting [Trinio's rules](https://github.com/trinodb/trino/tree/master/core/trino-main/src/main/java/io/trino/sql/planner/iterative/rule) from Java to DSL
+- Initial set of optimizer rules bootstrapped by porting [Trino's rules](https://github.com/trinodb/trino/tree/master/core/trino-main/src/main/java/io/trino/sql/planner/iterative/rule) from Java to DSL
 - Automatic generation of optimizer rules using [WeTune](https://ipads.se.sjtu.edu.cn/_media/publications/wetune_final.pdf)
 - Dynamic injection of optimizer rules through standard SQL API
 - Rule interpreter implemented in [Rust](https://www.rust-lang.org/)
